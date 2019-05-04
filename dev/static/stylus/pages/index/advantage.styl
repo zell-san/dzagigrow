@@ -1,0 +1,92 @@
+.advantage-block
+  width 100%
+
+  @media screen and (max-width tableWidth)
+    display flex
+    justify-content center
+
+  &-section
+    @media screen and (max-width bigPhoneWidth)
+      padding 0 25px
+      width 100%
+      display flex
+      justify-content center
+
+.advantage
+  background white
+  margin-top 30px
+  padding 25px 35px 25px 10px
+  border 1px solid greyDGdark
+
+  @media screen and (max-width tableWidth)
+    padding 15px
+    max-width 350px
+
+    @media screen and (max-width bigPhoneWidth)
+      width 100%
+      padding 10px
+
+  &-box
+    display flex
+    justify-content space-between
+    flex-wrap wrap
+
+    @media screen and (max-width desktopWidth)
+      justify-content center
+
+      @media screen and (max-width tableWidth)
+        align-items center
+
+    &__content
+      display flex
+      align-items center
+      border-left 1px solid greyDGdark
+      outline none
+
+      @media screen and (max-width desktopWidth)
+        margin 0 15px
+
+        &:nth-child(4)
+          margin-top 25px
+          border-left none
+
+        &:nth-child(5)
+          margin-top 25px
+
+      @media screen and (max-width smalDesktopWidth)
+        margin 0 10px
+
+        @media screen and (max-width tableWidth)
+          border none
+          align-items center
+          display flex!important
+          margin-top 0!important
+
+          @media screen and (max-width bigPhoneWidth)
+            margin 0
+            text-align center
+
+
+      &-first
+        border-left none
+
+      &-span
+        word-wrap break-word
+        width 125px
+        font-family HelveLightItalic
+        font-size rem(13px)
+
+        @media screen and (max-width tableWidth)
+          font-size rem(18px)
+          width 60%
+
+          @media screen and (max-width bigPhoneWidth)
+            //width 91px
+
+@media screen and (max-width tableWidth)
+  .advantage-box div
+    display flex
+    align-items center
+    justify-content center
+
+

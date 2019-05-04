@@ -1,0 +1,550 @@
+.cabinet
+  display flex
+  justify-content space-between
+
+  &-sidebar
+    @extend .blog-right
+
+    &__menu
+      background-color white
+      margin-bottom 15px
+      margin-top 15px
+
+    &__item
+      @extend .saidbar-nav__border
+
+    &__border
+      @extend .saidbar-nav__item
+      justify-content flex-start
+
+      &-last
+        border-bottom none
+
+  &-place
+    @extend .blog-left
+
+    &__menu
+      &-media
+        display none
+
+        @media screen and (max-width desktopWidth)
+          display block
+          margin-bottom 5px
+
+    &__personal
+      &-area
+        display none
+
+      &-orders
+        display none
+
+      &-data
+        display none
+
+      &-subscriptions
+        display none
+
+      &-bonus
+        display none
+
+      &-descr
+        background-color white
+        padding 35px
+        text-align center
+        font-size rem(16px)
+        line-height 28px
+        margin-bottom 15px
+
+        @media screen and (max-width desktopWidth)
+          margin-bottom 20px
+
+          @media screen and (max-width bigPhoneWidth)
+            padding 30px
+
+      &-grid
+        display flex
+        justify-content space-between
+
+        @media screen and (max-width tableWidth)
+          flex-wrap wrap
+
+        &-item
+          background-color white
+          size (228px 220px)
+          display flex
+          flex-direction column
+          justify-content center
+          align-items center
+
+          @media screen and (max-width desktopWidth)
+            size (216px 208px)
+
+            @media screen and (max-width smalDesktopWidth)
+              size (168px 160px)
+
+              @media screen and (max-width tableWidth)
+                size (208px 200px)
+                margin-bottom 15px
+
+                @media screen and (max-width bigPhoneWidth)
+                  size (128px 120px)
+
+          &-a
+            text-decoration underline
+
+    &__sbc
+      @extend .blog-subscrube
+      margin-top 20px
+
+      @media screen and (max-width tableWidth)
+        margin-top 5px
+
+
+
+.personal-orders
+  &__menu
+    @extend .pay-delivery__menu
+    padding-top 15px
+
+    &-item
+      @extend .pay-delivery__menu-item
+
+      @media screen and (max-width tableWidth)
+        padding 0 0 15px 0
+        text-align center
+        width 50%
+
+  &__inside
+    background-color white
+
+    @media screen and (max-width tableWidth)
+      display none
+
+    &-media
+      display none
+
+      @media screen and (max-width tableWidth)
+        display flex
+        margin-bottom 20px
+
+    &-active
+      display none
+
+      @media screen and (max-width tableWidth)
+        width 100%
+
+    &-atribut
+      display flex
+      font-size rem(12px)
+      justify-content space-between
+      background-color greyDG
+
+      &-box
+        text-align center
+
+        &:nth-child(odd)
+          background-color white
+
+        @media screen and (max-width tableWidth)
+          width 100%
+
+        &-media
+          display flex
+          justify-content space-between
+          align-items center
+          height 55px
+
+      &-item
+        padding 0 25px
+        color greyTextDG
+        display flex
+        align-items center
+        justify-content center
+        height 50px
+
+        @media screen and (max-width smalDesktopWidth)
+          padding 0 10px
+
+        &-media
+          color greyTextDG
+          font-size rem(16px)
+          margin-left 20px
+
+      &-so
+        @extend .personal-orders__inside-atribut-item
+        height 80px
+        color blackTextDG
+        border-bottom 1px solid greyDGdark
+        border-top 1px solid greyDGdark
+
+        @media screen and (max-width tableWidth)
+          border-bottom none
+
+        &-media
+          border none
+          justify-content flex-end
+          display flex
+          color blackTextDG
+          max-width 155px
+          width 100%
+          margin-right 20px
+
+        &-red
+          color redDG
+
+        &-green
+          color greenDG
+
+        &-bonus
+          flex-direction column
+
+        &-block
+          width 100%
+          display flex
+          justify-content space-between
+          margin 5px 0
+
+        &-off
+          color redDG
+
+        &-on
+          color greenDG
+
+    &-more
+      display none
+
+      @media screen and (max-width tableWidth)
+        display flex
+        justify-content center
+        align-items center
+        background linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(247, 247, 247, 0.8) 50%)
+        height 20px
+        margin-top -20px
+        position relative
+        z-index 10
+
+    &-details
+      display none
+
+      @media screen and (max-width tableWidth)
+        background-color white
+
+    &-nomination
+      display flex
+      border-bottom 1px solid greyDGdark
+
+      &-media
+        width 100%
+
+      &-box
+        display flex
+        justify-content space-between
+        height 55px
+        align-items center
+
+      &-item
+        color greyTextDG
+        width 175px
+        height 60px
+        display flex
+        align-items center
+        justify-content center
+
+        &:first-child
+          width 430px
+
+        &-media
+          @extend .personal-orders__inside-atribut-item-media
+
+    &-product
+      &-item
+        @extend .basket-block__item
+        padding 20px 0
+        border-bottom 1px solid greyDGdark
+
+        @media screen and (max-width tableWidth)
+          flex-direction column
+          border none
+          padding 0
+          margin-top 20px
+
+      &-box
+        display flex
+        width 430px
+        align-items center
+
+        @media screen and (max-width tableWidth)
+          border-top 1px solid greyDGdark
+          padding-top 20px
+
+      &-preview
+        @extend .basket-block__item-preview
+
+      &-img
+        @extend .basket-block__item-preview-img
+
+      &-name
+        @extend .basket-block__item-name
+
+      &-price
+        width 175px
+        text-align center
+
+        @media screen and (max-width tableWidth)
+          margin-right 20px
+          text-align end
+
+      &-discount
+        @extend .personal-orders__inside-product-price
+        font-weight bold
+
+      &-quantity
+        @extend .personal-orders__inside-product-price
+
+    &-repeat
+      padding 25px
+      display none
+      justify-content flex-end
+      border-bottom 1px solid greyDGdark
+
+      @media screen and (max-width tableWidth)
+        border-top 1px solid greyDGdark
+        flex-wrap wrap
+
+    &-change
+      @extend .personal-orders__inside-repeat
+      display flex
+
+    &-all
+      display none
+
+      @media screen and (max-width tableWidth)
+        width 100%
+
+
+.personal-data
+  background-color white
+
+  &__title
+    padding 25px 35px
+    text-align center
+
+  &__info
+    padding 0 35px 25px 35px
+    display flex
+    justify-content space-between
+    border-top 1px solid greyDGdark
+    border-bottom 1px solid greyDGdark
+
+    @media screen and (max-width tableWidth)
+      flex-direction column
+
+    &-block
+      width 50%
+
+      @media screen and (max-width tableWidth)
+        width 100%
+
+    &-text
+      margin 25px 0 15px 0
+
+    &-input
+      @extend .search-def-input
+      width 285px
+
+      @media screen and (max-width tableWidth)
+        width 100%
+
+      &:focus
+        box-shadow 0 0 3px rgb(0, 170, 46)
+
+      &-min
+        @extend .search-def-input
+        width 70px
+        margin-right 35px
+
+        &:focus
+          box-shadow 0 0 3px rgb(0, 170, 46)
+
+    &-box
+      &-home
+        display flex
+
+  &__btn
+    padding 15px 35px 25px 35px
+    display flex
+    justify-content flex-end
+
+    @media screen and (max-width tableWidth)
+      flex-direction column
+
+    &-transparent
+      @media screen and (max-width tableWidth)
+        width 100%
+
+.personal-subscriptions
+  &__main
+    background-color greenDG
+    display flex
+    align-items center
+    overflow hidden
+    min-height 145px
+    position relative
+    justify-content center
+
+    &-box
+      margin 30px 40px
+
+      &-yes
+        padding-left 150px
+
+        @media screen and (max-width smalDesktopWidth)
+          padding-left 0
+          width 70%
+
+          @media screen and (max-width tableWidth)
+            width 100%
+
+    &-title
+      @extend .subscribe-news__left
+      width 100%
+
+    &-descr
+      @extend .subscribe-stock__left-second
+
+  &__btn
+    display flex
+    justify-content flex-end
+    align-items center
+    margin 15px 0
+
+    @media screen and (max-width bigPhoneWidth)
+      flex-direction column
+
+    &-text
+      width 240px
+
+      @media screen and (max-width bigPhoneWidth)
+        padding-bottom 10px
+
+    &-sbc
+      width 160px
+      margin-top 0
+      margin-left 10px
+
+.personal-bonus
+  background-color white
+  display flex
+  justify-content space-between
+  line-height 20px
+
+  @media screen and (max-width tableWidth)
+    flex-direction column
+    margin-bottom 10px
+
+  &__green
+    background-color greenDG
+    color white
+    font-weight bold
+    display flex
+    justify-content center
+    align-items center
+    min-width 230px
+    border-radius 0 2em 2em/10em 10em 10em 0
+    padding 30px
+
+    @media screen and (max-width tableWidth)
+      border-radius 0
+
+    &-span
+      width 115px
+
+      @media screen and (max-width tableWidth)
+        width auto
+
+  &__block
+    width 100%
+    display flex
+    justify-content space-between
+    flex-wrap wrap
+    padding 0 40px
+
+    @media screen and (max-width smalDesktopWidth)
+      justify-content space-around
+
+  &__box
+    margin 30px 0
+    color greyTextDG
+
+    @media screen and (max-width smalDesktopWidth)
+      &:last-child
+        margin-top 0
+
+    &-p
+      color blackTextDG
+
+  &__btn
+    background-color transparent
+    size (235px 40px)
+    font-size rem(12px)
+
+.recovery
+  &-data
+    display none
+
+  &-apply
+    display none
+
+.recovery__popup
+  &-data
+    @extend .recovery__popup
+    height auto
+    max-height 390px
+
+    background-color white
+
+    &-title
+      font-weight bold
+      font-size rem(24px)
+      padding-bottom 0
+
+    &-text
+      margin 20px 0 10px 0
+
+      &-p
+        margin-top 10px
+        color redDG
+
+    &-input
+      @extend .search-def-input
+
+    &-btn
+      display flex
+      justify-content flex-end
+      margin-top 20px
+
+  &-apply
+    @extend .recovery__popup
+    height auto
+
+    &-box
+      display flex
+      flex-direction column
+      align-items center
+
+    &-btn
+      margin-top 20px
+
+
+.personal-orders__inside-more.opened
+  transform rotate(180deg)
+
+.personal-orders__menu-item.opened
+  color greenDG
+  border-bottom 2px solid greenDG
+
+.cabinet-sidebar__item:hover .saidbar-nav__item-a
+  color white
+
+.cabinet-sidebar__item:hover .cabinet-menu
+  fill white

@@ -1,0 +1,26 @@
+.teaser-phone
+  display none
+  width 100%
+  margin-top 55px
+
+  @media screen and (max-width tableWidth)
+    display block
+
+  &__item
+    position relative
+    width 100%
+
+    &-img
+      width 100%
+      height 100%
+
+    &-button
+      &-yellow
+        @extend .teaser__big-button
+
+      &-green
+        @extend .teaser__small-right-button
+
+      &-black
+        @extend .teaser__small-right-button-bottom
+

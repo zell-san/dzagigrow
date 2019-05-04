@@ -1,0 +1,539 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Каталог'
+    - var pageClass = 'catalog-page'
+
+block content
+
+    .container-fluid
+        .container.page
+            .catalog
+                .catalog-left
+                    .saidbar-nav
+                        .saidbar-nav__border
+                            .saidbar-nav__item Аксессуары для угольных фильтров
+                        .saidbar-nav__border
+                            .saidbar-nav__item Угольные фильтры Magic Air PRO
+                        .saidbar-nav__border
+                            .saidbar-nav__item Угольные фильтры Nano Filter
+                        .saidbar-nav__border
+                            .saidbar-nav__item Аксессуары для угольных фильтров
+                        .saidbar-nav__border
+                            .saidbar-nav__item.saidbar-nav__item-last Аксессуары для угольных фильтров
+                    .catalog-left__parametrs
+                        .parametrs__item
+                            .parametrs__item-block
+                            .parametrs__item-box-other
+                                .parametrs__item-inside-checkbox-other
+                                    input.parametrs__item-inside-checkbox(type='checkbox')
+                                .parametrs__item-title-other Товар в наличии
+                        .parametrs__item
+                            .parametrs__item-block
+                            .parametrs__item-box
+                                .parametrs__item-title Брэнд
+                                +icon('arrow-point', 'arrow-point-faq')
+                            .parametrs__item-inside
+                                .parametrs__item-inside-box
+                                    input.parametrs__item-inside-checkbox(type='checkbox')
+                                    .parametrs__item-inside-info DzagiGrow
+                        .parametrs__item
+                            .parametrs__item-block
+                            .parametrs__item-box
+                                .parametrs__item-title Страна производителя
+                                +icon('arrow-point', 'arrow-point-faq')
+                            .parametrs__item-inside
+                                .parametrs__item-inside-box
+                                    input.parametrs__item-inside-checkbox(type='checkbox')
+                                    .parametrs__item-inside-info Россия
+                                .parametrs__item-inside-box
+                                    input.parametrs__item-inside-checkbox(type='checkbox')
+                                    .parametrs__item-inside-info Франция
+                                .parametrs__item-inside-box
+                                    input.parametrs__item-inside-checkbox(type='checkbox')
+                                    .parametrs__item-inside-info Нидерланды
+                        .parametrs__item
+                            .parametrs__item-block
+                            .parametrs__item-box
+                                .parametrs__item-title Вид
+                                +icon('arrow-point', 'arrow-point-faq')
+                            .parametrs__item-inside
+                                .parametrs__item-inside-box
+                                    input.parametrs__item-inside-checkbox(type='checkbox')
+                                    .parametrs__item-inside-info DzagiGrow
+                        .parametrs__item
+                            .parametrs__item-block
+                            .parametrs__item-box
+                                .parametrs__item-title Объем, л.
+                                +icon('arrow-point', 'arrow-point-faq')
+                            .parametrs__item-inside
+                                .parametrs__item-inside-box
+                                    input.parametrs__item-inside-checkbox(type='checkbox')
+                                    .parametrs__item-inside-info DzagiGrow
+                        .parametrs__item
+                            .parametrs__item-block
+                            .parametrs__item-box
+                                .parametrs__item-title Вес, гр.
+                                +icon('arrow-point', 'arrow-point-faq')
+                            .parametrs__item-inside
+                                .parametrs__item-inside-box
+                                    input.parametrs__item-inside-checkbox(type='checkbox')
+                                    .parametrs__item-inside-info DzagiGrow
+                        .parametrs__item
+                            .parametrs__item-block
+                            .parametrs__item-box
+                                .parametrs__item-title Область применения
+                                +icon('arrow-point', 'arrow-point-faq')
+                            .parametrs__item-inside
+                                .parametrs__item-inside-box
+                                    input.parametrs__item-inside-checkbox(type='checkbox')
+                                    .parametrs__item-inside-info DzagiGrow
+                        .parametrs__item
+                            .parametrs__item-block
+                            .parametrs__item-box
+                                .parametrs__item-title Цена
+                                +icon('arrow-point', 'arrow-point-faq')
+                            .parametrs__item-inside
+                                .parametrs__item-filter
+                                    .parametrs__item-controls
+                                        .parametrs__item-scale
+                                            .parametrs__item-bar
+                                        .parametrs__item-toggle.parametrs__item-toggle-min
+                                        .parametrs__item-toggle.parametrs__item-toggle-max
+                                    .parametrs__item-price-controls
+                                        input.parametrs__item-min-price(type="text" value="1 000")
+                                        .parametrs__item-dash-price
+                                        input.parametrs__item-max-price(type="text" value="2 000")
+                    .catalog-left__btn.btn-more Очистить
+                .catalog-right
+                    include ../modules/breadcrumb
+                    .page-title Каталог
+                    .catalog-right__description
+                        .catalog-right__description-a Угольные фильтры
+                        .catalog-right__description-span Для полноценного роста растений в домашних условиях им необходимы не только удобрения, дополнительное искусственное освещение, но и качественная вентиляция и очистка воздуха. Получить “здоровый” воздух в гроубоксе, теплице или другой закрытой домашней оранжерее помогут специальные угольные фильтры. Их задачей является впитывание запахов, выделяемых органическими удобрениями и самими растениями.
+                    .catalog-right__filter-box
+                        .catalog-right__filter-btn
+                            .catalog-right__filter-btn-box
+                                .btn-green.catalog-right__filter-btn-box-key Фильтр
+                                    +icon('controls')
+                            .catalog-right__filter-btn-inside
+                                .catalog-left__parametrs
+                                    .parametrs__item
+                                        .parametrs__item-block
+                                        .parametrs__item-box-other
+                                            .parametrs__item-inside-checkbox-other
+                                                input.parametrs__item-inside-checkbox(type='checkbox')
+                                            .parametrs__item-title-other Товар в наличии
+                                    .parametrs__item
+                                        .parametrs__item-block
+                                        .parametrs__item-box
+                                            .parametrs__item-title Брэнд
+                                            +icon('arrow-point', 'arrow-point-faq')
+                                        .parametrs__item-inside
+                                            .parametrs__item-inside-box
+                                                input.parametrs__item-inside-checkbox(type='checkbox')
+                                                .parametrs__item-inside-info DzagiGrow
+                                    .parametrs__item
+                                        .parametrs__item-block
+                                        .parametrs__item-box
+                                            .parametrs__item-title Страна производителя
+                                            +icon('arrow-point', 'arrow-point-faq')
+                                        .parametrs__item-inside
+                                            .parametrs__item-inside-box
+                                                input.parametrs__item-inside-checkbox(type='checkbox')
+                                                .parametrs__item-inside-info Россия
+                                            .parametrs__item-inside-box
+                                                input.parametrs__item-inside-checkbox(type='checkbox')
+                                                .parametrs__item-inside-info Франция
+                                            .parametrs__item-inside-box
+                                                input.parametrs__item-inside-checkbox(type='checkbox')
+                                                .parametrs__item-inside-info Нидерланды
+                                    .parametrs__item
+                                        .parametrs__item-block
+                                        .parametrs__item-box
+                                            .parametrs__item-title Вид
+                                            +icon('arrow-point', 'arrow-point-faq')
+                                        .parametrs__item-inside
+                                            .parametrs__item-inside-box
+                                                input.parametrs__item-inside-checkbox(type='checkbox')
+                                                .parametrs__item-inside-info DzagiGrow
+                                    .parametrs__item
+                                        .parametrs__item-block
+                                        .parametrs__item-box
+                                            .parametrs__item-title Объем, л.
+                                            +icon('arrow-point', 'arrow-point-faq')
+                                        .parametrs__item-inside
+                                            .parametrs__item-inside-box
+                                                input.parametrs__item-inside-checkbox(type='checkbox')
+                                                .parametrs__item-inside-info DzagiGrow
+                                    .parametrs__item
+                                        .parametrs__item-block
+                                        .parametrs__item-box
+                                            .parametrs__item-title Вес, гр.
+                                            +icon('arrow-point', 'arrow-point-faq')
+                                        .parametrs__item-inside
+                                            .parametrs__item-inside-box
+                                                input.parametrs__item-inside-checkbox(type='checkbox')
+                                                .parametrs__item-inside-info DzagiGrow
+                                    .parametrs__item
+                                        .parametrs__item-block
+                                        .parametrs__item-box
+                                            .parametrs__item-title Область применения
+                                            +icon('arrow-point', 'arrow-point-faq')
+                                        .parametrs__item-inside
+                                            .parametrs__item-inside-box
+                                                input.parametrs__item-inside-checkbox(type='checkbox')
+                                                .parametrs__item-inside-info DzagiGrow
+                                    .parametrs__item
+                                        .parametrs__item-block
+                                        .parametrs__item-box
+                                            .parametrs__item-title Цена
+                                            +icon('arrow-point', 'arrow-point-faq')
+                                        .parametrs__item-inside
+                                            .parametrs__item-filter
+                                                .parametrs__item-controls
+                                                    .parametrs__item-scale
+                                                        .parametrs__item-bar
+                                                    .parametrs__item-toggle.parametrs__item-toggle-min
+                                                    .parametrs__item-toggle.parametrs__item-toggle-max
+                                                .parametrs__item-price-controls
+                                                    input.parametrs__item-min-price(type="text" value="1 000")
+                                                    .parametrs__item-dash-price
+                                                    input.parametrs__item-max-price(type="text" value="2 000")
+                                .catalog-left__btn-box
+                                    .catalog-left__btn.btn-more Очистить
+                                    .catalog-left__btn.btn-more Закрыть фильтр
+                        .catalog-right__filter Сортировать:
+                            span.catalog-right__filter-span <br>
+                            a.catalog-right__filter-a.catalog-right__filter-a-first по полярности
+                                +icon('arrow-point', 'arrow-point-filter')
+                            a.catalog-right__filter-a по алфавиту
+                                +icon('arrow-point', 'arrow-point-filter')
+                            a.catalog-right__filter-a по цене
+                                +icon('arrow-point', 'arrow-point-filter')
+                    .catalog-right__picking
+                        .catalog-right__picking-item
+                            span.catalog-right__picking-item-span В наличии
+                            +icon('close', 'close-catalog')
+                        .catalog-right__picking-item
+                            span.catalog-right__picking-item-span Россия
+                            +icon('close', 'close-catalog')
+                        .catalog-right__picking-reset
+                            a.catalog-right__picking-reset-a Сбросить все
+                    .catalog-right__products
+                        .catalog-right__products-item
+                            .ticket
+                                .ticket__left
+                                    .ticket-product
+                                        img.ticket-product__img(src='static/img/content/growbox.png' alt='')
+                                        .ticket-product__discount -15%
+                                .ticket__right
+                                    .ticket-header
+                                        .ticket-header__text Pro Box
+                                        .ticket-header__rating
+                                            span.ticket-header__rating-span ☆
+                                            span.ticket-header__rating-span ☆
+                                            span.ticket-header__rating-span ☆
+                                            span.ticket-header__rating-span ☆
+                                            span.ticket-header__rating-span ☆
+                                    .ticket-title Гроубокс 120-Apollo10
+                                    .ticket-buy
+                                        .ticket-buy__price
+                                            .ticket-buy__price-old 590р
+                                            .ticket-buy__price-new 450р
+                                        .ticket-buy__btn
+                                            button.btn-basket(href='javascript:void(0)')
+                                                +icon('tick-inside')
+                                                .ticket-buy__btn-text Купить
+                        .catalog-right__products-item
+                            .ticket
+                                .ticket__left
+                                    .ticket-product
+                                        img.ticket-product__img(src='static/img/content/growbox.png' alt='')
+                                        .ticket-product__discount -15%
+                                .ticket__right
+                                    .ticket-header
+                                        .ticket-header__text Pro Box
+                                        .ticket-header__rating
+                                            span.ticket-header__rating-span ☆
+                                            span.ticket-header__rating-span ☆
+                                            span.ticket-header__rating-span ☆
+                                            span.ticket-header__rating-span ☆
+                                            span.ticket-header__rating-span ☆
+                                    .ticket-title Гроубокс 120-Apollo10
+
+                                    .ticket-buy
+                                        .ticket-buy__price
+                                            .ticket-buy__price-old 590р
+                                            .ticket-buy__price-new 450р
+                                        .ticket-buy__btn
+                                            button.btn-basket(href='javascript:void(0)')
+                                                +icon('tick-inside')
+                                                .ticket-buy__btn-text Купить
+                        .catalog-right__products-item
+                            .ticket
+                                .ticket__left
+                                    .ticket-product
+                                        img.ticket-product__img(src='static/img/content/growbox.png' alt='')
+                                        .ticket-product__discount -15%
+                                .ticket__right
+                                    .ticket-header
+                                        .ticket-header__text Pro Box
+                                        .ticket-header__rating
+                                            span.ticket-header__rating-span ☆
+                                            span.ticket-header__rating-span ☆
+                                            span.ticket-header__rating-span ☆
+                                            span.ticket-header__rating-span ☆
+                                            span.ticket-header__rating-span ☆
+                                    .ticket-title Гроубокс 120-Apollo10
+
+                                    .ticket-buy
+                                        .ticket-buy__price
+                                            .ticket-buy__price-old 590р
+                                            .ticket-buy__price-new 450р
+                                        .ticket-buy__btn
+                                            button.btn-basket(href='javascript:void(0)')
+                                                +icon('tick-inside')
+                                                .ticket-buy__btn-text Купить
+
+                        .catalog-right__products-item
+                            .ticket
+                                .ticket__left
+                                    .ticket-product
+                                        img.ticket-product__img(src='static/img/content/growbox.png' alt='')
+                                        .ticket-product__discount -15%
+                                .ticket__right
+                                    .ticket-header
+                                        .ticket-header__text Pro Box
+                                        .ticket-header__rating
+                                            span.ticket-header__rating-span ☆
+                                            span.ticket-header__rating-span ☆
+                                            span.ticket-header__rating-span ☆
+                                            span.ticket-header__rating-span ☆
+                                            span.ticket-header__rating-span ☆
+                                    .ticket-title Гроубокс 120-Apollo10
+
+                                    .ticket-buy
+                                        .ticket-buy__price
+                                            .ticket-buy__price-old 590р
+                                            .ticket-buy__price-new 450р
+                                        .ticket-buy__btn
+                                            button.btn-basket(href='javascript:void(0)')
+                                                +icon('tick-inside')
+                                                .ticket-buy__btn-text Купить
+                        .catalog-right__products-item
+                            .ticket
+                                .ticket__left
+                                    .ticket-product
+                                        img.ticket-product__img(src='static/img/content/growbox.png' alt='')
+                                        .ticket-product__discount -15%
+                                .ticket__right
+                                    .ticket-header
+                                        .ticket-header__text Pro Box
+                                        .ticket-header__rating
+                                            span.ticket-header__rating-span ☆
+                                            span.ticket-header__rating-span ☆
+                                            span.ticket-header__rating-span ☆
+                                            span.ticket-header__rating-span ☆
+                                            span.ticket-header__rating-span ☆
+                                    .ticket-title Гроубокс 120-Apollo10
+
+                                    .ticket-buy
+                                        .ticket-buy__price
+                                            .ticket-buy__price-old 590р
+                                            .ticket-buy__price-new 450р
+                                        .ticket-buy__btn
+                                            button.btn-basket(href='javascript:void(0)')
+                                                +icon('tick-inside')
+                                                .ticket-buy__btn-text Купить
+                        .catalog-right__products-item
+                            .ticket
+                                .ticket__left
+                                    .ticket-product
+                                        img.ticket-product__img(src='static/img/content/growbox.png' alt='')
+                                        .ticket-product__discount -15%
+                                .ticket__right
+                                    .ticket-header
+                                        .ticket-header__text Pro Box
+                                        .ticket-header__rating
+                                            span.ticket-header__rating-span ☆
+                                            span.ticket-header__rating-span ☆
+                                            span.ticket-header__rating-span ☆
+                                            span.ticket-header__rating-span ☆
+                                            span.ticket-header__rating-span ☆
+                                    .ticket-title Гроубокс 120-Apollo10
+
+                                    .ticket-buy
+                                        .ticket-buy__price
+                                            .ticket-buy__price-old 590р
+                                            .ticket-buy__price-new 450р
+                                        .ticket-buy__btn
+                                            button.btn-basket(href='javascript:void(0)')
+                                                +icon('tick-inside')
+                                                .ticket-buy__btn-text Купить
+                        .catalog-right__products-item
+                            .ticket
+                                .ticket__left
+                                    .ticket-product
+                                        img.ticket-product__img(src='static/img/content/growbox.png' alt='')
+                                        .ticket-product__discount -15%
+                                .ticket__right
+                                    .ticket-header
+                                        .ticket-header__text Pro Box
+                                        .ticket-header__rating
+                                            span.ticket-header__rating-span ☆
+                                            span.ticket-header__rating-span ☆
+                                            span.ticket-header__rating-span ☆
+                                            span.ticket-header__rating-span ☆
+                                            span.ticket-header__rating-span ☆
+                                    .ticket-title Гроубокс 120-Apollo10
+                                    .ticket-buy
+                                        .ticket-buy__price
+                                            .ticket-buy__price-old 590р
+                                            .ticket-buy__price-new 450р
+                                        .ticket-buy__btn
+                                            button.btn-basket(href='javascript:void(0)')
+                                                +icon('tick-inside')
+                                                .ticket-buy__btn-text Купить
+                        .catalog-right__products-item
+                            .ticket
+                                .ticket__left
+                                    .ticket-product
+                                        img.ticket-product__img(src='static/img/content/growbox.png' alt='')
+                                        .ticket-product__discount -15%
+                                .ticket__right
+                                    .ticket-header
+                                        .ticket-header__text Pro Box
+                                        .ticket-header__rating
+                                            span.ticket-header__rating-span ☆
+                                            span.ticket-header__rating-span ☆
+                                            span.ticket-header__rating-span ☆
+                                            span.ticket-header__rating-span ☆
+                                            span.ticket-header__rating-span ☆
+                                    .ticket-title Гроубокс 120-Apollo10
+
+                                    .ticket-buy
+                                        .ticket-buy__price
+                                            .ticket-buy__price-old 590р
+                                            .ticket-buy__price-new 450р
+                                        .ticket-buy__btn
+                                            button.btn-basket(href='javascript:void(0)')
+                                                +icon('tick-inside')
+                                                .ticket-buy__btn-text Купить
+                        .catalog-right__products-item
+                            .ticket
+                                .ticket__left
+                                    .ticket-product
+                                        img.ticket-product__img(src='static/img/content/growbox.png' alt='')
+                                        .ticket-product__discount -15%
+                                .ticket__right
+                                    .ticket-header
+                                        .ticket-header__text Pro Box
+                                        .ticket-header__rating
+                                            span.ticket-header__rating-span ☆
+                                            span.ticket-header__rating-span ☆
+                                            span.ticket-header__rating-span ☆
+                                            span.ticket-header__rating-span ☆
+                                            span.ticket-header__rating-span ☆
+                                    .ticket-title Гроубокс 120-Apollo10
+
+                                    .ticket-buy
+                                        .ticket-buy__price
+                                            .ticket-buy__price-old 590р
+                                            .ticket-buy__price-new 450р
+                                        .ticket-buy__btn
+                                            button.btn-basket(href='javascript:void(0)')
+                                                +icon('tick-inside')
+                                                .ticket-buy__btn-text Купить
+
+                        .catalog-right__products-item
+                            .ticket
+                                .ticket__left
+                                    .ticket-product
+                                        img.ticket-product__img(src='static/img/content/growbox.png' alt='')
+                                        .ticket-product__discount -15%
+                                .ticket__right
+                                    .ticket-header
+                                        .ticket-header__text Pro Box
+                                        .ticket-header__rating
+                                            span.ticket-header__rating-span ☆
+                                            span.ticket-header__rating-span ☆
+                                            span.ticket-header__rating-span ☆
+                                            span.ticket-header__rating-span ☆
+                                            span.ticket-header__rating-span ☆
+                                    .ticket-title Гроубокс 120-Apollo10
+
+                                    .ticket-buy
+                                        .ticket-buy__price
+                                            .ticket-buy__price-old 590р
+                                            .ticket-buy__price-new 450р
+                                        .ticket-buy__btn
+                                            button.btn-basket(href='javascript:void(0)')
+                                                +icon('tick-inside')
+                                                .ticket-buy__btn-text Купить
+                        .catalog-right__products-item
+                            .ticket
+                                .ticket__left
+                                    .ticket-product
+                                        img.ticket-product__img(src='static/img/content/growbox.png' alt='')
+                                        .ticket-product__discount -15%
+                                .ticket__right
+                                    .ticket-header
+                                        .ticket-header__text Pro Box
+                                        .ticket-header__rating
+                                            span.ticket-header__rating-span ☆
+                                            span.ticket-header__rating-span ☆
+                                            span.ticket-header__rating-span ☆
+                                            span.ticket-header__rating-span ☆
+                                            span.ticket-header__rating-span ☆
+                                    .ticket-title Гроубокс 120-Apollo10
+
+                                    .ticket-buy
+                                        .ticket-buy__price
+                                            .ticket-buy__price-old 590р
+                                            .ticket-buy__price-new 450р
+                                        .ticket-buy__btn
+                                            button.btn-basket(href='javascript:void(0)')
+                                                +icon('tick-inside')
+                                                .ticket-buy__btn-text Купить
+                        .catalog-right__products-item
+                            .ticket
+                                .ticket__left
+                                    .ticket-product
+                                        img.ticket-product__img(src='static/img/content/growbox.png' alt='')
+                                        .ticket-product__discount -15%
+                                .ticket__right
+                                    .ticket-header
+                                        .ticket-header__text Pro Box
+                                        .ticket-header__rating
+                                            span.ticket-header__rating-span ☆
+                                            span.ticket-header__rating-span ☆
+                                            span.ticket-header__rating-span ☆
+                                            span.ticket-header__rating-span ☆
+                                            span.ticket-header__rating-span ☆
+                                    .ticket-title Гроубокс 120-Apollo10
+
+                                    .ticket-buy
+                                        .ticket-buy__price
+                                            .ticket-buy__price-old 590р
+                                            .ticket-buy__price-new 450р
+                                        .ticket-buy__btn
+                                            button.btn-basket(href='javascript:void(0)')
+                                                +icon('tick-inside')
+                                                .ticket-buy__btn-text Купить
+                    .catalog-right__btn
+                        .btn-more Загрузить еще
+                            +icon('arrow-point', 'arrow-point-more')
+                    .catalog-right__description
+                        .catalog-right__description-a Установка и особенности использования
+                        .catalog-right__description-span Угольные фильтры для очистки воздуха устанавливаются в канальных вентиляторах в гроубоксах, теплицах и оранжереях. Подробнее о том, как самостоятельно установить фильтр для гроубокса мы рассказывали в нашем видео-блоге:
+                        img.catalog-right__description-img(src="static/img/content/tube.png")
+                        .catalog-right__description-span Срок службы угольного фильтра зависит от площади поверхности абсорбирующего вещества. Самым эффективным будет фильтр с наименьшим размером пор.<br><br>
+                        .catalog-right__description-span Использование предфильтров снижает периодичность замены активированного угля в угольных фильтрах, что способствует снижению затрат на их обслуживание и повышению эффективности очистки воздуха.<br><br>
+                        .catalog-right__description-a Как выбрать угольный фильтр?
+                        .catalog-right__description-span <ul>В интернет-магазине DzagiGrow.ru представлены все самые надежные и популярные фильтры для гроубоксов, используемые в прогрессивном растениеводстве:
+                            <li>- Nano Filter</li>
+                            <li>- Magic Air PRO</li>
+                            <li>- Pro Activ</li>
+                            <li>- КЛЕВЕР</li></ul>Обращайтесь за помощью в выборе к нашим онлайн-консультантам.<br>Мы тщательно и бережно упаковываем наш товар и предоставляем гарантия. Купить угольный фильтр для гроубокса в DzagiGrow - это верное решение!
+    include index/sub_reviews

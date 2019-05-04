@@ -1,0 +1,105 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Акции'
+    - var pageClass = 'stock-page'
+
+block content
+
+    .container-fluid
+        .container.page
+            include ../modules/breadcrumb
+            .page-title Акции
+            .stock
+                .stock-left
+                    .stock-sidebar.saidbar-nav-media
+                        .saidbar-nav__border
+                            .saidbar-nav__item Все предложения
+                        .saidbar-nav__border
+                            .saidbar-nav__item Акции
+                        .saidbar-nav__border
+                            .saidbar-nav__item Бонусы
+                        .saidbar-nav__border
+                            .saidbar-nav__item.saidbar-nav__item-last Распродажи
+                    .stock-article
+                        .stock-article__item(onclick="window.location='article.html';")
+                            .stock-article__item-box
+                                img.stock-article__item-box-img(src="static/img/content/dd.png" alt'' )
+                                .stock-article__item-box-date 24 августа 2018
+                            .stock-article__item-preview Питер в Питере. Интервью консультанта Canna Питера Классена
+                        .stock-article__item(onclick="window.location='article.html';")
+                            .stock-article__item-box
+                                img.stock-article__item-box-img(src="static/img/content/dd.png" alt'')
+                                .stock-article__item-box-date 24 августа 2018
+                            .stock-article__item-preview Питер в Питере. Интервью консультанта Canna Питера Классена
+                        .stock-article__item(onclick="window.location='article.html';")
+                            .stock-article__item-box
+                                img.stock-article__item-box-img(src="static/img/content/dd.png" alt'')
+                                .stock-article__item-box-date 24 августа 2018
+                            .stock-article__item-preview Питер в Питере. Интервью консультанта Canna Питера Классена
+                        .stock-article__item(onclick="window.location='article.html';")
+                            .stock-article__item-box
+                                img.stock-article__item-box-img(src="static/img/content/dd.png" alt'')
+                                .stock-article__item-box-date 24 августа 2018
+                            .stock-article__item-preview Питер в Питере. Интервью консультанта Canna Питера Классена
+                        .stock-article__item(onclick="window.location='article.html';")
+                            .stock-article__item-box
+                                img.stock-article__item-box-img(src="static/img/content/dd.png" alt'')
+                                .stock-article__item-box-date 24 августа 2018
+                            .stock-article__item-preview Питер в Питере. Интервью консультанта Canna Питера Классена
+                        .stock-article__item(onclick="window.location='article.html';")
+                            .stock-article__item-box
+                                img.stock-article__item-box-img(src="static/img/content/dd.png" alt'')
+                                .stock-article__item-box-date 24 августа 2018
+                            .stock-article__item-preview Питер в Питере. Интервью консультанта Canna Питера Классена
+                        .stock-article__item(onclick="window.location='article.html';")
+                            .stock-article__item-box
+                                img.stock-article__item-box-img(src="static/img/content/dd.png" alt'')
+                                .stock-article__item-box-date 24 августа 2018
+                            .stock-article__item-preview Питер в Питере. Интервью консультанта Canna Питера Классена
+                        .stock-article__item(onclick="window.location='article.html';")
+                            .stock-article__item-box
+                                img.stock-article__item-box-img(src="static/img/content/dd.png" alt'')
+                                .stock-article__item-box-date 24 августа 2018
+                            .stock-article__item-preview Питер в Питере. Интервью консультанта Canna Питера Классена
+                        .stock-article__item(onclick="window.location='article.html';")
+                            .stock-article__item-box
+                                img.stock-article__item-box-img(src="static/img/content/dd.png" alt'')
+                                .stock-article__item-box-date 24 августа 2018
+                            .stock-article__item-preview Питер в Питере. Интервью консультанта Canna Питера Классена
+
+                    .stock-btn
+                        .btn-more Загрузить еще
+                            +icon('arrow-point', 'arrow-point-more')
+                .stock-right
+                    .saidbar-nav
+                        .saidbar-nav__border
+                            .saidbar-nav__item Все предложения
+                        .saidbar-nav__border
+                            .saidbar-nav__item Акции
+                        .saidbar-nav__border
+                            .saidbar-nav__item Бонусы
+                        .saidbar-nav__border
+                            .saidbar-nav__item.saidbar-nav__item-last Распродажи
+                    .stock-sbc
+                        p.stock-sbc__p Знания
+                        span.stock-sbc__span Стань продвинутым гровером. Получай полезные статьи раз в две недели!
+                        .stock-sbc__sbc
+                            input.stock-sbc__sbc-input(placeholder='Ваш почтовый адрес')
+                        .stock-sbc__policy
+                            input.stock-sbc__policy-checkbox#checkbox_sbc(type='checkbox')
+                            label(for='checkbox_sbc').stock-sbc__policy-label Я согласен на обработку персональных данных, а также с условиями подписки
+                        button.btn-subscribe.stock-sbc__btn Подписаться
+    .container-fluid.stock-subscrube
+        .container
+            .stock-sbc
+                .stock-sbc__right
+                    p.stock-sbc__p Знания
+                    span.stock-sbc__span Стань продвинутым гровером. Получай полезные статьи раз в две недели!
+                .stock-sbc__left
+                    .stock-sbc__sbc
+                        input.stock-sbc__sbc-input(placeholder='Ваш почтовый адрес')
+                    .stock-sbc__policy
+                        input.stock-sbc__policy-checkbox#checkbox-stock__sbc(type='checkbox')
+                        label(for='checkbox-stock__sbc').stock-sbc__policy-label Я согласен на обработку персональных данных, а также с условиями подписки
+                    button.btn-subscribe.stock-sbc__btn Подписаться

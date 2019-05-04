@@ -1,0 +1,179 @@
+//хит продаж
+.hit-teaser
+  background-color white
+  margin-top 50px
+
+.products-hit
+
+  &__box
+    display flex
+    padding-bottom 50px
+
+    @media screen and (max-width smalDesktopWidth)
+      flex-wrap wrap
+
+  &__text
+    @extend .products__text
+
+    &-title
+      @extend .products__text-title
+
+    &-all
+      @extend .products__text-all
+
+  &__teaser
+    @extend .products__teaser
+    flex-wrap wrap
+    max-height 760px
+
+    @media screen and (max-width smalDesktopWidth)
+      max-height 850px
+
+    &-item
+      @extend .products__teaser-item
+
+      @media screen and (max-width tableWidth)
+        justify-content center
+        display flex!important
+        padding-left 0
+
+      &:nth-child(2n+1)
+        @media screen and (max-width smalDesktopWidth)
+          padding-left 0
+
+.ticket_hit
+  @extend .ticket
+  size (307px 365px)
+
+  @media screen and (max-width smalDesktopWidth)
+    max-width 350px
+    max-height 410px
+    width 100%
+    height 100%
+
+    @media screen and (max-width bigPhoneWidth)
+      @extend .ticket_ad
+
+  &-header
+    @extend .ticket-header
+    align-items baseline
+    margin-top 5px
+
+    &__text
+      @extend .ticket-header__text
+
+    &__rating
+      @extend .ticket-header__rating
+
+      &-span
+        @extend .ticket-header__rating-span
+
+  &-title
+    @extend .ticket-title
+    text-align left
+    padding-top 7px
+    height 60px
+
+  &-product
+    @extend .ticket-product
+    width 100%
+    text-align center
+
+    &__img
+      @extend .ticket-product__img
+      margin 0
+
+    &__discount
+      @extend .ticket-product__discount
+      top 0
+
+  &-buy
+    @extend .ticket-buy
+    border none
+
+    &__price
+      @extend .ticket-buy__price
+
+      &-old
+        @extend .ticket-buy__price-old
+
+      &-new
+        @extend .ticket-buy__price-new
+
+    &__btn
+      @extend .ticket-buy__btn
+
+.products-hit_big__teaser
+  padding-top 15px
+
+  @media screen and (max-width smalDesktopWidth)
+    width 100%
+
+    @media screen and (max-width bigPhoneWidth)
+      padding-top 0
+
+//большой
+.ticket_hit_big
+  @extend .ticket
+  size (635px 745px)
+
+  @media screen and (max-width desktopWidth)
+    width 585px
+
+    @media screen and (max-width smalDesktopWidth)
+      width 100%
+
+      @media screen and (max-width tableWidth)
+        display none
+
+  &-header
+    @extend .ticket-header
+
+    &__text
+      @extend .ticket-header__text
+      font-size rem(22px)
+
+    &__rating
+      @extend .ticket-header__rating
+
+      &-span
+        @extend .ticket-header__rating-span
+        font-size (32px)
+        width 30px
+
+  &-title
+    @extend .ticket-title
+    font-size rem(25px)
+
+  &-product
+    @extend .ticket-product
+
+    &__img
+      @extend .ticket-product__img
+      max-width 500px
+
+    &__discount
+      @extend .ticket-product__discount
+      font-size rem(23px)
+      size (95px 45px)
+
+  &-buy
+    @extend .ticket-buy
+    align-items center
+
+    &__price
+      @extend .ticket-buy__price
+      display flex
+
+      &-old
+        @extend .ticket-buy__price-old
+        font-size (24px)
+        line-height inherit
+        padding-left 15px
+
+      &-new
+        @extend .ticket-buy__price-new
+        font-size (32px)
+        padding-bottom 0
+
+

@@ -1,0 +1,20 @@
+@import "sub_reviws/subscribe_stock.styl"
+@import "sub_reviws/reviews.styl"
+
+.sub_reviews
+  display flex
+  justify-content space-between
+  min-height 320px
+
+  @media screen and (max-width desktopWidth)
+    flex-direction column
+
+  &__sub
+    width 50%
+
+    @media screen and (max-width desktopWidth)
+      width 100%
+      min-height 300px
+
+  &__reviews
+    @extend .sub_reviews__sub

@@ -1,0 +1,16 @@
+.btn-more
+  @extend .btn-basket
+  size (220px 60px)
+  font-size rem(18px)
+  font-weight normal
+  background-color greyDG
+
+  &:hover .arrow-point-more
+    display none
+
+.btn-more-width
+  @extend .btn-more
+
+  @media screen and (max-width tableWidth)
+    width 400px
+

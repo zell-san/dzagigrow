@@ -1,0 +1,77 @@
+.menu-nav
+  width 310px
+  background-color white
+  display none
+  position absolute
+  top 61px
+  left 0
+  z-index 1000
+  color blackTextDG
+
+  @media screen and (max-width smalDesktopWidth)
+    display none
+
+  &__index
+    width 310px
+    background-color white
+    color blackTextDG
+
+    @media screen and (max-width smalDesktopWidth)
+      display none
+
+  &__border
+    padding 0 20px
+
+    &:hover
+      background-color greenDGlight
+
+  &__item
+    padding 14.5px 10px
+    cursor pointer
+    border-bottom 1px solid greyDGdark
+    font-size rem(13)
+    display flex
+    justify-content space-between
+    align-items center
+    position relative
+
+    &:hover
+      border-bottom 1px solid #eaf3ee
+
+    &-last
+      @extend.menu-nav__item
+      border-bottom none
+
+      @media screen and (max-width desktopWidth)
+        border-bottom 1px solid greyDGdark
+
+    &-sub
+      background-color white
+      position (absolute 0 none none 290px)
+      z-index 1000
+      border 1px solid greyDGdark
+      display none
+      width 310px
+
+      &-border
+        padding 0 20px
+
+        &:hover
+          background-color greenDGlight
+
+      &-element
+        padding 14.5px 10px
+        cursor pointer
+        border-bottom 1px solid greyDGdark
+        font-size rem(13)
+        align-items center
+
+        &:hover
+          border-bottom 1px solid #eaf3ee
+
+        &-last
+          border-bottom none
+
+
+
+

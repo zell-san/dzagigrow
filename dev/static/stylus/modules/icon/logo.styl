@@ -1,0 +1,26 @@
+.icon-logo
+  size (285px 295px)
+  transform rotate(10deg)
+  position(absolute, -73px, 0, 0, -110px)
+
+  @media screen and (max-width desktopWidth)
+    top 0
+
+    @media screen and (max-width smalDesktopWidth)
+      display none
+
+.logo-big
+  transform rotate(10deg)
+  size (400px 410px)
+  position(absolute, -110px, 0, 0, -230px)
+
+  @media screen and (max-width smalDesktopWidth)
+    display flex
+    position(absolute, -110px, 0, 0, -290px)
+
+  @media screen and (max-width tableWidth)
+    display none
+
+.icon-logo-cab
+  @extend .icon-logo
+  top -40px

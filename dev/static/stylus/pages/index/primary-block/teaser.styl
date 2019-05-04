@@ -1,0 +1,143 @@
+.teaser
+  display flex
+  width 100%
+  justify-content space-between
+
+  @media screen and (max-width desktopWidth)
+    flex-wrap wrap
+
+    @media screen and (max-width tableWidth)
+      display none
+
+  &__big
+    min-width 630px
+    max-height 385px
+    margin 15px 0 0 15px
+    position relative
+    overflow hidden
+    display flex
+
+    @media screen and (max-width desktopWidth)
+      min-width 600px
+
+      @media screen and (max-width smalDesktopWidth)
+        margin-left 0
+        width 100%
+        max-height 450px
+        margin-top 40px
+
+    &-img
+      cursor pointer
+      width 100%
+      transition: all 1s ease-out
+
+      @media screen and (max-width smalDesktopWidth)
+        width 100%
+
+      &:hover
+        transform scale(1.1)
+
+    &-button
+      font-weight bold
+      background-color yellowDG
+      border-radius 5px
+      font-size 30px
+      size (275px 55px)
+      border none
+      position (absolute none none 7% 7%)
+      cursor pointer
+
+      @media screen and (max-width bigPhoneWidth)
+        size (184px 30px)
+        font-size rem(14px)
+
+        @media screen and (max-width smallPhoneWidth)
+          width 140px
+          font-size rem(18px)
+
+  &__small
+    display flex
+    flex-wrap wrap
+    width 100%
+
+    @media screen and (max-width desktopWidth)
+      flex-wrap nowrap
+
+    &-right
+      overflow hidden
+      margin 15px 0 0 15px
+      position relative
+      max-width 310px
+      max-height 185px
+
+      @media screen and (max-width smalDesktopWidth)
+        width 50%
+        height 100%
+        max-width 350px
+        max-height 205px
+
+      &:first-child
+        @media screen and (max-width smalDesktopWidth)
+          margin-left 0
+
+      &-img
+        cursor pointer
+        transition: all 1s ease-out
+
+        @media screen and (max-width smalDesktopWidth)
+          width 100%
+
+        &:hover
+          transform scale(1.1)
+
+      &-button
+        font-weight bold
+        background-color white
+        border-radius 5px
+        border none
+        position (absolute none none 15% 50%)
+        cursor pointer
+        color greenDGdark
+        size (140px 30px)
+        margin-left -70px
+
+        @media screen and (max-width tableWidth)
+          size (200px 45px)
+          margin-left -100px
+          font-size rem(18px)
+
+          @media screen and (max-width bigPhoneWidth)
+            size (140px 30px)
+            margin-left -70px
+            font-size rem(18px)
+
+            @media screen and (max-width smallPhoneWidth)
+              font-size rem(18px)
+
+
+
+        &-bottom
+          font-weight bold
+          background-color white
+          border-radius 5px
+          border none
+          position (absolute none none 15% 50%)
+          cursor pointer
+          size (184px 30px)
+          margin-left -92px
+          font-stretch condensed
+          color black
+
+          @media screen and (max-width tableWidth)
+            size (270px 45px)
+            margin-left -135px
+            font-size rem(18px)
+
+            @media screen and (max-width bigPhoneWidth)
+              size (210px 30px)
+              margin-left -105px
+              font-size rem(14px)
+
+              @media screen and (max-width smallPhoneWidth)
+                font-size rem(18px)
+

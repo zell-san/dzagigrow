@@ -1,0 +1,75 @@
+.result
+  &__filter
+    padding-left 15px
+
+    @media screen and (max-width bigPhoneWidth)
+      padding-left 0
+
+    &-a
+      padding 0 15px
+      color greyTextDGdark
+
+      @media screen and (max-width bigPhoneWidth)
+        padding 0 8px
+
+      &-first
+        @media screen and (max-width tableWidth)
+          padding-left 0
+
+      &:hover
+        color blackTextDG
+
+    &-span
+      display none
+
+      @media screen and (max-width tableWidth)
+        display flex
+        margin-top 5px
+
+
+  &__product
+    display flex
+    flex-wrap wrap
+
+    &-item
+      @extend .products__teaser-item
+
+      &:nth-child(4n+1)
+        padding-left 0
+
+      @media screen and (max-width desktopWidth)
+        &:nth-child(4n+1)
+          padding-left 15px
+
+        &:nth-child(3n+1)
+          padding-left 0
+
+        @media screen and (max-width smalDesktopWidth)
+          &:nth-child(2n+1)
+            padding-left 0
+
+          &:nth-child(3n+1)
+            padding-left 15px
+
+          &:nth-child(6n+1)
+            padding-left 0
+
+          @media screen and (max-width tableWidth)
+            padding-left 0!important
+
+  &__btn
+    display flex
+    justify-content center
+    margin-top 30px
+
+.result__product-item .ticket
+  @media screen and (max-width desktopWidth)
+    max-width 293px
+
+    @media screen and (max-width smalDesktopWidth)
+      max-width 351px
+      width 100%
+      height 100%
+
+      @media screen and (max-width tableWidth)
+        max-width 430px

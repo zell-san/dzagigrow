@@ -1,0 +1,52 @@
+//menu header
+.header-third
+  background-color blackDG
+  color white
+  font-size rem(14)
+
+  @media screen and (max-width smalDesktopWidth)
+    display none
+
+.header-menu
+  display flex
+  padding 0
+
+  &__primary
+    display flex
+    align-items center
+    font-size rem(16)
+    background-color greenDG
+    padding 20px 20px
+    width 310px
+    cursor pointer
+    position relative
+
+    &-a
+      color white
+      margin-left 20px
+
+  &__box
+    align-items center
+    display flex
+    justify-content space-between
+    width: calc(100% - 310px)
+
+  &__main
+    margin-left 45px
+    width 560px
+    display flex
+    justify-content space-between
+
+    &-a
+      color white
+
+  &__login
+    display flex
+    margin-left 50px
+
+    &-a
+      color white
+
+      &:last-child
+        padding-right 0
+

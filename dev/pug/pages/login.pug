@@ -1,0 +1,106 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Вход / Регистрация'
+    - var pageClass = 'login-page'
+
+block content
+
+    .container-fluid
+        .container.page
+            include ../modules/breadcrumb
+            .page-title Вход / Регистрация
+            .login
+                .login__menu
+                    .login__menu-item.opened(data-tab='.login__inside-entry') Вход
+                    .login__menu-item(data-tab='.login__inside-registration') Регистрация
+                .login__inside
+                    .login__inside-entry.tab.opened
+                        p.login__inside-entry-p Логин
+                        input.login__inside-entry-input
+                        p.login__inside-entry-p Пароль
+                        input.login__inside-entry-input
+                        span.login__inside-entry-span Данные введены некорректно
+                        .login__inside-entry-block
+                            .login__inside-entry-box
+                                input.login__inside-entry-checkbox#checkbox__login(type='checkbox')
+                                label.login__inside-entry-label(for='checkbox__login') Запомнить меня
+                            a.login__inside-entry-a Забыли пароль?
+                        button.btn-green.login__inside-entry-btn Войти
+                    .login__inside-registration.tab
+                        .login__inside-registration-block
+                            .login__inside-registration-left
+                                p.login__inside-entry-p Логин*
+                                input.login__inside-entry-input
+                                p.login__inside-entry-p Email*
+                                input.login__inside-entry-input
+                                p.login__inside-entry-p Пароль*
+                                input.login__inside-entry-input
+                                p.login__inside-entry-p Повторить пароль
+                                input.login__inside-entry-input
+                                button.btn-green.login__inside-entry-btn Зарегестрироваться
+                            .login__inside-registration-right
+                                .login__inside-registration-title Плюсы регистрации
+                                .login__inside-registration-box
+                                    +icon('discount', 'icon-reg')
+                                    a.login__inside-registration-a Участие в акциях
+                                .login__inside-registration-box
+                                    +icon('support', 'icon-reg')
+                                    a.login__inside-registration-a Связь через<br>личный кабинет
+                                .login__inside-registration-box
+                                    +icon('gift-box', 'icon-reg')
+                                    a.login__inside-registration-a Бонусы за покупки
+                                .login__inside-registration-box
+                                    +icon('location', 'icon-reg')
+                                    a.login__inside-registration-a Отслеживание заказа
+    .login-media.login
+        .login__menu
+            .login__menu-item.opened(data-tab='.login__inside-entry') Вход
+            .login__menu-item(data-tab='.login__inside-registration') Регистрация
+        .login__inside
+            .login__inside-entry.tab.opened
+                p.login__inside-entry-p Логин
+                input.login__inside-entry-input
+                p.login__inside-entry-p Пароль
+                input.login__inside-entry-input
+                span.login__inside-entry-span Данные введены некорректно
+                .login__inside-entry-block
+                    .login__inside-entry-box
+                        input.login__inside-entry-checkbox#checkbox__login(type='checkbox')
+                        label.login__inside-entry-label(for='checkbox__login') Запомнить меня
+                    a.login__inside-entry-a Забыли пароль?
+                button.btn-green.login__inside-entry-btn Войти
+            .login__inside-registration.tab
+                .login__inside-registration-block
+                    .login__inside-registration-left
+                        p.login__inside-entry-p Логин*
+                        input.login__inside-entry-input
+                        p.login__inside-entry-p Email*
+                        input.login__inside-entry-input
+                        p.login__inside-entry-p Пароль*
+                        input.login__inside-entry-input
+                        p.login__inside-entry-p Повторить пароль
+                        input.login__inside-entry-input
+                        button.btn-green.login__inside-entry-btn Зарегестрироваться
+                    .login__inside-registration-right
+                        .login__inside-registration-title Плюсы регистрации
+                        .login__inside-registration-box
+                            +icon('discount', 'icon-reg')
+                            a.login__inside-registration-a Участие в акциях
+                        .login__inside-registration-box
+                            +icon('support', 'icon-reg')
+                            a.login__inside-registration-a Связь через<br>личный кабинет
+                        .login__inside-registration-box
+                            +icon('gift-box', 'icon-reg')
+                            a.login__inside-registration-a Бонусы за покупки
+                        .login__inside-registration-box
+                            +icon('location', 'icon-reg')
+                            a.login__inside-registration-a Отслеживание заказа
+    .recovery
+        .recovery__popup
+            .recovery__popup-title Восстановление пароля
+            p.login__inside-entry-p Email
+            input.login__inside-entry-input
+            p.login__inside-entry-p Укажите зарегестрированный email.
+            button.btn-green.login__inside-entry-btn Восстановить пароль
+

@@ -1,0 +1,344 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Карточка товара'
+    - var pageClass = 'product-page'
+
+block content
+
+    .container-fluid
+        .container.page
+            include ../modules/breadcrumb
+            .product
+                .product-box
+                    .product-left
+                        .product-left__gallery
+                            .product-left__gallery-big
+                                img.product-left__gallery-item(src="static/img/content/growbox.png")
+                                img.product-left__gallery-item(src="static/img/content/growbox.png")
+                                img.product-left__gallery-item(src="static/img/content/growbox.png")
+                                img.product-left__gallery-item(src="static/img/content/growbox.png")
+                            .product-left__gallery-small
+                                img.product-left__gallery-item(src="static/img/content/growbox.png")
+                                img.product-left__gallery-item(src="static/img/content/growbox.png")
+                                img.product-left__gallery-item(src="static/img/content/growbox.png")
+                                img.product-left__gallery-item(src="static/img/content/growbox.png")
+                        .product-left__info
+                            .product-left__info-name Фитолампа 15 Ватт Е27 (Биколор)
+                            .product-left__info-star
+                                span.product-left__info-star-span ☆
+                                span.product-left__info-star-span ☆
+                                span.product-left__info-star-span ☆
+                                span.product-left__info-star-span ☆
+                                span.product-left__info-star-span ☆
+                            .product-left-info-atribute Бренд:
+                                a.product-left__info-atribute-a Биколор
+                            .product-left__info-descr Простая и удобная лампа для цоколя Е27. Отлично подойдет для домашнего сада, досвечивания растений, выращивания рассады, а так же сборки собственных конструкций из нескольких ламп.
+                            ul.product-left__info-important Доставка и ограничения:
+                                li - Жидкости нельзя отправлять Самолётом
+                    .product-right
+                        .product-right__top
+                            .product-right__price 2 470р
+                            .product-right__btn.btn-green Добавить в корзину
+                            .price-cell.product-right__bottom-price-media
+                                .price-cell__symbol -
+                                input.price-cell__input
+                                .price-cell__symbol +
+                        .product-right__bottom
+                            .product-right__bottom-box
+                                .price-cell.product-right__bottom-price
+                                    .price-cell__symbol -
+                                    input.price-cell__input
+                                    .price-cell__symbol +
+                                .bonus-box
+                                    .bonus-box__text Бонусов будет зачислено:
+                                    .bonus-box__number 91 бонус
+                            .product-right__bottom-text Принимаем к оплате:
+                            .product-right__bottom-pay
+                                object.product-right__bottom-pay-img(type="image/svg+xml" data="static/img/general/icon_payments.svg")
+                    .product-none
+                        .product-right__top
+                            .product-right__price 2 470р
+                            .product-right__btn.btn-grey__all Товара нет в наличии
+                        .product-right__bottom
+                            .product-none__bottom-text Оставьте свою почту и мы сообщим когда товар появится на складе
+                            input.product-none__bottom-input(placeholder='Ваш почтовый адрес')
+                            .product-right__btn.btn-green Отправить
+                    .product-authorized
+                        .product-right__top
+                            .product-right__price 2 470р
+                            .product-right__btn.btn-grey__all Товара нет в наличии
+                        .product-right__bottom
+                            a.product-authorized__bottom-a trofim80056
+                            span.product-none__bottom-text сообщить когда товар появится на складе?
+                            .product-right__btn.btn-green Прислать уведомление?
+            .product-info
+                .product-menu
+                    .product-menu-item.product-about.opened(data-tab='.product-inside__about') О продукте
+                    .product-menu-item.product-brief(data-tab='.product-inside__brief') Инструкция
+                    .product-menu-item.product-use(data-tab='.product-inside__use') Применение
+                    .product-menu-item.product-reviews(data-tab='.product-inside__reviews') Отзывы
+                .product-inside
+                    .product-inside__about.tab.opened
+                        .about-product__block
+                            .about-product__box
+                               .about-product__box-item
+                                   a.about-product__box-item-a Мощность:
+                                   span.about-product__box-item-span 5 светодиодов по 3 Ватта = 15 Ватт (Номинальная мощность).
+                               .about-product__box-item
+                                   a.about-product__box-item-a Электрическая мощность:
+                                   span.about-product__box-item-span 7 Ватт.
+                               .about-product__box-item
+                                   a.about-product__box-item-a Длина волны излучения света:
+                                   span.about-product__box-item-span 4 красных светодиода 660 нм + 1 светодиод 450 нм.
+                               .about-product__box-item
+                                   a.about-product__box-item-a Питание:
+                                   span.about-product__box-item-span 110 - 240 В.
+                               .about-product__box-item
+                                   a.about-product__box-item-a Срок службы:
+                                   span.about-product__box-item-span ~ 50 000 часов.
+                               .about-product__box-item
+                                   a.about-product__box-item-a Габариты:
+                                   span.about-product__box-item-span d=9,5 см h=10 см.
+                               .about-product__box-item
+                                   a.about-product__box-item-a Вес:
+                                   span.about-product__box-item-span ~ 0,26 кг.
+                            .about-product__img
+                                img.about-product__img-item(src="static/img/content/tube.png")
+                        .about-product__title О продукте:
+                        .about-product__descr Ripen - питательный комплекс для медленно цветущих и завершающих жизненный цикл растений. Сам производитель называет Ripen —“forcing solution”, т.е. «усиливающий раствор».<br>Предназначен для ускорения процесса цветения и увеличения объема урожая. Состоит из очищенных минеральных солей и защитных элементов (буферов). Минимально допустимый состав элементов:<br><br>- P2O5 6%<br>- K2O 5%<br>- MgO 3%<br>- SO4 3%<br>Формула Ripen разработана с предельной точностью, поскольку растение на последней стадии развития является очень хрупкой биологической системой с пониженной способностью усваивать питательные вещества.<br><br>
+                        .about-product__title Преимущества продукта:
+                        .about-product__descr - ускоряет процесс созревания. Ripen подает растению сигнал о завершении жизненного цикла, и оно реагирует, в полной мере активизируя свой генетический потенциал;<br>- укрепляет иммунную систему;<br>- увеличивает содержание активных веществ, что особенно важно при выращивании лекарственных, ароматических и кулинарных растений;<br>- поставляет растению необходимые для конечной стадии цветения/плодоношения элементы в легкоусвояемой форме;<br>- в случае накопления нитратов или иных элементов, помогает переработать эти отложения, улучшая вкус и повышая экологическую ценность урожая;<br>- в случае серьезной инвазии патогенов или насекомых Ripen позволяет ускорить естественный цикл и сохранить хотя бы часть урожая;<br>- в условиях открытого грунта Ripen позволяет быстро собрать урожай, прежде чем он будет испорчен холодной и влажной погодой;<br>- в условиях закрытого грунта помогает моделировать окончание цикла, ускоряя созревание самых медленных растений.
+                    .product-inside__brief.tab
+                    .product-inside__use.tab
+                    .product-inside__reviews.tab
+                        .reviews
+                            .reviews__afore
+                                include ../modules/reviews-afore
+                                .reviews__afore-btn
+                                    button.btn-more Загрузить еще
+                                        +icon('arrow-point', 'arrow-point-more')
+                            .reviews__none
+                                .reviews__none-box
+                                    img.reviews__none-img(src="static/img/general/logo.png")
+                                    p.reviews__none-p У данного товара нет отзывов.
+                                    p.reviews__none-p Станьте первым, кто оставил отзыв об этом товаре!
+                            .reviews__write
+                                .reviews__write-title Написать отзыв
+                                .reviews__write-rating Оцените товар
+                                .reviews__write-star
+                                    span.reviews__write-star-span ☆
+                                    span.reviews__write-star-span ☆
+                                    span.reviews__write-star-span ☆
+                                    span.reviews__write-star-span ☆
+                                    span.reviews__write-star-span ☆
+                                .reviews__write-text Напишите отзыв
+                                textarea.reviews__write-textarea
+                                .reviews__write-btn
+                                    button.btn-green Добавить отзыв
+                            .reviews__authorized
+                                .reviews__write-title Написать отзыв
+                                .reviews__write-text Чтобы оставлять отзыв вам необходимо <br><a class="reviews__write-text-a">войти</a> под своим аккаунтом.<br><br>Если вы еще не зарегистрированы, то можете пройти <a class="reviews__write-text-a">регистрацию</a>, которая займет всего пару минут.
+    .product-inside__media
+        .product-inside__about.tab.opened
+            .about-product__block
+                .about-product__box
+                    .about-product__box-item
+                        a.about-product__box-item-a Мощность:
+                        span.about-product__box-item-span 5 светодиодов по 3 Ватта = 15 Ватт (Номинальная мощность).
+                    .about-product__box-item
+                        a.about-product__box-item-a Электрическая мощность:
+                        span.about-product__box-item-span 7 Ватт.
+                    .about-product__box-item
+                        a.about-product__box-item-a Длина волны излучения света:
+                        span.about-product__box-item-span 4 красных светодиода 660 нм + 1 светодиод 450 нм.
+                    .about-product__box-item
+                        a.about-product__box-item-a Питание:
+                        span.about-product__box-item-span 110 - 240 В.
+                    .about-product__box-item
+                        a.about-product__box-item-a Срок службы:
+                        span.about-product__box-item-span ~ 50 000 часов.
+                    .about-product__box-item
+                        a.about-product__box-item-a Габариты:
+                        span.about-product__box-item-span d=9,5 см h=10 см.
+                    .about-product__box-item
+                        a.about-product__box-item-a Вес:
+                        span.about-product__box-item-span ~ 0,26 кг.
+                .about-product__img
+                    img.about-product__img-item(src="static/img/content/tube.png")
+            .about-product__title О продукте:
+            .about-product__descr Ripen - питательный комплекс для медленно цветущих и завершающих жизненный цикл растений. Сам производитель называет Ripen —“forcing solution”, т.е. «усиливающий раствор».<br>Предназначен для ускорения процесса цветения и увеличения объема урожая. Состоит из очищенных минеральных солей и защитных элементов (буферов). Минимально допустимый состав элементов:<br><br>- P2O5 6%<br>- K2O 5%<br>- MgO 3%<br>- SO4 3%<br>Формула Ripen разработана с предельной точностью, поскольку растение на последней стадии развития является очень хрупкой биологической системой с пониженной способностью усваивать питательные вещества.<br><br>
+            .about-product__title Преимущества продукта:
+            .about-product__descr - ускоряет процесс созревания. Ripen подает растению сигнал о завершении жизненного цикла, и оно реагирует, в полной мере активизируя свой генетический потенциал;<br>- укрепляет иммунную систему;<br>- увеличивает содержание активных веществ, что особенно важно при выращивании лекарственных, ароматических и кулинарных растений;<br>- поставляет растению необходимые для конечной стадии цветения/плодоношения элементы в легкоусвояемой форме;<br>- в случае накопления нитратов или иных элементов, помогает переработать эти отложения, улучшая вкус и повышая экологическую ценность урожая;<br>- в случае серьезной инвазии патогенов или насекомых Ripen позволяет ускорить естественный цикл и сохранить хотя бы часть урожая;<br>- в условиях открытого грунта Ripen позволяет быстро собрать урожай, прежде чем он будет испорчен холодной и влажной погодой;<br>- в условиях закрытого грунта помогает моделировать окончание цикла, ускоряя созревание самых медленных растений.
+        .product-inside__brief.tab
+        .product-inside__use.tab
+        .product-inside__reviews.tab
+            .reviews
+                .reviews__afore
+                    include ../modules/reviews-afore
+                    .reviews__afore-btn
+                        button.btn-more Загрузить еще
+                            +icon('arrow-point', 'arrow-point-more')
+                .reviews__none
+                    .reviews__none-box
+                        img.reviews__none-img(src="static/img/general/logo.png")
+                        p.reviews__none-p У данного товара нет отзывов.
+                        p.reviews__none-p Станьте первым, кто оставил отзыв об этом товаре!
+                .reviews__write
+                    .reviews__write-title Написать отзыв
+                    .reviews__write-rating Оцените товар
+                    .reviews__write-star
+                        span.reviews__write-star-span ☆
+                        span.reviews__write-star-span ☆
+                        span.reviews__write-star-span ☆
+                        span.reviews__write-star-span ☆
+                        span.reviews__write-star-span ☆
+                    .reviews__write-text Напишите отзыв
+                    textarea.reviews__write-textarea
+                    .reviews__write-btn
+                        button.btn-green Добавить отзыв
+                .reviews__authorized
+                    .reviews__write-title Написать отзыв
+                    .reviews__write-text Чтобы оставлять отзыв вам необходимо <br><a class="reviews__write-text-a">войти</a> под своим аккаунтом.<br><br>Если вы еще не зарегистрированы, то можете пройти <a class="reviews__write-text-a">регистрацию</a>, которая займет всего пару минут.
+    .container-fluid
+        .container
+            .products
+                .products__text
+                    .products__text-title Товар входит в комплекты
+                .products__extra
+                    .product__extra-item
+                        .ticket__extra
+                            .ticket__left
+                                .ticket-product
+                                    img.ticket-product__img(src='static/img/content/growbox.png' alt='')
+                                    .ticket-product__discount -15%
+                            .ticket__right
+                                .ticket-header
+                                    .ticket-header__text Pro Box
+                                    .ticket-header__rating
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                .ticket-title Гроубокс 120-Apollo10
+                                .ticket-buy
+                                    .ticket-buy__price
+                                        .ticket-buy__price-old 590р
+                                        .ticket-buy__price-new 450р
+                                    .ticket-buy__btn
+                                        button.btn-basket(href='javascript:void(0)')
+                                            +icon('tick-inside')
+                                            .ticket-buy__btn-text Купить
+                    .product__extra-item
+                        .product__extra-item-plus +
+                        .ticket__extra
+                            .ticket__left
+                                .ticket-product
+                                    img.ticket-product__img(src='static/img/content/growbox.png' alt='')
+                                    .ticket-product__discount -15%
+                            .ticket__right
+                                .ticket-header
+                                    .ticket-header__text Pro Box
+                                    .ticket-header__rating
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                .ticket-title Гроубокс 120-Apollo10
+
+                                .ticket-buy
+                                    .ticket-buy__price
+                                        .ticket-buy__price-old 590р
+                                        .ticket-buy__price-new 450р
+                                    .ticket-buy__btn
+                                        button.btn-basket(href='javascript:void(0)')
+                                            +icon('tick-inside')
+                                            .ticket-buy__btn-text Купить
+                    .product__extra-item
+                        .product__extra-item-plus +
+                        .ticket__extra
+                            .ticket__left
+                                .ticket-product
+                                    img.ticket-product__img(src='static/img/content/growbox.png' alt='')
+                                    .ticket-product__discount -15%
+                            .ticket__right
+                                .ticket-header
+                                    .ticket-header__text Pro Box
+                                    .ticket-header__rating
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                .ticket-title Гроубокс 120-Apollo10
+
+                                .ticket-buy
+                                    .ticket-buy__price
+                                        .ticket-buy__price-old 590р
+                                        .ticket-buy__price-new 450р
+                                    .ticket-buy__btn
+                                        button.btn-basket(href='javascript:void(0)')
+                                            +icon('tick-inside')
+                                            .ticket-buy__btn-text Купить
+            .products
+                .products__text
+                    .products__text-title С этим товаром покупают
+                    .products__text-all
+                .products__additionally
+                    .product__additionally-item
+                        .ticket__add
+                            .ticket__left
+                                .ticket-product
+                                    img.ticket-product__img(src='static/img/content/growbox.png' alt='')
+                                    .ticket-product__discount -15%
+                            .ticket__right
+                                .ticket-header
+                                    .ticket-header__text Pro Box
+                                    .ticket-header__rating
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                .ticket-title Гроубокс 120-Apollo10
+                                .ticket-buy
+                                    .ticket-buy__price
+                                        .ticket-buy__price-old 590р
+                                        .ticket-buy__price-new 450р
+                                    .ticket-buy__btn
+                                        button.btn-basket(href='javascript:void(0)')
+                                            +icon('tick-inside')
+                                            .ticket-buy__btn-text Купить
+                    .product__additionally-item
+                        .ticket__add
+                            .ticket__left
+                                .ticket-product
+                                    img.ticket-product__img(src='static/img/content/growbox.png' alt='')
+                                    .ticket-product__discount -15%
+                            .ticket__right
+                                .ticket-header
+                                    .ticket-header__text Pro Box
+                                    .ticket-header__rating
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                .ticket-title Гроубокс 120-Apollo10
+
+                                .ticket-buy
+                                    .ticket-buy__price
+                                        .ticket-buy__price-old 590р
+                                        .ticket-buy__price-new 450р
+                                    .ticket-buy__btn
+                                        button.btn-basket(href='javascript:void(0)')
+                                            +icon('tick-inside')
+                                            .ticket-buy__btn-text Купить
+            .product__media-basket
+                .product__media-basket-box
+                    span.product__media-basket-box-span Добавить в корзину
+                    +icon('basket', 'basret-btn-product')
+                    span.product__media-basket-box-span 2470 р
+    include index/sub_reviews

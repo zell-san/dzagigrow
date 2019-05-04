@@ -1,0 +1,79 @@
+.about
+  background-color white
+  margin 55px 0 65px 0
+  padding 40px 50px
+
+  &-idea
+    display flex
+    justify-content space-between
+
+    @media screen and (max-width desktopWidth)
+      flex-direction column
+
+    &__name
+      font-weight bold
+      font-size rem(30px)
+      padding-right 70px
+      line-height 36px
+
+      @media screen and (max-width smalDesktopWidth)
+        padding-right 0
+
+        @media screen and (max-width bigPhoneWidth)
+          display flex
+          flex-wrap wrap
+
+      &-a
+        color greenDG
+        padding-left 10px
+
+        @media screen and (max-width bigPhoneWidth)
+          padding-left 0
+
+    &__sense
+      border-left 5px solid greenDG
+      display flex
+      align-items center
+      font-size rem(16px)
+      padding-left 20px
+      line-height 30px
+
+      @media screen and (max-width desktopWidth)
+        margin-top 30px
+
+  &-inside
+    justify-content space-between
+    overflow hidden
+    display flex
+
+    @media screen and (max-width desktopWidth)
+      flex-direction column
+
+    &-container
+      display none
+
+    &__column
+      width 44%
+
+      @media screen and (max-width desktopWidth)
+        width 100%
+
+    &__item
+      width 100%
+      line-height 30px
+      padding-top 40px
+
+      &-head
+        font-weight bold
+
+  &-btn
+    display flex
+    justify-content center
+    padding-top 50px
+
+
+.inside__item-contents
+  display contents
+
+
+

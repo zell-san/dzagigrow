@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Доставка / Оплата</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css"><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body class="delivery-page">
+    <div class="wrapper">
+      <header>
+        <!--first header-->
+        <div class="full">
+          <div class="container-fluid">
+            <div class="container">
+              <div class="header-nav">
+                <div class="header-nav__left"><a class="header-nav__left-a" href="blog.html">Блог</a><a class="header-nav__left-a" href="dzagi_tube.html">Dzagi tube</a><a class="header-nav__left-a" href="books.html">Книги</a></div>
+                <div class="header-nav__right">
+                  <div class="header-nav__right-social">
+                    <svg class="icon icon-tg social" role="img">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#tg"></use>
+                    </svg>
+                    <svg class="icon icon-ig social" role="img">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#ig"></use>
+                    </svg>
+                    <svg class="icon icon-yt social" role="img">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#yt"></use>
+                    </svg>
+                    <svg class="icon icon-fb social" role="img">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#fb"></use>
+                    </svg>
+                    <svg class="icon icon-vk social" role="img">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#vk"></use>
+                    </svg>
+                  </div>
+                  <div class="header-nav__right-phone" href="tel:+78003331659">8(800)333-16-59</div>
+                  <div class="header-nav__right-hang">Бесплатный звонок<br>по России</div>
+                  <div class="header-nav__right-phone" href="tel:+74951205945">8(495)120-59-45</div>
+                  <div class="header-nav__right-hang">Звонок<br>по Москве и МО</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--second header-->
+          <div class="container-fluid header-second">
+            <div class="container">
+              <div class="header-main">
+                <div class="header-main__logo"><img class="header-main__logo-img" onclick="window.location='index.html';" src="static/img/general/logo.png" alt=""></div>
+                <div class="header-main__city" href="javascript:PopUpHide()"><a class="header-main__city-a">Пермь</a>
+                  <svg class="icon icon-arrow-point arrow-point-city" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                  <div class="city-you" id="city-you" href="javascript:PopUpHide()">
+                    <svg class="icon icon-close close-city" role="img">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#close"></use>
+                    </svg>
+                    <div class="city-you__text"><span>Ваш город</span><a class="city-you__text-a">Пермь?</a></div>
+                    <div class="city-you__btn">
+                      <button class="btn-green city-you__btn-green">Да, верно</button>
+                      <button class="btn-grey city-you__btn-grey">Выбрать другой</button>
+                    </div>
+                  </div>
+                  <div class="city-choice" id="city-choice" href="javascript:PopUpHide()">
+                    <svg class="icon icon-close close-city" role="img">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#close"></use>
+                    </svg><span class="city-choice__span">Выбор города</span><span class="city-choice__span-small">Если вашего города нет - выберете ближайший</span>
+                    <div class="city-choice__search">
+                      <input class="city-choice__search-input" type="text" placeholder="Я ищу...">
+                      <svg class="icon icon-search search-header" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#search"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="header-main__search">
+                  <input class="header-main__search-input" type="text" placeholder="Я ищу...">
+                  <div class="header-main__search-icon" onclick="window.location='result.html';">
+                    <svg class="icon icon-search search-header" role="img">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#search"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="header-main__basket">
+                  <div class="header-main__basket-box">
+                    <div class="header-main__basket-icon">
+                      <svg class="icon icon-basket basket-header" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#basket"></use>
+                      </svg><span class="header-main__basket-number">5</span>
+                    </div>
+                    <div class="header-main__basket-cache"><span class="header-main__basket-hang">Сумма</span><a class="header-main__basket-sum">45 000 р</a></div>
+                    <div class="basket-block" id="basket-block" href="javascript:void(0)">
+                      <svg class="icon icon-close close-basket" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#close"></use>
+                      </svg>
+                      <div class="basket-block__title">Корзина</div>
+                      <div class="basket-block__item">
+                        <svg class="icon icon-cancel cancel-basket" role="img">
+                          <use xlink:href="static/img/svg/symbol/sprite.svg#cancel"></use>
+                        </svg>
+                        <div class="basket-block__item-preview"><img class="basket-block__item-preview-img" src="static/img/content/growbox.png"></div>
+                        <div class="basket-block__item-name">Фитолампа<br>15 Ватт E27 (Биколор)</div>
+                        <div class="basket-block__item-price">2 470р</div>
+                      </div>
+                      <div class="basket-block__bottom">
+                        <div class="basket-block__bottom-sum"><span>Итог:</span><span class="basket-block__bottom-sum-span">2 470р</span></div>
+                        <div class="basket-block__bottom-btn btn-green-big">Перейти в корзину</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--menu header-->
+        <div class="container-fluid header-third">
+          <div class="container">
+            <div class="header-menu">
+              <div class="header-menu__primary">
+                <div class="header-menu__opener">
+                  <svg class="icon icon-menu menu-header" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#menu"></use>
+                  </svg><a class="header-menu__primary-a">Категория товаров</a>
+                </div>
+                <div class="menu-nav">
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Гроубоксы
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Гидропонные системы
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Удобрения
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Освещение
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Полив
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Очистка воздуха
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Автоматизация
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Аксессуары
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Гроубоксы
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Гидропонные системы
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Удобрения
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Освещение
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Полив
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Очистка воздуха
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Автоматизация
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Аксессуары
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Полив
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Очистка воздуха
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Автоматизация
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item menu-nav__item-last">Аксессуары
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="header-menu__box">
+                <div class="header-menu__main"><a class="header-menu__main-a" href="price-list.html">Прайс-лист</a><a class="header-menu__main-a" href="stock.html">Акции</a><a class="header-menu__main-a" href="delivery.html">Доставка / Оплата</a><a class="header-menu__main-a" href="reviews.html">Отзывы</a><a class="header-menu__main-a" href="contacts.html">Контакты</a></div>
+                <div class="header-menu__login"><a class="header-menu__login-a" href="login.html">Вход</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Мобильная версия-->
+        <div class="container-fluid header-media">
+          <div class="header-media__menu">
+            <svg class="icon icon-menu menu-header-media" role="img">
+              <use xlink:href="static/img/svg/symbol/sprite.svg#menu"></use>
+            </svg>
+          </div>
+          <div class="header-media__box"><img class="header-media__box-img" src="static/img/general/logo.png" alt' href="javascript:void(0)">
+            <div class="header-media__box-icon">
+              <svg class="icon icon-search search-header-media" role="img">
+                <use xlink:href="static/img/svg/symbol/sprite.svg#search"></use>
+              </svg>
+              <div class="header-main__basket-icon">
+                <svg class="icon icon-basket basket-header-media" role="img">
+                  <use xlink:href="static/img/svg/symbol/sprite.svg#basket"></use>
+                </svg><span class="header-media__box-icon-number">5</span>
+              </div>
+            </div>
+          </div>
+          <div class="header-media__box-search">
+            <div class="header-main__search">
+              <input class="header-main__search-input" type="text" placeholder="Я ищу...">
+              <div class="header-main__search-icon" onclick="window.location='result.html';">
+                <svg class="icon icon-search search-header-media-open" role="img">
+                  <use xlink:href="static/img/svg/symbol/sprite.svg#search"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu-media-full">
+          <div class="container-fluid menu-media-full__open">
+            <div class="header-media-open">
+              <div class="header-media-open__menu">
+                <svg class="icon icon-close close-header-media" role="img">
+                  <use xlink:href="static/img/svg/symbol/sprite.svg#close"></use>
+                </svg>
+              </div>
+              <div class="header-media-open__box"><img class="header-media-open__box-img" src="static/img/general/logo.png" alt' href="javascript:void(0)">
+                <div class="header-media-open__box-icon"><span class="header-media-open__box-icon-span">Пермь
+                    <svg class="icon icon-arrow-point arrow-point-city" role="img">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                    </svg></span>
+                  <div class="city-you" id="city-you" href="javascript:PopUpHide()">
+                    <svg class="icon icon-close close-city" role="img">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#close"></use>
+                    </svg>
+                    <div class="city-you__text"><span>Ваш город</span><a class="city-you__text-a">Пермь?</a></div>
+                    <div class="city-you__btn">
+                      <button class="btn-green city-you__btn-green">Да, верно</button>
+                      <button class="btn-grey city-you__btn-grey">Выбрать другой</button>
+                    </div>
+                  </div>
+                  <div class="city-choice" id="city-choice" href="javascript:PopUpHide()">
+                    <svg class="icon icon-close close-city" role="img">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#close"></use>
+                    </svg><span class="city-choice__span">Выбор города</span><span class="city-choice__span-small">Если вашего города нет - выберете ближайший</span>
+                    <div class="city-choice__search">
+                      <input class="city-choice__search-input" type="text" placeholder="Я ищу...">
+                      <svg class="icon icon-search search-header" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#search"></use>
+                      </svg>
+                    </div>
+                  </div><span class="header-media-open__box-icon-span">Вход</span>
+                </div>
+              </div>
+            </div>
+            <div class="header-media-nav">
+              <svg class="icon icon-menu menu-header" role="img">
+                <use xlink:href="static/img/svg/symbol/sprite.svg#menu"></use>
+              </svg><a class="header-media-nav__a">Категория товаров</a>
+            </div>
+            <div class="menu-media-category">
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Гроубоксы
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+                <div class="menu-media-category__sub">
+                  <div class="menu-media-category__sub-element">Маленькие</div>
+                  <div class="menu-media-category__sub-element">Средние</div>
+                  <div class="menu-media-category__sub-element">Большие</div>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Гидропонные системы
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+                <div class="menu-media-category__sub">
+                  <div class="menu-media-category__sub-element">Маленькие</div>
+                  <div class="menu-media-category__sub-element">Средние</div>
+                  <div class="menu-media-category__sub-element">Большие</div>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Удобрения
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+                <div class="menu-media-category__sub">
+                  <div class="menu-media-category__sub-element">Маленькие</div>
+                  <div class="menu-media-category__sub-element">Средние</div>
+                  <div class="menu-media-category__sub-element">Большие</div>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Освещение
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+                <div class="menu-media-category__sub">
+                  <div class="menu-media-category__sub-element">Маленькие</div>
+                  <div class="menu-media-category__sub-element">Средние</div>
+                  <div class="menu-media-category__sub-element">Большие</div>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Полив
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+                <div class="menu-media-category__sub">
+                  <div class="menu-media-category__sub-element">Маленькие</div>
+                  <div class="menu-media-category__sub-element">Средние</div>
+                  <div class="menu-media-category__sub-element">Большие</div>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Очистка воздуха
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+                <div class="menu-media-category__sub">
+                  <div class="menu-media-category__sub-element">Маленькие</div>
+                  <div class="menu-media-category__sub-element">Средние</div>
+                  <div class="menu-media-category__sub-element">Большие</div>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Автоматизация
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+                <div class="menu-media-category__sub">
+                  <div class="menu-media-category__sub-element">Маленькие</div>
+                  <div class="menu-media-category__sub-element">Средние</div>
+                  <div class="menu-media-category__sub-element">Большие</div>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Аксессуары
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+                <div class="menu-media-category__sub">
+                  <div class="menu-media-category__sub-element">Маленькие</div>
+                  <div class="menu-media-category__sub-element">Средние</div>
+                  <div class="menu-media-category__sub-element">Большие</div>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Гроубоксы
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+                <div class="menu-media-category__sub">
+                  <div class="menu-media-category__sub-element">Маленькие</div>
+                  <div class="menu-media-category__sub-element">Средние</div>
+                  <div class="menu-media-category__sub-element">Большие</div>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Гидропонные системы
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+                <div class="menu-media-category__sub">
+                  <div class="menu-media-category__sub-element">Маленькие</div>
+                  <div class="menu-media-category__sub-element">Средние</div>
+                  <div class="menu-media-category__sub-element">Большие</div>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Удобрения
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+                <div class="menu-media-category__sub">
+                  <div class="menu-media-category__sub-element">Маленькие</div>
+                  <div class="menu-media-category__sub-element">Средние</div>
+                  <div class="menu-media-category__sub-element">Большие</div>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Освещение
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Полив
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Очистка воздуха
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Автоматизация
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Аксессуары
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Полив
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Очистка воздуха
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Автоматизация
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Аксессуары
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="header-media-main">
+              <div class="header-media-main__border">
+                <div class="header-media-main__border-item">Прайс-лист</div>
+              </div>
+              <div class="header-media-main__border">
+                <div class="header-media-main__border-item">Акции</div>
+              </div>
+              <div class="header-media-main__border">
+                <div class="header-media-main__border-item">Доставка и оплата</div>
+              </div>
+              <div class="header-media-main__border">
+                <div class="header-media-main__border-item">Отзывы</div>
+              </div>
+              <div class="header-media-main__border">
+                <div class="header-media-main__border-item">Контакты</div>
+              </div>
+              <div class="header-media-main__border">
+                <div class="header-media-main__border-item">Блог</div>
+              </div>
+              <div class="header-media-main__border">
+                <div class="header-media-main__border-item">Dzagi tube</div>
+              </div>
+              <div class="header-media-main__border">
+                <div class="header-media-main__border-item">Книги</div>
+              </div>
+            </div>
+            <div class="header-media-contact">
+              <div class="header-media-contact__number">
+                <div class="header-media-contact__number-box">
+                  <div class="header-media-contact__phone" href="tel:+78003331659">8(800)333-16-59</div>
+                  <div class="header-media-contact__hang">Бесплатный звонок<br>по России</div>
+                </div>
+                <div class="header-media-contact__number-box">
+                  <div class="header-media-contact__phone" href="tel:+74951205945">8(495)120-59-45</div>
+                  <div class="header-media-contact__hang">Звонок<br>по Москве и МО</div>
+                </div>
+              </div>
+              <div class="header-media-contact__social">
+                <svg class="icon icon-tg social" role="img">
+                  <use xlink:href="static/img/svg/symbol/sprite.svg#tg"></use>
+                </svg>
+                <svg class="icon icon-ig social" role="img">
+                  <use xlink:href="static/img/svg/symbol/sprite.svg#ig"></use>
+                </svg>
+                <svg class="icon icon-yt social" role="img">
+                  <use xlink:href="static/img/svg/symbol/sprite.svg#yt"></use>
+                </svg>
+                <svg class="icon icon-fb social" role="img">
+                  <use xlink:href="static/img/svg/symbol/sprite.svg#fb"></use>
+                </svg>
+                <svg class="icon icon-vk social" role="img">
+                  <use xlink:href="static/img/svg/symbol/sprite.svg#vk"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="content">
+        <div class="container-fluid">
+          <div class="container page">
+            <ul class="breadcrumb">
+              <li class="breadcrumb-item"><a class="breadcrumb-item__a breadcrumb-item__a-first" href="#">DzagiGrow /</a></li>
+              <li class="breadcrumb-item"><a class="breadcrumb-item__a" href="#">Блог /</a></li>
+              <li class="breadcrumb-item breadcrumb-item__active">Статья</li>
+            </ul>
+            <div class="page-title">Доставка / Оплата</div>
+            <div class="pay-delivery">
+              <div class="pay-delivery__menu">
+                <div class="pay-delivery__menu-item opened" data-tab=".delivery">Доставка</div>
+                <div class="pay-delivery__menu-item" data-tab=".pay">Оплата</div>
+              </div>
+              <div class="pay-delivery__block">
+                <div class="delivery tab opened">
+                  <div class="delivery__descr">В распоряжении нашего магазина находятся два склада: в Москве и в Перми. Отправка всех интернет-заказов производится из города Пермь. С московского склада осуществляется розничная продажа, а также курьерская доставка по Москве и прилегающим районам. Заказать доставку можно по телефону: 8 (495) 120-59-42.<br><br>На сайте отражены актуальные остатки товаров на складе в Перми, но они могут не совпадать с остатками на складе в Москве. Планируя покупки в гроушопе в Москве, обязательно уточняйте наличие нужного вам товара по телефону: 8 495 120-59-42 или электронной почте: moscow@dzagigrow.ru.<br><br>Мы отправляем товары, купленные в интернет-магазине, в течение суток после подтверждения оплаты, кроме выходных. Сразу после отправки в вашем личном кабинете появится номер почтового идентификатора. Мы доставляем товар во все уголки России, Казахстана и Белоруссии. Срок ожидания заказа будет зависеть от региона и способа доставки.</div>
+                  <div class="delivery__unit">
+                    <div class="delivery__unit-title">Доставка Транспортной компанией СДЭК (как наложенным платежом, так и обычным способом)</div>
+                    <div class="delivery__unit-box">
+                      <div class="delivery__unit-box-cont"><img class="delivery__unit-box-img" src="static/img/content/sdek.png"></div>
+                      <div class="delivery__unit-box-text"><p><strong>Стоимость доставки наложенным платежом:</strong> входит в счет на оплату при получении посылки и зависит от региона. Максимальная сумма, при которой можно выбрать наложенный платеж, составляет 20 тысяч рублей с учетом доставки.<br><strong>Способ доставки наложенным платежом:</strong> до терминала и до двери.<br><strong>Стоимость обычной доставки:</strong> входит в счет на оплату и зависит от региона.   <br><strong>Срок доставки:</strong> 2-7 дней, но если вас интересуют дальние регионы, то лучше уточнить сроки у консультантов. <br><strong>Поля для заполнения: </strong>ФИО, индекс, адрес, телефон (для связи с курьером).<br><strong>Полезные ссылки:</strong> статус доставки груза <br><span class="delivery__unit-box-text-span">Внимание! В авиадоствке нельзя провозить удобрения и прочие жидкости!!!</span></p></div>
+                    </div>
+                  </div>
+                  <div class="delivery__unit">
+                    <div class="delivery__unit-title">Доставка Почтой России</div>
+                    <div class="delivery__unit-box">
+                      <div class="delivery__unit-box-cont"><img class="delivery__unit-box-img" src="static/img/content/post.png"></div>
+                      <div class="delivery__unit-box-text"><p><strong>Стоимость доставки: </strong>рассчитывается автоматически при формировании заказа. <br>Стоимость доставки для особо дальних регионов уточняйте у консультантов. Авиадоставка происходит за счет клиента. Также в авиадоствке нельзя провозить удобрения и прочие жидкости.<br><strong>Срок доставки:</strong> 4-14 дней, для дальних регионов уточняйте у консультантов <br><strong>Дни отправок:</strong> каждый будний день<br><strong>Поля для заполнения:</strong> ФИО, индекс, адрес (или до востребования) <br><strong>Полезные ссылки:</strong> <a class="delivery__unit-box-text-a">отслеживание почтовых отправлений </a></p></div>
+                    </div>
+                  </div>
+                  <div class="delivery__unit">
+                    <div class="delivery__unit-title">Доставка Транспортной компанией Деловые Линии</div>
+                    <div class="delivery__unit-box">
+                      <div class="delivery__unit-box-cont"><img class="delivery__unit-box-img" src="static/img/content/delov.png"></div>
+                      <div class="delivery__unit-box-text"><p><strong>Стоимость доставки:</strong> до терминала рассчитывается автоматически при формировании заказа. <br><strong>Срок доставки:</strong> 3-6 дней, для дальних регионов уточняйте у консультантов  <br><strong>Поля для заполнения:</strong> ФИО, адрес, паспортные данные (это требование транспортной компании), телефон (для извещения о прибытии груза) <br><strong>Полезные ссылки:</strong>  <a class="delivery__unit-box-text-a">статус доставки груза, адреса терминалов</a></p></div>
+                    </div>
+                  </div>
+                  <div class="delivery__unit">
+                    <div class="delivery__unit-title">Доставка Транспортной компанией ПЭК</div>
+                    <div class="delivery__unit-box">
+                      <div class="delivery__unit-box-cont"><img class="delivery__unit-box-img" src="static/img/content/pek.jpg"></div>
+                      <div class="delivery__unit-box-text"><p><strong>Стоимость доставки:</strong> до терминала рассчитывается автоматически при формировании заказа. <br><strong>Срок доставки:</strong> 3-6 дней, для дальних регионов уточняйте у консультантов  <br><strong>Поля для заполнения:</strong> ФИО, адрес, паспортные данные (это требование транспортной компании), телефон (для извещения о прибытии груза) <br><strong>Полезные ссылки: </strong> <a class="delivery__unit-box-text-a">статус доставки груза, адреса терминалов</a></p></div>
+                    </div>
+                  </div>
+                  <div class="delivery__unit">
+                    <div class="delivery__unit-title">Экспресс-доставка EMS</div>
+                    <div class="delivery__unit-box">
+                      <div class="delivery__unit-box-cont"><img class="delivery__unit-box-img" src="static/img/content/ems.png"></div>
+                      <div class="delivery__unit-box-text"><p><strong>Стоимость доставки:</strong> входит в счет на оплату и зависит от региона. <br><strong>Срок доставки:</strong> 2-7 дней, для дальних регионов уточняйте у консультантов <br><strong>Поля для заполнения: </strong>ФИО, индекс, адрес, телефон (для связи с курьером).<br><strong>Полезные ссылки:</strong>  <a class="delivery__unit-box-text-a">отслеживание отправлений </a><br><span class="delivery__unit-box-text-span">Внимание! Любые жидкости компанией EMS не отправляются!!! Для того, чтобы заказать удобрения, выберите доставку Почтой России или транспортной компанией.</span></p></div>
+                    </div>
+                  </div>
+                  <div class="delivery__unit">
+                    <div class="delivery__unit-title">Доставка в Казахстан и Белоруссию транспортной компанией Энергия</div>
+                    <div class="delivery__unit-box">
+                      <div class="delivery__unit-box-cont"><img class="delivery__unit-box-img" src="static/img/content/energy.png"></div>
+                      <div class="delivery__unit-box-text"><p><strong>Стоимость доставки:</strong> рассчитывается индивидуально и оплачивается отдельно при получении груза. Примерную стоимость доставки можно рассчитать на сайте компании. <br><strong>Срок доставки:</strong> 4-8 дней, для дальних регионов уточняйте у консультантов <br><strong>Поля для заполнения:</strong> ФИО, индекс, адрес, телефон (для связи с курьером).           <br><strong>Полезные ссылки:</strong>  <a class="delivery__unit-box-text-a">отслеживание отправлений </a></p></div>
+                    </div>
+                  </div>
+                  <div class="delivery__pickup">
+                    <div class="delivery__pickup-title">Самовывоз со склада в перми</div>
+                    <div class="delivery__pickup-box">
+                      <div class="delivery__pickup-maps"><img class="delivery__pickup-maps-img" src="static/img/content/maps.png"></div>
+                      <div class="delivery__pickup-info">Оформите и оплатите заказ, указав в комментариях "самовывоз" и контактный телефон. Дождитесь звонка оператора, который сообщит о готовности заказа. Адрес склада: г. Пермь, ул. Дзержинского, 59 лит K (пройти до конца здания до вывески "DG").</div>
+                    </div>
+                  </div>
+                  <div class="delivery__courier">
+                    <div class="delivery__courier-item">
+                      <div class="delivery__courier-item-title">Доставка курьером по Перми</div>
+                      <div class="delivery__courier-item-descr">Оформите и оплатите заказ, при оформлении заказа укажите свой контактный телефон. Дождитесь звонка курьера и договоритесь о времени доставки заказа. Стоимость доставки - 500 рублей.</div>
+                    </div>
+                    <div class="delivery__courier-item">
+                      <div class="delivery__courier-item-title">Доставка курьером по Москве</div>
+                      <div class="delivery__courier-item-descr">Стоимость курьерской доставки из магазина по всему городу составляет 500 рублей, до 30 км от МКАД - 800 рублей. При выборе этого способа доставки для заказа позвоните по номеру московского магазина: 8 (495) 120-59-42.</div>
+                    </div>
+                  </div>
+                  <div class="delivery__trust">
+                    <div class="delivery__trust-title">Наши обязательства</div>
+                    <div class="delivery__trust-descr">Перед тем, как отправить заказ, мы его проверяем и старательно упаковываем в соответствии со всеми условиями его будущей пересылки. Посылки надежно и в то же время неприметно запакованы. Мы это делаем с заботой, об этом подробнее здесь. <br><br>Внимание: в зимний период мы не гарантируем сохранность удобрений, т. к. они могут замерзнуть. Свойств удобрение не потеряет (это мы доказали в этой статье), но, пожалуйста, учитывайте это при заказе или воспользуйтесь сухими удобрениями.</div>
+                  </div>
+                </div>
+                <!--оплата-->
+                <div class="pay tab">
+                  <div class="pay-text">
+                    DzagiGrow работает как по предоплатной системе, так и по наложенному платежу (оплата при получении). <br><br>В предоплатной системе после нажатия на кнопку "Оплатить" вы сразу же будете перенаправлены на страницу нашего платежного агрегатора PayAnyWay. Способы оплаты – все известные: QIWI, Яндекс.Деньги, PayPal, карта Сбербанка, Visa, MasterCard и 19 других способов. Срок оплаты – до 3 дней. На это время мы откладываем ваш заказ в уютное местечко, и никто кроме вас уже не сможет его выкупить. Как только вы произведете оплату, мы сразу все вышлем. <br><br>При наложенном платеже вы делаете заказ и оплачиваете его в терминале или курьеру в зависимости от выбранного способа доставки.<br><br>Если у вас возникнут вопросы, сразу звоните нам: 8 (800) 333-16-59. Мы на все оперативно ответим и, если нужно, подберем индивидуальные условия.<br><br>А теперь все то же самое, только на официальном языке.<br><br>DzagiGrow, как интернет магазин www.dzagigrow.ru, именуемый Продавец, в лице И.П. Ежова Андрея Анатольевича, на основании свидетельства о государственной регистрации Индивидуального предпринимателя 59 №004530138 и Покупатель заключают оферту о нижеследующе<br><br>1. ПРЕДМЕТ ОФЕРТЫ<br>Продавец обязуется передавать в собственность Покупателю товары (далее товар), а Покупатель обязуется принимать товары и своевременно производить их оплату на условиях настоящей оферты.
+                    
+                    <br><br>2. ПОРЯДОК ЗАКАЗА
+                    <br>2.1 Заказ товара осуществляется Покупателем самостоятельно путем выбора нужной продукции на сайте Продавца www.dzagigrow.ru
+                    <br>2.2 При оформлении заказа Покупатель предоставляет необходимую для заказа информацию: фамилия, имя, отчество, адрес электронной почты, адрес доставки, если требуется – паспорт и контактный телефон.
+                    <br>2.3 Ответственность за достоверность предоставленной информации несет Покупатель.
+                    <br>2.4 Порядок расчетов за заказанный товар – 100% предоплата, кроме случаев оплаты наложенным платежом.
+                    <br>2.5 Оплата товара производится на основании выставленного Продавцом счета на оплату (далее счет) посредством платежного партнера компании «МОНЕТА.РУ ООО» с переходом на сайт партнера www.payanyway.ru.
+                    <br>2.6 Счет за заказанный товар выставляется автоматически и гарантирует наличие товара на складе Продавца.
+                    <br>2.7 Срок действия счета: 3 (три) банковских дня.
+                    <br>2.8 Заказанный товар должен быть оплачен в течение срока действия счета.
+                    
+                    <br><br>3. ПОСТАВКА ТОВАРА
+                    <br>Продавец обязуется передавать в собственность Покупателю товары (далее товар), а Покупатель обязуется принимать товары и своевременно производить их оплату на условиях настоящей оферты.
+                    
+                    <br>3.1 Поставка товаров Покупателю осуществляется после их оплаты путем отгрузки товаров Продавцом со своего склада. Товар считается оплаченным после поступления денег Продавцу.
+                    <br>3.2 Максимальный срок отгрузки товара: 2 (два) рабочих дня. Срок отгрузки исчисляется с момента поступления денег Продавцу.
+                    
+                    <br><br>4. ДОСТАВКА ТОВАРА
+                    <br>4.1 Доставка товаров со склада Продавца до Покупателя осуществляется транспортной компанией Деловые Линии, ПЭК, EMS, ФГУП Почта России и самовывозом со склада Продавца.
+                    <br>4.2 Доставка товаров за счет Продавца не осуществляется.
+                    <br>4.3 Продавец обязуется соблюдать сроки доставки, а также своевременно уведомлять Покупателя о возможных изменениях сроков доставки.
+                    <br>4.4 Продавец не несет ответственности за изменение сроков доставки в случае обстоятельств, которые он не мог ни предвидеть, ни предотвратить.
+                    <br>4.5 Покупатель имеет право отказаться от получения товара, если доставленный товар не соответствует заказу, а также, если при приеме выявлены внешние повреждения, несоответствие товара по качеству или некомплектность.
+                    <br>4.6 В случае если доставка была осуществлена Продавцом в оговоренные сроки, но товар не был передан Покупателю по его вине, повторная доставка товара оплачивается Покупателем.
+                    
+                    <br><br>5. ОПЛАТА ТОВАРА
+                    
+                    <br><br>Оплата товара производится при помощи лицензированного партнера: «Небанковская кредитная организации «МОНЕТА.РУ ООО» с переходом на сайт платежного агрегатора http://www.payanyway.ru «МОНЕТА.РУ ООО» имеет необходимые сертификаты и лицензии для проведения финансовых и платежных операций на территории Российской федерации. Соответствует международному стандарту PCI DSS.
+                    Оплату на сайте партнера можно осуществить с помощью следующих систем перевода платежей:
+                    Поддерживаемые способы оплаты<br><br><br>
+                  </div><img class="pay-img" src="static/img/content/pay.png">
+                  <div class="pay-text"><br><br>При доставке наложенным платежом оплата через Монету.ру не требуется.<br><br>6. РЕЗЕРВ ЗАКАЗАННОГО ТОВАРА <br>Заказанный Покупателем товар резервируется на срок действия счета. В случае непоступления оплаты в установленные сроки товар снимается с резерва.<br><br>7. ВОЗВРАТ ТОВАРА <br>Если по каким-либо причинам Вы решили отказаться от приобретенного товара, то можете сделать это в соответствии с Законом РФ «О защите прав потребителей» от 07.02.1992 № 2300-1.<br>7.1 ВОЗВРАТ ТОВАРА НАДЛЕЖАЩЕГО КАЧЕСТВА  <br>Клиент вправе отказаться от заказанного Товара в любое время до его получения, а после получения Товара - в течение 7 (семи) дней, не считая дня покупки. Возврат Товара надлежащего качества возможен в случае, если сохранены его товарный вид, потребительские свойства, а также документ, подтверждающий факт и условия покупки указанного Товара. Клиент не вправе отказаться от Товара, имеющего индивидуально-определенные свойства, если указанный Товар может быть использован исключительно приобретающим его Клиентом. При отказе Клиента от Товара надлежащего качества Продавец должен возвратить ему денежную сумму, уплаченную потребителем по договору, за исключением расходов продавца на доставку от потребителя возвращенного товара, не позднее чем через 10 дней со дня предъявления потребителем соответствующего требования.<br>7.2 ВОЗВРАТ ТОВАРА НЕНАДЛЕЖАЩЕГО КАЧЕСТВА <br>Под товаром ненадлежащего качества подразумевается товар, не способный обеспечить свои функциональные качества из-за существенного недостатка (с наличием дефектов/брака). Покупатель, которому продан товар ненадлежащего качества, если это не было оговорено продавцом, вправе по своему выбору заявить любое из нижеперечисленных требований: замены на товар аналогичной марки (модели, артикула) или на такой же товар другой марки (модели, артикула) с соответствующим перерасчетом покупной цены; соразмерного уменьшения покупной цены; безвозмездного устранения недостатков товара или возмещения расходов на их исправление покупателем или третьим лицом; вправе отказаться от исполнения договора и потребовать возврата уплаченной за товар суммы. При возврате технически сложного товара ненадлежащего качества (перечень таких товаров утвержден Постановлением Правительства РФ от 10.11.2011 № 924 «Об утверждении перечня технически сложных товаров») Покупатель имеет право потребовать: замены на товар аналогичной марки (модели, артикула) или на такой же товар другой марки (модели, артикула) с соответствующим перерасчетом покупной цены; отказаться от исполнения договора и потребовать возврата уплаченной за товар суммы. Все вышеперечисленные требования по возврату товара ненадлежащего качества могут быть предъявлены в течении гарантийного срока - 1 год с момента продажи. Интернет-магазин вправе отказать в обмене или возврате товара, если сочтет, что обнаруженный существенный недостаток является следствием неправильной эксплуатации товара. В случае возникновения разногласий по качеству или причинам возникновения недостатков, Интернет-магазин вправе провести независимую экспертизу за свой счет. Покупатель может участвовать в экспертизе и оспорить ее решение в суде. Если в результате экспертизы установлено, что недостатки товара возникли по вине Покупателя, то Покупатель обязан возместить Продавцу стоимость экспертизы, а также связанные с ее проведением расходы на транспортировку и хранение товара.<br>7.3 Продавец берет на себя гарантийные и постгарантийные обязательства, консультацию и поддержку клиентов.<br>7.4 Продавец не принимает бракованные товары, если у них поврежден товарный вид, упаковка и/или нарушена комплектация.<br>7.5 В случае задержки платежа по счету (оплата поступила после отмены заказа) Продавец не гарантирует наличие товаров из заказа на своем складе.<br>7.6 В случае невозможности поставки, Продавец вправе согласовать с Покупателем замену указанного в счете товара на аналогичный или возврат денежных средств.<br><br>8. ОТВЕТСТВЕННОСТЬ СТОРОН <br>Меры ответственности сторон, не предусмотренные в настоящем договоре, применяются в соответствии с нормами гражданского законодательства, действующего на территории России.<br><br>9. ПОРЯДОК РАЗРЕШЕНИЯ СПОРОВ <br>Споры и разногласия, которые могут возникнуть при исполнении настоящего договора, будут по возможности разрешаться путем переговоров между сторонами. В случае не достижения согласия в ходе переговоров, споры будут разрешаться в судебном порядке в соответствии с действующим законодательством Российской Федерации.<br><br>10. КОНФИДЕНЦИАЛЬНОСТЬ <br>Компания гарантирует Пользователю конфиденциальность предоставленных данных при регистрации на Сайте и совершении заказа. Компания получает данные Пользователя для обработки и завершения заказа Пользователя.  <br>Настоящим Пользователь дает свое Согласие:  <br>- на обработку персональных данных (Ф.И.О., пол, дата и место рождения, паспортные данные, адреса регистрации и места жительства, контактные данные - домашний/мобильный телефон, адрес личной электронной почты) как с использованием автоматизированных средств обработки моих персональных данных, так и без использования средств автоматизации;<br>- на передачу персональных данных третьим лицам (организациям, которые в соответствии с договором с Компанией, осуществляют доставку заказанных Пользователем товаров).<br>Пользователь несет ответственность за конфиденциальность своего регистрационного имени (логина) и пароля, а также за все действия, произведенные под данным именем (логином) и паролем. Пользователь освобождает Компанию от ответственности за убытки, возникшие по причине несанкционированного использования третьими лицами данных Пользователя.  <br>Компания не несет ответственности за сведения, предоставленные Пользователем на Сайте в общедоступной форме.<br><br>11. ЗАКЛЮЧИТЕЛЬНЫЕ ПОЛОЖЕНИЯ <br>Настоящая оферта вступает в силу в момент подтверждения оплаты заказа и действует до полного завершения сторонами своих обязательств. Условия оферты не подлежат изменению после принятия этих условий Покупателем и согласования заказа.<br><br>12. РЕКВИЗИТЫ <br>ИП Ежов Андрей Анатольевич ИНН 590700669415,  ОГРНИП 312590434800020.  <br>Юридический адрес: Россия, г. Пермь, 6141039, ул. Сибирская дом 57. <br>Телефон: 8-800-333-1659<br>Банковские реквизиты: <br>Западно-Уральский банк ОАО «Сбербанк России» <br>БИК 045773603 <br>к/с 30101810900000000603 <br>расчетный счет 40802810549770004095</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--footer-->
+      <footer class="container-fluid footer-block">
+        <div class="container footer-box">
+          <div class="footer-box-menu">
+            <div class="footer-box-menu__column">
+              <p class="footer-box-menu__column-p" onclick="window.location='catalog.html';">Каталог</p>
+              <p class="footer-box-menu__column-p" onclick="window.location='stock.html';">Акции</p>
+              <p class="footer-box-menu__column-p" onclick="window.location='delivery.html';">Оплата/Доставка</p>
+              <p class="footer-box-menu__column-p" onclick="window.location='warranty.html';">Гарантия</p>
+              <p class="footer-box-menu__column-p" onclick="window.location='faq.html';">FAQ</p>
+              <p class="footer-box-menu__column-p" onclick="window.location='price-list.html';">Прайс-лист</p>
+            </div>
+            <div class="footer-box-menu__column">
+              <p class="footer-box-menu__column-p" onclick="window.location='index.html';">О нас</p>
+              <p class="footer-box-menu__column-p" onclick="window.location='reviews.html';">Отзывы</p>
+              <p class="footer-box-menu__column-p" onclick="window.location='blog.html';">Блог</p>
+              <p class="footer-box-menu__column-p" onclick="window.location='dzagi_tube.html';">Dzagi-tube</p>
+              <p class="footer-box-menu__column-p" onclick="window.location='books.html';">Книга "Сам вырастил"</p>
+            </div>
+            <div class="footer-box-menu__column">
+              <p class="footer-box-menu__column-p" onclick="window.location='index.html';">Вход</p>
+              <p class="footer-box-menu__column-p" onclick="window.location='index.html';">Регистрация</p>
+              <p class="footer-box-menu__column-p" onclick="window.location='index.html';">Восстановление пароля</p>
+            </div>
+          </div>
+          <div class="footer-box-container">
+            <div class="footer-box-contact">
+              <div class="footer-box-contact__number">8 (800) 333-16-59</div>
+              <div class="footer-box-contact__text">ИНТЕРНЕТ-МАГАЗИН: ПН-ПТ 08:00–22:00<br>СБ-ВС 12:00—22:00, ЗВОНОК БЕСПЛАТНЫЙ</div>
+              <div class="footer-box-contact__number">8 (495) 120-59-42</div>
+              <div class="footer-box-contact__text">ГРОУШОП В МОСКВЕ: ПН–ВС 12:00–21:00</div>
+            </div>
+            <div class="footer-box-connect">
+              <div class="footer-box-connect__search">
+                <input class="footer-box-connect__search-input" placeholder="Я ищю...">
+                <svg class="icon icon-search search-footer" role="img">
+                  <use xlink:href="static/img/svg/symbol/sprite.svg#search"></use>
+                </svg>
+              </div>
+              <div class="footer-box-connect__social">
+                <div class="footer-box-connect__social-icon">
+                  <svg class="icon icon-tg social-footer" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#tg"></use>
+                  </svg>
+                </div>
+                <div class="footer-box-connect__social-icon">
+                  <svg class="icon icon-ig social-footer" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#ig"></use>
+                  </svg>
+                </div>
+                <div class="footer-box-connect__social-icon">
+                  <svg class="icon icon-yt social-footer" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#yt"></use>
+                  </svg>
+                </div>
+                <div class="footer-box-connect__social-icon">
+                  <svg class="icon icon-fb social-footer" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#fb"></use>
+                  </svg>
+                </div>
+                <div class="footer-box-connect__social-icon">
+                  <svg class="icon icon-vk social-footer" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#vk"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="footer-box-connect__mail">Остались вопросы пишите на почту<br><a class="footer-box-connect__mail-a">sales@dzagigrow.ru</a></div>
+            </div>
+          </div>
+          <div class="up">
+            <svg class="icon icon-down-arrow " role="img">
+              <use xlink:href="static/img/svg/symbol/sprite.svg#down-arrow"></use>
+            </svg>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="static/js/jquery.js"></script>
+    <script src="static/js/slick.min.js"></script>
+    <script src="static/js/jquery.fancybox.js"></script>
+    <script src="static/js/libs.min.js"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>

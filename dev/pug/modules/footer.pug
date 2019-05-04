@@ -1,0 +1,46 @@
+//footer
+footer.container-fluid.footer-block
+    .container.footer-box
+        .footer-box-menu
+            .footer-box-menu__column
+                p.footer-box-menu__column-p(onclick="window.location='catalog.html';") Каталог
+                p.footer-box-menu__column-p(onclick="window.location='stock.html';") Акции
+                p.footer-box-menu__column-p(onclick="window.location='delivery.html';") Оплата/Доставка
+                p.footer-box-menu__column-p(onclick="window.location='warranty.html';") Гарантия
+                p.footer-box-menu__column-p(onclick="window.location='faq.html';") FAQ
+                p.footer-box-menu__column-p(onclick="window.location='price-list.html';") Прайс-лист
+            .footer-box-menu__column
+                p.footer-box-menu__column-p(onclick="window.location='index.html';") О нас
+                p.footer-box-menu__column-p(onclick="window.location='reviews.html';") Отзывы
+                p.footer-box-menu__column-p(onclick="window.location='blog.html';") Блог
+                p.footer-box-menu__column-p(onclick="window.location='dzagi_tube.html';") Dzagi-tube
+                p.footer-box-menu__column-p(onclick="window.location='books.html';") Книга "Сам вырастил"
+            .footer-box-menu__column
+                p.footer-box-menu__column-p(onclick="window.location='index.html';") Вход
+                p.footer-box-menu__column-p(onclick="window.location='index.html';") Регистрация
+                p.footer-box-menu__column-p(onclick="window.location='index.html';") Восстановление пароля
+        .footer-box-container
+            .footer-box-contact
+                .footer-box-contact__number 8 (800) 333-16-59
+                .footer-box-contact__text ИНТЕРНЕТ-МАГАЗИН: ПН-ПТ 08:00–22:00<br>СБ-ВС 12:00—22:00, ЗВОНОК БЕСПЛАТНЫЙ
+                .footer-box-contact__number 8 (495) 120-59-42
+                .footer-box-contact__text ГРОУШОП В МОСКВЕ: ПН–ВС 12:00–21:00
+            .footer-box-connect
+                .footer-box-connect__search
+                    input.footer-box-connect__search-input(placeholder='Я ищю...')
+                    +icon('search', 'search-footer')
+                .footer-box-connect__social
+                    .footer-box-connect__social-icon
+                        +icon('tg', 'social-footer')(href= "javascript:void(0)")
+                    .footer-box-connect__social-icon
+                        +icon('ig', 'social-footer')(href= "javascript:void(0)")
+                    .footer-box-connect__social-icon
+                        +icon('yt', 'social-footer')(href= "javascript:void(0)")
+                    .footer-box-connect__social-icon
+                        +icon('fb', 'social-footer')(href= "javascript:void(0)")
+                    .footer-box-connect__social-icon
+                        +icon('vk', 'social-footer')(href= "javascript:void(0)")
+                .footer-box-connect__mail Остались вопросы пишите на почту<br>
+                    a.footer-box-connect__mail-a sales@dzagigrow.ru
+        .up
+            +icon('down-arrow')

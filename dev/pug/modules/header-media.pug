@@ -1,0 +1,167 @@
+//Мобильная версия
+.container-fluid.header-media
+    .header-media__menu
+        +icon('menu', 'menu-header-media')
+    .header-media__box
+        img.header-media__box-img(src='static/img/general/logo.png' alt'' href='javascript:void(0)')
+        .header-media__box-icon
+            +icon('search', 'search-header-media')
+            .header-main__basket-icon
+                +icon('basket', 'basket-header-media')
+                span.header-media__box-icon-number 5
+    .header-media__box-search
+        .header-main__search
+            input.header-main__search-input(type="text" placeholder="Я ищу...")
+            .header-main__search-icon(onclick="window.location='result.html';")
+                +icon('search', 'search-header-media-open')
+.menu-media-full
+    .container-fluid.menu-media-full__open
+        .header-media-open
+            .header-media-open__menu
+                +icon('close', 'close-header-media')
+            .header-media-open__box
+                img.header-media-open__box-img(src='static/img/general/logo.png' alt'' href='javascript:void(0)')
+                .header-media-open__box-icon
+                    span.header-media-open__box-icon-span Пермь
+                        +icon('arrow-point', 'arrow-point-city')
+                    include city-popup
+                    span.header-media-open__box-icon-span Вход
+        .header-media-nav
+            +icon('menu', 'menu-header')
+            a.header-media-nav__a Категория товаров
+        .menu-media-category
+            .menu-media-category__border
+                .menu-media-category__item Гроубоксы
+                    +icon('arrow-point', 'subcategor')
+                .menu-media-category__sub
+                    .menu-media-category__sub-element Маленькие
+                    .menu-media-category__sub-element Средние
+                    .menu-media-category__sub-element Большие
+            .menu-media-category__border
+                .menu-media-category__item Гидропонные системы
+                    +icon('arrow-point', 'subcategor')
+                .menu-media-category__sub
+                    .menu-media-category__sub-element Маленькие
+                    .menu-media-category__sub-element Средние
+                    .menu-media-category__sub-element Большие
+            .menu-media-category__border
+                .menu-media-category__item Удобрения
+                    +icon('arrow-point', 'subcategor')
+                .menu-media-category__sub
+                    .menu-media-category__sub-element Маленькие
+                    .menu-media-category__sub-element Средние
+                    .menu-media-category__sub-element Большие
+            .menu-media-category__border
+                .menu-media-category__item Освещение
+                    +icon('arrow-point', 'subcategor')
+                .menu-media-category__sub
+                    .menu-media-category__sub-element Маленькие
+                    .menu-media-category__sub-element Средние
+                    .menu-media-category__sub-element Большие
+            .menu-media-category__border
+                .menu-media-category__item Полив
+                    +icon('arrow-point', 'subcategor')
+                .menu-media-category__sub
+                    .menu-media-category__sub-element Маленькие
+                    .menu-media-category__sub-element Средние
+                    .menu-media-category__sub-element Большие
+            .menu-media-category__border
+                .menu-media-category__item Очистка воздуха
+                    +icon('arrow-point', 'subcategor')
+                .menu-media-category__sub
+                    .menu-media-category__sub-element Маленькие
+                    .menu-media-category__sub-element Средние
+                    .menu-media-category__sub-element Большие
+            .menu-media-category__border
+                .menu-media-category__item Автоматизация
+                    +icon('arrow-point', 'subcategor')
+                .menu-media-category__sub
+                    .menu-media-category__sub-element Маленькие
+                    .menu-media-category__sub-element Средние
+                    .menu-media-category__sub-element Большие
+            .menu-media-category__border
+                .menu-media-category__item Аксессуары
+                    +icon('arrow-point', 'subcategor')
+                .menu-media-category__sub
+                    .menu-media-category__sub-element Маленькие
+                    .menu-media-category__sub-element Средние
+                    .menu-media-category__sub-element Большие
+            .menu-media-category__border
+                .menu-media-category__item Гроубоксы
+                    +icon('arrow-point', 'subcategor')
+                .menu-media-category__sub
+                    .menu-media-category__sub-element Маленькие
+                    .menu-media-category__sub-element Средние
+                    .menu-media-category__sub-element Большие
+            .menu-media-category__border
+                .menu-media-category__item Гидропонные системы
+                    +icon('arrow-point', 'subcategor')
+                .menu-media-category__sub
+                    .menu-media-category__sub-element Маленькие
+                    .menu-media-category__sub-element Средние
+                    .menu-media-category__sub-element Большие
+            .menu-media-category__border
+                .menu-media-category__item Удобрения
+                    +icon('arrow-point', 'subcategor')
+                .menu-media-category__sub
+                    .menu-media-category__sub-element Маленькие
+                    .menu-media-category__sub-element Средние
+                    .menu-media-category__sub-element Большие
+            .menu-media-category__border
+                .menu-media-category__item Освещение
+                    +icon('arrow-point', 'subcategor')
+            .menu-media-category__border
+                .menu-media-category__item Полив
+                    +icon('arrow-point', 'subcategor')
+            .menu-media-category__border
+                .menu-media-category__item Очистка воздуха
+                    +icon('arrow-point', 'subcategor')
+            .menu-media-category__border
+                .menu-media-category__item Автоматизация
+                    +icon('arrow-point', 'subcategor')
+            .menu-media-category__border
+                .menu-media-category__item Аксессуары
+                    +icon('arrow-point', 'subcategor')
+            .menu-media-category__border
+                .menu-media-category__item Полив
+                    +icon('arrow-point', 'subcategor')
+            .menu-media-category__border
+                .menu-media-category__item Очистка воздуха
+                    +icon('arrow-point', 'subcategor')
+            .menu-media-category__border
+                .menu-media-category__item Автоматизация
+                    +icon('arrow-point', 'subcategor')
+            .menu-media-category__border
+                .menu-media-category__item Аксессуары
+                    +icon('arrow-point', 'subcategor')
+        .header-media-main
+            .header-media-main__border
+                .header-media-main__border-item Прайс-лист
+            .header-media-main__border
+                .header-media-main__border-item Акции
+            .header-media-main__border
+                .header-media-main__border-item Доставка и оплата
+            .header-media-main__border
+                .header-media-main__border-item Отзывы
+            .header-media-main__border
+                .header-media-main__border-item Контакты
+            .header-media-main__border
+                .header-media-main__border-item Блог
+            .header-media-main__border
+                .header-media-main__border-item Dzagi tube
+            .header-media-main__border
+                .header-media-main__border-item Книги
+        .header-media-contact
+            .header-media-contact__number
+                .header-media-contact__number-box
+                    .header-media-contact__phone(href="tel:+78003331659") 8(800)333-16-59
+                    .header-media-contact__hang Бесплатный звонок<br>по России
+                .header-media-contact__number-box
+                    .header-media-contact__phone(href="tel:+74951205945") 8(495)120-59-45
+                    .header-media-contact__hang Звонок<br>по Москве и МО
+            .header-media-contact__social
+                 +icon('tg', 'social')(href= "javascript:void(0)")
+                 +icon('ig', 'social')(href= "javascript:void(0)")
+                 +icon('yt', 'social')(href= "javascript:void(0)")
+                 +icon('fb', 'social')(href= "javascript:void(0)")
+                 +icon('vk', 'social')(href= "javascript:void(0)")

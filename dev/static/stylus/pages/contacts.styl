@@ -1,0 +1,64 @@
+.contacts
+  background-color white
+  padding 35px 30px
+  line-height 24px
+
+  &__title
+    font-size rem(24px)
+    font-weight bold
+
+  &__descr
+    font-size rem(18px)
+    padding-top 15px
+
+
+  &__block
+    display flex
+    justify-content space-between
+
+    @media screen and (max-width desktopWidth)
+      flex-direction column
+
+  &__box
+    &-btn
+      margin-top 30px
+
+  &__item
+    width 590px
+    margin-top 30px
+
+    @media screen and (max-width desktopWidth)
+      width 100%
+
+    &-title
+      color greenDG
+      padding-bottom 10px
+      font-size rem(18px)
+      font-weight bold
+
+    &-photo
+      width 100%
+      overflow hidden
+
+      &-img
+        width 100%
+
+    &-a
+      color greenDG
+      text-decoration underline
+
+  &__map
+    width 100%
+    max-height 500px
+    overflow hidden
+    margin-top 40px
+
+    &-img
+      width 100%
+
+  &__social
+    width 100%
+
+    &-img
+      @media screen and (max-width tableWidth)
+        width 100%

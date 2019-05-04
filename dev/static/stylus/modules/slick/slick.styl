@@ -1,0 +1,79 @@
+//слайдер топ
+.slick-dots
+  bottom 5%
+  right 5%
+  width 90px
+
+  @media screen and (max-width smallPhoneWidth)
+    bottom 1%
+    right -2%
+
+.slick-dots li
+
+  @media screen and (max-width smallPhoneWidth)
+    margin 0
+
+.slick-dots li button
+  background-color transparent
+  color transparent
+
+.slick-dots li button:before
+  font-family "slick"
+  font-size rem(50px)
+  color white
+  opacity 1
+
+  @media screen and (max-width smallPhoneWidth)
+    font-size rem(30px)
+
+.slick-dots li.slick-active button::before
+  color greenDG
+  opacity 1
+
+.slick-dots li button:hover::before, .slick-dots li button:focus::before
+  color greenDG
+
+.slick-dotted.slick-slider
+  margin-bottom 0
+
+
+//arrow
+.slick-prev::before, .slick-next::before
+  color greyTextDG
+  font-size rem(70px)
+  line-height 0
+  opacity 0.4
+
+.slick-prev::before
+  content: '‹'
+
+.slick-next::before
+  content: '›'
+
+.slick-prev
+  left 0
+  z-index:1
+
+.slick-next
+  right 0
+
+//преимущество
+.advantage__arrow-left
+  left -55px
+
+  @media screen and (max-width bigPhoneWidth)
+    left -35px
+
+.advantage__arrow-right
+  right -55px
+
+  @media screen and (max-width bigPhoneWidth)
+    right -35px
+
+//отзывы
+.reviews__arrow-left
+  left -25px
+
+.reviews__arrow-right
+  right -25px
+

@@ -1,0 +1,142 @@
+.pay-delivery
+  line-height 24px
+
+  &__menu
+    display flex
+
+    &-item
+      padding 0 35px 15px 35px
+      color greyTextDG
+      font-weight bold
+      border-bottom 2px solid greyDG
+      text-transform uppercase
+      cursor pointer
+
+      &:hover
+        color greenDG
+        border-bottom 2px solid greenDG
+
+  &__block
+    padding 40px 35px
+    background-color white
+
+.delivery
+  display none
+
+  &__unit
+    &-title
+      font-weight bold
+      padding 30px 0 20px 0
+      font-size rem(18px)
+
+    &-box
+      display flex
+      align-items center
+
+      @media screen and (max-width tableWidth)
+        flex-wrap wrap
+
+      &-img
+        max-width 100%
+
+      &-cont
+        max-width 275px
+        min-width 275px
+        margin-right 15px
+        width 100%
+        display flex
+        align-items center
+        justify-content center
+
+        @media screen and (max-width tableWidth)
+          justify-content flex-start
+          margin-bottom 20px
+
+          @media screen and (max-width bigPhoneWidth)
+            min-width 100px
+
+      &-text
+        &-span
+          color greenDG
+
+        &-a
+          text-decoration underline
+          color greenDG
+
+  &__pickup
+    &-title
+      @extend .delivery__unit-title
+
+    &-box
+      display flex
+      justify-content space-between
+
+      @media screen and (max-width desktopWidth)
+        flex-wrap wrap
+
+    &-maps
+      width 50%
+      overflow hidden
+
+      @media screen and (max-width desktopWidth)
+        width 100%
+        margin-bottom 20px
+
+      &-img
+        width 100%
+
+    &-info
+      width 48%
+
+      @media screen and (max-width desktopWidth)
+        width 100%
+
+  &__courier
+    display flex
+    justify-content space-between
+
+    @media screen and (max-width smalDesktopWidth)
+      flex-wrap wrap
+
+    &-item
+      width 50%
+
+      &:last-child
+        width 48%
+
+      @media screen and (max-width desktopWidth)
+        width 49%
+
+        &:last-child
+          width 49%
+
+        @media screen and (max-width smalDesktopWidth)
+          width 100%
+
+          &:last-child
+            width 100%
+
+      &-title
+        @extend .delivery__unit-title
+
+  &__trust
+    &-title
+      @extend .delivery__unit-title
+
+
+.pay
+  display none
+  &-text
+    line-height 24px
+
+  &-img
+    @media screen and (max-width tableWidth)
+      width 100%
+
+
+.pay-delivery__menu-item.opened
+  color greenDG
+  border-bottom 2px solid greenDG
+
+.tab.opened
+  display block

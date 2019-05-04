@@ -1,0 +1,50 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Книги'
+    - var pageClass = 'books-page'
+
+block content
+
+    .container-fluid
+        .container.page
+            include ../modules/breadcrumb
+            .page-title «Книга «Сам вырастил!» Геннадий Синичкин»
+            .books
+                .books__box
+                    .books__keep
+                        .books__keep-title Оглавление
+                        .keep
+                            .keep__chapter Глава 1. Физиология растения
+                            .keep__paragraph
+                                a.keep__paragraph-item § 0. Слово автора
+                                a.keep__paragraph-item § 1. Теория: то, что должен знать каждый
+                                a.keep__paragraph-item § 2. Фотосинтез
+                                a.keep__paragraph-item § 3. Фотопериодизм
+                                a.keep__paragraph-item § 4. Половая жизнь растений
+                                a.keep__paragraph-item § 5. Взаимодействие растения с окружающей средой
+                                a.keep__paragraph-item § 6. Идеальные условия
+                            .keep__chapter Глава 2. Как оборудовать рабочее помещение
+                            .keep__paragraph
+                                a.keep__paragraph-item § 7. Выбор помещения и метода выращивания
+                                a.keep__paragraph-item § 8. Возможнные сложности, которые надо предвидеть заранее
+                                a.keep__paragraph-item § 9. Идеальное рабочее помещение
+                                a.keep__paragraph-item § 10. Список покупок
+                                a.keep__paragraph-item § 11. Советы вперемешку
+                                a.keep__paragraph-item § 12. Паутинный клещ
+                            .keep__chapter Глава 3. Дневник культивирования
+                            .keep__paragraph
+                                a.keep__paragraph-item § 13. Выбор растения
+                                a.keep__paragraph-item § 14. Проращивание семян
+                                a.keep__paragraph-item § 15. Укоренение отводков
+                                a.keep__paragraph-item § 16. Период вегетативного роста
+                                a.keep__paragraph-item § 17. Период подготовки растения к цветению
+                                a.keep__paragraph-item § 18. Цветение
+                                a.keep__paragraph-item § 19. Период созревания
+                                a.keep__paragraph-item § 20. Сбор урожая и сушка
+                                a.keep__paragraph-item § 21. Заключение
+                    .books__cover
+                        .books__cover-box
+                            img.books__cover-img(src="static/img/content/book.png")
+
+                        button.btn-green.books__cover-btn Купить книгу

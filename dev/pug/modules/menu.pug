@@ -1,0 +1,19 @@
+//menu header
+.container-fluid.header-third
+    .container
+        .header-menu
+            .header-menu__primary
+                .header-menu__opener
+                    +icon('menu', 'menu-header')
+                    a.header-menu__primary-a Категория товаров
+                .menu-nav
+                    include menu-nav
+            .header-menu__box
+                .header-menu__main
+                        a.header-menu__main-a(href="price-list.html") Прайс-лист
+                        a.header-menu__main-a(href="stock.html") Акции
+                        a.header-menu__main-a(href="delivery.html") Доставка / Оплата
+                        a.header-menu__main-a(href="reviews.html") Отзывы
+                        a.header-menu__main-a(href="contacts.html") Контакты
+                .header-menu__login
+                        a.header-menu__login-a(href="login.html") Вход

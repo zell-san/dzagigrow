@@ -1,0 +1,110 @@
+.products_ad
+
+  &__text
+    @extend .products__text
+    padding-bottom 10px
+
+    @media screen and (max-width bigPhoneWidth)
+      padding-bottom 0
+
+    &-title
+      @extend .products__text-title
+      padding-left 15px
+
+      @media screen and (max-width smalDesktopWidth)
+        padding-left 0
+
+    &-all
+      @extend .products__text-all
+
+  &__teaser
+    @extend .products__teaser
+
+    @media screen and (max-width desktopWidth)
+      flex-wrap wrap
+
+      @media screen and (max-width tableWidth)
+        overflow visible
+
+    &-item
+      @extend .products__teaser-item
+
+      @media screen and (max-width tableWidth)
+        padding-left 0
+        display flex!important
+        justify-content center
+
+      &:nth-child(2n+1)
+        @media screen and (max-width smalDesktopWidth)
+          padding-left 0
+
+
+
+.ticket_ad
+  @extend .ticket
+
+  @media screen and (max-width desktopWidth)
+    max-width 285px
+
+    @media screen and (max-width smalDesktopWidth)
+      max-width 350px
+      width 100%
+
+      @media screen and (max-width bigPhoneWidth)
+        width 100%
+        height 100%
+        padding 15px
+        margin: 0 25px;
+
+  &-header
+    @extend .ticket-header
+
+    &__text
+      @extend .ticket-header__text
+
+    &__rating
+      @extend .ticket-header__rating
+
+      &-span
+        @extend .ticket-header__rating-span
+
+  &-title
+    @extend .ticket-title
+
+  &-product
+    @extend .ticket-product
+
+    &__img
+      @extend .ticket-product__img
+
+    &__discount
+      @extend .ticket-product__discount
+
+      @media screen and (max-width bigPhoneWidth)
+        size (45px 25px)
+
+  &-buy
+    @extend .ticket-buy
+    border-top 1px solid greyDGdark
+
+    &__price
+      @extend .ticket-buy__price
+
+      &-old
+        @extend .ticket-buy__price-old
+
+      &-new
+        @extend .ticket-buy__price-new
+
+        @media screen and (max-width bigPhoneWidth)
+          padding-bottom 0
+
+    &__btn
+      @extend .ticket-buy__btn
+
+
+
+
+
+
+

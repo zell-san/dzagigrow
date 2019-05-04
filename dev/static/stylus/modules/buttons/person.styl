@@ -1,0 +1,30 @@
+.btn-more-min
+  @extend .btn-more
+  size (180px 50px)
+  margin-right 10px
+  font-size rem(14px)
+  background-color white
+
+  @media screen and (max-width tableWidth)
+    width 47%
+    margin-right 0
+
+.btn-del
+  @extend .btn-more-min
+  border 1px solid redDG
+  color redDG
+
+  &:hover
+    background-color redDG
+
+  @media screen and (max-width tableWidth)
+    width 50%
+    margin-right 10px
+
+.btn-person
+  @extend .btn-green
+  size (180px 50px)
+
+  @media screen and (max-width tableWidth)
+    width 100%
+    margin-top 10px

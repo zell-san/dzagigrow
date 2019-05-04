@@ -1,0 +1,207 @@
+//мобильная версия
+.header-media
+  background-color white
+  justify-content space-between
+  display none
+  z-index 1500
+
+  @media screen and (max-width smalDesktopWidth)
+    display flex
+    position fixed
+
+  &__menu
+    background-color greenDG
+    padding 15px
+    display flex
+
+  &__box
+    width 100%
+    justify-content space-between
+    align-items center
+    display flex
+    padding 0 25px
+
+    &-img
+      size (105px 45px)
+      cursor pointer
+
+      @media screen and (max-width bigPhoneWidth)
+        size (63px 27px)
+
+    &-icon
+      justify-content space-between
+      display flex
+      align-items center
+      position relative
+
+      &-number
+        @extend .header-main__basket-number
+
+        @media screen and (max-width bigPhoneWidth)
+          size (18px)
+          padding 2px 6px
+
+    &-search
+      position absolute
+      padding 20px 10px
+      height 80px
+      background-color white
+      width 100%
+      top 55px
+      border-top 1px solid greyDGdark
+      display none
+
+//открывается
+.menu-media-full
+  width 100%
+  position fixed
+  z-index 1500
+  top 0
+  display none
+  background-color white
+  height 100%
+
+  &__open
+    display flex
+    flex-direction column
+    height 100%
+
+//верхняя часть
+.header-media-open
+  justify-content space-between
+  display none
+  width 100%
+
+  @media screen and (max-width smalDesktopWidth)
+    display flex
+
+  &__menu
+    background-color blueDG
+    padding 15px
+    display flex
+
+  &__box
+    width 100%
+    justify-content space-between
+    align-items center
+    display flex
+    padding 0 25px
+
+    &-img
+      size (105px 45px)
+      cursor pointer
+
+      @media screen and (max-width bigPhoneWidth)
+        size (63px 27px)
+
+    &-icon
+      width 120px
+      justify-content space-between
+      display flex
+      align-items center
+      position relative
+      margin-left 10px
+
+      &-span
+        display flex
+        cursor pointer
+
+        @media screen and (max-width 380px)
+          padding-bottom 5px
+
+//свернутые категории
+.header-media-nav
+  width 100%
+  padding 14px 25px
+  background-color greenDG
+  font-size rem(16px)
+  display flex
+  align-items center
+
+  &__a
+    color white
+    padding-left 25px
+
+//меню
+.header-media-main
+  overflow scroll
+  height 100%
+
+  &__border
+    padding 0 20px
+
+    &-item
+      padding 14px 25px
+      cursor pointer
+      border-bottom 1px solid greyDGdark
+      font-size rem(13)
+      display flex
+      align-items center
+
+//контакты
+.header-media-contact
+  align-items center
+  display flex
+  padding 25px 15px 35px 15px
+  justify-content space-between
+  flex-wrap wrap
+
+  @media screen and (max-width tableWidth)
+    justify-content center
+
+  &__number
+    display flex
+    justify-content center
+
+    @media screen and (max-width smalDesktopWidth)
+      flex-wrap wrap
+
+    &-box
+      display flex
+
+      @media screen and (max-width tableWidth)
+        width 275px
+
+        @media screen and (max-width 714px)
+          margin-bottom 10px
+
+  &__phone
+    font-size rem(18px)
+    padding 0 10px
+    cursor pointer
+
+  &__hang
+    font-size rem(10px)
+    padding-right 20px
+    color greyDGdark
+
+  &__social
+    display flex
+    margin-left 10px
+
+//развернутые категории
+.menu-media-category
+  display none
+  flex-direction column
+  height 100%
+  overflow scroll
+
+  &__border
+    @extend .header-media-main__border
+
+
+  &__item
+    @extend .header-media-main__border-item
+    justify-content space-between
+    display flex
+
+  &__sub
+    padding-left 30px
+    display none
+    border-bottom 1px solid greyDGdark
+
+    &-element
+      padding 14px 10px
+      cursor pointer
+      font-size rem(13)
+      align-items center

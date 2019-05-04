@@ -1,0 +1,415 @@
+.product
+  margin-top 15px
+
+  &-box
+    display flex
+    justify-content space-between
+
+    @media screen and (max-width desktopWidth)
+      flex-direction column
+
+  &-left
+    padding 35px 30px
+    width 895px
+    background-color white
+    display flex
+
+    @media screen and (max-width desktopWidth)
+      width 100%
+
+      @media screen and (max-width tableWidth)
+        flex-direction column
+
+        @media screen and (max-width bigPhoneWidth)
+          padding 20px 15px
+
+    &__gallery
+      &-big
+        display flex
+        align-items center
+        justify-content center
+        size (300px 320px)
+        border 1px solid greyDGdark
+
+        @media screen and (max-width tableWidth)
+          width 100%
+
+      &-small
+        display flex
+        align-items center
+        width 340px
+        height 100px
+        padding 0 20px
+        margin-left -19px
+        margin-top 20px
+
+        @media screen and (max-width tableWidth)
+          margin-right -19px
+          width 410px
+          margin-bottom 15px
+
+          @media screen and (max-width tableWidth)
+            width 250px
+
+            @media screen and (max-width bigPhoneWidth)
+              width 330px
+              margin-top 10px
+
+      &-item
+        width 100%
+        margin 0 5px
+
+    &__info
+      padding-left 30px
+      line-height 24px
+
+      @media screen and (max-width tableWidth)
+        padding-left 0
+
+      &-name
+        font-weight bold
+        font-size rem(24px)
+
+      &-star
+        margin-top 10px
+        @extend .reviews_all__star
+
+        &-span
+          @extend .reviews_all__star-span
+
+      &-atribute
+        &-a
+          color greyTextDG
+          padding-left 5px
+
+      &-descr
+        padding-top 10px
+
+      &-important
+        padding-top 40px
+
+  &-right
+    width 370px
+    background-color white
+    height 100%
+
+    @media screen and (max-width desktopWidth)
+      width 100%
+      margin-top 20px
+      display flex
+
+      @media screen and (max-width tableWidth)
+        flex-direction column
+
+    &__top
+      padding 35px 30px
+
+      @media screen and (max-width desktopWidth)
+        width 50%
+        display flex
+        flex-direction column
+        justify-content center
+
+        @media screen and (max-width tableWidth)
+          width 100%
+          flex-direction initial
+          justify-content flex-start
+
+    &__price
+      font-weight bold
+      font-size rem(41px)
+
+      @media screen and (max-width bigPhoneWidth)
+        font-size rem(32px)
+
+    &__btn
+      width 100%
+      margin-top 20px
+      height 45px
+
+      @media screen and (max-width tableWidth)
+        display none
+
+    &__bottom
+      padding 35px 30px
+      background-color blueDG
+
+      @media screen and (max-width desktopWidth)
+        width 50%
+
+        @media screen and (max-width tableWidth)
+          width 100%
+
+      &-box
+        display flex
+        align-items center
+        margin-bottom 20px
+
+      &-price
+        @media screen and (max-width tableWidth)
+          display none!important
+
+        &-media
+          display none!important
+
+          @media screen and (max-width tableWidth)
+            display flex!important
+            margin-left 30px
+            align-items center
+
+            @media screen and (max-width bigPhoneWidth)
+              margin-left 15px
+              margin-right 0!important
+
+      &-pay
+        width 100%
+        margin-top 20px
+
+  &-none
+    @extend .product-right
+    display none
+
+    &__bottom
+      &-input
+        @extend .search-def-input
+        border-radius 3px
+        margin-top 10px
+
+  &-authorized
+    @extend .product-right
+    display none
+
+    &__bottom
+      &-a
+        font-weight bold
+        margin-right 5px
+
+  &-menu
+    display flex
+    margin-top 40px
+
+    @media screen and (max-width tableWidth)
+      flex-wrap wrap
+
+    &-item
+      @media screen and (max-width tableWidth)
+        background-color greyDG
+        border 1px solid greenDG
+        border-radius 3px
+        margin 0 15px 15px 0
+        size (150px 40px)
+        padding 0
+        display flex
+        align-items center
+        justify-content center
+        color greenDG
+
+        @media screen and (max-width bigPhoneWidth)
+          width 125px
+
+          &:nth-child(even)
+            margin-right 0
+
+      &:hover
+        @media screen and (max-width tableWidth)
+          border 1px solid greenDG
+          color white
+          background-color greenDG
+
+  &-about
+    @extend .pay-delivery__menu-item
+
+  &-brief
+    @extend .pay-delivery__menu-item
+
+  &-use
+    @extend .pay-delivery__menu-item
+
+  &-reviews
+    @extend .pay-delivery__menu-item
+
+  &-inside
+    line-height 24px
+
+    @media screen and (max-width tableWidth)
+      display none
+
+    &__media
+      display none
+      line-height 24px
+
+      @media screen and (max-width tableWidth)
+        display flex
+
+    &__about
+      background-color white
+      padding 30px 35px
+      display none
+
+    &__brief
+      @extend .product-inside__about
+
+    &__use
+      @extend .product-inside__about
+
+    &__reviews
+      display none
+
+  &__extra-item
+    padding-left 15px
+    background-color white
+    position relative
+
+    &:first-child
+      padding-left 0
+
+    &-plus
+      position (absolute 45% none none 0)
+      font-size rem(50px)
+      color greenDG
+
+  &__additionally-item
+    padding-right 15px
+
+    @media screen and (max-width tableWidth)
+      padding-right 0
+      margin-right 15px
+
+    &:last-child
+      padding-right 0
+
+  &__media-basket
+    display none
+
+    @media screen and (max-width tableWidth)
+      display flex
+      width 100%
+      padding-bottom 30px
+
+    &-box
+      background-color greenDG
+      padding 10px
+      border-radius 3px
+      display flex
+      color white
+      justify-content center
+      width 100%
+
+
+
+
+.products__extra
+  @extend .products__teaser
+  padding-top 15px
+
+  & .slick-list.draggable
+    padding-left 0!important
+
+.products__additionally
+  @extend .products__teaser
+  margin-bottom 30px
+  padding-top 15px
+
+  & .slick-list.draggable
+    padding-left 0!important
+
+
+.about-product
+  &__block
+    display flex
+    justify-content space-between
+
+    @media screen and (max-width tableWidth)
+      flex-direction column
+
+  &__box
+    size (685px 100%)
+
+    @media screen and (max-width tableWidth)
+      width 100%
+      margin-bottom 20px
+
+    &-item
+      padding 10px 15px
+      margin auto -15px
+      line-height normal
+      height auto
+
+      &:nth-child(odd)
+        background-color greyDG
+
+      &-a
+        font-weight bold
+        margin-right 5px
+
+  &__img
+    size (495px 275px)
+    overflow hidden
+    margin-left 15px
+
+    @media screen and (max-width tableWidth)
+      size (100%)
+      margin-left 0
+
+    &-item
+      width 100%
+
+  &__title
+    font-weight bold
+    padding 20px 0
+
+.price-cell
+  display flex
+  margin-right 15px
+
+  &__symbol
+    @extend .quantity-number__symbol
+
+  &__input
+    border 1px solid greyDGdark
+    size (65px 42px)
+    text-align center
+
+    @media screen and (max-width bigPhoneWidth)
+      size (50px 32px)
+
+.bonus-box
+  &__text
+    font-size rem(12px)
+
+  &__number
+    font-size rem(16px)
+    color greenDG
+
+.ticket__add
+  @extend .ticket
+
+  @media screen and (max-width desktopWidth)
+    size (447px 100%)
+
+    @media screen and (max-width smalDesktopWidth)
+      width 351px
+
+      @media screen and (max-width tableWidth)
+        width 100%
+
+.ticket__extra
+  @extend .ticket
+  @extend .ticket__add
+  border none
+
+
+.product-left__gallery-small .slick-prev::before, .product-left__gallery-small .slick-next::before
+  font-size rem(48px)
+
+.product-about.opened, .product-brief.opened, .product-use.opened, .product-reviews.opened
+  color greenDG
+  border-bottom 2px solid greenDG
+
+  @media screen and (max-width tableWidth)
+    border 1px solid greenDG
+    color white
+    background-color greenDG
+
+.tab.opened
+  display block

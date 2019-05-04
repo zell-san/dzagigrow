@@ -1,0 +1,73 @@
+.books
+  &__box
+    display flex
+
+    @media screen and (max-width desktopWidth)
+      flex-direction column
+
+  &__keep
+    font-size rem(13px)
+    padding-right 7px
+    width 50%
+
+    @media screen and (max-width desktopWidth)
+      width 100%
+      padding-right 0
+
+    &-title
+      background-color #4d887b
+      color white
+      padding 15px 35px
+      font-weight bold
+
+  &__cover
+    padding-left 7px
+    width 50%
+    display flex
+    align-items center
+    flex-direction column
+
+    @media screen and (max-width desktopWidth)
+      width 100%
+      padding-left 0
+      margin-top 30px
+
+    &-box
+      @media screen and (max-width desktopWidth)
+        width 100%
+
+    &-img
+      width 100%
+
+    &-btn
+      margin-top 30px
+      background-color #4d887b
+      border none
+
+.keep
+  background-color white
+  padding 20px 35px 10px 35px
+
+  &__chapter
+    color #4d887b
+    font-size rem(16px)
+    text-decoration underline
+
+    &:hover
+      text-decoration none
+
+  &__paragraph
+    padding-bottom 20px
+    padding-top 10px
+    color blackTextDG
+    display flex
+    flex-direction column
+
+    &-item
+      padding 6px 0
+      text-decoration underline
+
+      &:hover
+        text-decoration none
+
+

@@ -1,0 +1,143 @@
+.products
+
+  &__text
+    display flex
+    justify-content space-between
+    padding 35px 0 10px 0
+    align-items flex-end
+
+    @media screen and (max-width bigPhoneWidth)
+      padding 25px 0 0 0
+
+    &-title
+      font-family HelveBold
+      font-size rem(24px)
+
+      @media screen and (max-width bigPhoneWidth)
+        font-size rem(14px)
+
+        @media screen and (max-width smallPhoneWidth)
+          font-size rem(16px)
+
+    &-all
+      color greyTextDG
+      font-weight bold
+      cursor pointer
+
+  &__teaser
+    display flex
+    overflow hidden
+
+    &-item
+      padding 15px 0 0 15px
+      outline none
+
+
+.ticket
+  display flex
+  flex-direction column
+  justify-content space-between
+  padding 20px 25px 20px 25px
+  background-color white
+  border 1px solid greyDGdark
+  width 308px
+  height 450px
+
+  @media screen and (max-width bigPhoneWidth)
+    padding 15px
+
+
+  &-header
+    display flex
+    justify-content space-between
+    align-items center
+    line-height 1
+
+    &__text
+      color greyTextDG
+      font-family HelveLightItalic
+
+    &__rating
+      display flex
+      unicode-bidi bidi-override
+      direction rtl
+
+      &-span
+        font-size rem(20px)
+        display inline-block
+        position relative
+        width 16px
+        opacity 0.2
+
+        &:hover
+        &:hover ~ span
+          opacity 1
+
+        &:hover:before
+        &:hover ~ span:before
+          content: "\2605";
+          position: absolute;
+          color yellowDG
+          cursor pointer
+
+  &-title
+    text-decoration underline
+    font-size rem(16px)
+    padding-top 13px
+    cursor pointer
+
+  &-product
+    position relative
+    display inline-block
+    text-align center
+    overflow hidden
+
+    &__img
+      margin 35px 0 10px 0
+      cursor pointer
+      width 100%
+
+    &__discount
+      size (60px 30px)
+      background-color redDG
+      color white
+      display flex
+      align-items center
+      justify-content center
+      border-radius 3px
+      position absolute
+      top 25px
+
+      @media screen and (max-width bigPhoneWidth)
+        size (45px 25px)
+
+  &-buy
+    display flex
+    justify-content space-between
+    align-items end
+
+    &__price
+
+      &-old
+        font-size rem(16px)
+        text-decoration line-through
+        color greyTextDG
+        line-height 1
+
+      &-new
+        font-size rem(24px)
+        line-height 1
+        padding-bottom 8px
+
+    &__btn
+      padding-top 15px
+
+      &-text:hover ~ .icon-tick-inside
+        display none
+        visibility hidden
+
+
+
+
+
+

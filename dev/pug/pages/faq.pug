@@ -1,0 +1,76 @@
+extends ../layout/main
+
+block variables
+    - var title = 'faq'
+    - var pageClass = 'faq-page'
+
+block content
+
+    .container-fluid
+        .container.page
+            include ../modules/breadcrumb
+            .page-title FAQ
+            .page-search
+                input.page-search__input(type="text" placeholder="Я ищу...")
+                .page-search__icon
+                    +icon('search', 'search-header')
+            .faq
+                .faq__item
+                    .faq__item-box
+                        .faq__item-title Стоимость доставки?
+                        +icon('arrow-point', 'arrow-point-faq')
+                    .faq__item-inside
+                        .faq__item-inside-info Стоимость доставки?
+                .faq__item
+                    .faq__item-box
+                        .faq__item-title Товар не пришел, что делать?
+                        +icon('arrow-point', 'arrow-point-faq')
+                    .faq__item-inside
+                        .faq__item-inside-info Товар не пришел, что делать?
+                .faq__item
+                    .faq__item-box
+                        .faq__item-title Где я могу получить посылку?
+                        +icon('arrow-point', 'arrow-point-faq')
+                    .faq__item-inside
+                        .faq__item-inside-info Оформите и оплатите заказ, указав в комментариях "самовывоз" и контактный телефон. Дождитесь звонка оператора, который сообщит о готовности заказа. Адрес склада: г. Пермь, ул. Дзержинского, 59 лит K (пройти до конца здания до вывески "DG").
+                .faq__item
+                    .faq__item-box
+                        .faq__item-title Стоимость доставки?
+                        +icon('arrow-point', 'arrow-point-faq')
+                    .faq__item-inside
+                        .faq__item-inside-info Стоимость доставки?
+                .faq__item
+                    .faq__item-box
+                        .faq__item-title Стоимость доставки?
+                        +icon('arrow-point', 'arrow-point-faq')
+                    .faq__item-inside
+                        .faq__item-inside-info Стоимость доставки?
+                .faq__item
+                    .faq__item-box
+                        .faq__item-title Стоимость доставки?
+                        +icon('arrow-point', 'arrow-point-faq')
+                    .faq__item-inside
+                        .faq__item-inside-info Стоимость доставки?
+            .faq-footer
+                .faq-footer__box Не нашли ответа?<br>Спросите и мы ответим
+                .faq-footer__inside
+                    input.faq-footer__inside-input(type="text" placeholder="Напишите вопрос")
+                    .faq-footer__inside-btn
+                        a.faq-footer__inside-btn-a Отмена
+                        button.btn-green Отправить
+            .faq-footer
+                .faq-footer__box Не нашли ответа?<br>Спросите и мы ответим
+                .faq-footer__inside
+                    .faq-footer__inside-block
+                        .faq-footer__inside-box
+                            a.faq-footer__inside-a Имя
+                            input.faq-footer__inside-input
+                        .faq-footer__inside-box
+                            a.faq-footer__inside-a Email
+                            input.faq-footer__inside-input
+                    .faq-footer__inside-message
+                        a.faq-footer__inside-a Сообщение
+                        textarea.faq-footer__inside-textarea
+                    .faq-footer__inside-btn
+                        button.btn-green Отправить
+

@@ -1,0 +1,100 @@
+//товары для аута
+.out-block
+  background-color white
+
+.products_out
+  padding-bottom 50px
+
+  &__text
+    @extend .products__text
+
+    &-title
+      @extend .products__text-title
+
+    &-all
+      @extend .products__text-all
+
+  &__teaser
+    @extend .products__teaser
+
+    @media screen and (max-width smalDesktopWidth)
+      flex-wrap wrap
+
+      @media screen and (max-width tableWidth)
+        display flex!important
+        justify-content center
+
+    &-item
+      @extend .products__teaser-item
+
+      @media screen and (max-width tableWidth)
+        padding-left 0
+        display flex!important
+        justify-content center
+
+      &:first-child
+        padding-left 0
+
+      @media screen and (max-width smalDesktopWidth)
+        &:nth-child(2n+1)
+          padding-left 0
+
+.ticket_out
+  @extend .ticket
+
+  @media screen and (max-width desktopWidth)
+    max-width 293px
+
+    @media screen and (max-width smalDesktopWidth)
+      max-width 351px
+      width 100%
+
+      @media screen and (max-width bigPhoneWidth)
+        @extend .ticket_ad
+
+  &-header
+    @extend .ticket-header
+
+    &__text
+      @extend .ticket-header__text
+
+    &__rating
+      @extend .ticket-header__rating
+
+      &-span
+        @extend .ticket-header__rating-span
+
+  &-title
+    @extend .ticket-title
+
+  &-product
+    @extend .ticket-product
+
+    &__img
+      @extend .ticket-product__img
+
+    &__discount
+      @extend .ticket-product__discount
+
+      @media screen and (max-width bigPhoneWidth)
+        size (45px 25px)
+
+  &-buy
+    @extend .ticket-buy
+    border-top 1px solid greyDGdark
+
+    &__price
+      @extend .ticket-buy__price
+
+      &-old
+        @extend .ticket-buy__price-old
+
+      &-new
+        @extend .ticket-buy__price-new
+
+        @media screen and (max-width bigPhoneWidth)
+          padding-bottom 0
+
+    &__btn
+      @extend .ticket-buy__btn
+

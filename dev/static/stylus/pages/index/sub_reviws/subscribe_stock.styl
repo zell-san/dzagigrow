@@ -1,0 +1,69 @@
+//подписаться на новости
+.subscribe-block-stock
+  @extend .subscribe-block
+  height 100%
+
+  &__cont
+    @extend .subscribe-block__cont
+    justify-content flex-end
+    display flex
+
+    @media screen and (max-width desktopWidth)
+      justify-content center
+
+.subscribe-stock
+  @extend .subscribe-box
+  flex-direction column
+  align-items flex-start
+  width 615px
+  padding-left 0
+
+  @media screen and (max-width 1750px)
+    width 75%
+
+  @media screen and (max-width desktopWidth)
+    width 460px
+
+    @media screen and (max-width tableWidth)
+      padding 40px 0
+
+  &__left
+    @extend .subscribe-box__left
+    width 100%
+
+    &-span
+      @extend .subscribe-box__left-span
+
+    &-second
+      font-size rem(16px)
+      color white
+      width 100%
+      line-height 27px
+      padding 15px 0
+
+  &__right
+    @extend .subscribe-box__right
+
+    @media screen and (max-width tableWidth)
+      width 100%
+
+    &-sbc
+      @extend .subscribe-box__right-sbc
+
+    &-input
+      @extend .subscribe-box__right-input
+
+      @media screen and (max-width tableWidth)
+        width 100%
+
+    &-policy
+      @extend .subscribe-box__right-policy
+
+    &-checkbox
+      @extend .subscribe-box__right-checkbox
+
+    &-label
+      @extend .subscribe-box__right-label
+
+
+

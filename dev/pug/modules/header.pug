@@ -1,0 +1,62 @@
+header
+    //first header
+    .full
+        .container-fluid
+            .container
+                .header-nav
+                    .header-nav__left
+                        a.header-nav__left-a(href= "blog.html") Блог
+                        a.header-nav__left-a(href= "dzagi_tube.html") Dzagi tube
+                        a.header-nav__left-a(href= "books.html") Книги
+                    .header-nav__right
+                        .header-nav__right-social
+                            +icon('tg', 'social')
+                            +icon('ig', 'social')(href= "javascript:void(0)")
+                            +icon('yt', 'social')(href= "javascript:void(0)")
+                            +icon('fb', 'social')(href= "javascript:void(0)")
+                            +icon('vk', 'social')(href= "javascript:void(0)")
+                        .header-nav__right-phone(href="tel:+78003331659") 8(800)333-16-59
+                        .header-nav__right-hang Бесплатный звонок<br>по России
+                        .header-nav__right-phone(href="tel:+74951205945") 8(495)120-59-45
+                        .header-nav__right-hang Звонок<br>по Москве и МО
+        //second header
+        .container-fluid.header-second
+            .container
+                .header-main
+                    .header-main__logo
+                        img.header-main__logo-img(onclick="window.location='index.html';" src="static/img/general/logo.png" alt="")
+                    .header-main__city(href="javascript:PopUpHide()")
+                        a.header-main__city-a Пермь
+                        +icon('arrow-point', 'arrow-point-city')
+                        include city-popup
+                    .header-main__search
+                        input.header-main__search-input(type="text" placeholder="Я ищу...")
+                        .header-main__search-icon(onclick="window.location='result.html';")
+                            +icon('search', 'search-header')
+                    .header-main__basket
+                        .header-main__basket-box
+                            .header-main__basket-icon
+                                +icon('basket', 'basket-header')
+                                span.header-main__basket-number 5
+                            .header-main__basket-cache
+                                span.header-main__basket-hang Сумма
+                                a.header-main__basket-sum 45 000 р
+                            .basket-block#basket-block(href="javascript:void(0)")
+                                +icon('close', 'close-basket')
+                                .basket-block__title Корзина
+                                .basket-block__item
+                                    +icon('cancel', 'cancel-basket')
+                                    .basket-block__item-preview
+                                        img.basket-block__item-preview-img(src='static/img/content/growbox.png')
+                                    .basket-block__item-name Фитолампа<br>15 Ватт E27 (Биколор)
+                                    .basket-block__item-price 2 470р
+                                .basket-block__bottom
+                                    .basket-block__bottom-sum
+                                        span Итог:
+                                        span.basket-block__bottom-sum-span 2 470р
+                                    .basket-block__bottom-btn.btn-green-big Перейти в корзину
+
+
+
+    include ../modules/menu
+    include ../modules/header-media

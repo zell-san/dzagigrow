@@ -1,0 +1,825 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Личный кабинет'
+    - var pageClass = 'cabinet-page'
+
+block content
+
+    .container-fluid
+        .container.page
+            .cabinet
+                .cabinet-sidebar
+                    .cabinet-sidebar__menu
+                        .cabinet-sidebar__item(data-tab='.cabinet-place__personal-orders')
+                            .cabinet-sidebar__border
+                                +icon('order', 'cabinet-menu')
+                                a.saidbar-nav__item-a Мои заказы
+                        .cabinet-sidebar__item(data-tab='.cabinet-place__personal-data')
+                            .cabinet-sidebar__border
+                                +icon('user', 'cabinet-menu')
+                                a.saidbar-nav__item-a Личные данные
+                        .cabinet-sidebar__item(data-tab='.cabinet-place__personal-subscriptions')
+                            .cabinet-sidebar__border
+                                +icon('check-box', 'cabinet-menu')
+                                a.saidbar-nav__item-a Мои подписки
+                        .cabinet-sidebar__item(data-tab='.cabinet-place__personal-bonus')
+                            .cabinet-sidebar__border.cabinet-sidebar__border-last
+                                +icon('prize', 'cabinet-menu')
+                                a.saidbar-nav__item-a Бонусы
+                    .blog-sbc
+                        p.blog-sbc__p Знания
+                        span.blog-sbc__span Стань продвинутым гровером. Получай полезные статьи раз в две недели!
+                        .blog-sbc__sbc
+                            input.blog-sbc__sbc-input(placeholder='Ваш почтовый адрес')
+                        .blog-sbc__policy
+                            input.blog-sbc__policy-checkbox#checkbox_sbc(type='checkbox')
+                            label(for='checkbox_sbc').blog-sbc__policy-label Я согласен на обработку персональных данных, а также с условиями подписки
+                        button.btn-subscribe.blog-sbc__btn Подписаться
+
+                .cabinet-place
+                    .cabinet-place__personal-area.tab.opened
+                        include ../modules/breadcrumb
+                        .page-title Личный кабинет
+                        .cabinet-place__menu-media
+                            .cabinet-sidebar__menu
+                                .cabinet-sidebar__item
+                                    .cabinet-sidebar__border
+                                        +icon('order', 'cabinet-menu')
+                                        a.saidbar-nav__item-a Мои заказы
+                                .cabinet-sidebar__item
+                                    .cabinet-sidebar__border
+                                        +icon('user', 'cabinet-menu')
+                                        a.saidbar-nav__item-a Личные данные
+                                .cabinet-sidebar__item
+                                    .cabinet-sidebar__border
+                                        +icon('check-box', 'cabinet-menu')
+                                        a.saidbar-nav__item-a Мои подписки
+                                .cabinet-sidebar__item
+                                    .cabinet-sidebar__border.cabinet-sidebar__border-last
+                                        +icon('prize', 'cabinet-menu')
+                                        a.saidbar-nav__item-a Бонусы
+                        .cabinet-place__personal-descr «Привет! В личном кабинете ты можешь<br>изменить настройки своей учётной записи, отследить заказ, оформить<br>подписку на блог.»
+                        .cabinet-place__personal-grid
+                            .cabinet-place__personal-grid-item
+                                +icon('order', 'cabinet-grid')
+                                a.cabinet-place__personal-grid-item-a Мои заказы
+                            .cabinet-place__personal-grid-item
+                                +icon('user', 'cabinet-grid')
+                                a.cabinet-place__personal-grid-item-a Личные данные
+                            .cabinet-place__personal-grid-item
+                                +icon('check-box', 'cabinet-grid')
+                                a.cabinet-place__personal-grid-item-a Мои подписки
+                            .cabinet-place__personal-grid-item
+                                +icon('prize', 'cabinet-grid')
+                                a.cabinet-place__personal-grid-item-a Бонусы
+                    .cabinet-place__personal-orders.tab
+                        include ../modules/breadcrumb
+                        .page-title Мои заказы
+                        .cabinet-place__menu-media
+                            .cabinet-sidebar__menu
+                                .cabinet-sidebar__item
+                                    .cabinet-sidebar__border
+                                        +icon('order', 'cabinet-menu')
+                                        a.saidbar-nav__item-a Мои заказы
+                                .cabinet-sidebar__item
+                                    .cabinet-sidebar__border
+                                        +icon('user', 'cabinet-menu')
+                                        a.saidbar-nav__item-a Личные данные
+                                .cabinet-sidebar__item
+                                    .cabinet-sidebar__border
+                                        +icon('check-box', 'cabinet-menu')
+                                        a.saidbar-nav__item-a Мои подписки
+                                .cabinet-sidebar__item
+                                    .cabinet-sidebar__border.cabinet-sidebar__border-last
+                                        +icon('prize', 'cabinet-menu')
+                                        a.saidbar-nav__item-a Бонусы
+                        .cabinet-place__personal-descr Текст «Здесь вы можете отследить статус своих заказов или повторить заказ».
+                        .personal-orders__menu
+                            .personal-orders__menu-item.opened(data-tab='.personal-orders__inside-active') Активные заказы
+                            .personal-orders__menu-item(data-tab='.personal-orders__inside-all') Все заказы
+                        .personal-orders__inside
+                            .personal-orders__inside-active.tab.opened
+                                .personal-orders__inside-active-item
+                                    .personal-orders__inside-atribut
+                                        .personal-orders__inside-atribut-box
+                                            .personal-orders__inside-atribut-item Номер заказа
+                                            .personal-orders__inside-atribut-so № 89059
+                                        .personal-orders__inside-atribut-box
+                                            .personal-orders__inside-atribut-item Дата
+                                            .personal-orders__inside-atribut-so 22:30<br>09.10.2018
+                                        .personal-orders__inside-atribut-box
+                                            .personal-orders__inside-atribut-item Сумма заказа
+                                            .personal-orders__inside-atribut-so 57 230руб
+                                        .personal-orders__inside-atribut-box
+                                            .personal-orders__inside-atribut-item Статус оплаты
+                                            .personal-orders__inside-atribut-so Оплачено
+                                        .personal-orders__inside-atribut-box
+                                            .personal-orders__inside-atribut-item Статус доставки
+                                            .personal-orders__inside-atribut-so В работе
+                                        .personal-orders__inside-atribut-box
+                                            .personal-orders__inside-atribut-item Статус заказа
+                                            .personal-orders__inside-atribut-so ------
+                                        .personal-orders__inside-atribut-box
+                                            .personal-orders__inside-atribut-item Количество бонусов
+                                            .personal-orders__inside-atribut-so.personal-orders__inside-atribut-so-bonus
+                                                .personal-orders__inside-atribut-so-block
+                                                    span Списано
+                                                    a.personal-orders__inside-atribut-so-off -150б
+                                                .personal-orders__inside-atribut-so-block
+                                                    span Начисленно
+                                                    a.personal-orders__inside-atribut-so-on 210б
+                                    .personal-orders__inside-details
+                                        .personal-orders__inside-nomination
+                                            .personal-orders__inside-nomination-item Товар
+                                            .personal-orders__inside-nomination-item Цена
+                                            .personal-orders__inside-nomination-item Количество
+                                            .personal-orders__inside-nomination-item Со скидкой
+                                        .personal-orders__inside-product
+                                           .personal-orders__inside-product-item
+                                               .personal-orders__inside-product-box
+                                                   .personal-orders__inside-product-preview
+                                                        img.personal-orders__inside-product-img(src='static/img/content/growbox.png')
+                                                   .personal-orders__inside-product-name Фитолампа 15 Ватт E27 (Биколор)
+                                               .personal-orders__inside-product-price 2 470р
+                                               .personal-orders__inside-product-quantity 1
+                                               .personal-orders__inside-product-discount 2 470р
+                                           .personal-orders__inside-product-item
+                                               .personal-orders__inside-product-box
+                                                   .personal-orders__inside-product-preview
+                                                       img.personal-orders__inside-product-img(src='static/img/content/growbox.png')
+                                                   .personal-orders__inside-product-name Фитолампа 15 Ватт E27 (Биколор)
+                                               .personal-orders__inside-product-price 2 470р
+                                               .personal-orders__inside-product-quantity 1
+                                               .personal-orders__inside-product-discount 2 470р
+                                        .personal-orders__inside-repeat
+                                            .btn-person Повторить заказ
+                                        .personal-orders__inside-change
+                                            .btn-del Удалить заказ
+                                            .btn-more-min Изменить заказ
+                                            .btn-person Оформить заказ
+                            .personal-orders__inside-all.tab
+                                .personal-orders__inside-active-item
+                                    .personal-orders__inside-atribut
+                                        .personal-orders__inside-atribut-box
+                                            .personal-orders__inside-atribut-item Номер заказа
+                                            .personal-orders__inside-atribut-so № 89059
+                                        .personal-orders__inside-atribut-box
+                                            .personal-orders__inside-atribut-item Дата
+                                            .personal-orders__inside-atribut-so 22:30<br>09.10.2018
+                                        .personal-orders__inside-atribut-box
+                                            .personal-orders__inside-atribut-item Сумма заказа
+                                            .personal-orders__inside-atribut-so 57 230руб
+                                        .personal-orders__inside-atribut-box
+                                            .personal-orders__inside-atribut-item Статус оплаты
+                                            .personal-orders__inside-atribut-so.personal-orders__inside-atribut-so-red Не оплачено
+                                        .personal-orders__inside-atribut-box
+                                            .personal-orders__inside-atribut-item Статус доставки
+                                            .personal-orders__inside-atribut-so В работе
+                                        .personal-orders__inside-atribut-box
+                                            .personal-orders__inside-atribut-item Статус заказа
+                                            .personal-orders__inside-atribut-so ------
+                                        .personal-orders__inside-atribut-box
+                                            .personal-orders__inside-atribut-item Количество бонусов
+                                            .personal-orders__inside-atribut-so.personal-orders__inside-atribut-so-bonus
+                                                .personal-orders__inside-atribut-so-block
+                                                    span Списано
+                                                    a.personal-orders__inside-atribut-so-off -150б
+                                                .personal-orders__inside-atribut-so-block
+                                                    span Начисленно
+                                                    a.personal-orders__inside-atribut-so-on 210б
+                                    .personal-orders__inside-details
+                                        .personal-orders__inside-nomination
+                                            .personal-orders__inside-nomination-item Товар
+                                            .personal-orders__inside-nomination-item Цена
+                                            .personal-orders__inside-nomination-item Количество
+                                            .personal-orders__inside-nomination-item Со скидкой
+                                        .personal-orders__inside-product
+                                            .personal-orders__inside-product-item
+                                                .personal-orders__inside-product-box
+                                                    .personal-orders__inside-product-preview
+                                                        img.personal-orders__inside-product-img(src='static/img/content/growbox.png')
+                                                    .personal-orders__inside-product-name Фитолампа 15 Ватт E27 (Биколор)
+                                                .personal-orders__inside-product-price 2 470р
+                                                .personal-orders__inside-product-quantity 1
+                                                .personal-orders__inside-product-discount 2 470р
+                                            .personal-orders__inside-product-item
+                                                .personal-orders__inside-product-box
+                                                    .personal-orders__inside-product-preview
+                                                        img.personal-orders__inside-product-img(src='static/img/content/growbox.png')
+                                                    .personal-orders__inside-product-name Фитолампа 15 Ватт E27 (Биколор)
+                                                .personal-orders__inside-product-price 2 470р
+                                                .personal-orders__inside-product-quantity 1
+                                                .personal-orders__inside-product-discount 2 470р
+                                        .personal-orders__inside-repeat
+                                            .btn-person Повторить заказ
+                                        .personal-orders__inside-change
+                                            .btn-del Удалить заказ
+                                            .btn-more-min Изменить заказ
+                                            .btn-person Оформить заказ
+                                .personal-orders__inside-active-item
+                                    .personal-orders__inside-atribut
+                                        .personal-orders__inside-atribut-box
+                                            .personal-orders__inside-atribut-item Номер заказа
+                                            .personal-orders__inside-atribut-so № 89059
+                                        .personal-orders__inside-atribut-box
+                                            .personal-orders__inside-atribut-item Дата
+                                            .personal-orders__inside-atribut-so 22:30<br>09.10.2018
+                                        .personal-orders__inside-atribut-box
+                                            .personal-orders__inside-atribut-item Сумма заказа
+                                            .personal-orders__inside-atribut-so 57 230руб
+                                        .personal-orders__inside-atribut-box
+                                            .personal-orders__inside-atribut-item Статус оплаты
+                                            .personal-orders__inside-atribut-so Оплачено
+                                        .personal-orders__inside-atribut-box
+                                            .personal-orders__inside-atribut-item Статус доставки
+                                            .personal-orders__inside-atribut-so ------
+                                        .personal-orders__inside-atribut-box
+                                            .personal-orders__inside-atribut-item Статус заказа
+                                            .personal-orders__inside-atribut-so ------
+                                        .personal-orders__inside-atribut-box
+                                            .personal-orders__inside-atribut-item Количество бонусов
+                                            .personal-orders__inside-atribut-so.personal-orders__inside-atribut-so-bonus
+                                                .personal-orders__inside-atribut-so-block
+                                                    span Списано
+                                                    a.personal-orders__inside-atribut-so-off -150б
+                                                .personal-orders__inside-atribut-so-block
+                                                    span Начисленно
+                                                    a.personal-orders__inside-atribut-so-on 210б
+                                    .personal-orders__inside-details
+                                        .personal-orders__inside-nomination
+                                            .personal-orders__inside-nomination-item Товар
+                                            .personal-orders__inside-nomination-item Цена
+                                            .personal-orders__inside-nomination-item Количество
+                                            .personal-orders__inside-nomination-item Со скидкой
+                                        .personal-orders__inside-product
+                                            .personal-orders__inside-product-item
+                                                .personal-orders__inside-product-box
+                                                    .personal-orders__inside-product-preview
+                                                        img.personal-orders__inside-product-img(src='static/img/content/growbox.png')
+                                                    .personal-orders__inside-product-name Фитолампа 15 Ватт E27 (Биколор)
+                                                .personal-orders__inside-product-price 2 470р
+                                                .personal-orders__inside-product-quantity 1
+                                                .personal-orders__inside-product-discount 2 470р
+                                            .personal-orders__inside-product-item
+                                                .personal-orders__inside-product-box
+                                                    .personal-orders__inside-product-preview
+                                                        img.personal-orders__inside-product-img(src='static/img/content/growbox.png')
+                                                    .personal-orders__inside-product-name Фитолампа 15 Ватт E27 (Биколор)
+                                                .personal-orders__inside-product-price 2 470р
+                                                .personal-orders__inside-product-quantity 1
+                                                .personal-orders__inside-product-discount 2 470р
+                                        .personal-orders__inside-repeat
+                                            .btn-person Повторить заказ
+                                        .personal-orders__inside-change
+                                            .btn-del Удалить заказ
+                                            .btn-more-min Изменить заказ
+                                            .btn-person Оформить заказ
+                                .personal-orders__inside-active-item
+                                    .personal-orders__inside-atribut
+                                        .personal-orders__inside-atribut-box
+                                            .personal-orders__inside-atribut-item Номер заказа
+                                            .personal-orders__inside-atribut-so № 89059
+                                        .personal-orders__inside-atribut-box
+                                            .personal-orders__inside-atribut-item Дата
+                                            .personal-orders__inside-atribut-so 22:30<br>09.10.2018
+                                        .personal-orders__inside-atribut-box
+                                            .personal-orders__inside-atribut-item Сумма заказа
+                                            .personal-orders__inside-atribut-so 57 230руб
+                                        .personal-orders__inside-atribut-box
+                                            .personal-orders__inside-atribut-item Статус оплаты
+                                            .personal-orders__inside-atribut-so Оплачено
+                                        .personal-orders__inside-atribut-box
+                                            .personal-orders__inside-atribut-item Статус доставки
+                                            .personal-orders__inside-atribut-so В работе
+                                        .personal-orders__inside-atribut-box
+                                            .personal-orders__inside-atribut-item Статус заказа
+                                            .personal-orders__inside-atribut-so ------
+                                        .personal-orders__inside-atribut-box
+                                            .personal-orders__inside-atribut-item Количество бонусов
+                                            .personal-orders__inside-atribut-so.personal-orders__inside-atribut-so-bonus
+                                                .personal-orders__inside-atribut-so-block
+                                                    span Списано
+                                                    a.personal-orders__inside-atribut-so-off -150б
+                                                .personal-orders__inside-atribut-so-block
+                                                    span Начисленно
+                                                    a.personal-orders__inside-atribut-so-on 210б
+                                    .personal-orders__inside-details
+                                        .personal-orders__inside-nomination
+                                            .personal-orders__inside-nomination-item Товар
+                                            .personal-orders__inside-nomination-item Цена
+                                            .personal-orders__inside-nomination-item Количество
+                                            .personal-orders__inside-nomination-item Со скидкой
+                                        .personal-orders__inside-product
+                                            .personal-orders__inside-product-item
+                                                .personal-orders__inside-product-box
+                                                    .personal-orders__inside-product-preview
+                                                        img.personal-orders__inside-product-img(src='static/img/content/growbox.png')
+                                                    .personal-orders__inside-product-name Фитолампа 15 Ватт E27 (Биколор)
+                                                .personal-orders__inside-product-price 2 470р
+                                                .personal-orders__inside-product-quantity 1
+                                                .personal-orders__inside-product-discount 2 470р
+                                            .personal-orders__inside-product-item
+                                                .personal-orders__inside-product-box
+                                                    .personal-orders__inside-product-preview
+                                                        img.personal-orders__inside-product-img(src='static/img/content/growbox.png')
+                                                    .personal-orders__inside-product-name Фитолампа 15 Ватт E27 (Биколор)
+                                                .personal-orders__inside-product-price 2 470р
+                                                .personal-orders__inside-product-quantity 1
+                                                .personal-orders__inside-product-discount 2 470р
+                                        .personal-orders__inside-repeat
+                                            .btn-person Повторить заказ
+                                        .personal-orders__inside-change
+                                            .btn-del Удалить заказ
+                                            .btn-more-min Изменить заказ
+                                            .btn-person Оформить заказ
+                                .personal-orders__inside-active-item
+                                    .personal-orders__inside-atribut
+                                        .personal-orders__inside-atribut-box
+                                            .personal-orders__inside-atribut-item Номер заказа
+                                            .personal-orders__inside-atribut-so № 89059
+                                        .personal-orders__inside-atribut-box
+                                            .personal-orders__inside-atribut-item Дата
+                                            .personal-orders__inside-atribut-so 22:30<br>09.10.2018
+                                        .personal-orders__inside-atribut-box
+                                            .personal-orders__inside-atribut-item Сумма заказа
+                                            .personal-orders__inside-atribut-so 57 230руб
+                                        .personal-orders__inside-atribut-box
+                                            .personal-orders__inside-atribut-item Статус оплаты
+                                            .personal-orders__inside-atribut-so Оплачено
+                                        .personal-orders__inside-atribut-box
+                                            .personal-orders__inside-atribut-item Статус доставки
+                                            .personal-orders__inside-atribut-so.personal-orders__inside-atribut-so-green Доставлено
+                                        .personal-orders__inside-atribut-box
+                                            .personal-orders__inside-atribut-item Статус заказа
+                                            .personal-orders__inside-atribut-so ------
+                                        .personal-orders__inside-atribut-box
+                                            .personal-orders__inside-atribut-item Количество бонусов
+                                            .personal-orders__inside-atribut-so.personal-orders__inside-atribut-so-bonus
+                                                .personal-orders__inside-atribut-so-block
+                                                    span Списано
+                                                    a.personal-orders__inside-atribut-so-off -150б
+                                                .personal-orders__inside-atribut-so-block
+                                                    span Начисленно
+                                                    a.personal-orders__inside-atribut-so-on 210б
+                                    .personal-orders__inside-details
+                                        .personal-orders__inside-nomination
+                                            .personal-orders__inside-nomination-item Товар
+                                            .personal-orders__inside-nomination-item Цена
+                                            .personal-orders__inside-nomination-item Количество
+                                            .personal-orders__inside-nomination-item Со скидкой
+                                        .personal-orders__inside-product
+                                            .personal-orders__inside-product-item
+                                                .personal-orders__inside-product-box
+                                                    .personal-orders__inside-product-preview
+                                                        img.personal-orders__inside-product-img(src='static/img/content/growbox.png')
+                                                    .personal-orders__inside-product-name Фитолампа 15 Ватт E27 (Биколор)
+                                                .personal-orders__inside-product-price 2 470р
+                                                .personal-orders__inside-product-quantity 1
+                                                .personal-orders__inside-product-discount 2 470р
+                                            .personal-orders__inside-product-item
+                                                .personal-orders__inside-product-box
+                                                    .personal-orders__inside-product-preview
+                                                        img.personal-orders__inside-product-img(src='static/img/content/growbox.png')
+                                                    .personal-orders__inside-product-name Фитолампа 15 Ватт E27 (Биколор)
+                                                .personal-orders__inside-product-price 2 470р
+                                                .personal-orders__inside-product-quantity 1
+                                                .personal-orders__inside-product-discount 2 470р
+                                        .personal-orders__inside-repeat
+                                            .btn-person Повторить заказ
+                                        .personal-orders__inside-change
+                                            .btn-del Удалить заказ
+                                            .btn-more-min Изменить заказ
+                                            .btn-person Оформить заказ
+                        .personal-orders__inside-media
+                            .personal-orders__inside-active.tab.opened
+                                .personal-orders__inside-active-item
+                                    .personal-orders__inside-atribut
+                                        .personal-orders__inside-atribut-box
+                                            .personal-orders__inside-atribut-item Номер заказа
+                                            .personal-orders__inside-atribut-so № 89059
+                                        .personal-orders__inside-atribut-box
+                                            .personal-orders__inside-atribut-item Дата
+                                            .personal-orders__inside-atribut-so 22:30<br>09.10.2018
+                                        .personal-orders__inside-atribut-box
+                                            .personal-orders__inside-atribut-item Сумма заказа
+                                            .personal-orders__inside-atribut-so 57 230руб
+                                        .personal-orders__inside-atribut-box
+                                            .personal-orders__inside-atribut-item Статус доставки
+                                            .personal-orders__inside-atribut-so В работе
+                                    .personal-orders__inside-details
+                                        .personal-orders__inside-atribut-box-media
+                                            .personal-orders__inside-atribut-item-media Статус оплаты
+                                            .personal-orders__inside-atribut-so-media Оплачено
+                                        .personal-orders__inside-atribut-box-media
+                                            .personal-orders__inside-atribut-item-media Статус заказа
+                                            .personal-orders__inside-atribut-so-media ------
+                                        .personal-orders__inside-atribut-box-media
+                                            .personal-orders__inside-atribut-item-media Количество бонусов
+                                            .personal-orders__inside-atribut-so-media.personal-orders__inside-atribut-so-bonus
+                                                .personal-orders__inside-atribut-so-block
+                                                    span Списано
+                                                    a.personal-orders__inside-atribut-so-off -150б
+                                                .personal-orders__inside-atribut-so-block
+                                                    span Начисленно
+                                                    a.personal-orders__inside-atribut-so-on 210б
+                                        .personal-orders__inside-product
+                                            .personal-orders__inside-product-item
+                                                .personal-orders__inside-product-box
+                                                    .personal-orders__inside-product-preview
+                                                        img.personal-orders__inside-product-img(src='static/img/content/growbox.png')
+                                                    .personal-orders__inside-product-name Фитолампа 15 Ватт E27 (Биколор)
+                                                .personal-orders__inside-nomination-media
+                                                    .personal-orders__inside-nomination-box
+                                                        .personal-orders__inside-nomination-item-media Цена
+                                                        .personal-orders__inside-product-price 2 470р
+                                                    .personal-orders__inside-nomination-box
+                                                        .personal-orders__inside-nomination-item-media Количество
+                                                        .personal-orders__inside-product-quantity 1
+                                                    .personal-orders__inside-nomination-box
+                                                        .personal-orders__inside-nomination-item-media Со скидкой
+                                                        .personal-orders__inside-product-discount 2 470р
+                                            .personal-orders__inside-product-item
+                                                .personal-orders__inside-product-box
+                                                    .personal-orders__inside-product-preview
+                                                        img.personal-orders__inside-product-img(src='static/img/content/growbox.png')
+                                                    .personal-orders__inside-product-name Фитолампа 15 Ватт E27 (Биколор)
+                                                .personal-orders__inside-nomination-media
+                                                    .personal-orders__inside-nomination-box
+                                                        .personal-orders__inside-nomination-item-media Цена
+                                                        .personal-orders__inside-product-price 2 470р
+                                                    .personal-orders__inside-nomination-box
+                                                        .personal-orders__inside-nomination-item-media Количество
+                                                        .personal-orders__inside-product-quantity 1
+                                                    .personal-orders__inside-nomination-box
+                                                        .personal-orders__inside-nomination-item-media Со скидкой
+                                                        .personal-orders__inside-product-discount 2 470р
+                                        .personal-orders__inside-repeat
+                                            .btn-person Повторить заказ
+                                        .personal-orders__inside-change
+                                            .btn-del Удалить заказ
+                                            .btn-more-min Изменить заказ
+                                            .btn-person Оформить заказ
+                                    .personal-orders__inside-more
+                                        +icon('arrow-point', 'arrow-point-order')
+
+                            .personal-orders__inside-all.tab
+                                .personal-orders__inside-active-item
+                                    .personal-orders__inside-atribut
+                                        .personal-orders__inside-atribut-box
+                                            .personal-orders__inside-atribut-item Номер заказа
+                                            .personal-orders__inside-atribut-so № 89059
+                                        .personal-orders__inside-atribut-box
+                                            .personal-orders__inside-atribut-item Дата
+                                            .personal-orders__inside-atribut-so 22:30<br>09.10.2018
+                                        .personal-orders__inside-atribut-box
+                                            .personal-orders__inside-atribut-item Сумма заказа
+                                            .personal-orders__inside-atribut-so 57 230руб
+                                        .personal-orders__inside-atribut-box
+                                            .personal-orders__inside-atribut-item Статус доставки
+                                            .personal-orders__inside-atribut-so В работе
+                                    .personal-orders__inside-details
+                                        .personal-orders__inside-atribut-box-media
+                                            .personal-orders__inside-atribut-item-media Статус оплаты
+                                            .personal-orders__inside-atribut-so-media Оплачено
+                                        .personal-orders__inside-atribut-box-media
+                                            .personal-orders__inside-atribut-item-media Статус заказа
+                                            .personal-orders__inside-atribut-so-media ------
+                                        .personal-orders__inside-atribut-box-media
+                                            .personal-orders__inside-atribut-item-media Количество бонусов
+                                            .personal-orders__inside-atribut-so-media.personal-orders__inside-atribut-so-bonus
+                                                .personal-orders__inside-atribut-so-block
+                                                    span Списано
+                                                    a.personal-orders__inside-atribut-so-off -150б
+                                                .personal-orders__inside-atribut-so-block
+                                                    span Начисленно
+                                                    a.personal-orders__inside-atribut-so-on 210б
+                                        .personal-orders__inside-product
+                                            .personal-orders__inside-product-item
+                                                .personal-orders__inside-product-box
+                                                    .personal-orders__inside-product-preview
+                                                        img.personal-orders__inside-product-img(src='static/img/content/growbox.png')
+                                                    .personal-orders__inside-product-name Фитолампа 15 Ватт E27 (Биколор)
+                                                .personal-orders__inside-nomination-media
+                                                    .personal-orders__inside-nomination-box
+                                                        .personal-orders__inside-nomination-item-media Цена
+                                                        .personal-orders__inside-product-price 2 470р
+                                                    .personal-orders__inside-nomination-box
+                                                        .personal-orders__inside-nomination-item-media Количество
+                                                        .personal-orders__inside-product-quantity 1
+                                                    .personal-orders__inside-nomination-box
+                                                        .personal-orders__inside-nomination-item-media Со скидкой
+                                                        .personal-orders__inside-product-discount 2 470р
+                                            .personal-orders__inside-product-item
+                                                .personal-orders__inside-product-box
+                                                    .personal-orders__inside-product-preview
+                                                        img.personal-orders__inside-product-img(src='static/img/content/growbox.png')
+                                                    .personal-orders__inside-product-name Фитолампа 15 Ватт E27 (Биколор)
+                                                .personal-orders__inside-nomination-media
+                                                    .personal-orders__inside-nomination-box
+                                                        .personal-orders__inside-nomination-item-media Цена
+                                                        .personal-orders__inside-product-price 2 470р
+                                                    .personal-orders__inside-nomination-box
+                                                        .personal-orders__inside-nomination-item-media Количество
+                                                        .personal-orders__inside-product-quantity 1
+                                                    .personal-orders__inside-nomination-box
+                                                        .personal-orders__inside-nomination-item-media Со скидкой
+                                                        .personal-orders__inside-product-discount 2 470р
+                                        .personal-orders__inside-repeat
+                                            .btn-person Повторить заказ
+                                        .personal-orders__inside-change
+                                            .btn-del Удалить заказ
+                                            .btn-more-min Изменить заказ
+                                            .btn-person Оформить заказ
+                                    .personal-orders__inside-more
+                                        +icon('arrow-point', 'arrow-point-order')
+                                .personal-orders__inside-active-item
+                                    .personal-orders__inside-atribut
+                                        .personal-orders__inside-atribut-box
+                                            .personal-orders__inside-atribut-item Номер заказа
+                                            .personal-orders__inside-atribut-so № 89059
+                                        .personal-orders__inside-atribut-box
+                                            .personal-orders__inside-atribut-item Дата
+                                            .personal-orders__inside-atribut-so 22:30<br>09.10.2018
+                                        .personal-orders__inside-atribut-box
+                                            .personal-orders__inside-atribut-item Сумма заказа
+                                            .personal-orders__inside-atribut-so 57 230руб
+                                        .personal-orders__inside-atribut-box
+                                            .personal-orders__inside-atribut-item Статус доставки
+                                            .personal-orders__inside-atribut-so В работе
+                                    .personal-orders__inside-details
+                                        .personal-orders__inside-atribut-box-media
+                                            .personal-orders__inside-atribut-item-media Статус оплаты
+                                            .personal-orders__inside-atribut-so-media Оплачено
+                                        .personal-orders__inside-atribut-box-media
+                                            .personal-orders__inside-atribut-item-media Статус заказа
+                                            .personal-orders__inside-atribut-so-media ------
+                                        .personal-orders__inside-atribut-box-media
+                                            .personal-orders__inside-atribut-item-media Количество бонусов
+                                            .personal-orders__inside-atribut-so-media.personal-orders__inside-atribut-so-bonus
+                                                .personal-orders__inside-atribut-so-block
+                                                    span Списано
+                                                    a.personal-orders__inside-atribut-so-off -150б
+                                                .personal-orders__inside-atribut-so-block
+                                                    span Начисленно
+                                                    a.personal-orders__inside-atribut-so-on 210б
+                                        .personal-orders__inside-product
+                                            .personal-orders__inside-product-item
+                                                .personal-orders__inside-product-box
+                                                    .personal-orders__inside-product-preview
+                                                        img.personal-orders__inside-product-img(src='static/img/content/growbox.png')
+                                                    .personal-orders__inside-product-name Фитолампа 15 Ватт E27 (Биколор)
+                                                .personal-orders__inside-nomination-media
+                                                    .personal-orders__inside-nomination-box
+                                                        .personal-orders__inside-nomination-item-media Цена
+                                                        .personal-orders__inside-product-price 2 470р
+                                                    .personal-orders__inside-nomination-box
+                                                        .personal-orders__inside-nomination-item-media Количество
+                                                        .personal-orders__inside-product-quantity 1
+                                                    .personal-orders__inside-nomination-box
+                                                        .personal-orders__inside-nomination-item-media Со скидкой
+                                                        .personal-orders__inside-product-discount 2 470р
+                                            .personal-orders__inside-product-item
+                                                .personal-orders__inside-product-box
+                                                    .personal-orders__inside-product-preview
+                                                        img.personal-orders__inside-product-img(src='static/img/content/growbox.png')
+                                                    .personal-orders__inside-product-name Фитолампа 15 Ватт E27 (Биколор)
+                                                .personal-orders__inside-nomination-media
+                                                    .personal-orders__inside-nomination-box
+                                                        .personal-orders__inside-nomination-item-media Цена
+                                                        .personal-orders__inside-product-price 2 470р
+                                                    .personal-orders__inside-nomination-box
+                                                        .personal-orders__inside-nomination-item-media Количество
+                                                        .personal-orders__inside-product-quantity 1
+                                                    .personal-orders__inside-nomination-box
+                                                        .personal-orders__inside-nomination-item-media Со скидкой
+                                                        .personal-orders__inside-product-discount 2 470р
+                                        .personal-orders__inside-repeat
+                                            .btn-person Повторить заказ
+                                        .personal-orders__inside-change
+                                            .btn-del Удалить заказ
+                                            .btn-more-min Изменить заказ
+                                            .btn-person Оформить заказ
+                                    .personal-orders__inside-more
+                                        +icon('arrow-point', 'arrow-point-order')
+                                .personal-orders__inside-active-item
+                                    .personal-orders__inside-atribut
+                                        .personal-orders__inside-atribut-box
+                                            .personal-orders__inside-atribut-item Номер заказа
+                                            .personal-orders__inside-atribut-so № 89059
+                                        .personal-orders__inside-atribut-box
+                                            .personal-orders__inside-atribut-item Дата
+                                            .personal-orders__inside-atribut-so 22:30<br>09.10.2018
+                                        .personal-orders__inside-atribut-box
+                                            .personal-orders__inside-atribut-item Сумма заказа
+                                            .personal-orders__inside-atribut-so 57 230руб
+                                        .personal-orders__inside-atribut-box
+                                            .personal-orders__inside-atribut-item Статус доставки
+                                            .personal-orders__inside-atribut-so В работе
+                                    .personal-orders__inside-details
+                                        .personal-orders__inside-atribut-box-media
+                                            .personal-orders__inside-atribut-item-media Статус оплаты
+                                            .personal-orders__inside-atribut-so-media Оплачено
+                                        .personal-orders__inside-atribut-box-media
+                                            .personal-orders__inside-atribut-item-media Статус заказа
+                                            .personal-orders__inside-atribut-so-media ------
+                                        .personal-orders__inside-atribut-box-media
+                                            .personal-orders__inside-atribut-item-media Количество бонусов
+                                            .personal-orders__inside-atribut-so-media.personal-orders__inside-atribut-so-bonus
+                                                .personal-orders__inside-atribut-so-block
+                                                    span Списано
+                                                    a.personal-orders__inside-atribut-so-off -150б
+                                                .personal-orders__inside-atribut-so-block
+                                                    span Начисленно
+                                                    a.personal-orders__inside-atribut-so-on 210б
+                                        .personal-orders__inside-product
+                                            .personal-orders__inside-product-item
+                                                .personal-orders__inside-product-box
+                                                    .personal-orders__inside-product-preview
+                                                        img.personal-orders__inside-product-img(src='static/img/content/growbox.png')
+                                                    .personal-orders__inside-product-name Фитолампа 15 Ватт E27 (Биколор)
+                                                .personal-orders__inside-nomination-media
+                                                    .personal-orders__inside-nomination-box
+                                                        .personal-orders__inside-nomination-item-media Цена
+                                                        .personal-orders__inside-product-price 2 470р
+                                                    .personal-orders__inside-nomination-box
+                                                        .personal-orders__inside-nomination-item-media Количество
+                                                        .personal-orders__inside-product-quantity 1
+                                                    .personal-orders__inside-nomination-box
+                                                        .personal-orders__inside-nomination-item-media Со скидкой
+                                                        .personal-orders__inside-product-discount 2 470р
+                                            .personal-orders__inside-product-item
+                                                .personal-orders__inside-product-box
+                                                    .personal-orders__inside-product-preview
+                                                        img.personal-orders__inside-product-img(src='static/img/content/growbox.png')
+                                                    .personal-orders__inside-product-name Фитолампа 15 Ватт E27 (Биколор)
+                                                .personal-orders__inside-nomination-media
+                                                    .personal-orders__inside-nomination-box
+                                                        .personal-orders__inside-nomination-item-media Цена
+                                                        .personal-orders__inside-product-price 2 470р
+                                                    .personal-orders__inside-nomination-box
+                                                        .personal-orders__inside-nomination-item-media Количество
+                                                        .personal-orders__inside-product-quantity 1
+                                                    .personal-orders__inside-nomination-box
+                                                        .personal-orders__inside-nomination-item-media Со скидкой
+                                                        .personal-orders__inside-product-discount 2 470р
+                                        .personal-orders__inside-repeat
+                                            .btn-person Повторить заказ
+                                        .personal-orders__inside-change
+                                            .btn-del Удалить заказ
+                                            .btn-more-min Изменить заказ
+                                            .btn-person Оформить заказ
+                                    .personal-orders__inside-more
+                                        +icon('arrow-point', 'arrow-point-order')
+                    .cabinet-place__personal-data.tab
+                        include ../modules/breadcrumb
+                        .page-title Личные данные
+                        .cabinet-place__menu-media
+                            .cabinet-sidebar__menu
+                                .cabinet-sidebar__item
+                                    .cabinet-sidebar__border
+                                        +icon('order', 'cabinet-menu')
+                                        a.saidbar-nav__item-a Мои заказы
+                                .cabinet-sidebar__item
+                                    .cabinet-sidebar__border
+                                        +icon('user', 'cabinet-menu')
+                                        a.saidbar-nav__item-a Личные данные
+                                .cabinet-sidebar__item
+                                    .cabinet-sidebar__border
+                                        +icon('check-box', 'cabinet-menu')
+                                        a.saidbar-nav__item-a Мои подписки
+                                .cabinet-sidebar__item
+                                    .cabinet-sidebar__border.cabinet-sidebar__border-last
+                                        +icon('prize', 'cabinet-menu')
+                                        a.saidbar-nav__item-a Бонусы
+                        .personal-data
+                            .personal-data__title
+                                span «Здесь вы можете изменить свои личные данные».
+                            .personal-data__info
+                                .personal-data__info-block
+                                    .personal-data__info-box
+                                        .personal-data__info-text Логин:
+                                        input.personal-data__info-input
+                                    .personal-data__info-box
+                                        .personal-data__info-text E-mail:
+                                        input.personal-data__info-input
+                                    .personal-data__info-box
+                                        .personal-data__info-text Пароль:
+                                        .btn-person.personal-data__info-text-btn Изменить пароль
+                                .personal-data__info-block
+                                    .personal-data__info-box
+                                        .personal-data__info-text Адрес доставки:
+                                        input.personal-data__info-input
+                                    .personal-data__info-box
+                                        .personal-data__info-text Улица:
+                                        input.personal-data__info-input
+                                    .personal-data__info-box-home
+                                        .personal-data__info-home
+                                            .personal-data__info-text Дом:
+                                            input.personal-data__info-input-min
+                                        .personal-data__info-home
+                                            .personal-data__info-text Квартира:
+                                            input.personal-data__info-input-min
+                            .personal-data__btn
+                                .btn-more-min.personal-data__btn-transparent Отменить
+                                .btn-person Сохранить
+                    .cabinet-place__personal-subscriptions.tab
+                        include ../modules/breadcrumb
+                        .page-title Мои подписки
+                        .cabinet-place__menu-media
+                            .cabinet-sidebar__menu
+                                .cabinet-sidebar__item
+                                    .cabinet-sidebar__border
+                                        +icon('order', 'cabinet-menu')
+                                        a.saidbar-nav__item-a Мои заказы
+                                .cabinet-sidebar__item
+                                    .cabinet-sidebar__border
+                                        +icon('user', 'cabinet-menu')
+                                        a.saidbar-nav__item-a Личные данные
+                                .cabinet-sidebar__item
+                                    .cabinet-sidebar__border
+                                        +icon('check-box', 'cabinet-menu')
+                                        a.saidbar-nav__item-a Мои подписки
+                                .cabinet-sidebar__item
+                                    .cabinet-sidebar__border.cabinet-sidebar__border-last
+                                        +icon('prize', 'cabinet-menu')
+                                        a.saidbar-nav__item-a Бонусы
+                        .personal-subscriptions
+                            .personal-subscriptions__main
+                                object.icon-logo-cab(type="image/svg+xml" data="static/img/general/logo.svg")
+                                .personal-subscriptions__main-box
+                                    .personal-subscriptions__main-title Будьте в курсе всех новостей
+                                    .personal-subscriptions__main-descr Подпишитесь на последние обновления и узнавайте о новинках<br>и специальных предложениях первыми.
+                            .personal-subscriptions__btn
+                                .personal-subscriptions__btn-text После подписки Вам будет выслано письмо со ссылкой подтверждения.
+                                button.btn-subscribe.blog-sbc__btn.personal-subscriptions__btn-sbc Подписаться
+                        .personal-subscriptions
+                            .personal-subscriptions__main
+                                object.icon-logo-cab(type="image/svg+xml" data="static/img/general/logo.svg")
+                                .personal-subscriptions__main-box.personal-subscriptions__main-box-yes
+                                    .personal-subscriptions__main-title Вы подписаны на новостную рассылку
+                            .personal-subscriptions__btn
+                                button.btn-subscribe.blog-sbc__btn.personal-subscriptions__btn-sbc Отписаться
+                    .cabinet-place__personal-bonus.tab
+                        include ../modules/breadcrumb
+                        .page-title Бонусы
+                        .cabinet-place__menu-media
+                            .cabinet-sidebar__menu
+                                .cabinet-sidebar__item
+                                    .cabinet-sidebar__border
+                                        +icon('order', 'cabinet-menu')
+                                        a.saidbar-nav__item-a Мои заказы
+                                .cabinet-sidebar__item
+                                    .cabinet-sidebar__border
+                                        +icon('user', 'cabinet-menu')
+                                        a.saidbar-nav__item-a Личные данные
+                                .cabinet-sidebar__item
+                                    .cabinet-sidebar__border
+                                        +icon('check-box', 'cabinet-menu')
+                                        a.saidbar-nav__item-a Мои подписки
+                                .cabinet-sidebar__item
+                                    .cabinet-sidebar__border.cabinet-sidebar__border-last
+                                        +icon('prize', 'cabinet-menu')
+                                        a.saidbar-nav__item-a Бонусы
+                        .personal-bonus
+                            .personal-bonus__green
+                                span.personal-bonus__green-span На вашем счету 250 бонусов
+                            .personal-bonus__block
+                                .personal-bonus__box Всего начислено
+                                    p.personal-bonus__box-p 856 бонусов
+                                .personal-bonus__box Всего потрачено
+                                    p.personal-bonus__box-p 606 бонусов
+                                .personal-bonus__box
+                                    .personal-bonus__btn.btn-more Подробней о бонусной программе
+                    .cabinet-place__sbc
+                            .blog-sbc
+                                .blog-sbc__right
+                                    p.blog-sbc__p Знания
+                                    span.blog-sbc__span Стань продвинутым гровером. Получай полезные статьи раз в две недели!
+                                .blog-sbc__left
+                                    .blog-sbc__sbc
+                                        input.blog-sbc__sbc-input(placeholder='Ваш почтовый адрес')
+                                    .blog-sbc__policy
+                                        input.blog-sbc__policy-checkbox#checkbox-blog__sbc(type='checkbox')
+                                        label(for='checkbox-blog__sbc').blog-sbc__policy-label Я согласен на обработку персональных данных, а также с условиями подписки
+                                    button.btn-subscribe.blog-sbc__btn Подписаться
+
+    .recovery-data
+        .recovery__popup-data
+            .recovery__popup-data-title Изменение пароля
+            .recovery__popup-data-text Текущий пароль:
+            input.recovery__popup-data-input
+            .recovery__popup-data-text Новый пароль:
+            input.recovery__popup-data-input
+            .recovery__popup-data-text Пвторите, чтобы не ошибиться:
+            input.recovery__popup-data-input
+            p.recovery__popup-data-text-p Данные введены некорректно
+            .recovery__popup-data-btn
+                .btn-more-min.recovery__popup-data-btn-close Отменить
+                .btn-person.recovery__popup-data-btn-person Сохранить
+    .recovery-apply
+        .recovery__popup-apply
+            .recovery__popup-apply-box
+                .recovery__popup-data-title Пароль успешно изменен
+                .recovery__popup-apply-btn
+                    .btn-person.recovery__popup-data-btn-close Закрыть

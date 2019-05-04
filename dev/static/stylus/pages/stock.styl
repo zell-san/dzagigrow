@@ -1,0 +1,93 @@
+.stock
+  @extend .blog
+
+  &-left
+    @extend .blog-left
+
+  &-right
+    @extend .blog-right
+
+.stock-sidebar
+  width 100%
+  margin-top 0
+
+.stock-sidebar-media
+  @extend .blog-sidebar-media
+
+  &__btn
+    @extend .blog-sidebar-media__btn
+
+  &__include
+    @extend .blog-sidebar-media__include
+
+.stock-article
+  @extend .blog-article
+
+  &__item
+    @extend .blog-article__item
+
+    &-box
+      @extend .blog-article__item-box
+
+      &-img
+        @extend .blog-article__item-box-img
+
+      &-date
+        @extend .blog-article__item-box-date
+
+    &-preview
+      @extend .blog-article__item-preview
+
+.stock-btn
+  @extend .blog-btn
+
+
+//subcribe
+.stock-sbc
+  @extend .blog-sbc
+
+  &__p
+    @extend .blog-sbc__p
+
+  &__span
+    @extend .blog-sbc__span
+
+  &__sbc
+    &-input
+      @extend .blog-sbc__sbc-input
+
+  &__policy
+    &-checkbox
+      @extend .blog-sbc__policy-checkbox
+
+      &:checked + label:before
+        content: "\2713"
+        font-size rem(15px)
+        color: blackTextDG
+        text-align: center
+        line-height: 15px
+        background-color white
+
+    &-label
+      @extend .blog-sbc__policy-label
+
+      &:before
+        content: ""
+        display: inline-block
+        size (15px)
+        margin-right: 10px
+        position(absolute, 1px, 0, 0, 0)
+        background-color: white
+        border-radius 2px
+
+  &__btn
+    @extend .blog-sbc__btn
+
+.stock-subscrube
+  @extend .blog-subscrube
+
+.stock-sbc__right, .stock-sbc__left
+  width 47%
+
+  @media screen and (max-width tableWidth)
+    width 100%

@@ -1,0 +1,28 @@
+.btn-basket
+  display flex
+  align-items center
+  color greenDG
+  border 1px solid greenDG
+  background-color white
+  border-radius 3px
+  //font-weight bold
+  justify-content center
+  cursor pointer
+  size (125px 42px)
+
+  @media screen and (max-width bigPhoneWidth)
+    size (80px 30px)
+
+  &:hover
+    background-color greenDG
+    color white
+
+  &:hover .icon-tick-inside
+    display none
+
+  &__big
+    size (180px 55px)
+    font-size rem(18px)
+
+
+

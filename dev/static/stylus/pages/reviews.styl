@@ -1,0 +1,92 @@
+.reviews
+  display flex
+
+  @media screen and (max-width smalDesktopWidth)
+    flex-wrap wrap
+
+  &__afore
+    width 100%
+    //display none
+
+    &-btn
+      @extend .article-btn
+      margin-top 30px
+
+  &__none
+    @extend .reviews__afore
+    background-color white
+    display none
+
+    &-box
+      display flex
+      flex-direction column
+      align-items center
+      justify-content center
+      text-align center
+      height 100%
+
+    &-img
+      width 175px
+      margin-bottom 15px
+
+    &-p
+      font-size rem(24px)
+      font-weight bold
+
+  &__write
+    max-width 425px
+    width 100%
+    background-color blueDG
+    margin-bottom 90px
+    padding 35px 30px
+    //display none
+
+    @media screen and (max-width smalDesktopWidth)
+      max-width 100%
+      margin-top 30px
+      margin-bottom 0
+
+    &-title
+      font-weight bold
+      font-size rem(24px)
+      padding-bottom 25px
+
+    &-rating
+      padding-bottom 5px
+      font-size rem(16px)
+
+    &-star
+      @extend .ticket-header__rating
+      display inline-flex
+      margin-bottom 15px
+
+      &-span
+        font-size rem(38px)
+        @extend .ticket-header__rating-span
+        width 30px
+
+        @media screen and (max-width bigPhoneWidth)
+          width 23px
+
+    &-text
+      margin-bottom 10px
+      font-size rem(16px)
+
+      &-a
+        text-decoration underline
+        font-weight bold
+
+    &-textarea
+      width 100%
+      min-height 110px
+      margin-bottom 25px
+      border 1px solid greyDGdark
+
+    &-btn
+      display flex
+      justify-content center
+
+  &__authorized
+    @extend .reviews__write
+    display none
+    margin-bottom 0

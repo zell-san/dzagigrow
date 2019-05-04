@@ -1,0 +1,32 @@
+.reviews-afore
+  background-color white
+  padding 0 10px 0 30px
+  width 100%
+
+  &__comment
+    border-bottom 1px solid greyDGdark
+
+    &:last-child
+      border-bottom none
+
+    &-name
+      font-weight bold
+      padding-top 30px
+
+    &-box
+      display flex
+      align-items center
+      padding 10px 0
+
+    &-star
+      @extend .ticket-header__rating
+      margin-right 5px
+
+      &-span
+        @extend .ticket-header__rating-span
+
+    &-date
+      color greyTextDG
+
+    &-descr
+      padding-bottom 30px

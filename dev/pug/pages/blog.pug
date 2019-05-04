@@ -1,0 +1,98 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Блог'
+    - var pageClass = 'blog-page'
+
+block content
+
+    .container-fluid
+        .container.page
+            include ../modules/breadcrumb
+            .page-title Блог
+            .blog
+                .blog-left
+                    .blog-description
+                        .blog-description__a Всё о выращивании в домашних условиях
+                        .blog-description__span Научиться выращивать достаточно сложно. Ведь выращивание как таковое это целая наука, содержащая в себе много тонкостей и подводных камней. Мы понимаем это. Поэтому в 2013 году было принято решение вести раздел, где мы могли бы рассказывать вам все о ключевых аспектах выращивания. Все результаты наших трудов представлены в этом разделе. Учитесь выращивать, любите это дело, как это делаем мы, и вы обязательно будете достигать больших урожаев!
+                    .blog-sidebar
+                        include ../modules/sidebar-right-media
+                    .blog-sidebar-media
+                        .blog-sidebar-media__btn Каталог статей
+                            +icon('arrow-point', 'arrow-point-more__white')
+                        .blog-sidebar-media__include
+                            include ../modules/sidebar-right-media
+                    .blog-article
+                        .blog-article__item(onclick="window.location='article.html';")
+                            .blog-article__item-box
+                                img.blog-article__item-box-img(src="static/img/content/dd.png" alt'' )
+                                .blog-article__item-box-date 24 августа 2018
+                            .blog-article__item-preview Питер в Питере. Интервью консультанта Canna Питера Классена
+                        .blog-article__item(onclick="window.location='article.html';")
+                            .blog-article__item-box
+                                img.blog-article__item-box-img(src="static/img/content/dd.png" alt'')
+                                .blog-article__item-box-date 24 августа 2018
+                            .blog-article__item-preview Питер в Питере. Интервью консультанта Canna Питера Классена
+                        .blog-article__item(onclick="window.location='article.html';")
+                            .blog-article__item-box
+                                img.blog-article__item-box-img(src="static/img/content/dd.png" alt'')
+                                .blog-article__item-box-date 24 августа 2018
+                            .blog-article__item-preview Питер в Питере. Интервью консультанта Canna Питера Классена
+                        .blog-article__item(onclick="window.location='article.html';")
+                            .blog-article__item-box
+                                img.blog-article__item-box-img(src="static/img/content/dd.png" alt'')
+                                .blog-article__item-box-date 24 августа 2018
+                            .blog-article__item-preview Питер в Питере. Интервью консультанта Canna Питера Классена
+                        .blog-article__item(onclick="window.location='article.html';")
+                            .blog-article__item-box
+                                img.blog-article__item-box-img(src="static/img/content/dd.png" alt'')
+                                .blog-article__item-box-date 24 августа 2018
+                            .blog-article__item-preview Питер в Питере. Интервью консультанта Canna Питера Классена
+                        .blog-article__item(onclick="window.location='article.html';")
+                            .blog-article__item-box
+                                img.blog-article__item-box-img(src="static/img/content/dd.png" alt'')
+                                .blog-article__item-box-date 24 августа 2018
+                            .blog-article__item-preview Питер в Питере. Интервью консультанта Canna Питера Классена
+                        .blog-article__item(onclick="window.location='article.html';")
+                            .blog-article__item-box
+                                img.blog-article__item-box-img(src="static/img/content/dd.png" alt'')
+                                .blog-article__item-box-date 24 августа 2018
+                            .blog-article__item-preview Питер в Питере. Интервью консультанта Canna Питера Классена
+                        .blog-article__item(onclick="window.location='article.html';")
+                            .blog-article__item-box
+                                img.blog-article__item-box-img(src="static/img/content/dd.png" alt'')
+                                .blog-article__item-box-date 24 августа 2018
+                            .blog-article__item-preview Питер в Питере. Интервью консультанта Canna Питера Классена
+                        .blog-article__item(onclick="window.location='article.html';")
+                            .blog-article__item-box
+                                img.blog-article__item-box-img(src="static/img/content/dd.png" alt'')
+                                .blog-article__item-box-date 24 августа 2018
+                            .blog-article__item-preview Питер в Питере. Интервью консультанта Canna Питера Классена
+
+                    .blog-btn
+                        .btn-more Загрузить еще
+                            +icon('arrow-point', 'arrow-point-more')
+                .blog-right
+                    include ../modules/sidebar-right
+                    .blog-sbc
+                        p.blog-sbc__p Знания
+                        span.blog-sbc__span Стань продвинутым гровером. Получай полезные статьи раз в две недели!
+                        .blog-sbc__sbc
+                            input.blog-sbc__sbc-input(placeholder='Ваш почтовый адрес')
+                        .blog-sbc__policy
+                            input.blog-sbc__policy-checkbox#checkbox_sbc(type='checkbox')
+                            label(for='checkbox_sbc').blog-sbc__policy-label Я согласен на обработку персональных данных, а также с условиями подписки
+                        button.btn-subscribe.blog-sbc__btn Подписаться
+    .container-fluid.blog-subscrube
+        .container
+            .blog-sbc
+                .blog-sbc__right
+                    p.blog-sbc__p Знания
+                    span.blog-sbc__span Стань продвинутым гровером. Получай полезные статьи раз в две недели!
+                .blog-sbc__left
+                    .blog-sbc__sbc
+                        input.blog-sbc__sbc-input(placeholder='Ваш почтовый адрес')
+                    .blog-sbc__policy
+                        input.blog-sbc__policy-checkbox#checkbox-blog__sbc(type='checkbox')
+                        label(for='checkbox-blog__sbc').blog-sbc__policy-label Я согласен на обработку персональных данных, а также с условиями подписки
+                    button.btn-subscribe.blog-sbc__btn Подписаться

@@ -1,0 +1,2048 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Личный кабинет</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css"><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body class="cabinet-page">
+    <div class="wrapper">
+      <header>
+        <!--first header-->
+        <div class="full">
+          <div class="container-fluid">
+            <div class="container">
+              <div class="header-nav">
+                <div class="header-nav__left"><a class="header-nav__left-a" href="blog.html">Блог</a><a class="header-nav__left-a" href="dzagi_tube.html">Dzagi tube</a><a class="header-nav__left-a" href="books.html">Книги</a></div>
+                <div class="header-nav__right">
+                  <div class="header-nav__right-social">
+                    <svg class="icon icon-tg social" role="img">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#tg"></use>
+                    </svg>
+                    <svg class="icon icon-ig social" role="img">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#ig"></use>
+                    </svg>
+                    <svg class="icon icon-yt social" role="img">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#yt"></use>
+                    </svg>
+                    <svg class="icon icon-fb social" role="img">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#fb"></use>
+                    </svg>
+                    <svg class="icon icon-vk social" role="img">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#vk"></use>
+                    </svg>
+                  </div>
+                  <div class="header-nav__right-phone" href="tel:+78003331659">8(800)333-16-59</div>
+                  <div class="header-nav__right-hang">Бесплатный звонок<br>по России</div>
+                  <div class="header-nav__right-phone" href="tel:+74951205945">8(495)120-59-45</div>
+                  <div class="header-nav__right-hang">Звонок<br>по Москве и МО</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--second header-->
+          <div class="container-fluid header-second">
+            <div class="container">
+              <div class="header-main">
+                <div class="header-main__logo"><img class="header-main__logo-img" onclick="window.location='index.html';" src="static/img/general/logo.png" alt=""></div>
+                <div class="header-main__city" href="javascript:PopUpHide()"><a class="header-main__city-a">Пермь</a>
+                  <svg class="icon icon-arrow-point arrow-point-city" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                  <div class="city-you" id="city-you" href="javascript:PopUpHide()">
+                    <svg class="icon icon-close close-city" role="img">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#close"></use>
+                    </svg>
+                    <div class="city-you__text"><span>Ваш город</span><a class="city-you__text-a">Пермь?</a></div>
+                    <div class="city-you__btn">
+                      <button class="btn-green city-you__btn-green">Да, верно</button>
+                      <button class="btn-grey city-you__btn-grey">Выбрать другой</button>
+                    </div>
+                  </div>
+                  <div class="city-choice" id="city-choice" href="javascript:PopUpHide()">
+                    <svg class="icon icon-close close-city" role="img">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#close"></use>
+                    </svg><span class="city-choice__span">Выбор города</span><span class="city-choice__span-small">Если вашего города нет - выберете ближайший</span>
+                    <div class="city-choice__search">
+                      <input class="city-choice__search-input" type="text" placeholder="Я ищу...">
+                      <svg class="icon icon-search search-header" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#search"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="header-main__search">
+                  <input class="header-main__search-input" type="text" placeholder="Я ищу...">
+                  <div class="header-main__search-icon" onclick="window.location='result.html';">
+                    <svg class="icon icon-search search-header" role="img">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#search"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="header-main__basket">
+                  <div class="header-main__basket-box">
+                    <div class="header-main__basket-icon">
+                      <svg class="icon icon-basket basket-header" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#basket"></use>
+                      </svg><span class="header-main__basket-number">5</span>
+                    </div>
+                    <div class="header-main__basket-cache"><span class="header-main__basket-hang">Сумма</span><a class="header-main__basket-sum">45 000 р</a></div>
+                    <div class="basket-block" id="basket-block" href="javascript:void(0)">
+                      <svg class="icon icon-close close-basket" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#close"></use>
+                      </svg>
+                      <div class="basket-block__title">Корзина</div>
+                      <div class="basket-block__item">
+                        <svg class="icon icon-cancel cancel-basket" role="img">
+                          <use xlink:href="static/img/svg/symbol/sprite.svg#cancel"></use>
+                        </svg>
+                        <div class="basket-block__item-preview"><img class="basket-block__item-preview-img" src="static/img/content/growbox.png"></div>
+                        <div class="basket-block__item-name">Фитолампа<br>15 Ватт E27 (Биколор)</div>
+                        <div class="basket-block__item-price">2 470р</div>
+                      </div>
+                      <div class="basket-block__bottom">
+                        <div class="basket-block__bottom-sum"><span>Итог:</span><span class="basket-block__bottom-sum-span">2 470р</span></div>
+                        <div class="basket-block__bottom-btn btn-green-big">Перейти в корзину</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--menu header-->
+        <div class="container-fluid header-third">
+          <div class="container">
+            <div class="header-menu">
+              <div class="header-menu__primary">
+                <div class="header-menu__opener">
+                  <svg class="icon icon-menu menu-header" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#menu"></use>
+                  </svg><a class="header-menu__primary-a">Категория товаров</a>
+                </div>
+                <div class="menu-nav">
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Гроубоксы
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Гидропонные системы
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Удобрения
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Освещение
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Полив
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Очистка воздуха
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Автоматизация
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Аксессуары
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Гроубоксы
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Гидропонные системы
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Удобрения
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Освещение
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Полив
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Очистка воздуха
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Автоматизация
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Аксессуары
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Полив
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Очистка воздуха
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Автоматизация
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item menu-nav__item-last">Аксессуары
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="header-menu__box">
+                <div class="header-menu__main"><a class="header-menu__main-a" href="price-list.html">Прайс-лист</a><a class="header-menu__main-a" href="stock.html">Акции</a><a class="header-menu__main-a" href="delivery.html">Доставка / Оплата</a><a class="header-menu__main-a" href="reviews.html">Отзывы</a><a class="header-menu__main-a" href="contacts.html">Контакты</a></div>
+                <div class="header-menu__login"><a class="header-menu__login-a" href="login.html">Вход</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Мобильная версия-->
+        <div class="container-fluid header-media">
+          <div class="header-media__menu">
+            <svg class="icon icon-menu menu-header-media" role="img">
+              <use xlink:href="static/img/svg/symbol/sprite.svg#menu"></use>
+            </svg>
+          </div>
+          <div class="header-media__box"><img class="header-media__box-img" src="static/img/general/logo.png" alt' href="javascript:void(0)">
+            <div class="header-media__box-icon">
+              <svg class="icon icon-search search-header-media" role="img">
+                <use xlink:href="static/img/svg/symbol/sprite.svg#search"></use>
+              </svg>
+              <div class="header-main__basket-icon">
+                <svg class="icon icon-basket basket-header-media" role="img">
+                  <use xlink:href="static/img/svg/symbol/sprite.svg#basket"></use>
+                </svg><span class="header-media__box-icon-number">5</span>
+              </div>
+            </div>
+          </div>
+          <div class="header-media__box-search">
+            <div class="header-main__search">
+              <input class="header-main__search-input" type="text" placeholder="Я ищу...">
+              <div class="header-main__search-icon" onclick="window.location='result.html';">
+                <svg class="icon icon-search search-header-media-open" role="img">
+                  <use xlink:href="static/img/svg/symbol/sprite.svg#search"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu-media-full">
+          <div class="container-fluid menu-media-full__open">
+            <div class="header-media-open">
+              <div class="header-media-open__menu">
+                <svg class="icon icon-close close-header-media" role="img">
+                  <use xlink:href="static/img/svg/symbol/sprite.svg#close"></use>
+                </svg>
+              </div>
+              <div class="header-media-open__box"><img class="header-media-open__box-img" src="static/img/general/logo.png" alt' href="javascript:void(0)">
+                <div class="header-media-open__box-icon"><span class="header-media-open__box-icon-span">Пермь
+                    <svg class="icon icon-arrow-point arrow-point-city" role="img">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                    </svg></span>
+                  <div class="city-you" id="city-you" href="javascript:PopUpHide()">
+                    <svg class="icon icon-close close-city" role="img">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#close"></use>
+                    </svg>
+                    <div class="city-you__text"><span>Ваш город</span><a class="city-you__text-a">Пермь?</a></div>
+                    <div class="city-you__btn">
+                      <button class="btn-green city-you__btn-green">Да, верно</button>
+                      <button class="btn-grey city-you__btn-grey">Выбрать другой</button>
+                    </div>
+                  </div>
+                  <div class="city-choice" id="city-choice" href="javascript:PopUpHide()">
+                    <svg class="icon icon-close close-city" role="img">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#close"></use>
+                    </svg><span class="city-choice__span">Выбор города</span><span class="city-choice__span-small">Если вашего города нет - выберете ближайший</span>
+                    <div class="city-choice__search">
+                      <input class="city-choice__search-input" type="text" placeholder="Я ищу...">
+                      <svg class="icon icon-search search-header" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#search"></use>
+                      </svg>
+                    </div>
+                  </div><span class="header-media-open__box-icon-span">Вход</span>
+                </div>
+              </div>
+            </div>
+            <div class="header-media-nav">
+              <svg class="icon icon-menu menu-header" role="img">
+                <use xlink:href="static/img/svg/symbol/sprite.svg#menu"></use>
+              </svg><a class="header-media-nav__a">Категория товаров</a>
+            </div>
+            <div class="menu-media-category">
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Гроубоксы
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+                <div class="menu-media-category__sub">
+                  <div class="menu-media-category__sub-element">Маленькие</div>
+                  <div class="menu-media-category__sub-element">Средние</div>
+                  <div class="menu-media-category__sub-element">Большие</div>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Гидропонные системы
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+                <div class="menu-media-category__sub">
+                  <div class="menu-media-category__sub-element">Маленькие</div>
+                  <div class="menu-media-category__sub-element">Средние</div>
+                  <div class="menu-media-category__sub-element">Большие</div>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Удобрения
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+                <div class="menu-media-category__sub">
+                  <div class="menu-media-category__sub-element">Маленькие</div>
+                  <div class="menu-media-category__sub-element">Средние</div>
+                  <div class="menu-media-category__sub-element">Большие</div>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Освещение
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+                <div class="menu-media-category__sub">
+                  <div class="menu-media-category__sub-element">Маленькие</div>
+                  <div class="menu-media-category__sub-element">Средние</div>
+                  <div class="menu-media-category__sub-element">Большие</div>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Полив
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+                <div class="menu-media-category__sub">
+                  <div class="menu-media-category__sub-element">Маленькие</div>
+                  <div class="menu-media-category__sub-element">Средние</div>
+                  <div class="menu-media-category__sub-element">Большие</div>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Очистка воздуха
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+                <div class="menu-media-category__sub">
+                  <div class="menu-media-category__sub-element">Маленькие</div>
+                  <div class="menu-media-category__sub-element">Средние</div>
+                  <div class="menu-media-category__sub-element">Большие</div>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Автоматизация
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+                <div class="menu-media-category__sub">
+                  <div class="menu-media-category__sub-element">Маленькие</div>
+                  <div class="menu-media-category__sub-element">Средние</div>
+                  <div class="menu-media-category__sub-element">Большие</div>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Аксессуары
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+                <div class="menu-media-category__sub">
+                  <div class="menu-media-category__sub-element">Маленькие</div>
+                  <div class="menu-media-category__sub-element">Средние</div>
+                  <div class="menu-media-category__sub-element">Большие</div>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Гроубоксы
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+                <div class="menu-media-category__sub">
+                  <div class="menu-media-category__sub-element">Маленькие</div>
+                  <div class="menu-media-category__sub-element">Средние</div>
+                  <div class="menu-media-category__sub-element">Большие</div>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Гидропонные системы
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+                <div class="menu-media-category__sub">
+                  <div class="menu-media-category__sub-element">Маленькие</div>
+                  <div class="menu-media-category__sub-element">Средние</div>
+                  <div class="menu-media-category__sub-element">Большие</div>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Удобрения
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+                <div class="menu-media-category__sub">
+                  <div class="menu-media-category__sub-element">Маленькие</div>
+                  <div class="menu-media-category__sub-element">Средние</div>
+                  <div class="menu-media-category__sub-element">Большие</div>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Освещение
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Полив
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Очистка воздуха
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Автоматизация
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Аксессуары
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Полив
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Очистка воздуха
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Автоматизация
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Аксессуары
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="header-media-main">
+              <div class="header-media-main__border">
+                <div class="header-media-main__border-item">Прайс-лист</div>
+              </div>
+              <div class="header-media-main__border">
+                <div class="header-media-main__border-item">Акции</div>
+              </div>
+              <div class="header-media-main__border">
+                <div class="header-media-main__border-item">Доставка и оплата</div>
+              </div>
+              <div class="header-media-main__border">
+                <div class="header-media-main__border-item">Отзывы</div>
+              </div>
+              <div class="header-media-main__border">
+                <div class="header-media-main__border-item">Контакты</div>
+              </div>
+              <div class="header-media-main__border">
+                <div class="header-media-main__border-item">Блог</div>
+              </div>
+              <div class="header-media-main__border">
+                <div class="header-media-main__border-item">Dzagi tube</div>
+              </div>
+              <div class="header-media-main__border">
+                <div class="header-media-main__border-item">Книги</div>
+              </div>
+            </div>
+            <div class="header-media-contact">
+              <div class="header-media-contact__number">
+                <div class="header-media-contact__number-box">
+                  <div class="header-media-contact__phone" href="tel:+78003331659">8(800)333-16-59</div>
+                  <div class="header-media-contact__hang">Бесплатный звонок<br>по России</div>
+                </div>
+                <div class="header-media-contact__number-box">
+                  <div class="header-media-contact__phone" href="tel:+74951205945">8(495)120-59-45</div>
+                  <div class="header-media-contact__hang">Звонок<br>по Москве и МО</div>
+                </div>
+              </div>
+              <div class="header-media-contact__social">
+                <svg class="icon icon-tg social" role="img">
+                  <use xlink:href="static/img/svg/symbol/sprite.svg#tg"></use>
+                </svg>
+                <svg class="icon icon-ig social" role="img">
+                  <use xlink:href="static/img/svg/symbol/sprite.svg#ig"></use>
+                </svg>
+                <svg class="icon icon-yt social" role="img">
+                  <use xlink:href="static/img/svg/symbol/sprite.svg#yt"></use>
+                </svg>
+                <svg class="icon icon-fb social" role="img">
+                  <use xlink:href="static/img/svg/symbol/sprite.svg#fb"></use>
+                </svg>
+                <svg class="icon icon-vk social" role="img">
+                  <use xlink:href="static/img/svg/symbol/sprite.svg#vk"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="content">
+        <div class="container-fluid">
+          <div class="container page">
+            <div class="cabinet">
+              <div class="cabinet-sidebar">
+                <div class="cabinet-sidebar__menu">
+                  <div class="cabinet-sidebar__item" data-tab=".cabinet-place__personal-orders">
+                    <div class="cabinet-sidebar__border">
+                      <svg class="icon icon-order cabinet-menu" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#order"></use>
+                      </svg><a class="saidbar-nav__item-a">Мои заказы</a>
+                    </div>
+                  </div>
+                  <div class="cabinet-sidebar__item" data-tab=".cabinet-place__personal-data">
+                    <div class="cabinet-sidebar__border">
+                      <svg class="icon icon-user cabinet-menu" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#user"></use>
+                      </svg><a class="saidbar-nav__item-a">Личные данные</a>
+                    </div>
+                  </div>
+                  <div class="cabinet-sidebar__item" data-tab=".cabinet-place__personal-subscriptions">
+                    <div class="cabinet-sidebar__border">
+                      <svg class="icon icon-check-box cabinet-menu" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#check-box"></use>
+                      </svg><a class="saidbar-nav__item-a">Мои подписки</a>
+                    </div>
+                  </div>
+                  <div class="cabinet-sidebar__item" data-tab=".cabinet-place__personal-bonus">
+                    <div class="cabinet-sidebar__border cabinet-sidebar__border-last">
+                      <svg class="icon icon-prize cabinet-menu" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#prize"></use>
+                      </svg><a class="saidbar-nav__item-a">Бонусы</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="blog-sbc">
+                  <p class="blog-sbc__p">Знания</p><span class="blog-sbc__span">Стань продвинутым гровером. Получай полезные статьи раз в две недели!</span>
+                  <div class="blog-sbc__sbc">
+                    <input class="blog-sbc__sbc-input" placeholder="Ваш почтовый адрес">
+                  </div>
+                  <div class="blog-sbc__policy">
+                    <input class="blog-sbc__policy-checkbox" id="checkbox_sbc" type="checkbox">
+                    <label class="blog-sbc__policy-label" for="checkbox_sbc">Я согласен на обработку персональных данных, а также с условиями подписки</label>
+                  </div>
+                  <button class="btn-subscribe blog-sbc__btn">Подписаться</button>
+                </div>
+              </div>
+              <div class="cabinet-place">
+                <div class="cabinet-place__personal-area tab opened">
+                  <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a class="breadcrumb-item__a breadcrumb-item__a-first" href="#">DzagiGrow /</a></li>
+                    <li class="breadcrumb-item"><a class="breadcrumb-item__a" href="#">Блог /</a></li>
+                    <li class="breadcrumb-item breadcrumb-item__active">Статья</li>
+                  </ul>
+                  <div class="page-title">Личный кабинет</div>
+                  <div class="cabinet-place__menu-media">
+                    <div class="cabinet-sidebar__menu">
+                      <div class="cabinet-sidebar__item">
+                        <div class="cabinet-sidebar__border">
+                          <svg class="icon icon-order cabinet-menu" role="img">
+                            <use xlink:href="static/img/svg/symbol/sprite.svg#order"></use>
+                          </svg><a class="saidbar-nav__item-a">Мои заказы</a>
+                        </div>
+                      </div>
+                      <div class="cabinet-sidebar__item">
+                        <div class="cabinet-sidebar__border">
+                          <svg class="icon icon-user cabinet-menu" role="img">
+                            <use xlink:href="static/img/svg/symbol/sprite.svg#user"></use>
+                          </svg><a class="saidbar-nav__item-a">Личные данные</a>
+                        </div>
+                      </div>
+                      <div class="cabinet-sidebar__item">
+                        <div class="cabinet-sidebar__border">
+                          <svg class="icon icon-check-box cabinet-menu" role="img">
+                            <use xlink:href="static/img/svg/symbol/sprite.svg#check-box"></use>
+                          </svg><a class="saidbar-nav__item-a">Мои подписки</a>
+                        </div>
+                      </div>
+                      <div class="cabinet-sidebar__item">
+                        <div class="cabinet-sidebar__border cabinet-sidebar__border-last">
+                          <svg class="icon icon-prize cabinet-menu" role="img">
+                            <use xlink:href="static/img/svg/symbol/sprite.svg#prize"></use>
+                          </svg><a class="saidbar-nav__item-a">Бонусы</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cabinet-place__personal-descr">«Привет! В личном кабинете ты можешь<br>изменить настройки своей учётной записи, отследить заказ, оформить<br>подписку на блог.»</div>
+                  <div class="cabinet-place__personal-grid">
+                    <div class="cabinet-place__personal-grid-item">
+                      <svg class="icon icon-order cabinet-grid" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#order"></use>
+                      </svg><a class="cabinet-place__personal-grid-item-a">Мои заказы</a>
+                    </div>
+                    <div class="cabinet-place__personal-grid-item">
+                      <svg class="icon icon-user cabinet-grid" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#user"></use>
+                      </svg><a class="cabinet-place__personal-grid-item-a">Личные данные</a>
+                    </div>
+                    <div class="cabinet-place__personal-grid-item">
+                      <svg class="icon icon-check-box cabinet-grid" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#check-box"></use>
+                      </svg><a class="cabinet-place__personal-grid-item-a">Мои подписки</a>
+                    </div>
+                    <div class="cabinet-place__personal-grid-item">
+                      <svg class="icon icon-prize cabinet-grid" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#prize"></use>
+                      </svg><a class="cabinet-place__personal-grid-item-a">Бонусы</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="cabinet-place__personal-orders tab">
+                  <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a class="breadcrumb-item__a breadcrumb-item__a-first" href="#">DzagiGrow /</a></li>
+                    <li class="breadcrumb-item"><a class="breadcrumb-item__a" href="#">Блог /</a></li>
+                    <li class="breadcrumb-item breadcrumb-item__active">Статья</li>
+                  </ul>
+                  <div class="page-title">Мои заказы</div>
+                  <div class="cabinet-place__menu-media">
+                    <div class="cabinet-sidebar__menu">
+                      <div class="cabinet-sidebar__item">
+                        <div class="cabinet-sidebar__border">
+                          <svg class="icon icon-order cabinet-menu" role="img">
+                            <use xlink:href="static/img/svg/symbol/sprite.svg#order"></use>
+                          </svg><a class="saidbar-nav__item-a">Мои заказы</a>
+                        </div>
+                      </div>
+                      <div class="cabinet-sidebar__item">
+                        <div class="cabinet-sidebar__border">
+                          <svg class="icon icon-user cabinet-menu" role="img">
+                            <use xlink:href="static/img/svg/symbol/sprite.svg#user"></use>
+                          </svg><a class="saidbar-nav__item-a">Личные данные</a>
+                        </div>
+                      </div>
+                      <div class="cabinet-sidebar__item">
+                        <div class="cabinet-sidebar__border">
+                          <svg class="icon icon-check-box cabinet-menu" role="img">
+                            <use xlink:href="static/img/svg/symbol/sprite.svg#check-box"></use>
+                          </svg><a class="saidbar-nav__item-a">Мои подписки</a>
+                        </div>
+                      </div>
+                      <div class="cabinet-sidebar__item">
+                        <div class="cabinet-sidebar__border cabinet-sidebar__border-last">
+                          <svg class="icon icon-prize cabinet-menu" role="img">
+                            <use xlink:href="static/img/svg/symbol/sprite.svg#prize"></use>
+                          </svg><a class="saidbar-nav__item-a">Бонусы</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cabinet-place__personal-descr">Текст «Здесь вы можете отследить статус своих заказов или повторить заказ».</div>
+                  <div class="personal-orders__menu">
+                    <div class="personal-orders__menu-item opened" data-tab=".personal-orders__inside-active">Активные заказы</div>
+                    <div class="personal-orders__menu-item" data-tab=".personal-orders__inside-all">Все заказы</div>
+                  </div>
+                  <div class="personal-orders__inside">
+                    <div class="personal-orders__inside-active tab opened">
+                      <div class="personal-orders__inside-active-item">
+                        <div class="personal-orders__inside-atribut">
+                          <div class="personal-orders__inside-atribut-box">
+                            <div class="personal-orders__inside-atribut-item">Номер заказа</div>
+                            <div class="personal-orders__inside-atribut-so">№ 89059</div>
+                          </div>
+                          <div class="personal-orders__inside-atribut-box">
+                            <div class="personal-orders__inside-atribut-item">Дата</div>
+                            <div class="personal-orders__inside-atribut-so">22:30<br>09.10.2018</div>
+                          </div>
+                          <div class="personal-orders__inside-atribut-box">
+                            <div class="personal-orders__inside-atribut-item">Сумма заказа</div>
+                            <div class="personal-orders__inside-atribut-so">57 230руб</div>
+                          </div>
+                          <div class="personal-orders__inside-atribut-box">
+                            <div class="personal-orders__inside-atribut-item">Статус оплаты</div>
+                            <div class="personal-orders__inside-atribut-so">Оплачено</div>
+                          </div>
+                          <div class="personal-orders__inside-atribut-box">
+                            <div class="personal-orders__inside-atribut-item">Статус доставки</div>
+                            <div class="personal-orders__inside-atribut-so">В работе</div>
+                          </div>
+                          <div class="personal-orders__inside-atribut-box">
+                            <div class="personal-orders__inside-atribut-item">Статус заказа</div>
+                            <div class="personal-orders__inside-atribut-so">------</div>
+                          </div>
+                          <div class="personal-orders__inside-atribut-box">
+                            <div class="personal-orders__inside-atribut-item">Количество бонусов</div>
+                            <div class="personal-orders__inside-atribut-so personal-orders__inside-atribut-so-bonus">
+                              <div class="personal-orders__inside-atribut-so-block"><span>Списано</span><a class="personal-orders__inside-atribut-so-off">-150б</a></div>
+                              <div class="personal-orders__inside-atribut-so-block"><span>Начисленно</span><a class="personal-orders__inside-atribut-so-on">210б</a></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="personal-orders__inside-details">
+                          <div class="personal-orders__inside-nomination">
+                            <div class="personal-orders__inside-nomination-item">Товар</div>
+                            <div class="personal-orders__inside-nomination-item">Цена</div>
+                            <div class="personal-orders__inside-nomination-item">Количество</div>
+                            <div class="personal-orders__inside-nomination-item">Со скидкой</div>
+                          </div>
+                          <div class="personal-orders__inside-product">
+                            <div class="personal-orders__inside-product-item">
+                              <div class="personal-orders__inside-product-box">
+                                <div class="personal-orders__inside-product-preview"><img class="personal-orders__inside-product-img" src="static/img/content/growbox.png"></div>
+                                <div class="personal-orders__inside-product-name">Фитолампа 15 Ватт E27 (Биколор)</div>
+                              </div>
+                              <div class="personal-orders__inside-product-price">2 470р</div>
+                              <div class="personal-orders__inside-product-quantity">1</div>
+                              <div class="personal-orders__inside-product-discount">2 470р</div>
+                            </div>
+                            <div class="personal-orders__inside-product-item">
+                              <div class="personal-orders__inside-product-box">
+                                <div class="personal-orders__inside-product-preview"><img class="personal-orders__inside-product-img" src="static/img/content/growbox.png"></div>
+                                <div class="personal-orders__inside-product-name">Фитолампа 15 Ватт E27 (Биколор)</div>
+                              </div>
+                              <div class="personal-orders__inside-product-price">2 470р</div>
+                              <div class="personal-orders__inside-product-quantity">1</div>
+                              <div class="personal-orders__inside-product-discount">2 470р</div>
+                            </div>
+                          </div>
+                          <div class="personal-orders__inside-repeat">
+                            <div class="btn-person">Повторить заказ</div>
+                          </div>
+                          <div class="personal-orders__inside-change">
+                            <div class="btn-del">Удалить заказ</div>
+                            <div class="btn-more-min">Изменить заказ</div>
+                            <div class="btn-person">Оформить заказ</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="personal-orders__inside-all tab">
+                      <div class="personal-orders__inside-active-item">
+                        <div class="personal-orders__inside-atribut">
+                          <div class="personal-orders__inside-atribut-box">
+                            <div class="personal-orders__inside-atribut-item">Номер заказа</div>
+                            <div class="personal-orders__inside-atribut-so">№ 89059</div>
+                          </div>
+                          <div class="personal-orders__inside-atribut-box">
+                            <div class="personal-orders__inside-atribut-item">Дата</div>
+                            <div class="personal-orders__inside-atribut-so">22:30<br>09.10.2018</div>
+                          </div>
+                          <div class="personal-orders__inside-atribut-box">
+                            <div class="personal-orders__inside-atribut-item">Сумма заказа</div>
+                            <div class="personal-orders__inside-atribut-so">57 230руб</div>
+                          </div>
+                          <div class="personal-orders__inside-atribut-box">
+                            <div class="personal-orders__inside-atribut-item">Статус оплаты</div>
+                            <div class="personal-orders__inside-atribut-so personal-orders__inside-atribut-so-red">Не оплачено</div>
+                          </div>
+                          <div class="personal-orders__inside-atribut-box">
+                            <div class="personal-orders__inside-atribut-item">Статус доставки</div>
+                            <div class="personal-orders__inside-atribut-so">В работе</div>
+                          </div>
+                          <div class="personal-orders__inside-atribut-box">
+                            <div class="personal-orders__inside-atribut-item">Статус заказа</div>
+                            <div class="personal-orders__inside-atribut-so">------</div>
+                          </div>
+                          <div class="personal-orders__inside-atribut-box">
+                            <div class="personal-orders__inside-atribut-item">Количество бонусов</div>
+                            <div class="personal-orders__inside-atribut-so personal-orders__inside-atribut-so-bonus">
+                              <div class="personal-orders__inside-atribut-so-block"><span>Списано</span><a class="personal-orders__inside-atribut-so-off">-150б</a></div>
+                              <div class="personal-orders__inside-atribut-so-block"><span>Начисленно</span><a class="personal-orders__inside-atribut-so-on">210б</a></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="personal-orders__inside-details">
+                          <div class="personal-orders__inside-nomination">
+                            <div class="personal-orders__inside-nomination-item">Товар</div>
+                            <div class="personal-orders__inside-nomination-item">Цена</div>
+                            <div class="personal-orders__inside-nomination-item">Количество</div>
+                            <div class="personal-orders__inside-nomination-item">Со скидкой</div>
+                          </div>
+                          <div class="personal-orders__inside-product">
+                            <div class="personal-orders__inside-product-item">
+                              <div class="personal-orders__inside-product-box">
+                                <div class="personal-orders__inside-product-preview"><img class="personal-orders__inside-product-img" src="static/img/content/growbox.png"></div>
+                                <div class="personal-orders__inside-product-name">Фитолампа 15 Ватт E27 (Биколор)</div>
+                              </div>
+                              <div class="personal-orders__inside-product-price">2 470р</div>
+                              <div class="personal-orders__inside-product-quantity">1</div>
+                              <div class="personal-orders__inside-product-discount">2 470р</div>
+                            </div>
+                            <div class="personal-orders__inside-product-item">
+                              <div class="personal-orders__inside-product-box">
+                                <div class="personal-orders__inside-product-preview"><img class="personal-orders__inside-product-img" src="static/img/content/growbox.png"></div>
+                                <div class="personal-orders__inside-product-name">Фитолампа 15 Ватт E27 (Биколор)</div>
+                              </div>
+                              <div class="personal-orders__inside-product-price">2 470р</div>
+                              <div class="personal-orders__inside-product-quantity">1</div>
+                              <div class="personal-orders__inside-product-discount">2 470р</div>
+                            </div>
+                          </div>
+                          <div class="personal-orders__inside-repeat">
+                            <div class="btn-person">Повторить заказ</div>
+                          </div>
+                          <div class="personal-orders__inside-change">
+                            <div class="btn-del">Удалить заказ</div>
+                            <div class="btn-more-min">Изменить заказ</div>
+                            <div class="btn-person">Оформить заказ</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="personal-orders__inside-active-item">
+                        <div class="personal-orders__inside-atribut">
+                          <div class="personal-orders__inside-atribut-box">
+                            <div class="personal-orders__inside-atribut-item">Номер заказа</div>
+                            <div class="personal-orders__inside-atribut-so">№ 89059</div>
+                          </div>
+                          <div class="personal-orders__inside-atribut-box">
+                            <div class="personal-orders__inside-atribut-item">Дата</div>
+                            <div class="personal-orders__inside-atribut-so">22:30<br>09.10.2018</div>
+                          </div>
+                          <div class="personal-orders__inside-atribut-box">
+                            <div class="personal-orders__inside-atribut-item">Сумма заказа</div>
+                            <div class="personal-orders__inside-atribut-so">57 230руб</div>
+                          </div>
+                          <div class="personal-orders__inside-atribut-box">
+                            <div class="personal-orders__inside-atribut-item">Статус оплаты</div>
+                            <div class="personal-orders__inside-atribut-so">Оплачено</div>
+                          </div>
+                          <div class="personal-orders__inside-atribut-box">
+                            <div class="personal-orders__inside-atribut-item">Статус доставки</div>
+                            <div class="personal-orders__inside-atribut-so">------</div>
+                          </div>
+                          <div class="personal-orders__inside-atribut-box">
+                            <div class="personal-orders__inside-atribut-item">Статус заказа</div>
+                            <div class="personal-orders__inside-atribut-so">------</div>
+                          </div>
+                          <div class="personal-orders__inside-atribut-box">
+                            <div class="personal-orders__inside-atribut-item">Количество бонусов</div>
+                            <div class="personal-orders__inside-atribut-so personal-orders__inside-atribut-so-bonus">
+                              <div class="personal-orders__inside-atribut-so-block"><span>Списано</span><a class="personal-orders__inside-atribut-so-off">-150б</a></div>
+                              <div class="personal-orders__inside-atribut-so-block"><span>Начисленно</span><a class="personal-orders__inside-atribut-so-on">210б</a></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="personal-orders__inside-details">
+                          <div class="personal-orders__inside-nomination">
+                            <div class="personal-orders__inside-nomination-item">Товар</div>
+                            <div class="personal-orders__inside-nomination-item">Цена</div>
+                            <div class="personal-orders__inside-nomination-item">Количество</div>
+                            <div class="personal-orders__inside-nomination-item">Со скидкой</div>
+                          </div>
+                          <div class="personal-orders__inside-product">
+                            <div class="personal-orders__inside-product-item">
+                              <div class="personal-orders__inside-product-box">
+                                <div class="personal-orders__inside-product-preview"><img class="personal-orders__inside-product-img" src="static/img/content/growbox.png"></div>
+                                <div class="personal-orders__inside-product-name">Фитолампа 15 Ватт E27 (Биколор)</div>
+                              </div>
+                              <div class="personal-orders__inside-product-price">2 470р</div>
+                              <div class="personal-orders__inside-product-quantity">1</div>
+                              <div class="personal-orders__inside-product-discount">2 470р</div>
+                            </div>
+                            <div class="personal-orders__inside-product-item">
+                              <div class="personal-orders__inside-product-box">
+                                <div class="personal-orders__inside-product-preview"><img class="personal-orders__inside-product-img" src="static/img/content/growbox.png"></div>
+                                <div class="personal-orders__inside-product-name">Фитолампа 15 Ватт E27 (Биколор)</div>
+                              </div>
+                              <div class="personal-orders__inside-product-price">2 470р</div>
+                              <div class="personal-orders__inside-product-quantity">1</div>
+                              <div class="personal-orders__inside-product-discount">2 470р</div>
+                            </div>
+                          </div>
+                          <div class="personal-orders__inside-repeat">
+                            <div class="btn-person">Повторить заказ</div>
+                          </div>
+                          <div class="personal-orders__inside-change">
+                            <div class="btn-del">Удалить заказ</div>
+                            <div class="btn-more-min">Изменить заказ</div>
+                            <div class="btn-person">Оформить заказ</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="personal-orders__inside-active-item">
+                        <div class="personal-orders__inside-atribut">
+                          <div class="personal-orders__inside-atribut-box">
+                            <div class="personal-orders__inside-atribut-item">Номер заказа</div>
+                            <div class="personal-orders__inside-atribut-so">№ 89059</div>
+                          </div>
+                          <div class="personal-orders__inside-atribut-box">
+                            <div class="personal-orders__inside-atribut-item">Дата</div>
+                            <div class="personal-orders__inside-atribut-so">22:30<br>09.10.2018</div>
+                          </div>
+                          <div class="personal-orders__inside-atribut-box">
+                            <div class="personal-orders__inside-atribut-item">Сумма заказа</div>
+                            <div class="personal-orders__inside-atribut-so">57 230руб</div>
+                          </div>
+                          <div class="personal-orders__inside-atribut-box">
+                            <div class="personal-orders__inside-atribut-item">Статус оплаты</div>
+                            <div class="personal-orders__inside-atribut-so">Оплачено</div>
+                          </div>
+                          <div class="personal-orders__inside-atribut-box">
+                            <div class="personal-orders__inside-atribut-item">Статус доставки</div>
+                            <div class="personal-orders__inside-atribut-so">В работе</div>
+                          </div>
+                          <div class="personal-orders__inside-atribut-box">
+                            <div class="personal-orders__inside-atribut-item">Статус заказа</div>
+                            <div class="personal-orders__inside-atribut-so">------</div>
+                          </div>
+                          <div class="personal-orders__inside-atribut-box">
+                            <div class="personal-orders__inside-atribut-item">Количество бонусов</div>
+                            <div class="personal-orders__inside-atribut-so personal-orders__inside-atribut-so-bonus">
+                              <div class="personal-orders__inside-atribut-so-block"><span>Списано</span><a class="personal-orders__inside-atribut-so-off">-150б</a></div>
+                              <div class="personal-orders__inside-atribut-so-block"><span>Начисленно</span><a class="personal-orders__inside-atribut-so-on">210б</a></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="personal-orders__inside-details">
+                          <div class="personal-orders__inside-nomination">
+                            <div class="personal-orders__inside-nomination-item">Товар</div>
+                            <div class="personal-orders__inside-nomination-item">Цена</div>
+                            <div class="personal-orders__inside-nomination-item">Количество</div>
+                            <div class="personal-orders__inside-nomination-item">Со скидкой</div>
+                          </div>
+                          <div class="personal-orders__inside-product">
+                            <div class="personal-orders__inside-product-item">
+                              <div class="personal-orders__inside-product-box">
+                                <div class="personal-orders__inside-product-preview"><img class="personal-orders__inside-product-img" src="static/img/content/growbox.png"></div>
+                                <div class="personal-orders__inside-product-name">Фитолампа 15 Ватт E27 (Биколор)</div>
+                              </div>
+                              <div class="personal-orders__inside-product-price">2 470р</div>
+                              <div class="personal-orders__inside-product-quantity">1</div>
+                              <div class="personal-orders__inside-product-discount">2 470р</div>
+                            </div>
+                            <div class="personal-orders__inside-product-item">
+                              <div class="personal-orders__inside-product-box">
+                                <div class="personal-orders__inside-product-preview"><img class="personal-orders__inside-product-img" src="static/img/content/growbox.png"></div>
+                                <div class="personal-orders__inside-product-name">Фитолампа 15 Ватт E27 (Биколор)</div>
+                              </div>
+                              <div class="personal-orders__inside-product-price">2 470р</div>
+                              <div class="personal-orders__inside-product-quantity">1</div>
+                              <div class="personal-orders__inside-product-discount">2 470р</div>
+                            </div>
+                          </div>
+                          <div class="personal-orders__inside-repeat">
+                            <div class="btn-person">Повторить заказ</div>
+                          </div>
+                          <div class="personal-orders__inside-change">
+                            <div class="btn-del">Удалить заказ</div>
+                            <div class="btn-more-min">Изменить заказ</div>
+                            <div class="btn-person">Оформить заказ</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="personal-orders__inside-active-item">
+                        <div class="personal-orders__inside-atribut">
+                          <div class="personal-orders__inside-atribut-box">
+                            <div class="personal-orders__inside-atribut-item">Номер заказа</div>
+                            <div class="personal-orders__inside-atribut-so">№ 89059</div>
+                          </div>
+                          <div class="personal-orders__inside-atribut-box">
+                            <div class="personal-orders__inside-atribut-item">Дата</div>
+                            <div class="personal-orders__inside-atribut-so">22:30<br>09.10.2018</div>
+                          </div>
+                          <div class="personal-orders__inside-atribut-box">
+                            <div class="personal-orders__inside-atribut-item">Сумма заказа</div>
+                            <div class="personal-orders__inside-atribut-so">57 230руб</div>
+                          </div>
+                          <div class="personal-orders__inside-atribut-box">
+                            <div class="personal-orders__inside-atribut-item">Статус оплаты</div>
+                            <div class="personal-orders__inside-atribut-so">Оплачено</div>
+                          </div>
+                          <div class="personal-orders__inside-atribut-box">
+                            <div class="personal-orders__inside-atribut-item">Статус доставки</div>
+                            <div class="personal-orders__inside-atribut-so personal-orders__inside-atribut-so-green">Доставлено</div>
+                          </div>
+                          <div class="personal-orders__inside-atribut-box">
+                            <div class="personal-orders__inside-atribut-item">Статус заказа</div>
+                            <div class="personal-orders__inside-atribut-so">------</div>
+                          </div>
+                          <div class="personal-orders__inside-atribut-box">
+                            <div class="personal-orders__inside-atribut-item">Количество бонусов</div>
+                            <div class="personal-orders__inside-atribut-so personal-orders__inside-atribut-so-bonus">
+                              <div class="personal-orders__inside-atribut-so-block"><span>Списано</span><a class="personal-orders__inside-atribut-so-off">-150б</a></div>
+                              <div class="personal-orders__inside-atribut-so-block"><span>Начисленно</span><a class="personal-orders__inside-atribut-so-on">210б</a></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="personal-orders__inside-details">
+                          <div class="personal-orders__inside-nomination">
+                            <div class="personal-orders__inside-nomination-item">Товар</div>
+                            <div class="personal-orders__inside-nomination-item">Цена</div>
+                            <div class="personal-orders__inside-nomination-item">Количество</div>
+                            <div class="personal-orders__inside-nomination-item">Со скидкой</div>
+                          </div>
+                          <div class="personal-orders__inside-product">
+                            <div class="personal-orders__inside-product-item">
+                              <div class="personal-orders__inside-product-box">
+                                <div class="personal-orders__inside-product-preview"><img class="personal-orders__inside-product-img" src="static/img/content/growbox.png"></div>
+                                <div class="personal-orders__inside-product-name">Фитолампа 15 Ватт E27 (Биколор)</div>
+                              </div>
+                              <div class="personal-orders__inside-product-price">2 470р</div>
+                              <div class="personal-orders__inside-product-quantity">1</div>
+                              <div class="personal-orders__inside-product-discount">2 470р</div>
+                            </div>
+                            <div class="personal-orders__inside-product-item">
+                              <div class="personal-orders__inside-product-box">
+                                <div class="personal-orders__inside-product-preview"><img class="personal-orders__inside-product-img" src="static/img/content/growbox.png"></div>
+                                <div class="personal-orders__inside-product-name">Фитолампа 15 Ватт E27 (Биколор)</div>
+                              </div>
+                              <div class="personal-orders__inside-product-price">2 470р</div>
+                              <div class="personal-orders__inside-product-quantity">1</div>
+                              <div class="personal-orders__inside-product-discount">2 470р</div>
+                            </div>
+                          </div>
+                          <div class="personal-orders__inside-repeat">
+                            <div class="btn-person">Повторить заказ</div>
+                          </div>
+                          <div class="personal-orders__inside-change">
+                            <div class="btn-del">Удалить заказ</div>
+                            <div class="btn-more-min">Изменить заказ</div>
+                            <div class="btn-person">Оформить заказ</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="personal-orders__inside-media">
+                    <div class="personal-orders__inside-active tab opened">
+                      <div class="personal-orders__inside-active-item">
+                        <div class="personal-orders__inside-atribut">
+                          <div class="personal-orders__inside-atribut-box">
+                            <div class="personal-orders__inside-atribut-item">Номер заказа</div>
+                            <div class="personal-orders__inside-atribut-so">№ 89059</div>
+                          </div>
+                          <div class="personal-orders__inside-atribut-box">
+                            <div class="personal-orders__inside-atribut-item">Дата</div>
+                            <div class="personal-orders__inside-atribut-so">22:30<br>09.10.2018</div>
+                          </div>
+                          <div class="personal-orders__inside-atribut-box">
+                            <div class="personal-orders__inside-atribut-item">Сумма заказа</div>
+                            <div class="personal-orders__inside-atribut-so">57 230руб</div>
+                          </div>
+                          <div class="personal-orders__inside-atribut-box">
+                            <div class="personal-orders__inside-atribut-item">Статус доставки</div>
+                            <div class="personal-orders__inside-atribut-so">В работе</div>
+                          </div>
+                        </div>
+                        <div class="personal-orders__inside-details">
+                          <div class="personal-orders__inside-atribut-box-media">
+                            <div class="personal-orders__inside-atribut-item-media">Статус оплаты</div>
+                            <div class="personal-orders__inside-atribut-so-media">Оплачено</div>
+                          </div>
+                          <div class="personal-orders__inside-atribut-box-media">
+                            <div class="personal-orders__inside-atribut-item-media">Статус заказа</div>
+                            <div class="personal-orders__inside-atribut-so-media">------</div>
+                          </div>
+                          <div class="personal-orders__inside-atribut-box-media">
+                            <div class="personal-orders__inside-atribut-item-media">Количество бонусов</div>
+                            <div class="personal-orders__inside-atribut-so-media personal-orders__inside-atribut-so-bonus">
+                              <div class="personal-orders__inside-atribut-so-block"><span>Списано</span><a class="personal-orders__inside-atribut-so-off">-150б</a></div>
+                              <div class="personal-orders__inside-atribut-so-block"><span>Начисленно</span><a class="personal-orders__inside-atribut-so-on">210б</a></div>
+                            </div>
+                          </div>
+                          <div class="personal-orders__inside-product">
+                            <div class="personal-orders__inside-product-item">
+                              <div class="personal-orders__inside-product-box">
+                                <div class="personal-orders__inside-product-preview"><img class="personal-orders__inside-product-img" src="static/img/content/growbox.png"></div>
+                                <div class="personal-orders__inside-product-name">Фитолампа 15 Ватт E27 (Биколор)</div>
+                              </div>
+                              <div class="personal-orders__inside-nomination-media">
+                                <div class="personal-orders__inside-nomination-box">
+                                  <div class="personal-orders__inside-nomination-item-media">Цена</div>
+                                  <div class="personal-orders__inside-product-price">2 470р</div>
+                                </div>
+                                <div class="personal-orders__inside-nomination-box">
+                                  <div class="personal-orders__inside-nomination-item-media">Количество</div>
+                                  <div class="personal-orders__inside-product-quantity">1</div>
+                                </div>
+                                <div class="personal-orders__inside-nomination-box">
+                                  <div class="personal-orders__inside-nomination-item-media">Со скидкой</div>
+                                  <div class="personal-orders__inside-product-discount">2 470р</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="personal-orders__inside-product-item">
+                              <div class="personal-orders__inside-product-box">
+                                <div class="personal-orders__inside-product-preview"><img class="personal-orders__inside-product-img" src="static/img/content/growbox.png"></div>
+                                <div class="personal-orders__inside-product-name">Фитолампа 15 Ватт E27 (Биколор)</div>
+                              </div>
+                              <div class="personal-orders__inside-nomination-media">
+                                <div class="personal-orders__inside-nomination-box">
+                                  <div class="personal-orders__inside-nomination-item-media">Цена</div>
+                                  <div class="personal-orders__inside-product-price">2 470р</div>
+                                </div>
+                                <div class="personal-orders__inside-nomination-box">
+                                  <div class="personal-orders__inside-nomination-item-media">Количество</div>
+                                  <div class="personal-orders__inside-product-quantity">1</div>
+                                </div>
+                                <div class="personal-orders__inside-nomination-box">
+                                  <div class="personal-orders__inside-nomination-item-media">Со скидкой</div>
+                                  <div class="personal-orders__inside-product-discount">2 470р</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="personal-orders__inside-repeat">
+                            <div class="btn-person">Повторить заказ</div>
+                          </div>
+                          <div class="personal-orders__inside-change">
+                            <div class="btn-del">Удалить заказ</div>
+                            <div class="btn-more-min">Изменить заказ</div>
+                            <div class="btn-person">Оформить заказ</div>
+                          </div>
+                        </div>
+                        <div class="personal-orders__inside-more">
+                          <svg class="icon icon-arrow-point arrow-point-order" role="img">
+                            <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="personal-orders__inside-all tab">
+                      <div class="personal-orders__inside-active-item">
+                        <div class="personal-orders__inside-atribut">
+                          <div class="personal-orders__inside-atribut-box">
+                            <div class="personal-orders__inside-atribut-item">Номер заказа</div>
+                            <div class="personal-orders__inside-atribut-so">№ 89059</div>
+                          </div>
+                          <div class="personal-orders__inside-atribut-box">
+                            <div class="personal-orders__inside-atribut-item">Дата</div>
+                            <div class="personal-orders__inside-atribut-so">22:30<br>09.10.2018</div>
+                          </div>
+                          <div class="personal-orders__inside-atribut-box">
+                            <div class="personal-orders__inside-atribut-item">Сумма заказа</div>
+                            <div class="personal-orders__inside-atribut-so">57 230руб</div>
+                          </div>
+                          <div class="personal-orders__inside-atribut-box">
+                            <div class="personal-orders__inside-atribut-item">Статус доставки</div>
+                            <div class="personal-orders__inside-atribut-so">В работе</div>
+                          </div>
+                        </div>
+                        <div class="personal-orders__inside-details">
+                          <div class="personal-orders__inside-atribut-box-media">
+                            <div class="personal-orders__inside-atribut-item-media">Статус оплаты</div>
+                            <div class="personal-orders__inside-atribut-so-media">Оплачено</div>
+                          </div>
+                          <div class="personal-orders__inside-atribut-box-media">
+                            <div class="personal-orders__inside-atribut-item-media">Статус заказа</div>
+                            <div class="personal-orders__inside-atribut-so-media">------</div>
+                          </div>
+                          <div class="personal-orders__inside-atribut-box-media">
+                            <div class="personal-orders__inside-atribut-item-media">Количество бонусов</div>
+                            <div class="personal-orders__inside-atribut-so-media personal-orders__inside-atribut-so-bonus">
+                              <div class="personal-orders__inside-atribut-so-block"><span>Списано</span><a class="personal-orders__inside-atribut-so-off">-150б</a></div>
+                              <div class="personal-orders__inside-atribut-so-block"><span>Начисленно</span><a class="personal-orders__inside-atribut-so-on">210б</a></div>
+                            </div>
+                          </div>
+                          <div class="personal-orders__inside-product">
+                            <div class="personal-orders__inside-product-item">
+                              <div class="personal-orders__inside-product-box">
+                                <div class="personal-orders__inside-product-preview"><img class="personal-orders__inside-product-img" src="static/img/content/growbox.png"></div>
+                                <div class="personal-orders__inside-product-name">Фитолампа 15 Ватт E27 (Биколор)</div>
+                              </div>
+                              <div class="personal-orders__inside-nomination-media">
+                                <div class="personal-orders__inside-nomination-box">
+                                  <div class="personal-orders__inside-nomination-item-media">Цена</div>
+                                  <div class="personal-orders__inside-product-price">2 470р</div>
+                                </div>
+                                <div class="personal-orders__inside-nomination-box">
+                                  <div class="personal-orders__inside-nomination-item-media">Количество</div>
+                                  <div class="personal-orders__inside-product-quantity">1</div>
+                                </div>
+                                <div class="personal-orders__inside-nomination-box">
+                                  <div class="personal-orders__inside-nomination-item-media">Со скидкой</div>
+                                  <div class="personal-orders__inside-product-discount">2 470р</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="personal-orders__inside-product-item">
+                              <div class="personal-orders__inside-product-box">
+                                <div class="personal-orders__inside-product-preview"><img class="personal-orders__inside-product-img" src="static/img/content/growbox.png"></div>
+                                <div class="personal-orders__inside-product-name">Фитолампа 15 Ватт E27 (Биколор)</div>
+                              </div>
+                              <div class="personal-orders__inside-nomination-media">
+                                <div class="personal-orders__inside-nomination-box">
+                                  <div class="personal-orders__inside-nomination-item-media">Цена</div>
+                                  <div class="personal-orders__inside-product-price">2 470р</div>
+                                </div>
+                                <div class="personal-orders__inside-nomination-box">
+                                  <div class="personal-orders__inside-nomination-item-media">Количество</div>
+                                  <div class="personal-orders__inside-product-quantity">1</div>
+                                </div>
+                                <div class="personal-orders__inside-nomination-box">
+                                  <div class="personal-orders__inside-nomination-item-media">Со скидкой</div>
+                                  <div class="personal-orders__inside-product-discount">2 470р</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="personal-orders__inside-repeat">
+                            <div class="btn-person">Повторить заказ</div>
+                          </div>
+                          <div class="personal-orders__inside-change">
+                            <div class="btn-del">Удалить заказ</div>
+                            <div class="btn-more-min">Изменить заказ</div>
+                            <div class="btn-person">Оформить заказ</div>
+                          </div>
+                        </div>
+                        <div class="personal-orders__inside-more">
+                          <svg class="icon icon-arrow-point arrow-point-order" role="img">
+                            <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="personal-orders__inside-active-item">
+                        <div class="personal-orders__inside-atribut">
+                          <div class="personal-orders__inside-atribut-box">
+                            <div class="personal-orders__inside-atribut-item">Номер заказа</div>
+                            <div class="personal-orders__inside-atribut-so">№ 89059</div>
+                          </div>
+                          <div class="personal-orders__inside-atribut-box">
+                            <div class="personal-orders__inside-atribut-item">Дата</div>
+                            <div class="personal-orders__inside-atribut-so">22:30<br>09.10.2018</div>
+                          </div>
+                          <div class="personal-orders__inside-atribut-box">
+                            <div class="personal-orders__inside-atribut-item">Сумма заказа</div>
+                            <div class="personal-orders__inside-atribut-so">57 230руб</div>
+                          </div>
+                          <div class="personal-orders__inside-atribut-box">
+                            <div class="personal-orders__inside-atribut-item">Статус доставки</div>
+                            <div class="personal-orders__inside-atribut-so">В работе</div>
+                          </div>
+                        </div>
+                        <div class="personal-orders__inside-details">
+                          <div class="personal-orders__inside-atribut-box-media">
+                            <div class="personal-orders__inside-atribut-item-media">Статус оплаты</div>
+                            <div class="personal-orders__inside-atribut-so-media">Оплачено</div>
+                          </div>
+                          <div class="personal-orders__inside-atribut-box-media">
+                            <div class="personal-orders__inside-atribut-item-media">Статус заказа</div>
+                            <div class="personal-orders__inside-atribut-so-media">------</div>
+                          </div>
+                          <div class="personal-orders__inside-atribut-box-media">
+                            <div class="personal-orders__inside-atribut-item-media">Количество бонусов</div>
+                            <div class="personal-orders__inside-atribut-so-media personal-orders__inside-atribut-so-bonus">
+                              <div class="personal-orders__inside-atribut-so-block"><span>Списано</span><a class="personal-orders__inside-atribut-so-off">-150б</a></div>
+                              <div class="personal-orders__inside-atribut-so-block"><span>Начисленно</span><a class="personal-orders__inside-atribut-so-on">210б</a></div>
+                            </div>
+                          </div>
+                          <div class="personal-orders__inside-product">
+                            <div class="personal-orders__inside-product-item">
+                              <div class="personal-orders__inside-product-box">
+                                <div class="personal-orders__inside-product-preview"><img class="personal-orders__inside-product-img" src="static/img/content/growbox.png"></div>
+                                <div class="personal-orders__inside-product-name">Фитолампа 15 Ватт E27 (Биколор)</div>
+                              </div>
+                              <div class="personal-orders__inside-nomination-media">
+                                <div class="personal-orders__inside-nomination-box">
+                                  <div class="personal-orders__inside-nomination-item-media">Цена</div>
+                                  <div class="personal-orders__inside-product-price">2 470р</div>
+                                </div>
+                                <div class="personal-orders__inside-nomination-box">
+                                  <div class="personal-orders__inside-nomination-item-media">Количество</div>
+                                  <div class="personal-orders__inside-product-quantity">1</div>
+                                </div>
+                                <div class="personal-orders__inside-nomination-box">
+                                  <div class="personal-orders__inside-nomination-item-media">Со скидкой</div>
+                                  <div class="personal-orders__inside-product-discount">2 470р</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="personal-orders__inside-product-item">
+                              <div class="personal-orders__inside-product-box">
+                                <div class="personal-orders__inside-product-preview"><img class="personal-orders__inside-product-img" src="static/img/content/growbox.png"></div>
+                                <div class="personal-orders__inside-product-name">Фитолампа 15 Ватт E27 (Биколор)</div>
+                              </div>
+                              <div class="personal-orders__inside-nomination-media">
+                                <div class="personal-orders__inside-nomination-box">
+                                  <div class="personal-orders__inside-nomination-item-media">Цена</div>
+                                  <div class="personal-orders__inside-product-price">2 470р</div>
+                                </div>
+                                <div class="personal-orders__inside-nomination-box">
+                                  <div class="personal-orders__inside-nomination-item-media">Количество</div>
+                                  <div class="personal-orders__inside-product-quantity">1</div>
+                                </div>
+                                <div class="personal-orders__inside-nomination-box">
+                                  <div class="personal-orders__inside-nomination-item-media">Со скидкой</div>
+                                  <div class="personal-orders__inside-product-discount">2 470р</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="personal-orders__inside-repeat">
+                            <div class="btn-person">Повторить заказ</div>
+                          </div>
+                          <div class="personal-orders__inside-change">
+                            <div class="btn-del">Удалить заказ</div>
+                            <div class="btn-more-min">Изменить заказ</div>
+                            <div class="btn-person">Оформить заказ</div>
+                          </div>
+                        </div>
+                        <div class="personal-orders__inside-more">
+                          <svg class="icon icon-arrow-point arrow-point-order" role="img">
+                            <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="personal-orders__inside-active-item">
+                        <div class="personal-orders__inside-atribut">
+                          <div class="personal-orders__inside-atribut-box">
+                            <div class="personal-orders__inside-atribut-item">Номер заказа</div>
+                            <div class="personal-orders__inside-atribut-so">№ 89059</div>
+                          </div>
+                          <div class="personal-orders__inside-atribut-box">
+                            <div class="personal-orders__inside-atribut-item">Дата</div>
+                            <div class="personal-orders__inside-atribut-so">22:30<br>09.10.2018</div>
+                          </div>
+                          <div class="personal-orders__inside-atribut-box">
+                            <div class="personal-orders__inside-atribut-item">Сумма заказа</div>
+                            <div class="personal-orders__inside-atribut-so">57 230руб</div>
+                          </div>
+                          <div class="personal-orders__inside-atribut-box">
+                            <div class="personal-orders__inside-atribut-item">Статус доставки</div>
+                            <div class="personal-orders__inside-atribut-so">В работе</div>
+                          </div>
+                        </div>
+                        <div class="personal-orders__inside-details">
+                          <div class="personal-orders__inside-atribut-box-media">
+                            <div class="personal-orders__inside-atribut-item-media">Статус оплаты</div>
+                            <div class="personal-orders__inside-atribut-so-media">Оплачено</div>
+                          </div>
+                          <div class="personal-orders__inside-atribut-box-media">
+                            <div class="personal-orders__inside-atribut-item-media">Статус заказа</div>
+                            <div class="personal-orders__inside-atribut-so-media">------</div>
+                          </div>
+                          <div class="personal-orders__inside-atribut-box-media">
+                            <div class="personal-orders__inside-atribut-item-media">Количество бонусов</div>
+                            <div class="personal-orders__inside-atribut-so-media personal-orders__inside-atribut-so-bonus">
+                              <div class="personal-orders__inside-atribut-so-block"><span>Списано</span><a class="personal-orders__inside-atribut-so-off">-150б</a></div>
+                              <div class="personal-orders__inside-atribut-so-block"><span>Начисленно</span><a class="personal-orders__inside-atribut-so-on">210б</a></div>
+                            </div>
+                          </div>
+                          <div class="personal-orders__inside-product">
+                            <div class="personal-orders__inside-product-item">
+                              <div class="personal-orders__inside-product-box">
+                                <div class="personal-orders__inside-product-preview"><img class="personal-orders__inside-product-img" src="static/img/content/growbox.png"></div>
+                                <div class="personal-orders__inside-product-name">Фитолампа 15 Ватт E27 (Биколор)</div>
+                              </div>
+                              <div class="personal-orders__inside-nomination-media">
+                                <div class="personal-orders__inside-nomination-box">
+                                  <div class="personal-orders__inside-nomination-item-media">Цена</div>
+                                  <div class="personal-orders__inside-product-price">2 470р</div>
+                                </div>
+                                <div class="personal-orders__inside-nomination-box">
+                                  <div class="personal-orders__inside-nomination-item-media">Количество</div>
+                                  <div class="personal-orders__inside-product-quantity">1</div>
+                                </div>
+                                <div class="personal-orders__inside-nomination-box">
+                                  <div class="personal-orders__inside-nomination-item-media">Со скидкой</div>
+                                  <div class="personal-orders__inside-product-discount">2 470р</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="personal-orders__inside-product-item">
+                              <div class="personal-orders__inside-product-box">
+                                <div class="personal-orders__inside-product-preview"><img class="personal-orders__inside-product-img" src="static/img/content/growbox.png"></div>
+                                <div class="personal-orders__inside-product-name">Фитолампа 15 Ватт E27 (Биколор)</div>
+                              </div>
+                              <div class="personal-orders__inside-nomination-media">
+                                <div class="personal-orders__inside-nomination-box">
+                                  <div class="personal-orders__inside-nomination-item-media">Цена</div>
+                                  <div class="personal-orders__inside-product-price">2 470р</div>
+                                </div>
+                                <div class="personal-orders__inside-nomination-box">
+                                  <div class="personal-orders__inside-nomination-item-media">Количество</div>
+                                  <div class="personal-orders__inside-product-quantity">1</div>
+                                </div>
+                                <div class="personal-orders__inside-nomination-box">
+                                  <div class="personal-orders__inside-nomination-item-media">Со скидкой</div>
+                                  <div class="personal-orders__inside-product-discount">2 470р</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="personal-orders__inside-repeat">
+                            <div class="btn-person">Повторить заказ</div>
+                          </div>
+                          <div class="personal-orders__inside-change">
+                            <div class="btn-del">Удалить заказ</div>
+                            <div class="btn-more-min">Изменить заказ</div>
+                            <div class="btn-person">Оформить заказ</div>
+                          </div>
+                        </div>
+                        <div class="personal-orders__inside-more">
+                          <svg class="icon icon-arrow-point arrow-point-order" role="img">
+                            <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cabinet-place__personal-data tab">
+                  <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a class="breadcrumb-item__a breadcrumb-item__a-first" href="#">DzagiGrow /</a></li>
+                    <li class="breadcrumb-item"><a class="breadcrumb-item__a" href="#">Блог /</a></li>
+                    <li class="breadcrumb-item breadcrumb-item__active">Статья</li>
+                  </ul>
+                  <div class="page-title">Личные данные</div>
+                  <div class="cabinet-place__menu-media">
+                    <div class="cabinet-sidebar__menu">
+                      <div class="cabinet-sidebar__item">
+                        <div class="cabinet-sidebar__border">
+                          <svg class="icon icon-order cabinet-menu" role="img">
+                            <use xlink:href="static/img/svg/symbol/sprite.svg#order"></use>
+                          </svg><a class="saidbar-nav__item-a">Мои заказы</a>
+                        </div>
+                      </div>
+                      <div class="cabinet-sidebar__item">
+                        <div class="cabinet-sidebar__border">
+                          <svg class="icon icon-user cabinet-menu" role="img">
+                            <use xlink:href="static/img/svg/symbol/sprite.svg#user"></use>
+                          </svg><a class="saidbar-nav__item-a">Личные данные</a>
+                        </div>
+                      </div>
+                      <div class="cabinet-sidebar__item">
+                        <div class="cabinet-sidebar__border">
+                          <svg class="icon icon-check-box cabinet-menu" role="img">
+                            <use xlink:href="static/img/svg/symbol/sprite.svg#check-box"></use>
+                          </svg><a class="saidbar-nav__item-a">Мои подписки</a>
+                        </div>
+                      </div>
+                      <div class="cabinet-sidebar__item">
+                        <div class="cabinet-sidebar__border cabinet-sidebar__border-last">
+                          <svg class="icon icon-prize cabinet-menu" role="img">
+                            <use xlink:href="static/img/svg/symbol/sprite.svg#prize"></use>
+                          </svg><a class="saidbar-nav__item-a">Бонусы</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="personal-data">
+                    <div class="personal-data__title"><span>«Здесь вы можете изменить свои личные данные».</span></div>
+                    <div class="personal-data__info">
+                      <div class="personal-data__info-block">
+                        <div class="personal-data__info-box">
+                          <div class="personal-data__info-text">Логин:</div>
+                          <input class="personal-data__info-input">
+                        </div>
+                        <div class="personal-data__info-box">
+                          <div class="personal-data__info-text">E-mail:</div>
+                          <input class="personal-data__info-input">
+                        </div>
+                        <div class="personal-data__info-box">
+                          <div class="personal-data__info-text">Пароль:</div>
+                          <div class="btn-person personal-data__info-text-btn">Изменить пароль</div>
+                        </div>
+                      </div>
+                      <div class="personal-data__info-block">
+                        <div class="personal-data__info-box">
+                          <div class="personal-data__info-text">Адрес доставки:</div>
+                          <input class="personal-data__info-input">
+                        </div>
+                        <div class="personal-data__info-box">
+                          <div class="personal-data__info-text">Улица:</div>
+                          <input class="personal-data__info-input">
+                        </div>
+                        <div class="personal-data__info-box-home">
+                          <div class="personal-data__info-home">
+                            <div class="personal-data__info-text">Дом:</div>
+                            <input class="personal-data__info-input-min">
+                          </div>
+                          <div class="personal-data__info-home">
+                            <div class="personal-data__info-text">Квартира:</div>
+                            <input class="personal-data__info-input-min">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="personal-data__btn">
+                      <div class="btn-more-min personal-data__btn-transparent">Отменить</div>
+                      <div class="btn-person">Сохранить</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cabinet-place__personal-subscriptions tab">
+                  <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a class="breadcrumb-item__a breadcrumb-item__a-first" href="#">DzagiGrow /</a></li>
+                    <li class="breadcrumb-item"><a class="breadcrumb-item__a" href="#">Блог /</a></li>
+                    <li class="breadcrumb-item breadcrumb-item__active">Статья</li>
+                  </ul>
+                  <div class="page-title">Мои подписки</div>
+                  <div class="cabinet-place__menu-media">
+                    <div class="cabinet-sidebar__menu">
+                      <div class="cabinet-sidebar__item">
+                        <div class="cabinet-sidebar__border">
+                          <svg class="icon icon-order cabinet-menu" role="img">
+                            <use xlink:href="static/img/svg/symbol/sprite.svg#order"></use>
+                          </svg><a class="saidbar-nav__item-a">Мои заказы</a>
+                        </div>
+                      </div>
+                      <div class="cabinet-sidebar__item">
+                        <div class="cabinet-sidebar__border">
+                          <svg class="icon icon-user cabinet-menu" role="img">
+                            <use xlink:href="static/img/svg/symbol/sprite.svg#user"></use>
+                          </svg><a class="saidbar-nav__item-a">Личные данные</a>
+                        </div>
+                      </div>
+                      <div class="cabinet-sidebar__item">
+                        <div class="cabinet-sidebar__border">
+                          <svg class="icon icon-check-box cabinet-menu" role="img">
+                            <use xlink:href="static/img/svg/symbol/sprite.svg#check-box"></use>
+                          </svg><a class="saidbar-nav__item-a">Мои подписки</a>
+                        </div>
+                      </div>
+                      <div class="cabinet-sidebar__item">
+                        <div class="cabinet-sidebar__border cabinet-sidebar__border-last">
+                          <svg class="icon icon-prize cabinet-menu" role="img">
+                            <use xlink:href="static/img/svg/symbol/sprite.svg#prize"></use>
+                          </svg><a class="saidbar-nav__item-a">Бонусы</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="personal-subscriptions">
+                    <div class="personal-subscriptions__main">
+                      <object class="icon-logo-cab" type="image/svg+xml" data="static/img/general/logo.svg"></object>
+                      <div class="personal-subscriptions__main-box">
+                        <div class="personal-subscriptions__main-title">Будьте в курсе всех новостей</div>
+                        <div class="personal-subscriptions__main-descr">Подпишитесь на последние обновления и узнавайте о новинках<br>и специальных предложениях первыми.</div>
+                      </div>
+                    </div>
+                    <div class="personal-subscriptions__btn">
+                      <div class="personal-subscriptions__btn-text">После подписки Вам будет выслано письмо со ссылкой подтверждения.</div>
+                      <button class="btn-subscribe blog-sbc__btn personal-subscriptions__btn-sbc">Подписаться</button>
+                    </div>
+                  </div>
+                  <div class="personal-subscriptions">
+                    <div class="personal-subscriptions__main">
+                      <object class="icon-logo-cab" type="image/svg+xml" data="static/img/general/logo.svg"></object>
+                      <div class="personal-subscriptions__main-box personal-subscriptions__main-box-yes">
+                        <div class="personal-subscriptions__main-title">Вы подписаны на новостную рассылку</div>
+                      </div>
+                    </div>
+                    <div class="personal-subscriptions__btn">
+                      <button class="btn-subscribe blog-sbc__btn personal-subscriptions__btn-sbc">Отписаться</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="cabinet-place__personal-bonus tab">
+                  <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a class="breadcrumb-item__a breadcrumb-item__a-first" href="#">DzagiGrow /</a></li>
+                    <li class="breadcrumb-item"><a class="breadcrumb-item__a" href="#">Блог /</a></li>
+                    <li class="breadcrumb-item breadcrumb-item__active">Статья</li>
+                  </ul>
+                  <div class="page-title">Бонусы</div>
+                  <div class="cabinet-place__menu-media">
+                    <div class="cabinet-sidebar__menu">
+                      <div class="cabinet-sidebar__item">
+                        <div class="cabinet-sidebar__border">
+                          <svg class="icon icon-order cabinet-menu" role="img">
+                            <use xlink:href="static/img/svg/symbol/sprite.svg#order"></use>
+                          </svg><a class="saidbar-nav__item-a">Мои заказы</a>
+                        </div>
+                      </div>
+                      <div class="cabinet-sidebar__item">
+                        <div class="cabinet-sidebar__border">
+                          <svg class="icon icon-user cabinet-menu" role="img">
+                            <use xlink:href="static/img/svg/symbol/sprite.svg#user"></use>
+                          </svg><a class="saidbar-nav__item-a">Личные данные</a>
+                        </div>
+                      </div>
+                      <div class="cabinet-sidebar__item">
+                        <div class="cabinet-sidebar__border">
+                          <svg class="icon icon-check-box cabinet-menu" role="img">
+                            <use xlink:href="static/img/svg/symbol/sprite.svg#check-box"></use>
+                          </svg><a class="saidbar-nav__item-a">Мои подписки</a>
+                        </div>
+                      </div>
+                      <div class="cabinet-sidebar__item">
+                        <div class="cabinet-sidebar__border cabinet-sidebar__border-last">
+                          <svg class="icon icon-prize cabinet-menu" role="img">
+                            <use xlink:href="static/img/svg/symbol/sprite.svg#prize"></use>
+                          </svg><a class="saidbar-nav__item-a">Бонусы</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="personal-bonus">
+                    <div class="personal-bonus__green"><span class="personal-bonus__green-span">На вашем счету 250 бонусов</span></div>
+                    <div class="personal-bonus__block">
+                      <div class="personal-bonus__box">Всего начислено
+                        <p class="personal-bonus__box-p">856 бонусов</p>
+                      </div>
+                      <div class="personal-bonus__box">Всего потрачено
+                        <p class="personal-bonus__box-p">606 бонусов</p>
+                      </div>
+                      <div class="personal-bonus__box">
+                        <div class="personal-bonus__btn btn-more">Подробней о бонусной программе</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cabinet-place__sbc">
+                  <div class="blog-sbc">
+                    <div class="blog-sbc__right">
+                      <p class="blog-sbc__p">Знания</p><span class="blog-sbc__span">Стань продвинутым гровером. Получай полезные статьи раз в две недели!</span>
+                    </div>
+                    <div class="blog-sbc__left">
+                      <div class="blog-sbc__sbc">
+                        <input class="blog-sbc__sbc-input" placeholder="Ваш почтовый адрес">
+                      </div>
+                      <div class="blog-sbc__policy">
+                        <input class="blog-sbc__policy-checkbox" id="checkbox-blog__sbc" type="checkbox">
+                        <label class="blog-sbc__policy-label" for="checkbox-blog__sbc">Я согласен на обработку персональных данных, а также с условиями подписки</label>
+                      </div>
+                      <button class="btn-subscribe blog-sbc__btn">Подписаться</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="recovery-data">
+          <div class="recovery__popup-data">
+            <div class="recovery__popup-data-title">Изменение пароля</div>
+            <div class="recovery__popup-data-text">Текущий пароль:</div>
+            <input class="recovery__popup-data-input">
+            <div class="recovery__popup-data-text">Новый пароль:</div>
+            <input class="recovery__popup-data-input">
+            <div class="recovery__popup-data-text">Пвторите, чтобы не ошибиться:</div>
+            <input class="recovery__popup-data-input">
+            <p class="recovery__popup-data-text-p">Данные введены некорректно</p>
+            <div class="recovery__popup-data-btn">
+              <div class="btn-more-min recovery__popup-data-btn-close">Отменить</div>
+              <div class="btn-person recovery__popup-data-btn-person">Сохранить</div>
+            </div>
+          </div>
+        </div>
+        <div class="recovery-apply">
+          <div class="recovery__popup-apply">
+            <div class="recovery__popup-apply-box">
+              <div class="recovery__popup-data-title">Пароль успешно изменен</div>
+              <div class="recovery__popup-apply-btn">
+                <div class="btn-person recovery__popup-data-btn-close">Закрыть</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--footer-->
+      <footer class="container-fluid footer-block">
+        <div class="container footer-box">
+          <div class="footer-box-menu">
+            <div class="footer-box-menu__column">
+              <p class="footer-box-menu__column-p" onclick="window.location='catalog.html';">Каталог</p>
+              <p class="footer-box-menu__column-p" onclick="window.location='stock.html';">Акции</p>
+              <p class="footer-box-menu__column-p" onclick="window.location='delivery.html';">Оплата/Доставка</p>
+              <p class="footer-box-menu__column-p" onclick="window.location='warranty.html';">Гарантия</p>
+              <p class="footer-box-menu__column-p" onclick="window.location='faq.html';">FAQ</p>
+              <p class="footer-box-menu__column-p" onclick="window.location='price-list.html';">Прайс-лист</p>
+            </div>
+            <div class="footer-box-menu__column">
+              <p class="footer-box-menu__column-p" onclick="window.location='index.html';">О нас</p>
+              <p class="footer-box-menu__column-p" onclick="window.location='reviews.html';">Отзывы</p>
+              <p class="footer-box-menu__column-p" onclick="window.location='blog.html';">Блог</p>
+              <p class="footer-box-menu__column-p" onclick="window.location='dzagi_tube.html';">Dzagi-tube</p>
+              <p class="footer-box-menu__column-p" onclick="window.location='books.html';">Книга "Сам вырастил"</p>
+            </div>
+            <div class="footer-box-menu__column">
+              <p class="footer-box-menu__column-p" onclick="window.location='index.html';">Вход</p>
+              <p class="footer-box-menu__column-p" onclick="window.location='index.html';">Регистрация</p>
+              <p class="footer-box-menu__column-p" onclick="window.location='index.html';">Восстановление пароля</p>
+            </div>
+          </div>
+          <div class="footer-box-container">
+            <div class="footer-box-contact">
+              <div class="footer-box-contact__number">8 (800) 333-16-59</div>
+              <div class="footer-box-contact__text">ИНТЕРНЕТ-МАГАЗИН: ПН-ПТ 08:00–22:00<br>СБ-ВС 12:00—22:00, ЗВОНОК БЕСПЛАТНЫЙ</div>
+              <div class="footer-box-contact__number">8 (495) 120-59-42</div>
+              <div class="footer-box-contact__text">ГРОУШОП В МОСКВЕ: ПН–ВС 12:00–21:00</div>
+            </div>
+            <div class="footer-box-connect">
+              <div class="footer-box-connect__search">
+                <input class="footer-box-connect__search-input" placeholder="Я ищю...">
+                <svg class="icon icon-search search-footer" role="img">
+                  <use xlink:href="static/img/svg/symbol/sprite.svg#search"></use>
+                </svg>
+              </div>
+              <div class="footer-box-connect__social">
+                <div class="footer-box-connect__social-icon">
+                  <svg class="icon icon-tg social-footer" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#tg"></use>
+                  </svg>
+                </div>
+                <div class="footer-box-connect__social-icon">
+                  <svg class="icon icon-ig social-footer" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#ig"></use>
+                  </svg>
+                </div>
+                <div class="footer-box-connect__social-icon">
+                  <svg class="icon icon-yt social-footer" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#yt"></use>
+                  </svg>
+                </div>
+                <div class="footer-box-connect__social-icon">
+                  <svg class="icon icon-fb social-footer" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#fb"></use>
+                  </svg>
+                </div>
+                <div class="footer-box-connect__social-icon">
+                  <svg class="icon icon-vk social-footer" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#vk"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="footer-box-connect__mail">Остались вопросы пишите на почту<br><a class="footer-box-connect__mail-a">sales@dzagigrow.ru</a></div>
+            </div>
+          </div>
+          <div class="up">
+            <svg class="icon icon-down-arrow " role="img">
+              <use xlink:href="static/img/svg/symbol/sprite.svg#down-arrow"></use>
+            </svg>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="static/js/jquery.js"></script>
+    <script src="static/js/slick.min.js"></script>
+    <script src="static/js/jquery.fancybox.js"></script>
+    <script src="static/js/libs.min.js"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>

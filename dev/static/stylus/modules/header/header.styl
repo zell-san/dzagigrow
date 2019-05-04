@@ -1,0 +1,178 @@
+.full
+  background-color white
+
+  @media screen and (max-width smalDesktopWidth)
+    display none
+
+//first header
+.header-nav
+  display flex
+  justify-content space-between
+  align-items center
+  padding 10px 0
+
+  &__left
+    align-items center
+    padding 0
+
+    &-a
+      padding 0 15px
+      cursor pointer
+      color blackTextDG
+
+      &:first-child
+        padding-left 0
+
+  &__right
+    align-items center
+    display flex
+    padding 0
+
+    &-phone
+      font-size rem(18px)
+      padding 0 10px
+      cursor pointer
+
+    &-hang
+      font-size rem(10px)
+      padding-right 20px
+      color greyTextDG
+
+      &:last-child
+        padding-right 0
+
+    &-social
+      display flex
+      margin-right 10px
+
+
+//second header
+.header-second
+  border-top 1px solid greyDGdark
+
+.header-main
+  display flex
+  align-items center
+  padding 0
+
+  &__logo
+    padding 0 35px 0 0
+
+    &-img
+      width 170px
+      cursor pointer
+
+  &__city
+    display flex
+    position relative
+    cursor pointer
+    padding-right 40px
+
+  &__search
+    @extend .search-def
+
+    &-input
+      @extend .search-def-input
+
+  &__basket
+    justify-content flex-end
+    height 105px
+    padding-left 30px
+    position relative
+    z-index 1500
+
+    &-box
+      align-items center
+      display flex
+      height 100%
+      min-width 150px
+      padding 0 10px
+      box-shadow: 0 0 0 rgba(0,0,0,0), -3px 0 5px -3px rgba(0,0,0,0.2), 3px 0 5px -3px rgba(0,0,0,0.2), 0 0 0px rgba(0,0,0,0) inset
+      cursor pointer
+      justify-content space-between
+
+      &:hover #basket-block
+        display block!important
+
+    &-icon
+      position relative
+
+    &-cache
+      position relative
+
+    &-hang
+      color greyTextDG
+      font-size rem(13)
+      position (absolute -4px none none 0)
+
+    &-number
+      background-color redDG
+      color white
+      font-size rem(13)
+      border-radius 50px
+      position (absolute -5px -7px none none)
+      size (20px)
+      padding 3px 7px
+
+    &-sum
+      display block
+      font-size rem(18)
+      text-decoration underline greyDG!important
+      margin-top 10px
+
+.basket-block
+  @extend .popup
+  width 490px
+  min-height 450px
+  align-items baseline
+  justify-content flex-start
+  position (absolute 103px 0 none none)
+  display none
+
+  &__title
+    font-size rem(24px)
+    font-family HelveBold
+    font-weight bold
+    padding 35px 0 0 50px
+
+  &__item
+    display flex
+    padding 25px 30px 0 25px
+    align-items center
+    width 100%
+
+    &-preview
+      size (80px 70px)
+      margin 0 25px
+      overflow hidden
+
+      &-img
+        width 100%
+
+    &-name
+      width 200px
+
+    &-price
+      padding-left 30px
+
+  &__bottom
+    background-color blueDG
+    display flex
+    justify-content space-between
+    width 100%
+    align-items center
+    padding 0 25px
+    bottom 0
+    position absolute
+
+    &-sum
+      display flex
+      flex-direction column
+      justify-content center
+      height 135px
+      font-weight bold
+      font-size rem(16px)
+
+      &-span
+        font-family HelveBold
+        font-size rem(36px)

@@ -1,0 +1,327 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Результаты поиска'
+    - var pageClass = 'result-page'
+
+block content
+
+    .container-fluid
+        .container.page
+            include ../modules/breadcrumb
+            .page-title Результаты поиска по запросу "Гроубокс"
+            .result__filter Сортировать:
+                span.result__filter-span <br>
+                a.result__filter-a.result__filter-a-first по полярности
+                    +icon('arrow-point', 'arrow-point-filter')
+                a.result__filter-a по алфавиту
+                    +icon('arrow-point', 'arrow-point-filter')
+                a.result__filter-a по цене
+                    +icon('arrow-point', 'arrow-point-filter')
+            .result
+                .result__product
+                    .result__product-item
+                        .ticket
+                            .ticket__left
+                                .ticket-product
+                                    img.ticket-product__img(src='static/img/content/growbox.png' alt='')
+                                    .ticket-product__discount -15%
+                            .ticket__right
+                                .ticket-header
+                                    .ticket-header__text Pro Box
+                                    .ticket-header__rating
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                .ticket-title Гроубокс 120-Apollo10
+                                .ticket-buy
+                                    .ticket-buy__price
+                                        .ticket-buy__price-old 590р
+                                        .ticket-buy__price-new 450р
+                                    .ticket-buy__btn
+                                        button.btn-basket(href='javascript:void(0)')
+                                            +icon('tick-inside')
+                                            .ticket-buy__btn-text Купить
+                    .result__product-item
+                        .ticket
+                            .ticket__left
+                                .ticket-product
+                                    img.ticket-product__img(src='static/img/content/growbox.png' alt='')
+                                    .ticket-product__discount -15%
+                            .ticket__right
+                                .ticket-header
+                                    .ticket-header__text Pro Box
+                                    .ticket-header__rating
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                .ticket-title Гроубокс 120-Apollo10
+
+                                .ticket-buy
+                                    .ticket-buy__price
+                                        .ticket-buy__price-old 590р
+                                        .ticket-buy__price-new 450р
+                                    .ticket-buy__btn
+                                        button.btn-basket(href='javascript:void(0)')
+                                            +icon('tick-inside')
+                                            .ticket-buy__btn-text Купить
+                    .result__product-item
+                        .ticket
+                            .ticket__left
+                                .ticket-product
+                                    img.ticket-product__img(src='static/img/content/growbox.png' alt='')
+                                    .ticket-product__discount -15%
+                            .ticket__right
+                                .ticket-header
+                                    .ticket-header__text Pro Box
+                                    .ticket-header__rating
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                .ticket-title Гроубокс 120-Apollo10
+
+                                .ticket-buy
+                                    .ticket-buy__price
+                                        .ticket-buy__price-old 590р
+                                        .ticket-buy__price-new 450р
+                                    .ticket-buy__btn
+                                        button.btn-basket(href='javascript:void(0)')
+                                            +icon('tick-inside')
+                                            .ticket-buy__btn-text Купить
+
+                    .result__product-item
+                        .ticket
+                            .ticket__left
+                                .ticket-product
+                                    img.ticket-product__img(src='static/img/content/growbox.png' alt='')
+                                    .ticket-product__discount -15%
+                            .ticket__right
+                                .ticket-header
+                                    .ticket-header__text Pro Box
+                                    .ticket-header__rating
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                .ticket-title Гроубокс 120-Apollo10
+
+                                .ticket-buy
+                                    .ticket-buy__price
+                                        .ticket-buy__price-old 590р
+                                        .ticket-buy__price-new 450р
+                                    .ticket-buy__btn
+                                        button.btn-basket(href='javascript:void(0)')
+                                            +icon('tick-inside')
+                                            .ticket-buy__btn-text Купить
+                    .result__product-item
+                        .ticket
+                            .ticket__left
+                                .ticket-product
+                                    img.ticket-product__img(src='static/img/content/growbox.png' alt='')
+                                    .ticket-product__discount -15%
+                            .ticket__right
+                                .ticket-header
+                                    .ticket-header__text Pro Box
+                                    .ticket-header__rating
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                .ticket-title Гроубокс 120-Apollo10
+
+                                .ticket-buy
+                                    .ticket-buy__price
+                                        .ticket-buy__price-old 590р
+                                        .ticket-buy__price-new 450р
+                                    .ticket-buy__btn
+                                        button.btn-basket(href='javascript:void(0)')
+                                            +icon('tick-inside')
+                                            .ticket-buy__btn-text Купить
+                    .result__product-item
+                        .ticket
+                            .ticket__left
+                                .ticket-product
+                                    img.ticket-product__img(src='static/img/content/growbox.png' alt='')
+                                    .ticket-product__discount -15%
+                            .ticket__right
+                                .ticket-header
+                                    .ticket-header__text Pro Box
+                                    .ticket-header__rating
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                .ticket-title Гроубокс 120-Apollo10
+
+                                .ticket-buy
+                                    .ticket-buy__price
+                                        .ticket-buy__price-old 590р
+                                        .ticket-buy__price-new 450р
+                                    .ticket-buy__btn
+                                        button.btn-basket(href='javascript:void(0)')
+                                            +icon('tick-inside')
+                                            .ticket-buy__btn-text Купить
+                    .result__product-item
+                        .ticket
+                            .ticket__left
+                                .ticket-product
+                                    img.ticket-product__img(src='static/img/content/growbox.png' alt='')
+                                    .ticket-product__discount -15%
+                            .ticket__right
+                                .ticket-header
+                                    .ticket-header__text Pro Box
+                                    .ticket-header__rating
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                .ticket-title Гроубокс 120-Apollo10
+                                .ticket-buy
+                                    .ticket-buy__price
+                                        .ticket-buy__price-old 590р
+                                        .ticket-buy__price-new 450р
+                                    .ticket-buy__btn
+                                        button.btn-basket(href='javascript:void(0)')
+                                            +icon('tick-inside')
+                                            .ticket-buy__btn-text Купить
+                    .result__product-item
+                        .ticket
+                            .ticket__left
+                                .ticket-product
+                                    img.ticket-product__img(src='static/img/content/growbox.png' alt='')
+                                    .ticket-product__discount -15%
+                            .ticket__right
+                                .ticket-header
+                                    .ticket-header__text Pro Box
+                                    .ticket-header__rating
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                .ticket-title Гроубокс 120-Apollo10
+
+                                .ticket-buy
+                                    .ticket-buy__price
+                                        .ticket-buy__price-old 590р
+                                        .ticket-buy__price-new 450р
+                                    .ticket-buy__btn
+                                        button.btn-basket(href='javascript:void(0)')
+                                            +icon('tick-inside')
+                                            .ticket-buy__btn-text Купить
+                    .result__product-item
+                        .ticket
+                            .ticket__left
+                                .ticket-product
+                                    img.ticket-product__img(src='static/img/content/growbox.png' alt='')
+                                    .ticket-product__discount -15%
+                            .ticket__right
+                                .ticket-header
+                                    .ticket-header__text Pro Box
+                                    .ticket-header__rating
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                .ticket-title Гроубокс 120-Apollo10
+
+                                .ticket-buy
+                                    .ticket-buy__price
+                                        .ticket-buy__price-old 590р
+                                        .ticket-buy__price-new 450р
+                                    .ticket-buy__btn
+                                        button.btn-basket(href='javascript:void(0)')
+                                            +icon('tick-inside')
+                                            .ticket-buy__btn-text Купить
+
+                    .result__product-item
+                        .ticket
+                            .ticket__left
+                                .ticket-product
+                                    img.ticket-product__img(src='static/img/content/growbox.png' alt='')
+                                    .ticket-product__discount -15%
+                            .ticket__right
+                                .ticket-header
+                                    .ticket-header__text Pro Box
+                                    .ticket-header__rating
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                .ticket-title Гроубокс 120-Apollo10
+
+                                .ticket-buy
+                                    .ticket-buy__price
+                                        .ticket-buy__price-old 590р
+                                        .ticket-buy__price-new 450р
+                                    .ticket-buy__btn
+                                        button.btn-basket(href='javascript:void(0)')
+                                            +icon('tick-inside')
+                                            .ticket-buy__btn-text Купить
+                    .result__product-item
+                        .ticket
+                            .ticket__left
+                                .ticket-product
+                                    img.ticket-product__img(src='static/img/content/growbox.png' alt='')
+                                    .ticket-product__discount -15%
+                            .ticket__right
+                                .ticket-header
+                                    .ticket-header__text Pro Box
+                                    .ticket-header__rating
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                .ticket-title Гроубокс 120-Apollo10
+
+                                .ticket-buy
+                                    .ticket-buy__price
+                                        .ticket-buy__price-old 590р
+                                        .ticket-buy__price-new 450р
+                                    .ticket-buy__btn
+                                        button.btn-basket(href='javascript:void(0)')
+                                            +icon('tick-inside')
+                                            .ticket-buy__btn-text Купить
+                    .result__product-item
+                        .ticket
+                            .ticket__left
+                                .ticket-product
+                                    img.ticket-product__img(src='static/img/content/growbox.png' alt='')
+                                    .ticket-product__discount -15%
+                            .ticket__right
+                                .ticket-header
+                                    .ticket-header__text Pro Box
+                                    .ticket-header__rating
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                .ticket-title Гроубокс 120-Apollo10
+
+                                .ticket-buy
+                                    .ticket-buy__price
+                                        .ticket-buy__price-old 590р
+                                        .ticket-buy__price-new 450р
+                                    .ticket-buy__btn
+                                        button.btn-basket(href='javascript:void(0)')
+                                            +icon('tick-inside')
+                                            .ticket-buy__btn-text Купить
+
+                .result__btn
+                    .btn-more Загрузить еще
+                        +icon('arrow-point', 'arrow-point-more')
+    include ../pages/index/sub_reviews

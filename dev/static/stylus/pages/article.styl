@@ -1,0 +1,160 @@
+.article
+  @extend .blog
+
+  &-left
+    @extend .blog-left
+
+  &-right
+    @extend .blog-right
+
+  &-description
+    @extend  .blog-description
+    margin-bottom 25px
+    padding-bottom 90px
+    position relative
+
+    &__img
+      width 100%
+      padding 20px 0
+
+    &__social
+      position (absolute none none 30px 35px)
+      display flex
+
+  &-promo
+    display none
+    justify-content space-between
+    margin-bottom 20px
+
+    @media screen and (max-width desktopWidth)
+      display flex
+
+    &__title
+      font-weight bold
+      font-size rem(18px)
+      display none
+
+      @media screen and (max-width desktopWidth)
+        display flex
+
+  &-art
+    justify-content space-between
+    display none
+
+    @media screen and (max-width desktopWidth)
+      display flex
+
+    &__box
+      &-right
+        display flex
+        align-items center
+        justify-content right
+
+    &__title
+      padding 0 10px
+      color greenDG
+
+    &__item
+      @extend .blog-article__item
+      margin-left 0
+
+      @media screen and (max-width tableWidth)
+        display none
+
+      &-box
+        @extend .blog-article__item-box
+
+        &-img
+          @extend .blog-article__item-box-img
+
+        &-date
+          @extend .blog-article__item-box-date
+
+      &-preview
+        @extend .blog-article__item-preview
+
+  &-reviews
+    &__title
+      font-size rem(18px)
+      text-transform uppercase
+      padding 45px 0 20px 0
+
+    &__login
+      background-color white
+      padding 30px
+      text-align center
+      font-size rem(16px)
+      line-height 21px
+      margin-bottom 20px
+
+      &-a
+        font-weight bold
+        text-decoration underline
+
+    &__write
+      padding 30px
+      background-color white
+      margin-bottom 20px
+
+      &-input
+        @extend .header-main__search-input
+        width 100%
+        min-height 70px
+
+      &-box
+        display flex
+        justify-content space-between
+        padding-top 20px
+
+        @media screen and (max-width tableWidth)
+          flex-direction column
+          align-items center
+
+        &-input
+          @extend .header-main__search-input
+          size (290px 40px)
+
+          @media screen and (max-width tableWidth)
+            width 100%
+
+        &-btn
+          @media screen and (max-width tableWidth)
+            margin-top 20px
+
+    &__comment
+      height 285px
+      margin-bottom 20px
+      overflow hidden
+
+  &-btn
+    display flex
+    justify-content center
+
+  &-sbr
+    &__art
+      &-title
+        padding-top 30px
+        font-size rem(18px)
+        font-weight bold
+
+    &__promo
+      &-item
+        padding-left 0
+        width 310px
+
+        @media screen and (max-width desktopWidth)
+          width 450px
+          height 100%
+
+          @media screen and (max-width smalDesktopWidth)
+            width 354px
+
+            @media screen and (max-width tableWidth)
+              width 80%
+
+.article-ticket
+  width 100%
+  height 100%
+
+.article-right
+  @extend .blog-right

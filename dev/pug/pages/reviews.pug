@@ -1,0 +1,39 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Отзывы'
+    - var pageClass = 'reviews-page'
+
+block content
+
+    .container-fluid
+        .container.page
+            include ../modules/breadcrumb
+            .page-title Отзывы
+            .reviews
+                .reviews__afore
+                    include ../modules/reviews-afore
+                    .reviews__afore-btn
+                        button.btn-more Загрузить еще
+                            +icon('arrow-point', 'arrow-point-more')
+                .reviews__none
+                    .reviews__none-box
+                        img.reviews__none-img(src="static/img/general/logo.png")
+                        p.reviews__none-p У данного товара нет отзывов.
+                        p.reviews__none-p Станьте первым, кто оставил отзыв об этом товаре!
+                .reviews__write
+                    .reviews__write-title Написать отзыв
+                    .reviews__write-rating Оцените товар
+                    .reviews__write-star
+                        span.reviews__write-star-span ☆
+                        span.reviews__write-star-span ☆
+                        span.reviews__write-star-span ☆
+                        span.reviews__write-star-span ☆
+                        span.reviews__write-star-span ☆
+                    .reviews__write-text Напишите отзыв
+                    textarea.reviews__write-textarea
+                    .reviews__write-btn
+                        button.btn-green Добавить отзыв
+                .reviews__authorized
+                    .reviews__write-title Написать отзыв
+                    .reviews__write-text Чтобы оставлять отзыв вам необходимо <br><a class="reviews__write-text-a">войти</a> под своим аккаунтом.<br><br>Если вы еще не зарегистрированы, то можете пройти <a class="reviews__write-text-a">регистрацию</a>, которая займет всего пару минут.

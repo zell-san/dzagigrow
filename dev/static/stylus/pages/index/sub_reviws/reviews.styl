@@ -1,0 +1,69 @@
+.reviews_block
+  background-color white
+  height 100%
+  justify-content flex-start
+
+  @media screen and (max-width desktopWidth)
+    justify-content center
+
+.reviews_box
+  height 100%
+  display flex
+  flex-direction column
+  width 650px
+  padding-left 50px
+
+  @media screen and (max-width desktopWidth)
+    padding-left 25px
+
+    @media screen and (max-width bigPhoneWidth)
+      width 100%
+      padding 0 40px
+
+.reviews_message
+  display flex
+  justify-content space-between
+  align-items center
+  height 100%
+
+  &__detail
+    text-align center
+    max-width 600px
+
+    @media screen and (max-width tableWidth)
+      display flex!important
+      flex-direction column
+      align-items center
+
+    &-title
+      font-size rem(16px)
+      font-family HelveBold
+      padding-bottom 30px
+      padding-top 50px
+
+    &-descr
+      font-family HelveItalic
+      line-height 30px
+
+      @media screen and (max-width tableWidth)
+        max-width 90%
+
+.reviews_all
+  display flex
+  justify-content space-between
+  align-items flex-end
+  padding-bottom 45px
+  padding-top 30px
+
+  &__star
+    @extend .ticket-header__rating
+    display block
+    text-align left
+
+    &-span
+      @extend .ticket-header__rating-span
+      width 24px
+      font-size rem(25px)
+      line-height 15px
+
+

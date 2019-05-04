@@ -1,0 +1,18 @@
+//подписаться на новости
+
+.container-fluid.subscribe-block-news
+    .container.subscribe-block-news__cont
+        object.icon-logo(type="image/svg+xml" data="static/img/general/logo.svg")
+        .subscribe-news
+            .subscribe-news__left
+                span.subscribe-news__left-span Следите за полезными статьями и видео у нас в блоге
+            .subscribe-news__right
+                .subscribe-news__right-sbc
+                    input.subscribe-news__right-input(placeholder='Ваш почтовый адрес')
+                    button.btn-subscribe Подписаться
+                .subscribe-news__right-policy
+                    input.subscribe-news__right-checkbox#checkbox_sbc(type='checkbox')
+                    label(for='checkbox_sbc').subscribe-news__right-label Я согласен на обработку персональных данных, а также с условиями подписки
+                button.btn-subscribe__small Подписаться
+
+

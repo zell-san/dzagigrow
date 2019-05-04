@@ -1,0 +1,104 @@
+extends ../layout/main
+
+block variables
+    - var title = 'dzagi-tube'
+    - var pageClass = 'tube-page'
+
+block content
+
+    .container-fluid
+        .container.page
+            include ../modules/breadcrumb
+            .page-title Dzagi tube
+            .tube
+                .tube-left
+                    .tube-description__box
+                        .tube-description
+                            .tube-description__a
+                            .tube-description__span На нашем канале вы увидите подробные и полезные инструкции о том, как вырастить большой урожай в домашних условиях. Мы докажем что гидропоника своими руками - это просто! Как правильно оборудовать гроубокс и домашнюю оранжерею. Как подобрать удобрения и составить карту кормления для ваших растений. Как организовать капельный полив и грамотно подобрать освещение для растений. И еще много всего интересного! Добивайтесь успехов в домашней гидропонике с нами!
+
+                        .tube-description__social
+                            a.tube-description__social-a Перейти на наш youtube канал
+                            +icon('yt', 'tube-yt')
+                    .tube-sidebar
+                        .saidbar-nav-media
+                            .saidbar-nav__border
+                                .saidbar-nav__item Все видео
+                            .saidbar-nav__border
+                                .saidbar-nav__item Первый сезон. Базовые вопросы
+                            .saidbar-nav__border
+                                .saidbar-nav__item Второй сезон: тонкости и секреты успешного гровинга
+                            .saidbar-nav__border
+                                .saidbar-nav__item Третий сезон: новый формат
+                            .saidbar-nav__border
+                                .saidbar-nav__item Уникальные ролики от команды DG
+                            .saidbar-nav__border
+                                .saidbar-nav__item Освещение в гроубоксе
+                            .saidbar-nav__border
+                                .saidbar-nav__item Гроубокс своими руками или как собрать
+                            .saidbar-nav__border
+                                .saidbar-nav__item Удобрения для гидропоники и субстратов
+                            .saidbar-nav__border
+                                .saidbar-nav__item.saidbar-nav__item-last Гидропоника в домашних условиях
+                    .tube-article
+                        .tube-article__item
+                            .tube-article__item-box
+                                img.tube-article__item-box-img(src="static/img/content/tube.png" alt'')
+                            .tube-article__item-preview Питер в Питере. Интервью консультанта Canna Питера Классена
+                        .tube-article__item
+                            .tube-article__item-box
+                                img.tube-article__item-box-img(src="static/img/content/tube.png" alt'')
+                            .tube-article__item-preview Питер в Питере. Интервью консультанта Canna Питера Классена
+                        .tube-article__item
+                            .tube-article__item-box
+                                img.tube-article__item-box-img(src="static/img/content/tube.png" alt'')
+                            .tube-article__item-preview Питер в Питере. Интервью консультанта Canna Питера Классена
+                        .tube-article__item
+                            .tube-article__item-box
+                                img.tube-article__item-box-img(src="static/img/content/tube.png" alt'')
+                            .tube-article__item-preview Питер в Питере. Интервью консультанта Canna Питера Классена
+                        .tube-article__item
+                            .tube-article__item-box
+                                img.tube-article__item-box-img(src="static/img/content/tube.png" alt'')
+                            .tube-article__item-preview Питер в Питере. Интервью консультанта Canna Питера Классена
+                        .tube-article__item
+                            .tube-article__item-box
+                                img.tube-article__item-box-img(src="static/img/content/tube.png" alt'')
+                            .tube-article__item-preview Питер в Питере. Интервью консультанта Canna Питера Классена
+                        .tube-article__item
+                            .tube-article__item-box
+                                img.tube-article__item-box-img(src="static/img/content/tube.png" alt'')
+                            .tube-article__item-preview Питер в Питере. Интервью консультанта Canna Питера Классена
+                        .tube-article__item
+                            .tube-article__item-box
+                                img.tube-article__item-box-img(src="static/img/content/tube.png" alt'')
+                            .tube-article__item-preview Питер в Питере. Интервью консультанта Canna Питера Классена
+                        .tube-article__item
+                            .tube-article__item-box
+                                img.tube-article__item-box-img(src="static/img/content/tube.png" alt'')
+                            .tube-article__item-preview Питер в Питере. Интервью консультанта Canna Питера Классена
+                    .tube-btn
+                        .btn-more Загрузить еще
+                            +icon('arrow-point', 'arrow-point-more')
+                .tube-right
+                    .saidbar-nav
+                        .saidbar-nav__border
+                            .saidbar-nav__item Все видео
+                        .saidbar-nav__border
+                            .saidbar-nav__item Первый сезон. Базовые вопросы
+                        .saidbar-nav__border
+                            .saidbar-nav__item Второй сезон: тонкости и секреты успешного гровинга
+                        .saidbar-nav__border
+                            .saidbar-nav__item Третий сезон: новый формат
+                        .saidbar-nav__border
+                            .saidbar-nav__item Уникальные ролики от команды DG
+                        .saidbar-nav__border
+                            .saidbar-nav__item Освещение в гроубоксе
+                        .saidbar-nav__border
+                            .saidbar-nav__item Гроубокс своими руками или как собрать
+                        .saidbar-nav__border
+                            .saidbar-nav__item Удобрения для гидропоники и субстратов
+                        .saidbar-nav__border
+                            .saidbar-nav__item.saidbar-nav__item-last Гидропоника в домашних условиях
+    include index/sub_reviews
+

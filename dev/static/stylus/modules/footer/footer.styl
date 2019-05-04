@@ -1,0 +1,116 @@
+footer
+  flex 0 0 auto
+  padding 80px 0 70px 0
+
+.footer-block
+  background-color blackDG
+
+.footer-box
+  display flex
+  color greyTextDG
+  justify-content space-between
+
+  @media screen and (max-width desktopWidth)
+    flex-direction column-reverse
+
+  &-container
+    display flex
+    width 50%
+    justify-content space-between
+
+    @media screen and (max-width desktopWidth)
+      width 100%
+      border-bottom 1px solid greyDGdark
+      margin-bottom 35px
+      padding-bottom 10px
+
+      @media screen and (max-width tableWidth)
+        flex-direction column
+        border none
+        align-items center
+
+  &-menu
+    display flex
+    width 50%
+    justify-content space-between
+    padding-right 50px
+
+    @media screen and (max-width desktopWidth)
+      width 100%
+      padding-right 0
+
+      @media screen and (max-width tableWidth)
+        display none
+
+    &__column
+
+      &:nth-child(even)
+        padding-left 50px
+
+      &-p
+        padding-bottom 20px
+        cursor pointer
+
+        &:last-child
+          padding-bottom 0
+
+
+  &-contact
+    width 50%
+    padding-left 35px
+
+    @media screen and (max-width desktopWidth)
+      padding-left 0
+
+      @media screen and (max-width tableWidth)
+        width 100%
+        align-items center
+        flex-direction column
+        display flex
+        margin-bottom 20px
+
+    &__number
+      font-size rem(30px)
+      color white
+      padding-bottom 13px
+      line-height 38px
+
+    &__text
+      font-size rem(12px)
+      padding-bottom 20px
+
+  &-connect
+    max-width 285px
+
+    &__search
+      @extend .search-def
+
+      &-input
+        @extend .search-def-input
+        border none
+
+    &__social
+      display flex
+      justify-content space-between
+      padding 22px 0
+
+      &-icon
+        size (40px)
+        background-color greyTextDGdark
+        border-radius 30px
+        display flex
+        align-items center
+        justify-content center
+        cursor pointer
+        opacity 0.5
+
+
+    &__mail
+      font-size rem(16px)
+      width 100%
+
+      &-a
+        color greyTextDG
+
+
+    

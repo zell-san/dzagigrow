@@ -1,0 +1,277 @@
+.catalog
+  display flex
+  justify-content space-between
+
+  &-left
+    @extend .blog-right
+    margin-top 85px
+
+    &__parametrs
+      background-color white
+      font-size rem(14px)
+
+    &__btn
+      width 100%
+      margin-top 10px
+
+      &-box
+        display flex
+        flex-wrap wrap
+
+  &-right
+    @extend .blog-left
+
+    &__description
+      @extend .blog-description
+      line-height 24px
+      margin-bottom 30px
+
+      &-a
+        @extend .blog-description__a
+
+      &-img
+        width 100%
+        margin 30px 0
+
+    &__filter
+      @extend .result__filter
+      padding-left 0
+
+      &-box
+        display flex
+        align-items center
+        margin-bottom 5px
+        flex-wrap wrap
+
+        @media screen and (max-width tableWidth)
+          flex-direction column
+          align-items flex-start
+
+      &-btn
+        display none
+        margin-right 30px
+
+        @media screen and (max-width desktopWidth)
+          display flex
+
+          @media screen and (max-width tableWidth)
+            margin-bottom 10px
+            width 100%
+
+        &-box
+          &-key
+            font-weight normal
+
+        &-inside
+          display none
+          width 100%
+
+      &-span
+        @extend .result__filter-span
+        margin-top 5px
+
+      &-a
+        @extend .result__filter-a
+        padding-top 5px
+
+        &-first
+          @extend .result__filter-a-first
+
+    &__picking
+      display flex
+      align-items center
+
+      @media screen and (max-width bigPhoneWidth)
+        flex-wrap wrap
+
+      &-reset
+        @media screen and (max-width bigPhoneWidth)
+          margin-top 10px
+
+      &-item
+        border 1px solid greenDG
+        border-radius 3px
+        padding 10px
+        display flex
+        align-items center
+        margin-right 15px
+        margin-top 10px
+
+        &-span
+          color greenDG
+          margin-right 10px
+
+    &__products
+      @extend .products__teaser
+      flex-wrap wrap
+      height 930px
+
+      @media screen and (max-width smalDesktopWidth)
+        height 2415px
+
+        @media screen and (max-width tableWidth)
+          height 2212px
+
+          @media screen and (max-width bigPhoneWidth)
+            height 1966px
+
+      &-item
+        &:nth-child(4n+1)
+          padding-left 15px
+
+        &:nth-child(3n+1)
+          padding-left 0
+
+        @media screen and (max-width desktopWidth)
+          @extend .result__product-item
+
+          @media screen and (max-width smalDesktopWidth)
+            &:nth-child(2n+1)
+              padding-left 0
+
+            &:nth-child(3n+1)
+              padding-left 15px
+
+            &:nth-child(6n+1)
+              padding-left 0
+
+              @media screen and (max-width tableWidth)
+                padding-left 0!important
+
+    &__btn
+      margin 30px 0
+      display flex
+      justify-content center
+
+.parametrs__item
+  @extend .faq__item
+  position relative
+
+  &:hover
+    border-bottom 1px solid greyDGdark
+
+  &-block
+    border-left 3px solid greenDG
+    position (absolute 10px none 10px none)
+
+  &-box
+    @extend .faq__item-box
+    padding 10px 25px
+    justify-content space-between
+
+    &:hover
+      background-color white
+      color blackTextDG
+
+    &:hover .arrow-point-faq
+      fill greyTextDGdark
+
+    &-other
+      @extend .parametrs__item-box
+      justify-content flex-start
+
+  &-title
+    height 100%
+    display flex
+    align-items center
+    font-weight bold
+
+    &-other
+      padding 0 10px
+      font-weight bold
+
+  &-inside
+    padding 20px 25px
+    border-top 1px solid greyDGdark
+    margin-bottom 0
+    display none
+    flex-direction column
+
+    &-box
+      display flex
+      padding-bottom 5px
+
+      &:last-child
+        padding-bottom 0
+
+    &-checkbox
+      &-other
+        @extend .parametrs__item-title
+
+    &-info
+      padding 0 10px
+
+.parametrs__item-box.opened .arrow-point-faq
+  transform rotate(270deg)
+
+
+.parametrs__item
+  &-filter
+    width 100%
+
+  &-controls
+    position relative
+    height 50px
+    margin-bottom 10px
+    padding 0 5px
+    border-radius 5px
+    overflow hidden
+    display flex
+    align-items center
+
+  &-scale
+    height 2px
+    background greyDGdark
+    width 100%
+
+  &-bar
+    height 5px
+    background-color greenDG
+    width 100%
+
+  &-toggle
+    position absolute
+    border 5px solid greenDG
+    background white
+    cursor pointer
+    border-radius 50%
+    size (20px)
+
+    &-min
+      left 0
+
+    &-max
+      right 0
+
+  &-price-controls
+    display flex
+    justify-content space-between
+
+  &-min-price
+    size (100px 40px)
+    padding 8px 10px
+    border 1px solid greyDGdark
+    background white
+    color blackTextDG
+
+  &-max-price
+    @extend .parametrs__item-min-price
+
+  &-dash-price
+    height 1px
+    margin auto
+    width 20px
+    background-color greyDGdark
+
+
+.catalog-right__products-item .ticket
+  @media screen and (max-width desktopWidth)
+    max-width 293px
+
+    @media screen and (max-width smalDesktopWidth)
+      max-width 351px
+      width 100%
+      height 100%
+
+      @media screen and (max-width tableWidth)
+        max-width 430px

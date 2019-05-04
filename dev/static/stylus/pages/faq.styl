@@ -1,0 +1,100 @@
+.page-search
+  @extend .search-def
+  margin-bottom 20px
+
+  &__input
+    @extend .search-def-input
+
+.faq
+  font-size rem(16px)
+  margin-bottom 20px
+
+  &__item
+    @extend .price-category__item
+
+    &-title
+      font-weight 500
+
+    &-box
+      height 60px
+      justify-content flex-start
+      padding 0 35px
+
+      &:hover .arrow-point-faq
+        fill white
+
+    &-inside
+      @extend .price-inside
+      padding 30px 0
+      line-height 24px
+
+      @media screen and (max-width smalDesktopWidth)
+        padding 20px 20px
+
+        @media screen and (max-width bigPhoneWidth)
+          padding 10px
+
+      &-info
+        @extend .price-inside__info-row
+        border-top none
+        height 100%
+
+
+.faq__item-box.opened
+  background-color greenDG
+  color white
+
+.faq__item-box.opened .arrow-point-faq
+  fill white
+  transform rotate(270deg)
+
+
+.faq-footer
+  &__box
+    height 110px
+    display flex
+    justify-content center
+    align-items center
+    font-size rem(24px)
+    text-align center
+    background-color greenDG
+    color white
+
+  &__inside
+    background-color white
+    padding 35px
+
+    &-input
+      @extend .search-def-input
+      height 40px
+      margin-top 10px
+
+    &-btn
+      display flex
+      justify-content flex-end
+      align-items center
+      margin-top 15px
+
+      &-a
+        margin-right 40px
+        color greyTextDGdark
+
+    &-block
+      display flex
+      justify-content space-between
+
+      @media screen and (max-width tableWidth)
+        flex-direction column
+
+    &-box
+      width 48%
+      padding-bottom 25px
+
+      @media screen and (max-width tableWidth)
+        width 100%
+
+    &-textarea
+      @extend .search-def-input
+      height 130px
+      margin-top 10px
+

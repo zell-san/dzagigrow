@@ -1,0 +1,2395 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Главная страница</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css"><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body class="index-page">
+    <div class="wrapper">
+      <header>
+        <!--first header-->
+        <div class="full">
+          <div class="container-fluid">
+            <div class="container">
+              <div class="header-nav">
+                <div class="header-nav__left"><a class="header-nav__left-a" href="blog.html">Блог</a><a class="header-nav__left-a" href="dzagi_tube.html">Dzagi tube</a><a class="header-nav__left-a" href="books.html">Книги</a></div>
+                <div class="header-nav__right">
+                  <div class="header-nav__right-social">
+                    <svg class="icon icon-tg social" role="img">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#tg"></use>
+                    </svg>
+                    <svg class="icon icon-ig social" role="img">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#ig"></use>
+                    </svg>
+                    <svg class="icon icon-yt social" role="img">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#yt"></use>
+                    </svg>
+                    <svg class="icon icon-fb social" role="img">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#fb"></use>
+                    </svg>
+                    <svg class="icon icon-vk social" role="img">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#vk"></use>
+                    </svg>
+                  </div>
+                  <div class="header-nav__right-phone" href="tel:+78003331659">8(800)333-16-59</div>
+                  <div class="header-nav__right-hang">Бесплатный звонок<br>по России</div>
+                  <div class="header-nav__right-phone" href="tel:+74951205945">8(495)120-59-45</div>
+                  <div class="header-nav__right-hang">Звонок<br>по Москве и МО</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--second header-->
+          <div class="container-fluid header-second">
+            <div class="container">
+              <div class="header-main">
+                <div class="header-main__logo"><img class="header-main__logo-img" onclick="window.location='index.html';" src="static/img/general/logo.png" alt=""></div>
+                <div class="header-main__city" href="javascript:PopUpHide()"><a class="header-main__city-a">Пермь</a>
+                  <svg class="icon icon-arrow-point arrow-point-city" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                  <div class="city-you" id="city-you" href="javascript:PopUpHide()">
+                    <svg class="icon icon-close close-city" role="img">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#close"></use>
+                    </svg>
+                    <div class="city-you__text"><span>Ваш город</span><a class="city-you__text-a">Пермь?</a></div>
+                    <div class="city-you__btn">
+                      <button class="btn-green city-you__btn-green">Да, верно</button>
+                      <button class="btn-grey city-you__btn-grey">Выбрать другой</button>
+                    </div>
+                  </div>
+                  <div class="city-choice" id="city-choice" href="javascript:PopUpHide()">
+                    <svg class="icon icon-close close-city" role="img">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#close"></use>
+                    </svg><span class="city-choice__span">Выбор города</span><span class="city-choice__span-small">Если вашего города нет - выберете ближайший</span>
+                    <div class="city-choice__search">
+                      <input class="city-choice__search-input" type="text" placeholder="Я ищу...">
+                      <svg class="icon icon-search search-header" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#search"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="header-main__search">
+                  <input class="header-main__search-input" type="text" placeholder="Я ищу...">
+                  <div class="header-main__search-icon" onclick="window.location='result.html';">
+                    <svg class="icon icon-search search-header" role="img">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#search"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="header-main__basket">
+                  <div class="header-main__basket-box">
+                    <div class="header-main__basket-icon">
+                      <svg class="icon icon-basket basket-header" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#basket"></use>
+                      </svg><span class="header-main__basket-number">5</span>
+                    </div>
+                    <div class="header-main__basket-cache"><span class="header-main__basket-hang">Сумма</span><a class="header-main__basket-sum">45 000 р</a></div>
+                    <div class="basket-block" id="basket-block" href="javascript:void(0)">
+                      <svg class="icon icon-close close-basket" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#close"></use>
+                      </svg>
+                      <div class="basket-block__title">Корзина</div>
+                      <div class="basket-block__item">
+                        <svg class="icon icon-cancel cancel-basket" role="img">
+                          <use xlink:href="static/img/svg/symbol/sprite.svg#cancel"></use>
+                        </svg>
+                        <div class="basket-block__item-preview"><img class="basket-block__item-preview-img" src="static/img/content/growbox.png"></div>
+                        <div class="basket-block__item-name">Фитолампа<br>15 Ватт E27 (Биколор)</div>
+                        <div class="basket-block__item-price">2 470р</div>
+                      </div>
+                      <div class="basket-block__bottom">
+                        <div class="basket-block__bottom-sum"><span>Итог:</span><span class="basket-block__bottom-sum-span">2 470р</span></div>
+                        <div class="basket-block__bottom-btn btn-green-big">Перейти в корзину</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--menu header-->
+        <div class="container-fluid header-third">
+          <div class="container">
+            <div class="header-menu">
+              <div class="header-menu__primary">
+                <div class="header-menu__opener">
+                  <svg class="icon icon-menu menu-header" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#menu"></use>
+                  </svg><a class="header-menu__primary-a">Категория товаров</a>
+                </div>
+                <div class="menu-nav">
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Гроубоксы
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Гидропонные системы
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Удобрения
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Освещение
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Полив
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Очистка воздуха
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Автоматизация
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Аксессуары
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Гроубоксы
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Гидропонные системы
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Удобрения
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Освещение
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Полив
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Очистка воздуха
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Автоматизация
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Аксессуары
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Полив
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Очистка воздуха
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Автоматизация
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item menu-nav__item-last">Аксессуары
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="header-menu__box">
+                <div class="header-menu__main"><a class="header-menu__main-a" href="price-list.html">Прайс-лист</a><a class="header-menu__main-a" href="stock.html">Акции</a><a class="header-menu__main-a" href="delivery.html">Доставка / Оплата</a><a class="header-menu__main-a" href="reviews.html">Отзывы</a><a class="header-menu__main-a" href="contacts.html">Контакты</a></div>
+                <div class="header-menu__login"><a class="header-menu__login-a" href="login.html">Вход</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Мобильная версия-->
+        <div class="container-fluid header-media">
+          <div class="header-media__menu">
+            <svg class="icon icon-menu menu-header-media" role="img">
+              <use xlink:href="static/img/svg/symbol/sprite.svg#menu"></use>
+            </svg>
+          </div>
+          <div class="header-media__box"><img class="header-media__box-img" src="static/img/general/logo.png" alt' href="javascript:void(0)">
+            <div class="header-media__box-icon">
+              <svg class="icon icon-search search-header-media" role="img">
+                <use xlink:href="static/img/svg/symbol/sprite.svg#search"></use>
+              </svg>
+              <div class="header-main__basket-icon">
+                <svg class="icon icon-basket basket-header-media" role="img">
+                  <use xlink:href="static/img/svg/symbol/sprite.svg#basket"></use>
+                </svg><span class="header-media__box-icon-number">5</span>
+              </div>
+            </div>
+          </div>
+          <div class="header-media__box-search">
+            <div class="header-main__search">
+              <input class="header-main__search-input" type="text" placeholder="Я ищу...">
+              <div class="header-main__search-icon" onclick="window.location='result.html';">
+                <svg class="icon icon-search search-header-media-open" role="img">
+                  <use xlink:href="static/img/svg/symbol/sprite.svg#search"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu-media-full">
+          <div class="container-fluid menu-media-full__open">
+            <div class="header-media-open">
+              <div class="header-media-open__menu">
+                <svg class="icon icon-close close-header-media" role="img">
+                  <use xlink:href="static/img/svg/symbol/sprite.svg#close"></use>
+                </svg>
+              </div>
+              <div class="header-media-open__box"><img class="header-media-open__box-img" src="static/img/general/logo.png" alt' href="javascript:void(0)">
+                <div class="header-media-open__box-icon"><span class="header-media-open__box-icon-span">Пермь
+                    <svg class="icon icon-arrow-point arrow-point-city" role="img">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                    </svg></span>
+                  <div class="city-you" id="city-you" href="javascript:PopUpHide()">
+                    <svg class="icon icon-close close-city" role="img">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#close"></use>
+                    </svg>
+                    <div class="city-you__text"><span>Ваш город</span><a class="city-you__text-a">Пермь?</a></div>
+                    <div class="city-you__btn">
+                      <button class="btn-green city-you__btn-green">Да, верно</button>
+                      <button class="btn-grey city-you__btn-grey">Выбрать другой</button>
+                    </div>
+                  </div>
+                  <div class="city-choice" id="city-choice" href="javascript:PopUpHide()">
+                    <svg class="icon icon-close close-city" role="img">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#close"></use>
+                    </svg><span class="city-choice__span">Выбор города</span><span class="city-choice__span-small">Если вашего города нет - выберете ближайший</span>
+                    <div class="city-choice__search">
+                      <input class="city-choice__search-input" type="text" placeholder="Я ищу...">
+                      <svg class="icon icon-search search-header" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#search"></use>
+                      </svg>
+                    </div>
+                  </div><span class="header-media-open__box-icon-span">Вход</span>
+                </div>
+              </div>
+            </div>
+            <div class="header-media-nav">
+              <svg class="icon icon-menu menu-header" role="img">
+                <use xlink:href="static/img/svg/symbol/sprite.svg#menu"></use>
+              </svg><a class="header-media-nav__a">Категория товаров</a>
+            </div>
+            <div class="menu-media-category">
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Гроубоксы
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+                <div class="menu-media-category__sub">
+                  <div class="menu-media-category__sub-element">Маленькие</div>
+                  <div class="menu-media-category__sub-element">Средние</div>
+                  <div class="menu-media-category__sub-element">Большие</div>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Гидропонные системы
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+                <div class="menu-media-category__sub">
+                  <div class="menu-media-category__sub-element">Маленькие</div>
+                  <div class="menu-media-category__sub-element">Средние</div>
+                  <div class="menu-media-category__sub-element">Большие</div>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Удобрения
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+                <div class="menu-media-category__sub">
+                  <div class="menu-media-category__sub-element">Маленькие</div>
+                  <div class="menu-media-category__sub-element">Средние</div>
+                  <div class="menu-media-category__sub-element">Большие</div>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Освещение
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+                <div class="menu-media-category__sub">
+                  <div class="menu-media-category__sub-element">Маленькие</div>
+                  <div class="menu-media-category__sub-element">Средние</div>
+                  <div class="menu-media-category__sub-element">Большие</div>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Полив
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+                <div class="menu-media-category__sub">
+                  <div class="menu-media-category__sub-element">Маленькие</div>
+                  <div class="menu-media-category__sub-element">Средние</div>
+                  <div class="menu-media-category__sub-element">Большие</div>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Очистка воздуха
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+                <div class="menu-media-category__sub">
+                  <div class="menu-media-category__sub-element">Маленькие</div>
+                  <div class="menu-media-category__sub-element">Средние</div>
+                  <div class="menu-media-category__sub-element">Большие</div>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Автоматизация
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+                <div class="menu-media-category__sub">
+                  <div class="menu-media-category__sub-element">Маленькие</div>
+                  <div class="menu-media-category__sub-element">Средние</div>
+                  <div class="menu-media-category__sub-element">Большие</div>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Аксессуары
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+                <div class="menu-media-category__sub">
+                  <div class="menu-media-category__sub-element">Маленькие</div>
+                  <div class="menu-media-category__sub-element">Средние</div>
+                  <div class="menu-media-category__sub-element">Большие</div>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Гроубоксы
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+                <div class="menu-media-category__sub">
+                  <div class="menu-media-category__sub-element">Маленькие</div>
+                  <div class="menu-media-category__sub-element">Средние</div>
+                  <div class="menu-media-category__sub-element">Большие</div>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Гидропонные системы
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+                <div class="menu-media-category__sub">
+                  <div class="menu-media-category__sub-element">Маленькие</div>
+                  <div class="menu-media-category__sub-element">Средние</div>
+                  <div class="menu-media-category__sub-element">Большие</div>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Удобрения
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+                <div class="menu-media-category__sub">
+                  <div class="menu-media-category__sub-element">Маленькие</div>
+                  <div class="menu-media-category__sub-element">Средние</div>
+                  <div class="menu-media-category__sub-element">Большие</div>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Освещение
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Полив
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Очистка воздуха
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Автоматизация
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Аксессуары
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Полив
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Очистка воздуха
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Автоматизация
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Аксессуары
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="header-media-main">
+              <div class="header-media-main__border">
+                <div class="header-media-main__border-item">Прайс-лист</div>
+              </div>
+              <div class="header-media-main__border">
+                <div class="header-media-main__border-item">Акции</div>
+              </div>
+              <div class="header-media-main__border">
+                <div class="header-media-main__border-item">Доставка и оплата</div>
+              </div>
+              <div class="header-media-main__border">
+                <div class="header-media-main__border-item">Отзывы</div>
+              </div>
+              <div class="header-media-main__border">
+                <div class="header-media-main__border-item">Контакты</div>
+              </div>
+              <div class="header-media-main__border">
+                <div class="header-media-main__border-item">Блог</div>
+              </div>
+              <div class="header-media-main__border">
+                <div class="header-media-main__border-item">Dzagi tube</div>
+              </div>
+              <div class="header-media-main__border">
+                <div class="header-media-main__border-item">Книги</div>
+              </div>
+            </div>
+            <div class="header-media-contact">
+              <div class="header-media-contact__number">
+                <div class="header-media-contact__number-box">
+                  <div class="header-media-contact__phone" href="tel:+78003331659">8(800)333-16-59</div>
+                  <div class="header-media-contact__hang">Бесплатный звонок<br>по России</div>
+                </div>
+                <div class="header-media-contact__number-box">
+                  <div class="header-media-contact__phone" href="tel:+74951205945">8(495)120-59-45</div>
+                  <div class="header-media-contact__hang">Звонок<br>по Москве и МО</div>
+                </div>
+              </div>
+              <div class="header-media-contact__social">
+                <svg class="icon icon-tg social" role="img">
+                  <use xlink:href="static/img/svg/symbol/sprite.svg#tg"></use>
+                </svg>
+                <svg class="icon icon-ig social" role="img">
+                  <use xlink:href="static/img/svg/symbol/sprite.svg#ig"></use>
+                </svg>
+                <svg class="icon icon-yt social" role="img">
+                  <use xlink:href="static/img/svg/symbol/sprite.svg#yt"></use>
+                </svg>
+                <svg class="icon icon-fb social" role="img">
+                  <use xlink:href="static/img/svg/symbol/sprite.svg#fb"></use>
+                </svg>
+                <svg class="icon icon-vk social" role="img">
+                  <use xlink:href="static/img/svg/symbol/sprite.svg#vk"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="content">
+        <!--phone-->
+        <div class="container-fluid teaser-phone-block">
+          <div class="teaser-phone single-item">
+            <div class="teaser-phone__item"><img class="teaser-phone__item-img" src="static/img/content/image1.png" alt="">
+              <button class="teaser-phone__item-button-yellow" href="javascript:void(0)">Подробнее</button>
+            </div>
+            <div class="teaser-phone__item"><img class="teaser-phone__item-img" src="static/img/content/image3.png" alt="">
+              <button class="teaser-phone__item-button-green" href="javascript:void(0)">Читать книгу</button>
+            </div>
+            <div class="teaser-phone__item"><img class="teaser-phone__item-img" src="static/img/content/image2.png" alt="">
+              <button class="teaser-phone__item-button-black" href="javascript:void(0)">Посмотреть все скидки дня!</button>
+            </div>
+          </div>
+        </div>
+        <!--главная страница-->
+        <!--primari-block-->
+        <div class="container-fluid">
+          <div class="container primary-block">
+            <div class="menu-nav__index">
+              <div class="menu-nav__border">
+                <div class="menu-nav__item">Гроубоксы
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                  <div class="menu-nav__item-sub">
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element">Маленькие</div>
+                    </div>
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element">Средние</div>
+                    </div>
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-nav__border">
+                <div class="menu-nav__item">Гидропонные системы
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                  <div class="menu-nav__item-sub">
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element">Маленькие</div>
+                    </div>
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element">Средние</div>
+                    </div>
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-nav__border">
+                <div class="menu-nav__item">Удобрения
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                  <div class="menu-nav__item-sub">
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element">Маленькие</div>
+                    </div>
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element">Средние</div>
+                    </div>
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-nav__border">
+                <div class="menu-nav__item">Освещение
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                  <div class="menu-nav__item-sub">
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element">Маленькие</div>
+                    </div>
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element">Средние</div>
+                    </div>
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-nav__border">
+                <div class="menu-nav__item">Полив
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                  <div class="menu-nav__item-sub">
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element">Маленькие</div>
+                    </div>
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element">Средние</div>
+                    </div>
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-nav__border">
+                <div class="menu-nav__item">Очистка воздуха
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                  <div class="menu-nav__item-sub">
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element">Маленькие</div>
+                    </div>
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element">Средние</div>
+                    </div>
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-nav__border">
+                <div class="menu-nav__item">Автоматизация
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                  <div class="menu-nav__item-sub">
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element">Маленькие</div>
+                    </div>
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element">Средние</div>
+                    </div>
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-nav__border">
+                <div class="menu-nav__item">Аксессуары
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                  <div class="menu-nav__item-sub">
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element">Маленькие</div>
+                    </div>
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element">Средние</div>
+                    </div>
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-nav__border">
+                <div class="menu-nav__item">Гроубоксы
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                  <div class="menu-nav__item-sub">
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element">Маленькие</div>
+                    </div>
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element">Средние</div>
+                    </div>
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-nav__border">
+                <div class="menu-nav__item">Гидропонные системы
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                  <div class="menu-nav__item-sub">
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element">Маленькие</div>
+                    </div>
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element">Средние</div>
+                    </div>
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-nav__border">
+                <div class="menu-nav__item">Удобрения
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                  <div class="menu-nav__item-sub">
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element">Маленькие</div>
+                    </div>
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element">Средние</div>
+                    </div>
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-nav__border">
+                <div class="menu-nav__item">Освещение
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                  <div class="menu-nav__item-sub">
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element">Маленькие</div>
+                    </div>
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element">Средние</div>
+                    </div>
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-nav__border">
+                <div class="menu-nav__item">Полив
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                  <div class="menu-nav__item-sub">
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element">Маленькие</div>
+                    </div>
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element">Средние</div>
+                    </div>
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-nav__border">
+                <div class="menu-nav__item">Очистка воздуха
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                  <div class="menu-nav__item-sub">
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element">Маленькие</div>
+                    </div>
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element">Средние</div>
+                    </div>
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-nav__border">
+                <div class="menu-nav__item">Автоматизация
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                  <div class="menu-nav__item-sub">
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element">Маленькие</div>
+                    </div>
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element">Средние</div>
+                    </div>
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-nav__border">
+                <div class="menu-nav__item">Аксессуары
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                  <div class="menu-nav__item-sub">
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element">Маленькие</div>
+                    </div>
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element">Средние</div>
+                    </div>
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-nav__border">
+                <div class="menu-nav__item">Полив
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                  <div class="menu-nav__item-sub">
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element">Маленькие</div>
+                    </div>
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element">Средние</div>
+                    </div>
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-nav__border">
+                <div class="menu-nav__item">Очистка воздуха
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                  <div class="menu-nav__item-sub">
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element">Маленькие</div>
+                    </div>
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element">Средние</div>
+                    </div>
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-nav__border">
+                <div class="menu-nav__item">Автоматизация
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                  <div class="menu-nav__item-sub">
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element">Маленькие</div>
+                    </div>
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element">Средние</div>
+                    </div>
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-nav__border">
+                <div class="menu-nav__item menu-nav__item-last">Аксессуары
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                  <div class="menu-nav__item-sub">
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element">Маленькие</div>
+                    </div>
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element">Средние</div>
+                    </div>
+                    <div class="menu-nav__item-sub-border">
+                      <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section-block__ad">
+              <div class="teaser">
+                <div class="teaser__big"><img class="teaser__big-img" src="static/img/content/image1.png" alt="">
+                  <button class="teaser__big-button" href="javascript:void(0)">Подробнее</button>
+                </div>
+                <div class="teaser__small">
+                  <div class="teaser__small-right"><img class="teaser__small-right-img" src="static/img/content/image3.png" alt="">
+                    <button class="teaser__small-right-button" href="javascript:void(0)">Читать книгу</button>
+                  </div>
+                  <div class="teaser__small-right"><img class="teaser__small-right-img" src="static/img/content/image2.png" alt="">
+                    <button class="teaser__small-right-button-bottom" href="javascript:void(0)">Посмотреть все скидки дня!</button>
+                  </div>
+                </div>
+              </div>
+              <!--products-teaser-->
+              <div class="products_ad">
+                <div class="products_ad__text">
+                  <div class="products_ad__text-title">Готовые гроубоксы</div>
+                  <div class="products_ad__text-all" href="javascript:void(0)">Все товары</div>
+                </div>
+                <div class="products_ad__teaser">
+                  <div class="products_ad__teaser-item">
+                    <div class="ticket_ad">
+                      <div class="ticket_ad-header">
+                        <div class="ticket_ad-header__text">Pro Box</div>
+                        <div class="ticket_ad-header__rating"><span class="ticket_ad-header__rating-span">☆</span><span class="ticket_ad-header__rating-span">☆</span><span class="ticket_ad-header__rating-span">☆</span><span class="ticket_ad-header__rating-span">☆</span><span class="ticket_ad-header__rating-span">☆</span></div>
+                      </div>
+                      <div class="ticket_ad-title" onclick="window.location='product.html';">Гроубокс 120-Apollo10</div>
+                      <div class="ticket_ad-product"><img class="ticket_ad-product__img" src="static/img/content/growbox.png" alt="" onclick="window.location='product.html';">
+                        <div class="ticket_ad-product__discount">-15%</div>
+                      </div>
+                      <div class="ticket_ad-buy">
+                        <div class="ticket_ad-buy__price">
+                          <div class="ticket_ad-buy__price-old">60 200р</div>
+                          <div class="ticket_ad-buy__price-new">58 915р</div>
+                        </div>
+                        <div class="ticket_ad-buy__btn">
+                          <button class="btn-basket" href="javascript:void(0)">
+                            <svg class="icon icon-tick-inside " role="img">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#tick-inside"></use>
+                            </svg>
+                            <div class="ticket_ad-buy__btn-text">Купить</div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="products_ad__teaser-item">
+                    <div class="ticket_ad">
+                      <div class="ticket_ad-header">
+                        <div class="ticket_ad-header__text">Pro Box</div>
+                        <div class="ticket_ad-header__rating"><span class="ticket_ad-header__rating-span">☆</span><span class="ticket_ad-header__rating-span">☆</span><span class="ticket_ad-header__rating-span">☆</span><span class="ticket_ad-header__rating-span">☆</span><span class="ticket_ad-header__rating-span">☆</span></div>
+                      </div>
+                      <div class="ticket_ad-title">Гроубокс 120-Apollo10</div>
+                      <div class="ticket_ad-product"><img class="ticket_ad-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket_ad-product__discount">-15%</div>
+                      </div>
+                      <div class="ticket_ad-buy">
+                        <div class="ticket_ad-buy__price">
+                          <div class="ticket_ad-buy__price-old">60 200р</div>
+                          <div class="ticket_ad-buy__price-new">58 915р</div>
+                        </div>
+                        <div class="ticket_ad-buy__btn">
+                          <button class="btn-basket" href="javascript:void(0)">
+                            <svg class="icon icon-tick-inside " role="img">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#tick-inside"></use>
+                            </svg>
+                            <div class="ticket_ad-buy__btn-text">Купить</div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="products_ad__teaser-item">
+                    <div class="ticket_ad">
+                      <div class="ticket_ad-header">
+                        <div class="ticket_ad-header__text">Pro Box</div>
+                        <div class="ticket_ad-header__rating"><span class="ticket_ad-header__rating-span">☆</span><span class="ticket_ad-header__rating-span">☆</span><span class="ticket_ad-header__rating-span">☆</span><span class="ticket_ad-header__rating-span">☆</span><span class="ticket_ad-header__rating-span">☆</span></div>
+                      </div>
+                      <div class="ticket_ad-title">Гроубокс 120-Apollo10</div>
+                      <div class="ticket_ad-product"><img class="ticket_ad-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket_ad-product__discount">-15%</div>
+                      </div>
+                      <div class="ticket_ad-buy">
+                        <div class="ticket_ad-buy__price">
+                          <div class="ticket_ad-buy__price-old">60 200р</div>
+                          <div class="ticket_ad-buy__price-new">58 915р</div>
+                        </div>
+                        <div class="ticket_ad-buy__btn">
+                          <button class="btn-basket" href="javascript:void(0)">
+                            <svg class="icon icon-tick-inside " role="img">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#tick-inside"></use>
+                            </svg>
+                            <div class="ticket_ad-buy__btn-text">Купить</div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="products_ad__teaser-item">
+                    <div class="ticket_ad">
+                      <div class="ticket_ad-header">
+                        <div class="ticket_ad-header__text">Pro Box</div>
+                        <div class="ticket_ad-header__rating"><span class="ticket_ad-header__rating-span">☆</span><span class="ticket_ad-header__rating-span">☆</span><span class="ticket_ad-header__rating-span">☆</span><span class="ticket_ad-header__rating-span">☆</span><span class="ticket_ad-header__rating-span">☆</span></div>
+                      </div>
+                      <div class="ticket_ad-title">Гроубокс 120-Apollo10</div>
+                      <div class="ticket_ad-product"><img class="ticket_ad-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket_ad-product__discount">-15%</div>
+                      </div>
+                      <div class="ticket_ad-buy">
+                        <div class="ticket_ad-buy__price">
+                          <div class="ticket_ad-buy__price-old">60 200р</div>
+                          <div class="ticket_ad-buy__price-new">58 915р</div>
+                        </div>
+                        <div class="ticket_ad-buy__btn">
+                          <button class="btn-basket" href="javascript:void(0)">
+                            <svg class="icon icon-tick-inside " role="img">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#tick-inside"></use>
+                            </svg>
+                            <div class="ticket_ad-buy__btn-text">Купить</div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="container advantage-block">
+            <div class="advantage-block-section">
+              <div class="advantage">
+                <div class="advantage-box">
+                  <div class="advantage-box__content advantage-box__content-first">
+                    <svg class="icon icon-product advantage-icon" role="img">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#product"></use>
+                    </svg><span class="advantage-box__content-span">Самый полный выбор товара</span>
+                  </div>
+                  <div class="advantage-box__content">
+                    <svg class="icon icon-24-hours advantage-icon" role="img">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#24-hours"></use>
+                    </svg><span class="advantage-box__content-span">Мы реально отправляем заказ за 24 часа</span>
+                  </div>
+                  <div class="advantage-box__content">
+                    <svg class="icon icon-present advantage-icon" role="img">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#present"></use>
+                    </svg><span class="advantage-box__content-span">У нас постоянно проводятся амбициозные акции</span>
+                  </div>
+                  <div class="advantage-box__content">
+                    <svg class="icon icon-ribbon advantage-icon" role="img">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#ribbon"></use>
+                    </svg><span class="advantage-box__content-span">Отличное качество всей предлагаемой продукции</span>
+                  </div>
+                  <div class="advantage-box__content">
+                    <svg class="icon icon-credit-card advantage-icon" role="img">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#credit-card"></use>
+                    </svg><span class="advantage-box__content-span">Возврат денег или обмен товара при наличии притензии</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--hit-->
+        <div class="container-fluid hit-teaser">
+          <div class="container">
+            <div class="products-hit">
+              <div class="products-hit__text">
+                <div class="products-hit__text-title">Хит продаж</div>
+                <div class="products-hit__text-all" href="javascript:void(0)">Все товары</div>
+              </div>
+              <div class="products-hit__box">
+                <div class="products-hit_big__teaser">
+                  <div class="ticket_hit_big">
+                    <div class="ticket_hit_big-header">
+                      <div class="ticket_hit_big-header__text">Pro Box</div>
+                      <div class="ticket_hit_big-header__rating"><span class="ticket_hit_big-header__rating-span">☆</span><span class="ticket_hit_big-header__rating-span">☆</span><span class="ticket_hit_big-header__rating-span">☆</span><span class="ticket_hit_big-header__rating-span">☆</span><span class="ticket_hit_big-header__rating-span">☆</span></div>
+                    </div>
+                    <div class="ticket_hit_big-title">Гроубокс 120-Apollo10</div>
+                    <div class="ticket_hit_big-product"><img class="ticket_hit_big-product__img" src="static/img/content/growbox.png" alt="">
+                      <div class="ticket_hit_big-product__discount">-15%</div>
+                    </div>
+                    <div class="ticket_hit_big-buy">
+                      <div class="ticket_hit_big-buy__price">
+                        <div class="ticket_hit_big-buy__price-new">58 915р</div>
+                        <div class="ticket_hit_big-buy__price-old">60 200р</div>
+                      </div>
+                      <div class="ticket_hit_big-buy__btn">
+                        <button class="btn-basket btn-basket__big" href="javascript:void(0)">
+                          <svg class="icon icon-tick-inside " role="img">
+                            <use xlink:href="static/img/svg/symbol/sprite.svg#tick-inside"></use>
+                          </svg>
+                          <div class="ticket_hit_big-buy__btn-text">Купить</div>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="products-hit__teaser">
+                  <div class="products-hit__teaser-item">
+                    <div class="ticket_hit">
+                      <div class="ticket_hit-product"><img class="ticket_hit-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket_hit-product__discount">-15%</div>
+                      </div>
+                      <div class="ticket_hit-header">
+                        <div class="ticket_hit-header__text">Pro Box</div>
+                        <div class="ticket_hit-header__rating"><span class="ticket_hit-header__rating-span">☆</span><span class="ticket_hit-header__rating-span">☆</span><span class="ticket_hit-header__rating-span">☆</span><span class="ticket_hit-header__rating-span">☆</span><span class="ticket_hit-header__rating-span">☆</span></div>
+                      </div>
+                      <div class="ticket_hit-title">Гроубокс 120-Apollo10</div>
+                      <div class="ticket_hit-buy">
+                        <div class="ticket_hit-buy__price">
+                          <div class="ticket_hit-buy__price-old">60 200р</div>
+                          <div class="ticket_hit-buy__price-new">58 915р</div>
+                        </div>
+                        <div class="ticket_hit-buy__btn">
+                          <button class="btn-basket" href="javascript:void(0)">
+                            <svg class="icon icon-tick-inside " role="img">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#tick-inside"></use>
+                            </svg>
+                            <div class="ticket_hit-buy__btn-text">Купить</div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="products-hit__teaser-item">
+                    <div class="ticket_hit">
+                      <div class="ticket_hit-product"><img class="ticket_hit-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket_hit-product__discount">-15%</div>
+                      </div>
+                      <div class="ticket_hit-header">
+                        <div class="ticket_hit-header__text">Pro Box</div>
+                        <div class="ticket_hit-header__rating"><span class="ticket_hit-header__rating-span">☆</span><span class="ticket_hit-header__rating-span">☆</span><span class="ticket_hit-header__rating-span">☆</span><span class="ticket_hit-header__rating-span">☆</span><span class="ticket_hit-header__rating-span">☆</span></div>
+                      </div>
+                      <div class="ticket_hit-title">Гроубокс 120-Apollo10</div>
+                      <div class="ticket_hit-buy">
+                        <div class="ticket_hit-buy__price">
+                          <div class="ticket_hit-buy__price-old">60 200р</div>
+                          <div class="ticket_hit-buy__price-new">58 915р</div>
+                        </div>
+                        <div class="ticket_hit-buy__btn">
+                          <button class="btn-basket" href="javascript:void(0)">
+                            <svg class="icon icon-tick-inside " role="img">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#tick-inside"></use>
+                            </svg>
+                            <div class="ticket_hit-buy__btn-text">Купить</div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="products-hit__teaser-item">
+                    <div class="ticket_hit">
+                      <div class="ticket_hit-product"><img class="ticket_hit-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket_hit-product__discount">-15%</div>
+                      </div>
+                      <div class="ticket_hit-header">
+                        <div class="ticket_hit-header__text">Pro Box</div>
+                        <div class="ticket_hit-header__rating"><span class="ticket_hit-header__rating-span">☆</span><span class="ticket_hit-header__rating-span">☆</span><span class="ticket_hit-header__rating-span">☆</span><span class="ticket_hit-header__rating-span">☆</span><span class="ticket_hit-header__rating-span">☆</span></div>
+                      </div>
+                      <div class="ticket_hit-title">Гроубокс 120-Apollo10</div>
+                      <div class="ticket_hit-buy">
+                        <div class="ticket_hit-buy__price">
+                          <div class="ticket_hit-buy__price-old">60 200р</div>
+                          <div class="ticket_hit-buy__price-new">58 915р</div>
+                        </div>
+                        <div class="ticket_hit-buy__btn">
+                          <button class="btn-basket" href="javascript:void(0)">
+                            <svg class="icon icon-tick-inside " role="img">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#tick-inside"></use>
+                            </svg>
+                            <div class="ticket_hit-buy__btn-text">Купить</div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="products-hit__teaser-item">
+                    <div class="ticket_hit">
+                      <div class="ticket_hit-product"><img class="ticket_hit-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket_hit-product__discount">-15%</div>
+                      </div>
+                      <div class="ticket_hit-header">
+                        <div class="ticket_hit-header__text">Pro Box</div>
+                        <div class="ticket_hit-header__rating"><span class="ticket_hit-header__rating-span">☆</span><span class="ticket_hit-header__rating-span">☆</span><span class="ticket_hit-header__rating-span">☆</span><span class="ticket_hit-header__rating-span">☆</span><span class="ticket_hit-header__rating-span">☆</span></div>
+                      </div>
+                      <div class="ticket_hit-title">Гроубокс 120-Apollo10 000000000000000000000000</div>
+                      <div class="ticket_hit-buy">
+                        <div class="ticket_hit-buy__price">
+                          <div class="ticket_hit-buy__price-old">60 200р</div>
+                          <div class="ticket_hit-buy__price-new">58 915р</div>
+                        </div>
+                        <div class="ticket_hit-buy__btn">
+                          <button class="btn-basket" href="javascript:void(0)">
+                            <svg class="icon icon-tick-inside " role="img">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#tick-inside"></use>
+                            </svg>
+                            <div class="ticket_hit-buy__btn-text">Купить</div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Акционные товары-->
+        <div class="container-fluid">
+          <div class="container stock-teaser">
+            <div class="products_stock">
+              <div class="products_stock__text">
+                <div class="products_stock__text-title">Аукционные товары</div>
+                <div class="products_stock__text-all" href="javascript:void(0)">Все товары</div>
+              </div>
+              <div class="products_stock__teaser">
+                <div class="products_stock__teaser-item">
+                  <div class="ticket_stock">
+                    <div class="ticket_stock__left">
+                      <div class="ticket_stock-product"><img class="ticket_stock-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket_stock-product__discount">-15%</div>
+                      </div>
+                    </div>
+                    <div class="ticket_stock__right">
+                      <div class="ticket_stock-header">
+                        <div class="ticket_stock-header__text">Pro Box</div>
+                        <div class="ticket_stock-header__rating"><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span></div>
+                      </div>
+                      <div class="ticket_stock-title">Гроубокс 120-Apollo10</div>
+                      <div class="ticket_stock-buy">
+                        <div class="ticket_stock-buy__price">
+                          <div class="ticket_stock-buy__price-old">590р</div>
+                          <div class="ticket_stock-buy__price-new">450р</div>
+                        </div>
+                        <div class="ticket_stock-buy__btn">
+                          <button class="btn-basket" href="javascript:void(0)">
+                            <svg class="icon icon-tick-inside " role="img">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#tick-inside"></use>
+                            </svg>
+                            <div class="ticket_stock-buy__btn-text">Купить</div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="products_stock__teaser-item">
+                  <div class="ticket_stock">
+                    <div class="ticket_stock__left">
+                      <div class="ticket_stock-product"><img class="ticket_stock-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket_stock-product__discount">-15%</div>
+                      </div>
+                    </div>
+                    <div class="ticket_stock__right">
+                      <div class="ticket_stock-header">
+                        <div class="ticket_stock-header__text">Pro Box</div>
+                        <div class="ticket_stock-header__rating"><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span></div>
+                      </div>
+                      <div class="ticket_stock-title">Гроубокс 120-Apollo10</div>
+                      <div class="ticket_stock-buy">
+                        <div class="ticket_stock-buy__price">
+                          <div class="ticket_stock-buy__price-old">590р</div>
+                          <div class="ticket_stock-buy__price-new">450р</div>
+                        </div>
+                        <div class="ticket_stock-buy__btn">
+                          <button class="btn-basket" href="javascript:void(0)">
+                            <svg class="icon icon-tick-inside " role="img">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#tick-inside"></use>
+                            </svg>
+                            <div class="ticket_stock-buy__btn-text">Купить</div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="products_stock__teaser-item">
+                  <div class="ticket_stock">
+                    <div class="ticket_stock__left">
+                      <div class="ticket_stock-product"><img class="ticket_stock-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket_stock-product__discount">-15%</div>
+                      </div>
+                    </div>
+                    <div class="ticket_stock__right">
+                      <div class="ticket_stock-header">
+                        <div class="ticket_stock-header__text">Pro Box</div>
+                        <div class="ticket_stock-header__rating"><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span></div>
+                      </div>
+                      <div class="ticket_stock-title">Гроубокс 120-Apollo10</div>
+                      <div class="ticket_stock-buy">
+                        <div class="ticket_stock-buy__price">
+                          <div class="ticket_stock-buy__price-old">590р</div>
+                          <div class="ticket_stock-buy__price-new">450р</div>
+                        </div>
+                        <div class="ticket_stock-buy__btn">
+                          <button class="btn-basket" href="javascript:void(0)">
+                            <svg class="icon icon-tick-inside " role="img">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#tick-inside"></use>
+                            </svg>
+                            <div class="ticket_stock-buy__btn-text">Купить</div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="products_stock__teaser-item">
+                  <div class="ticket_stock">
+                    <div class="ticket_stock__left">
+                      <div class="ticket_stock-product"><img class="ticket_stock-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket_stock-product__discount">-15%</div>
+                      </div>
+                    </div>
+                    <div class="ticket_stock__right">
+                      <div class="ticket_stock-header">
+                        <div class="ticket_stock-header__text">Pro Box</div>
+                        <div class="ticket_stock-header__rating"><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span></div>
+                      </div>
+                      <div class="ticket_stock-title">Гроубокс 120-Apollo10</div>
+                      <div class="ticket_stock-buy">
+                        <div class="ticket_stock-buy__price">
+                          <div class="ticket_stock-buy__price-old">590р</div>
+                          <div class="ticket_stock-buy__price-new">450р</div>
+                        </div>
+                        <div class="ticket_stock-buy__btn">
+                          <button class="btn-basket" href="javascript:void(0)">
+                            <svg class="icon icon-tick-inside " role="img">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#tick-inside"></use>
+                            </svg>
+                            <div class="ticket_stock-buy__btn-text">Купить</div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="products_stock__teaser-item">
+                  <div class="ticket_stock">
+                    <div class="ticket_stock__left">
+                      <div class="ticket_stock-product"><img class="ticket_stock-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket_stock-product__discount">-15%</div>
+                      </div>
+                    </div>
+                    <div class="ticket_stock__right">
+                      <div class="ticket_stock-header">
+                        <div class="ticket_stock-header__text">Pro Box</div>
+                        <div class="ticket_stock-header__rating"><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span></div>
+                      </div>
+                      <div class="ticket_stock-title">Гроубокс 120-Apollo10</div>
+                      <div class="ticket_stock-buy">
+                        <div class="ticket_stock-buy__price">
+                          <div class="ticket_stock-buy__price-old">590р</div>
+                          <div class="ticket_stock-buy__price-new">450р</div>
+                        </div>
+                        <div class="ticket_stock-buy__btn">
+                          <button class="btn-basket" href="javascript:void(0)">
+                            <svg class="icon icon-tick-inside " role="img">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#tick-inside"></use>
+                            </svg>
+                            <div class="ticket_stock-buy__btn-text">Купить</div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="products_stock__teaser-item">
+                  <div class="ticket_stock">
+                    <div class="ticket_stock__left">
+                      <div class="ticket_stock-product"><img class="ticket_stock-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket_stock-product__discount">-15%</div>
+                      </div>
+                    </div>
+                    <div class="ticket_stock__right">
+                      <div class="ticket_stock-header">
+                        <div class="ticket_stock-header__text">Pro Box</div>
+                        <div class="ticket_stock-header__rating"><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span></div>
+                      </div>
+                      <div class="ticket_stock-title">Гроубокс 120-Apollo10</div>
+                      <div class="ticket_stock-buy">
+                        <div class="ticket_stock-buy__price">
+                          <div class="ticket_stock-buy__price-old">590р</div>
+                          <div class="ticket_stock-buy__price-new">450р</div>
+                        </div>
+                        <div class="ticket_stock-buy__btn">
+                          <button class="btn-basket" href="javascript:void(0)">
+                            <svg class="icon icon-tick-inside " role="img">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#tick-inside"></use>
+                            </svg>
+                            <div class="ticket_stock-buy__btn-text">Купить</div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="products_stock__teaser-item">
+                  <div class="ticket_stock">
+                    <div class="ticket_stock__left">
+                      <div class="ticket_stock-product"><img class="ticket_stock-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket_stock-product__discount">-15%</div>
+                      </div>
+                    </div>
+                    <div class="ticket_stock__right">
+                      <div class="ticket_stock-header">
+                        <div class="ticket_stock-header__text">Pro Box</div>
+                        <div class="ticket_stock-header__rating"><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span></div>
+                      </div>
+                      <div class="ticket_stock-title">Гроубокс 120-Apollo10</div>
+                      <div class="ticket_stock-buy">
+                        <div class="ticket_stock-buy__price">
+                          <div class="ticket_stock-buy__price-old">590р</div>
+                          <div class="ticket_stock-buy__price-new">450р</div>
+                        </div>
+                        <div class="ticket_stock-buy__btn">
+                          <button class="btn-basket" href="javascript:void(0)">
+                            <svg class="icon icon-tick-inside " role="img">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#tick-inside"></use>
+                            </svg>
+                            <div class="ticket_stock-buy__btn-text">Купить</div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="products_stock__teaser-item">
+                  <div class="ticket_stock">
+                    <div class="ticket_stock__left">
+                      <div class="ticket_stock-product"><img class="ticket_stock-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket_stock-product__discount">-15%</div>
+                      </div>
+                    </div>
+                    <div class="ticket_stock__right">
+                      <div class="ticket_stock-header">
+                        <div class="ticket_stock-header__text">Pro Box</div>
+                        <div class="ticket_stock-header__rating"><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span></div>
+                      </div>
+                      <div class="ticket_stock-title">Гроубокс 120-Apollo10</div>
+                      <div class="ticket_stock-buy">
+                        <div class="ticket_stock-buy__price">
+                          <div class="ticket_stock-buy__price-old">590р</div>
+                          <div class="ticket_stock-buy__price-new">450р</div>
+                        </div>
+                        <div class="ticket_stock-buy__btn">
+                          <button class="btn-basket" href="javascript:void(0)">
+                            <svg class="icon icon-tick-inside " role="img">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#tick-inside"></use>
+                            </svg>
+                            <div class="ticket_stock-buy__btn-text">Купить</div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="products_stock__teaser-item">
+                  <div class="ticket_stock">
+                    <div class="ticket_stock__left">
+                      <div class="ticket_stock-product"><img class="ticket_stock-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket_stock-product__discount">-15%</div>
+                      </div>
+                    </div>
+                    <div class="ticket_stock__right">
+                      <div class="ticket_stock-header">
+                        <div class="ticket_stock-header__text">Pro Box</div>
+                        <div class="ticket_stock-header__rating"><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span></div>
+                      </div>
+                      <div class="ticket_stock-title">Гроубокс 120-Apollo10</div>
+                      <div class="ticket_stock-buy">
+                        <div class="ticket_stock-buy__price">
+                          <div class="ticket_stock-buy__price-old">590р</div>
+                          <div class="ticket_stock-buy__price-new">450р</div>
+                        </div>
+                        <div class="ticket_stock-buy__btn">
+                          <button class="btn-basket" href="javascript:void(0)">
+                            <svg class="icon icon-tick-inside " role="img">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#tick-inside"></use>
+                            </svg>
+                            <div class="ticket_stock-buy__btn-text">Купить</div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--подписаться на новости-->
+        <div class="container-fluid subscribe-block-news">
+          <div class="container subscribe-block-news__cont">
+            <object class="icon-logo" type="image/svg+xml" data="static/img/general/logo.svg"></object>
+            <div class="subscribe-news">
+              <div class="subscribe-news__left"><span class="subscribe-news__left-span">Следите за полезными статьями и видео у нас в блоге</span></div>
+              <div class="subscribe-news__right">
+                <div class="subscribe-news__right-sbc">
+                  <input class="subscribe-news__right-input" placeholder="Ваш почтовый адрес">
+                  <button class="btn-subscribe">Подписаться</button>
+                </div>
+                <div class="subscribe-news__right-policy">
+                  <input class="subscribe-news__right-checkbox" id="checkbox_sbc" type="checkbox">
+                  <label class="subscribe-news__right-label" for="checkbox_sbc">Я согласен на обработку персональных данных, а также с условиями подписки</label>
+                </div>
+                <button class="btn-subscribe__small">Подписаться</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- товары для аута-->
+        <div class="container-fluid out-block">
+          <div class="container">
+            <div class="products_out">
+              <div class="products_out__text">
+                <div class="products_out__text-title">Товары для аута</div>
+                <div class="products_out__text-all" href="javascript:void(0)">Все товары</div>
+              </div>
+              <div class="products_out__teaser">
+                <div class="products_out__teaser-item">
+                  <div class="ticket_out">
+                    <div class="ticket_out-header">
+                      <div class="ticket_out-header__text">Pro Box</div>
+                      <div class="ticket_out-header__rating"><span class="ticket_out-header__rating-span">☆</span><span class="ticket_out-header__rating-span">☆</span><span class="ticket_out-header__rating-span">☆</span><span class="ticket_out-header__rating-span">☆</span><span class="ticket_out-header__rating-span">☆</span></div>
+                    </div>
+                    <div class="ticket_out-title">Гроубокс 120-Apollo10</div>
+                    <div class="ticket_out-product"><img class="ticket_out-product__img" src="static/img/content/growbox.png" alt="">
+                      <div class="ticket_out-product__discount">-15%</div>
+                    </div>
+                    <div class="ticket_out-buy">
+                      <div class="ticket_out-buy__price">
+                        <div class="ticket_out-buy__price-old">60 200р</div>
+                        <div class="ticket_out-buy__price-new">58 915р</div>
+                      </div>
+                      <div class="ticket_out-buy__btn">
+                        <button class="btn-basket" href="javascript:void(0)">
+                          <svg class="icon icon-tick-inside " role="img">
+                            <use xlink:href="static/img/svg/symbol/sprite.svg#tick-inside"></use>
+                          </svg>
+                          <div class="ticket_out-buy__btn-text">Купить</div>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="products_out__teaser-item">
+                  <div class="ticket_out">
+                    <div class="ticket_out-header">
+                      <div class="ticket_out-header__text">Pro Box</div>
+                      <div class="ticket_out-header__rating"><span class="ticket_out-header__rating-span">☆</span><span class="ticket_out-header__rating-span">☆</span><span class="ticket_out-header__rating-span">☆</span><span class="ticket_out-header__rating-span">☆</span><span class="ticket_out-header__rating-span">☆</span></div>
+                    </div>
+                    <div class="ticket_out-title">Гроубокс 120-Apollo10</div>
+                    <div class="ticket_out-product"><img class="ticket_out-product__img" src="static/img/content/growbox.png" alt="">
+                      <div class="ticket_out-product__discount">-15%</div>
+                    </div>
+                    <div class="ticket_out-buy">
+                      <div class="ticket_out-buy__price">
+                        <div class="ticket_out-buy__price-old">60 200р</div>
+                        <div class="ticket_out-buy__price-new">58 915р</div>
+                      </div>
+                      <div class="ticket_out-buy__btn">
+                        <button class="btn-basket" href="javascript:void(0)">
+                          <svg class="icon icon-tick-inside " role="img">
+                            <use xlink:href="static/img/svg/symbol/sprite.svg#tick-inside"></use>
+                          </svg>
+                          <div class="ticket_out-buy__btn-text">Купить</div>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="products_out__teaser-item">
+                  <div class="ticket_out">
+                    <div class="ticket_out-header">
+                      <div class="ticket_out-header__text">Pro Box</div>
+                      <div class="ticket_out-header__rating"><span class="ticket_out-header__rating-span">☆</span><span class="ticket_out-header__rating-span">☆</span><span class="ticket_out-header__rating-span">☆</span><span class="ticket_out-header__rating-span">☆</span><span class="ticket_out-header__rating-span">☆</span></div>
+                    </div>
+                    <div class="ticket_out-title">Гроубокс 120-Apollo10</div>
+                    <div class="ticket_out-product"><img class="ticket_out-product__img" src="static/img/content/growbox.png" alt="">
+                      <div class="ticket_out-product__discount">-15%</div>
+                    </div>
+                    <div class="ticket_out-buy">
+                      <div class="ticket_out-buy__price">
+                        <div class="ticket_out-buy__price-old">60 200р</div>
+                        <div class="ticket_out-buy__price-new">58 915р</div>
+                      </div>
+                      <div class="ticket_out-buy__btn">
+                        <button class="btn-basket" href="javascript:void(0)">
+                          <svg class="icon icon-tick-inside " role="img">
+                            <use xlink:href="static/img/svg/symbol/sprite.svg#tick-inside"></use>
+                          </svg>
+                          <div class="ticket_out-buy__btn-text">Купить</div>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="products_out__teaser-item">
+                  <div class="ticket_out">
+                    <div class="ticket_out-header">
+                      <div class="ticket_out-header__text">Pro Box</div>
+                      <div class="ticket_out-header__rating"><span class="ticket_out-header__rating-span">☆</span><span class="ticket_out-header__rating-span">☆</span><span class="ticket_out-header__rating-span">☆</span><span class="ticket_out-header__rating-span">☆</span><span class="ticket_out-header__rating-span">☆</span></div>
+                    </div>
+                    <div class="ticket_out-title">Гроубокс 120-Apollo10</div>
+                    <div class="ticket_out-product"><img class="ticket_out-product__img" src="static/img/content/growbox.png" alt="">
+                      <div class="ticket_out-product__discount">-15%</div>
+                    </div>
+                    <div class="ticket_out-buy">
+                      <div class="ticket_out-buy__price">
+                        <div class="ticket_out-buy__price-old">60 200р</div>
+                        <div class="ticket_out-buy__price-new">58 915р</div>
+                      </div>
+                      <div class="ticket_out-buy__btn">
+                        <button class="btn-basket" href="javascript:void(0)">
+                          <svg class="icon icon-tick-inside " role="img">
+                            <use xlink:href="static/img/svg/symbol/sprite.svg#tick-inside"></use>
+                          </svg>
+                          <div class="ticket_out-buy__btn-text">Купить</div>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- товары для автоматизации-->
+        <div class="container-fluid">
+          <div class="container automatic-teaser">
+            <div class="products_automatic">
+              <div class="products_automatic__text">
+                <div class="products_automatic__text-title">Товары для автоматизации</div>
+                <div class="products_automatic__text-all" href="javascript:void(0)">Все товары</div>
+              </div>
+              <div class="products_automatic__teaser">
+                <div class="products_automatic__teaser-item">
+                  <div class="ticket_automatic">
+                    <div class="ticket_automatic__left">
+                      <div class="ticket_automatic-product"><img class="ticket_automatic-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket_automatic-product__discount">-15%</div>
+                      </div>
+                    </div>
+                    <div class="ticket_automatic__right">
+                      <div class="ticket_automatic-header">
+                        <div class="ticket_automatic-header__text">Pro Box</div>
+                        <div class="ticket_automatic-header__rating"><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span></div>
+                      </div>
+                      <div class="ticket_automatic-title">Гроубокс 120-Apollo10</div>
+                      <div class="ticket_automatic-buy">
+                        <div class="ticket_automatic-buy__price">
+                          <div class="ticket_automatic-buy__price-old">590р</div>
+                          <div class="ticket_automatic-buy__price-new">450р</div>
+                        </div>
+                        <div class="ticket_automatic-buy__btn">
+                          <button class="btn-basket" href="javascript:void(0)">
+                            <svg class="icon icon-tick-inside " role="img">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#tick-inside"></use>
+                            </svg>
+                            <div class="ticket_automatic-buy__btn-text">Купить</div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="products_automatic__teaser-item">
+                  <div class="ticket_automatic">
+                    <div class="ticket_automatic__left">
+                      <div class="ticket_automatic-product"><img class="ticket_automatic-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket_automatic-product__discount">-15%</div>
+                      </div>
+                    </div>
+                    <div class="ticket_automatic__right">
+                      <div class="ticket_automatic-header">
+                        <div class="ticket_automatic-header__text">Pro Box</div>
+                        <div class="ticket_automatic-header__rating"><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span></div>
+                      </div>
+                      <div class="ticket_automatic-title">Гроубокс 120-Apollo10</div>
+                      <div class="ticket_automatic-buy">
+                        <div class="ticket_automatic-buy__price">
+                          <div class="ticket_automatic-buy__price-old">590р</div>
+                          <div class="ticket_automatic-buy__price-new">450р</div>
+                        </div>
+                        <div class="ticket_automatic-buy__btn">
+                          <button class="btn-basket" href="javascript:void(0)">
+                            <svg class="icon icon-tick-inside " role="img">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#tick-inside"></use>
+                            </svg>
+                            <div class="ticket_automatic-buy__btn-text">Купить</div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="products_automatic__teaser-item">
+                  <div class="ticket_automatic">
+                    <div class="ticket_automatic__left">
+                      <div class="ticket_automatic-product"><img class="ticket_automatic-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket_automatic-product__discount">-15%</div>
+                      </div>
+                    </div>
+                    <div class="ticket_automatic__right">
+                      <div class="ticket_automatic-header">
+                        <div class="ticket_automatic-header__text">Pro Box</div>
+                        <div class="ticket_automatic-header__rating"><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span></div>
+                      </div>
+                      <div class="ticket_automatic-title">Гроубокс 120-Apollo10</div>
+                      <div class="ticket_automatic-buy">
+                        <div class="ticket_automatic-buy__price">
+                          <div class="ticket_automatic-buy__price-old">590р</div>
+                          <div class="ticket_automatic-buy__price-new">450р</div>
+                        </div>
+                        <div class="ticket_automatic-buy__btn">
+                          <button class="btn-basket" href="javascript:void(0)">
+                            <svg class="icon icon-tick-inside " role="img">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#tick-inside"></use>
+                            </svg>
+                            <div class="ticket_automatic-buy__btn-text">Купить</div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="products_automatic__teaser-item">
+                  <div class="ticket_automatic">
+                    <div class="ticket_automatic__left">
+                      <div class="ticket_automatic-product"><img class="ticket_automatic-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket_automatic-product__discount">-15%</div>
+                      </div>
+                    </div>
+                    <div class="ticket_automatic__right">
+                      <div class="ticket_automatic-header">
+                        <div class="ticket_automatic-header__text">Pro Box</div>
+                        <div class="ticket_automatic-header__rating"><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span></div>
+                      </div>
+                      <div class="ticket_automatic-title">Гроубокс 120-Apollo10</div>
+                      <div class="ticket_automatic-buy">
+                        <div class="ticket_automatic-buy__price">
+                          <div class="ticket_automatic-buy__price-old">590р</div>
+                          <div class="ticket_automatic-buy__price-new">450р</div>
+                        </div>
+                        <div class="ticket_automatic-buy__btn">
+                          <button class="btn-basket" href="javascript:void(0)">
+                            <svg class="icon icon-tick-inside " role="img">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#tick-inside"></use>
+                            </svg>
+                            <div class="ticket_automatic-buy__btn-text">Купить</div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="products_automatic__teaser-item">
+                  <div class="ticket_automatic">
+                    <div class="ticket_automatic__left">
+                      <div class="ticket_automatic-product"><img class="ticket_automatic-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket_automatic-product__discount">-15%</div>
+                      </div>
+                    </div>
+                    <div class="ticket_automatic__right">
+                      <div class="ticket_automatic-header">
+                        <div class="ticket_automatic-header__text">Pro Box</div>
+                        <div class="ticket_automatic-header__rating"><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span></div>
+                      </div>
+                      <div class="ticket_automatic-title">Гроубокс 120-Apollo10</div>
+                      <div class="ticket_automatic-buy">
+                        <div class="ticket_automatic-buy__price">
+                          <div class="ticket_automatic-buy__price-old">590р</div>
+                          <div class="ticket_automatic-buy__price-new">450р</div>
+                        </div>
+                        <div class="ticket_automatic-buy__btn">
+                          <button class="btn-basket" href="javascript:void(0)">
+                            <svg class="icon icon-tick-inside " role="img">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#tick-inside"></use>
+                            </svg>
+                            <div class="ticket_automatic-buy__btn-text">Купить</div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="products_automatic__teaser-item">
+                  <div class="ticket_automatic">
+                    <div class="ticket_automatic__left">
+                      <div class="ticket_automatic-product"><img class="ticket_automatic-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket_automatic-product__discount">-15%</div>
+                      </div>
+                    </div>
+                    <div class="ticket_automatic__right">
+                      <div class="ticket_automatic-header">
+                        <div class="ticket_automatic-header__text">Pro Box</div>
+                        <div class="ticket_automatic-header__rating"><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span></div>
+                      </div>
+                      <div class="ticket_automatic-title">Гроубокс 120-Apollo10</div>
+                      <div class="ticket_automatic-buy">
+                        <div class="ticket_automatic-buy__price">
+                          <div class="ticket_automatic-buy__price-old">590р</div>
+                          <div class="ticket_automatic-buy__price-new">450р</div>
+                        </div>
+                        <div class="ticket_automatic-buy__btn">
+                          <button class="btn-basket" href="javascript:void(0)">
+                            <svg class="icon icon-tick-inside " role="img">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#tick-inside"></use>
+                            </svg>
+                            <div class="ticket_automatic-buy__btn-text">Купить</div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="products_automatic__teaser-item">
+                  <div class="ticket_automatic">
+                    <div class="ticket_automatic__left">
+                      <div class="ticket_automatic-product"><img class="ticket_automatic-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket_automatic-product__discount">-15%</div>
+                      </div>
+                    </div>
+                    <div class="ticket_automatic__right">
+                      <div class="ticket_automatic-header">
+                        <div class="ticket_automatic-header__text">Pro Box</div>
+                        <div class="ticket_automatic-header__rating"><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span></div>
+                      </div>
+                      <div class="ticket_automatic-title">Гроубокс 120-Apollo10</div>
+                      <div class="ticket_automatic-buy">
+                        <div class="ticket_automatic-buy__price">
+                          <div class="ticket_automatic-buy__price-old">590р</div>
+                          <div class="ticket_automatic-buy__price-new">450р</div>
+                        </div>
+                        <div class="ticket_automatic-buy__btn">
+                          <button class="btn-basket" href="javascript:void(0)">
+                            <svg class="icon icon-tick-inside " role="img">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#tick-inside"></use>
+                            </svg>
+                            <div class="ticket_automatic-buy__btn-text">Купить</div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="products_automatic__teaser-item">
+                  <div class="ticket_automatic">
+                    <div class="ticket_automatic__left">
+                      <div class="ticket_automatic-product"><img class="ticket_automatic-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket_automatic-product__discount">-15%</div>
+                      </div>
+                    </div>
+                    <div class="ticket_automatic__right">
+                      <div class="ticket_automatic-header">
+                        <div class="ticket_automatic-header__text">Pro Box</div>
+                        <div class="ticket_automatic-header__rating"><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span></div>
+                      </div>
+                      <div class="ticket_automatic-title">Гроубокс 120-Apollo10</div>
+                      <div class="ticket_automatic-buy">
+                        <div class="ticket_automatic-buy__price">
+                          <div class="ticket_automatic-buy__price-old">590р</div>
+                          <div class="ticket_automatic-buy__price-new">450р</div>
+                        </div>
+                        <div class="ticket_automatic-buy__btn">
+                          <button class="btn-basket" href="javascript:void(0)">
+                            <svg class="icon icon-tick-inside " role="img">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#tick-inside"></use>
+                            </svg>
+                            <div class="ticket_automatic-buy__btn-text">Купить</div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="products_automatic__teaser-item">
+                  <div class="ticket_automatic">
+                    <div class="ticket_automatic__left">
+                      <div class="ticket_automatic-product"><img class="ticket_automatic-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket_automatic-product__discount">-15%</div>
+                      </div>
+                    </div>
+                    <div class="ticket_automatic__right">
+                      <div class="ticket_automatic-header">
+                        <div class="ticket_automatic-header__text">Pro Box</div>
+                        <div class="ticket_automatic-header__rating"><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span></div>
+                      </div>
+                      <div class="ticket_automatic-title">Гроубокс 120-Apollo10</div>
+                      <div class="ticket_automatic-buy">
+                        <div class="ticket_automatic-buy__price">
+                          <div class="ticket_automatic-buy__price-old">590р</div>
+                          <div class="ticket_automatic-buy__price-new">450р</div>
+                        </div>
+                        <div class="ticket_automatic-buy__btn">
+                          <button class="btn-basket" href="javascript:void(0)">
+                            <svg class="icon icon-tick-inside " role="img">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#tick-inside"></use>
+                            </svg>
+                            <div class="ticket_automatic-buy__btn-text">Купить</div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="products_automatic__more">
+                <button class="btn-more-width">
+                  <div class="btn-more__text">Загрузить еще</div>
+                  <svg class="icon icon-arrow-point arrow-point-more" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid sub_reviews">
+          <div class="sub_reviews__sub">
+            <!--подписаться на акции-->
+            <div class="container-fluid subscribe-block-stock">
+              <div class="container subscribe-block-stock__cont">
+                <object class="logo-big" type="image/svg+xml" data="static/img/general/logo.svg"></object>
+                <div class="subscribe-stock">
+                  <div class="subscribe-stock__left"><span class="subscribe-stock__left-span">Будь в курсе</span></div>
+                  <div class="subscribe-stock__left-second">Подпишитесь на последние обновления и узнавайте о новинках и специальных предложениях первыми</div>
+                  <div class="subscribe-stock__right">
+                    <div class="subscribe-stock__right-sbc">
+                      <input class="subscribe-stock__right-input" placeholder="Ваш почтовый адрес">
+                      <button class="btn-subscribe">Подписаться</button>
+                    </div>
+                    <div class="subscribe-stock__right-policy">
+                      <input class="subscribe-stock__right-checkbox" id="checkbox_sbc-news" type="checkbox">
+                      <label class="subscribe-stock__right-label" for="checkbox_sbc-news">Я согласен на обработку персональных данных,<br>а также с условиями подписки</label>
+                    </div>
+                    <button class="btn-subscribe__small">Подписаться</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sub_reviews__reviews">
+            <!-- Отзывы-->
+            <div class="container-fluid reviews_block">
+              <div class="container reviews_box">
+                <div class="reviews_message">
+                  <div class="reviews_message__detail">
+                    <div class="reviews_message__detail-title">trofim80056</div>
+                    <div class="reviews_message__detail-descr">Всем привет,заказывал здесь в первый раз и как оказалось не зря! пришло всё быстро,упаковка отличная,всем советую заказывать и не боятся за свои кровные;) магазин пять баллов,успехов вам!</div>
+                  </div>
+                  <div class="reviews_message__detail">
+                    <div class="reviews_message__detail-title">trofim80056</div>
+                    <div class="reviews_message__detail-descr">Всем привет,заказывал здесь в первый раз и как оказалось не зря! пришло всё быстро,упаковка отличная,всем советую заказывать и не боятся за свои кровные;) магазин пять баллов,успехов вам!</div>
+                  </div>
+                </div>
+                <div class="reviews_all">
+                  <div class="reviews_all__star"><span class="reviews_all__star-span">☆</span><span class="reviews_all__star-span">☆</span><span class="reviews_all__star-span">☆</span><span class="reviews_all__star-span">☆</span><span class="reviews_all__star-span">☆</span>
+                    <div class="reviews_all__date">11.07.2018</div>
+                  </div>
+                  <button class="btn-green">Все отзывы</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Информация о магазине-->
+        <div class="container-fluid">
+          <div class="container about">
+            <div class="about-idea">
+              <div class="about-idea__name">Интернет-магазин гидропоники<a class="about-idea__name-a">DzagiGrow</a></div>
+              <div class="about-idea__sense">Выращивать самим – дело благородное. Это занятие по-своему и опасно, и трудно. Но тем не менее число тех, кто раз и навсегда решил выращивать свои любимые растения у себя дома, увеличивается с каждым годом. Почему? Потому что это интересно!</div>
+            </div>
+            <div class="about-inside-container">
+              <div class="about-inside">
+                <ul class="about-inside__column">
+                  <li class="about-inside__item">
+                    <div class="about-inside__item-head">Гроушоп</div>
+                    <div class="about-inside__item-indent">DzagiGrow работает с 2006 года. Мы первый интернет-магазин прогрессивного растениеводства в России, кто открыл мир выращивания на дому. За 10 лет работы наша команда завоевала репутацию честного магазина с лучшей консультацией. Нам доверяют, и для нас это самое важное.</div>
+                  </li>
+                  <li class="about-inside__item">
+                    <div class="about-inside__item-head">Наши партнеры</div>
+                    <div class="about-inside__item-indent">Мы поддерживаем отношения со своими партнерами, среди которых General Hydroponics Europe, Biobizz World Wild Organics, Hesi, Etisso, Valagro, Homebox, Secret Jardin, Soler&Palau, Phresh, Nano Filter, AquaPot, AutoPot, AZUD и лаборатория E-MODE PRO.</div>
+                  </li>
+                </ul>
+                <ul class="about-inside__column">
+                  <li class="about-inside__item">
+                    <div class="about-inside__item-head">Наш ассортимент</div>
+                    <div class="about-inside__item-indent">У нас вы можете купить оборудование для гидропоники, гроубоксы как готовые решения, гроутенты, гидропонные системы AquaPot и AutoPot. Удобрения для гидропоники GHE, Biobizz, Valagro, Hesi, Etisso и другое. Лампы для растений ДНАТ и ДРИЗ, ЭПРА, угольные фильтры, вентиляторы, таймеры. Системы климат-контроля, системы автоматического контроля освещения, полива и температуры, GrowBag, SmartPot и многое другое!</div>
+                  </li>
+                  <li class="about-inside__item">
+                    <div class="about-inside__item-head inside__item-contents">DzagiGrow</div>
+                    <div class="about-inside__item-indent inside__item-contents">– это не просто магазин гидропонного оборудования! Мы каждый день воплощаем мечты в реальность, стремимся достигнуть максимального результата во всем, что делаем. Выращивайте с нами, друзья!</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="about-btn">
+              <button class="btn-green" id="open-btn">Открыть</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--footer-->
+      <footer class="container-fluid footer-block">
+        <div class="container footer-box">
+          <div class="footer-box-menu">
+            <div class="footer-box-menu__column">
+              <p class="footer-box-menu__column-p" onclick="window.location='catalog.html';">Каталог</p>
+              <p class="footer-box-menu__column-p" onclick="window.location='stock.html';">Акции</p>
+              <p class="footer-box-menu__column-p" onclick="window.location='delivery.html';">Оплата/Доставка</p>
+              <p class="footer-box-menu__column-p" onclick="window.location='warranty.html';">Гарантия</p>
+              <p class="footer-box-menu__column-p" onclick="window.location='faq.html';">FAQ</p>
+              <p class="footer-box-menu__column-p" onclick="window.location='price-list.html';">Прайс-лист</p>
+            </div>
+            <div class="footer-box-menu__column">
+              <p class="footer-box-menu__column-p" onclick="window.location='index.html';">О нас</p>
+              <p class="footer-box-menu__column-p" onclick="window.location='reviews.html';">Отзывы</p>
+              <p class="footer-box-menu__column-p" onclick="window.location='blog.html';">Блог</p>
+              <p class="footer-box-menu__column-p" onclick="window.location='dzagi_tube.html';">Dzagi-tube</p>
+              <p class="footer-box-menu__column-p" onclick="window.location='books.html';">Книга "Сам вырастил"</p>
+            </div>
+            <div class="footer-box-menu__column">
+              <p class="footer-box-menu__column-p" onclick="window.location='index.html';">Вход</p>
+              <p class="footer-box-menu__column-p" onclick="window.location='index.html';">Регистрация</p>
+              <p class="footer-box-menu__column-p" onclick="window.location='index.html';">Восстановление пароля</p>
+            </div>
+          </div>
+          <div class="footer-box-container">
+            <div class="footer-box-contact">
+              <div class="footer-box-contact__number">8 (800) 333-16-59</div>
+              <div class="footer-box-contact__text">ИНТЕРНЕТ-МАГАЗИН: ПН-ПТ 08:00–22:00<br>СБ-ВС 12:00—22:00, ЗВОНОК БЕСПЛАТНЫЙ</div>
+              <div class="footer-box-contact__number">8 (495) 120-59-42</div>
+              <div class="footer-box-contact__text">ГРОУШОП В МОСКВЕ: ПН–ВС 12:00–21:00</div>
+            </div>
+            <div class="footer-box-connect">
+              <div class="footer-box-connect__search">
+                <input class="footer-box-connect__search-input" placeholder="Я ищю...">
+                <svg class="icon icon-search search-footer" role="img">
+                  <use xlink:href="static/img/svg/symbol/sprite.svg#search"></use>
+                </svg>
+              </div>
+              <div class="footer-box-connect__social">
+                <div class="footer-box-connect__social-icon">
+                  <svg class="icon icon-tg social-footer" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#tg"></use>
+                  </svg>
+                </div>
+                <div class="footer-box-connect__social-icon">
+                  <svg class="icon icon-ig social-footer" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#ig"></use>
+                  </svg>
+                </div>
+                <div class="footer-box-connect__social-icon">
+                  <svg class="icon icon-yt social-footer" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#yt"></use>
+                  </svg>
+                </div>
+                <div class="footer-box-connect__social-icon">
+                  <svg class="icon icon-fb social-footer" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#fb"></use>
+                  </svg>
+                </div>
+                <div class="footer-box-connect__social-icon">
+                  <svg class="icon icon-vk social-footer" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#vk"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="footer-box-connect__mail">Остались вопросы пишите на почту<br><a class="footer-box-connect__mail-a">sales@dzagigrow.ru</a></div>
+            </div>
+          </div>
+          <div class="up">
+            <svg class="icon icon-down-arrow " role="img">
+              <use xlink:href="static/img/svg/symbol/sprite.svg#down-arrow"></use>
+            </svg>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="static/js/jquery.js"></script>
+    <script src="static/js/slick.min.js"></script>
+    <script src="static/js/jquery.fancybox.js"></script>
+    <script src="static/js/libs.min.js"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>

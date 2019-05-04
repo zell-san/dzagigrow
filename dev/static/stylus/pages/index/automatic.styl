@@ -1,0 +1,81 @@
+.stock-teaser
+
+.products_automatic
+
+  &__text
+    @extend .products_stock__text
+
+    &-title
+      @extend .products_stock__text-title
+
+    &-all
+      @extend .products_stock__text-all
+
+  &__teaser
+    @extend .products_stock__teaser
+    height 440px
+
+    @media screen and (max-width desktopWidth)
+      height 660px
+
+      @media screen and (max-width smalDesktopWidth)
+        height 1320px
+
+    &-item
+      @extend .products_stock__teaser-item
+
+  &__more
+    display flex
+    justify-content center
+    padding-bottom 55px
+
+
+.ticket_automatic
+  @extend .ticket_stock
+
+  &__left
+    @extend .ticket_stock__left
+
+  &__right
+    @extend .ticket_stock__right
+
+  &-header
+    @extend .ticket_stock-header
+
+    &__text
+      @extend .ticket_stock-header__text
+
+    &__rating
+      @extend .ticket_stock-header__rating
+
+      &-span
+        @extend .ticket_stock-header__rating-span
+
+  &-title
+    @extend .ticket_stock-title
+
+  &-product
+    @extend .ticket_stock-product
+
+    &__img
+      @extend .ticket_stock-product__img
+
+    &__discount
+      @extend .ticket_stock-product__discount
+
+  &-buy
+    @extend .ticket_stock-buy
+
+    &__price
+      @extend .ticket_stock-buy__price
+
+      &-old
+        @extend .ticket_stock-buy__price-old
+
+      &-new
+        @extend .ticket_stock-buy__price-new
+
+    &__btn
+      @extend .ticket_stock-buy__btn
+
+

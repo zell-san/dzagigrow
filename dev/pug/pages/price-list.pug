@@ -1,0 +1,863 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Прайс лист'
+    - var pageClass = 'price-page'
+
+block content
+
+    .container-fluid
+        .container.page
+            include ../modules/breadcrumb
+            .page-title Прайс лист
+            .price-category
+                .price-category__item
+                    .price-category__item-box
+                        .price-category__item-title CO2
+                        +icon('arrow-point', 'arrow-point-price')
+                    .price-inside
+                        .price-inside__menu
+                            .price-inside__menu-item Все
+                            .price-inside__menu-item Комплектующие
+                            .price-inside__menu-item Приборы
+                            .price-inside__menu-item Расходники
+                            .price-inside__menu-item Системы
+                        .price-inside__info
+                            .price-inside__info-row.price-inside__info-row-sign
+                                .price-inside__info-cell-box
+                                    .price-inside__info-cell.price-inside__info-cell-clean
+                                        span.price-inside__info-cell-span Наименование
+                                    .price-inside__info-cell.price-inside__info-cell-atm
+                                        span.price-inside__info-cell-span Количество
+                                    .price-inside__info-cell.price-inside__info-cell-visible
+                                        span.price-inside__info-cell-span.price-inside__info-cell-visible Наименование/<br>количество
+                                .price-inside__info-cell.price-inside__info-cell-value
+                                    span.price-inside__info-cell-span Цена
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span Скидка
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span Итого
+                            .price-inside__info-row
+                                .price-inside__info-cell-box
+                                    .price-inside__info-cell
+                                        span.price-inside__info-cell-span Баллон CO2
+                                    .price-inside__info-cell.price-inside__info-cell-cost
+                                        span.price-inside__info-cell-sapn Цена: 3157.00 р.
+                                    .price-inside__info-cell.price-inside__info-cell-symbol
+                                        .quantity-number__symbol -
+                                        .quantity-number__box
+                                            input.quantity-number
+                                            input.quantity-number__right(placeholder='(58)' readonly)
+                                        .quantity-number__symbol +
+                                .price-inside__info-cell.price-inside__info-cell-value
+                                    span.price-inside__info-cell-span 3157.00 р.
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span 0%
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span 3157.00 р.
+                .price-category__item
+                    .price-category__item-box
+                        .price-category__item-title E-mode PRO
+                        +icon('arrow-point', 'arrow-point-price')
+                    .price-inside
+                        .price-inside__menu
+                            .price-inside__menu-item Все
+                            .price-inside__menu-item Комплектующие
+                            .price-inside__menu-item Приборы
+                            .price-inside__menu-item Расходники
+                            .price-inside__menu-item Системы
+                        .price-inside__info
+                            .price-inside__info-row.price-inside__info-row-sign
+                                .price-inside__info-cell-box
+                                    .price-inside__info-cell.price-inside__info-cell-clean
+                                        span.price-inside__info-cell-span Наименование
+                                    .price-inside__info-cell.price-inside__info-cell-atm
+                                        span.price-inside__info-cell-span Количество
+                                    .price-inside__info-cell.price-inside__info-cell-visible
+                                        span.price-inside__info-cell-span.price-inside__info-cell-visible Наименование/<br>количество
+                                .price-inside__info-cell.price-inside__info-cell-value
+                                    span.price-inside__info-cell-span Цена
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span Скидка
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span Итого
+                            .price-inside__info-row
+                                .price-inside__info-cell-box
+                                    .price-inside__info-cell
+                                        span.price-inside__info-cell-span Баллон CO2
+                                    .price-inside__info-cell.price-inside__info-cell-cost
+                                        span.price-inside__info-cell-sapn Цена: 3157.00 р.
+                                    .price-inside__info-cell.price-inside__info-cell-symbol
+                                        .quantity-number__symbol -
+                                        .quantity-number__box
+                                            input.quantity-number
+                                            input.quantity-number__right(placeholder='(58)' readonly)
+                                        .quantity-number__symbol +
+                                .price-inside__info-cell.price-inside__info-cell-value
+                                    span.price-inside__info-cell-span 3157.00 р.
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span 0%
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span 3157.00 р.
+                .price-category__item
+                    .price-category__item-box
+                        .price-category__item-title pH, EC, TDS
+                        +icon('arrow-point', 'arrow-point-price')
+                    .price-inside
+                        .price-inside__menu
+                            .price-inside__menu-item Все
+                            .price-inside__menu-item Комплектующие
+                            .price-inside__menu-item Приборы
+                            .price-inside__menu-item Расходники
+                            .price-inside__menu-item Системы
+                        .price-inside__info
+                            .price-inside__info-row.price-inside__info-row-sign
+                                .price-inside__info-cell-box
+                                    .price-inside__info-cell.price-inside__info-cell-clean
+                                        span.price-inside__info-cell-span Наименование
+                                    .price-inside__info-cell.price-inside__info-cell-atm
+                                        span.price-inside__info-cell-span Количество
+                                    .price-inside__info-cell.price-inside__info-cell-visible
+                                        span.price-inside__info-cell-span.price-inside__info-cell-visible Наименование/<br>количество
+                                .price-inside__info-cell.price-inside__info-cell-value
+                                    span.price-inside__info-cell-span Цена
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span Скидка
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span Итого
+                            .price-inside__info-row
+                                .price-inside__info-cell-box
+                                    .price-inside__info-cell
+                                        span.price-inside__info-cell-span Баллон CO2
+                                    .price-inside__info-cell.price-inside__info-cell-cost
+                                        span.price-inside__info-cell-sapn Цена: 3157.00 р.
+                                    .price-inside__info-cell.price-inside__info-cell-symbol
+                                        .quantity-number__symbol -
+                                        .quantity-number__box
+                                            input.quantity-number
+                                            input.quantity-number__right(placeholder='(58)' readonly)
+                                        .quantity-number__symbol +
+                                .price-inside__info-cell.price-inside__info-cell-value
+                                    span.price-inside__info-cell-span 3157.00 р.
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span 0%
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span 3157.00 р.
+                .price-category__item
+                    .price-category__item-box
+                        .price-category__item-title Аксессуары
+                        +icon('arrow-point', 'arrow-point-price')
+                    .price-inside
+                        .price-inside__menu
+                            .price-inside__menu-item Все
+                            .price-inside__menu-item Комплектующие
+                            .price-inside__menu-item Приборы
+                            .price-inside__menu-item Расходники
+                            .price-inside__menu-item Системы
+                        .price-inside__info
+                            .price-inside__info-row.price-inside__info-row-sign
+                                .price-inside__info-cell-box
+                                    .price-inside__info-cell.price-inside__info-cell-clean
+                                        span.price-inside__info-cell-span Наименование
+                                    .price-inside__info-cell.price-inside__info-cell-atm
+                                        span.price-inside__info-cell-span Количество
+                                    .price-inside__info-cell.price-inside__info-cell-visible
+                                        span.price-inside__info-cell-span.price-inside__info-cell-visible Наименование/<br>количество
+                                .price-inside__info-cell.price-inside__info-cell-value
+                                    span.price-inside__info-cell-span Цена
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span Скидка
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span Итого
+                            .price-inside__info-row
+                                .price-inside__info-cell-box
+                                    .price-inside__info-cell
+                                        span.price-inside__info-cell-span Баллон CO2
+                                    .price-inside__info-cell.price-inside__info-cell-cost
+                                        span.price-inside__info-cell-sapn Цена: 3157.00 р.
+                                    .price-inside__info-cell.price-inside__info-cell-symbol
+                                        .quantity-number__symbol -
+                                        .quantity-number__box
+                                            input.quantity-number
+                                            input.quantity-number__right(placeholder='(58)' readonly)
+                                        .quantity-number__symbol +
+                                .price-inside__info-cell.price-inside__info-cell-value
+                                    span.price-inside__info-cell-span 3157.00 р.
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span 0%
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span 3157.00 р.
+                .price-category__item
+                    .price-category__item-box
+                        .price-category__item-title Вентиляция
+                        +icon('arrow-point', 'arrow-point-price')
+                    .price-inside
+                        .price-inside__menu
+                            .price-inside__menu-item Все
+                            .price-inside__menu-item Комплектующие
+                            .price-inside__menu-item Приборы
+                            .price-inside__menu-item Расходники
+                            .price-inside__menu-item Системы
+                        .price-inside__info
+                            .price-inside__info-row.price-inside__info-row-sign
+                                .price-inside__info-cell-box
+                                    .price-inside__info-cell.price-inside__info-cell-clean
+                                        span.price-inside__info-cell-span Наименование
+                                    .price-inside__info-cell.price-inside__info-cell-atm
+                                        span.price-inside__info-cell-span Количество
+                                    .price-inside__info-cell.price-inside__info-cell-visible
+                                        span.price-inside__info-cell-span.price-inside__info-cell-visible Наименование/<br>количество
+                                .price-inside__info-cell.price-inside__info-cell-value
+                                    span.price-inside__info-cell-span Цена
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span Скидка
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span Итого
+                            .price-inside__info-row
+                                .price-inside__info-cell-box
+                                    .price-inside__info-cell
+                                        span.price-inside__info-cell-span Баллон CO2
+                                    .price-inside__info-cell.price-inside__info-cell-cost
+                                        span.price-inside__info-cell-sapn Цена: 3157.00 р.
+                                    .price-inside__info-cell.price-inside__info-cell-symbol
+                                        .quantity-number__symbol -
+                                        .quantity-number__box
+                                            input.quantity-number
+                                            input.quantity-number__right(placeholder='(58)' readonly)
+                                        .quantity-number__symbol +
+                                .price-inside__info-cell.price-inside__info-cell-value
+                                    span.price-inside__info-cell-span 3157.00 р.
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span 0%
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span 3157.00 р.
+                .price-category__item
+                    .price-category__item-box
+                        .price-category__item-title Гидропонные системы
+                        +icon('arrow-point', 'arrow-point-price')
+                    .price-inside
+                        .price-inside__menu
+                            .price-inside__menu-item Все
+                            .price-inside__menu-item Комплектующие
+                            .price-inside__menu-item Приборы
+                            .price-inside__menu-item Расходники
+                            .price-inside__menu-item Системы
+                        .price-inside__info
+                            .price-inside__info-row.price-inside__info-row-sign
+                                .price-inside__info-cell-box
+                                    .price-inside__info-cell.price-inside__info-cell-clean
+                                        span.price-inside__info-cell-span Наименование
+                                    .price-inside__info-cell.price-inside__info-cell-atm
+                                        span.price-inside__info-cell-span Количество
+                                    .price-inside__info-cell.price-inside__info-cell-visible
+                                        span.price-inside__info-cell-span.price-inside__info-cell-visible Наименование/<br>количество
+                                .price-inside__info-cell.price-inside__info-cell-value
+                                    span.price-inside__info-cell-span Цена
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span Скидка
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span Итого
+                            .price-inside__info-row
+                                .price-inside__info-cell-box
+                                    .price-inside__info-cell
+                                        span.price-inside__info-cell-span Баллон CO2
+                                    .price-inside__info-cell.price-inside__info-cell-cost
+                                        span.price-inside__info-cell-sapn Цена: 3157.00 р.
+                                    .price-inside__info-cell.price-inside__info-cell-symbol
+                                        .quantity-number__symbol -
+                                        .quantity-number__box
+                                            input.quantity-number
+                                            input.quantity-number__right(placeholder='(58)' readonly)
+                                        .quantity-number__symbol +
+                                .price-inside__info-cell.price-inside__info-cell-value
+                                    span.price-inside__info-cell-span 3157.00 р.
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span 0%
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span 3157.00 р.
+                .price-category__item
+                    .price-category__item-box
+                        .price-category__item-title Готовые гроубоксы
+                        +icon('arrow-point', 'arrow-point-price')
+                    .price-inside
+                        .price-inside__menu
+                            .price-inside__menu-item Все
+                            .price-inside__menu-item Комплектующие
+                            .price-inside__menu-item Приборы
+                            .price-inside__menu-item Расходники
+                            .price-inside__menu-item Системы
+                        .price-inside__info
+                            .price-inside__info-row.price-inside__info-row-sign
+                                .price-inside__info-cell-box
+                                    .price-inside__info-cell.price-inside__info-cell-clean
+                                        span.price-inside__info-cell-span Наименование
+                                    .price-inside__info-cell.price-inside__info-cell-atm
+                                        span.price-inside__info-cell-span Количество
+                                    .price-inside__info-cell.price-inside__info-cell-visible
+                                        span.price-inside__info-cell-span.price-inside__info-cell-visible Наименование/<br>количество
+                                .price-inside__info-cell.price-inside__info-cell-value
+                                    span.price-inside__info-cell-span Цена
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span Скидка
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span Итого
+                            .price-inside__info-row
+                                .price-inside__info-cell-box
+                                    .price-inside__info-cell
+                                        span.price-inside__info-cell-span Баллон CO2
+                                    .price-inside__info-cell.price-inside__info-cell-cost
+                                        span.price-inside__info-cell-sapn Цена: 3157.00 р.
+                                    .price-inside__info-cell.price-inside__info-cell-symbol
+                                        .quantity-number__symbol -
+                                        .quantity-number__box
+                                            input.quantity-number
+                                            input.quantity-number__right(placeholder='(58)' readonly)
+                                        .quantity-number__symbol +
+                                .price-inside__info-cell.price-inside__info-cell-value
+                                    span.price-inside__info-cell-span 3157.00 р.
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span 0%
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span 3157.00 р.
+                .price-category__item
+                    .price-category__item-box
+                        .price-category__item-title Гроутенты
+                        +icon('arrow-point', 'arrow-point-price')
+                    .price-inside
+                        .price-inside__menu
+                            .price-inside__menu-item Все
+                            .price-inside__menu-item Комплектующие
+                            .price-inside__menu-item Приборы
+                            .price-inside__menu-item Расходники
+                            .price-inside__menu-item Системы
+                        .price-inside__info
+                            .price-inside__info-row.price-inside__info-row-sign
+                                .price-inside__info-cell-box
+                                    .price-inside__info-cell.price-inside__info-cell-clean
+                                        span.price-inside__info-cell-span Наименование
+                                    .price-inside__info-cell.price-inside__info-cell-atm
+                                        span.price-inside__info-cell-span Количество
+                                    .price-inside__info-cell.price-inside__info-cell-visible
+                                        span.price-inside__info-cell-span.price-inside__info-cell-visible Наименование/<br>количество
+                                .price-inside__info-cell.price-inside__info-cell-value
+                                    span.price-inside__info-cell-span Цена
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span Скидка
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span Итого
+                            .price-inside__info-row
+                                .price-inside__info-cell-box
+                                    .price-inside__info-cell
+                                        span.price-inside__info-cell-span Баллон CO2
+                                    .price-inside__info-cell.price-inside__info-cell-cost
+                                        span.price-inside__info-cell-sapn Цена: 3157.00 р.
+                                    .price-inside__info-cell.price-inside__info-cell-symbol
+                                        .quantity-number__symbol -
+                                        .quantity-number__box
+                                            input.quantity-number
+                                            input.quantity-number__right(placeholder='(58)' readonly)
+                                        .quantity-number__symbol +
+                                .price-inside__info-cell.price-inside__info-cell-value
+                                    span.price-inside__info-cell-span 3157.00 р.
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span 0%
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span 3157.00 р.
+                .price-category__item
+                    .price-category__item-box
+                        .price-category__item-title Капельный полив
+                        +icon('arrow-point', 'arrow-point-price')
+                    .price-inside
+                        .price-inside__menu
+                            .price-inside__menu-item Все
+                            .price-inside__menu-item Комплектующие
+                            .price-inside__menu-item Приборы
+                            .price-inside__menu-item Расходники
+                            .price-inside__menu-item Системы
+                        .price-inside__info
+                            .price-inside__info-row.price-inside__info-row-sign
+                                .price-inside__info-cell-box
+                                    .price-inside__info-cell.price-inside__info-cell-clean
+                                        span.price-inside__info-cell-span Наименование
+                                    .price-inside__info-cell.price-inside__info-cell-atm
+                                        span.price-inside__info-cell-span Количество
+                                    .price-inside__info-cell.price-inside__info-cell-visible
+                                        span.price-inside__info-cell-span.price-inside__info-cell-visible Наименование/<br>количество
+                                .price-inside__info-cell.price-inside__info-cell-value
+                                    span.price-inside__info-cell-span Цена
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span Скидка
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span Итого
+                            .price-inside__info-row
+                                .price-inside__info-cell-box
+                                    .price-inside__info-cell
+                                        span.price-inside__info-cell-span Баллон CO2
+                                    .price-inside__info-cell.price-inside__info-cell-cost
+                                        span.price-inside__info-cell-sapn Цена: 3157.00 р.
+                                    .price-inside__info-cell.price-inside__info-cell-symbol
+                                        .quantity-number__symbol -
+                                        .quantity-number__box
+                                            input.quantity-number
+                                            input.quantity-number__right(placeholder='(58)' readonly)
+                                        .quantity-number__symbol +
+                                .price-inside__info-cell.price-inside__info-cell-value
+                                    span.price-inside__info-cell-span 3157.00 р.
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span 0%
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span 3157.00 р.
+                .price-category__item
+                    .price-category__item-box
+                        .price-category__item-title Климат-контроль
+                        +icon('arrow-point', 'arrow-point-price')
+                    .price-inside
+                        .price-inside__menu
+                            .price-inside__menu-item Все
+                            .price-inside__menu-item Комплектующие
+                            .price-inside__menu-item Приборы
+                            .price-inside__menu-item Расходники
+                            .price-inside__menu-item Системы
+                        .price-inside__info
+                            .price-inside__info-row.price-inside__info-row-sign
+                                .price-inside__info-cell-box
+                                    .price-inside__info-cell.price-inside__info-cell-clean
+                                        span.price-inside__info-cell-span Наименование
+                                    .price-inside__info-cell.price-inside__info-cell-atm
+                                        span.price-inside__info-cell-span Количество
+                                    .price-inside__info-cell.price-inside__info-cell-visible
+                                        span.price-inside__info-cell-span.price-inside__info-cell-visible Наименование/<br>количество
+                                .price-inside__info-cell.price-inside__info-cell-value
+                                    span.price-inside__info-cell-span Цена
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span Скидка
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span Итого
+                            .price-inside__info-row
+                                .price-inside__info-cell-box
+                                    .price-inside__info-cell
+                                        span.price-inside__info-cell-span Баллон CO2
+                                    .price-inside__info-cell.price-inside__info-cell-cost
+                                        span.price-inside__info-cell-sapn Цена: 3157.00 р.
+                                    .price-inside__info-cell.price-inside__info-cell-symbol
+                                        .quantity-number__symbol -
+                                        .quantity-number__box
+                                            input.quantity-number
+                                            input.quantity-number__right(placeholder='(58)' readonly)
+                                        .quantity-number__symbol +
+                                .price-inside__info-cell.price-inside__info-cell-value
+                                    span.price-inside__info-cell-span 3157.00 р.
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span 0%
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span 3157.00 р.
+                .price-category__item
+                    .price-category__item-box
+                        .price-category__item-title Нейтрализаторы запаха
+                        +icon('arrow-point', 'arrow-point-price')
+                    .price-inside
+                        .price-inside__menu
+                            .price-inside__menu-item Все
+                            .price-inside__menu-item Комплектующие
+                            .price-inside__menu-item Приборы
+                            .price-inside__menu-item Расходники
+                            .price-inside__menu-item Системы
+                        .price-inside__info
+                            .price-inside__info-row.price-inside__info-row-sign
+                                .price-inside__info-cell-box
+                                    .price-inside__info-cell.price-inside__info-cell-clean
+                                        span.price-inside__info-cell-span Наименование
+                                    .price-inside__info-cell.price-inside__info-cell-atm
+                                        span.price-inside__info-cell-span Количество
+                                    .price-inside__info-cell.price-inside__info-cell-visible
+                                        span.price-inside__info-cell-span.price-inside__info-cell-visible Наименование/<br>количество
+                                .price-inside__info-cell.price-inside__info-cell-value
+                                    span.price-inside__info-cell-span Цена
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span Скидка
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span Итого
+                            .price-inside__info-row
+                                .price-inside__info-cell-box
+                                    .price-inside__info-cell
+                                        span.price-inside__info-cell-span Баллон CO2
+                                    .price-inside__info-cell.price-inside__info-cell-cost
+                                        span.price-inside__info-cell-sapn Цена: 3157.00 р.
+                                    .price-inside__info-cell.price-inside__info-cell-symbol
+                                        .quantity-number__symbol -
+                                        .quantity-number__box
+                                            input.quantity-number
+                                            input.quantity-number__right(placeholder='(58)' readonly)
+                                        .quantity-number__symbol +
+                                .price-inside__info-cell.price-inside__info-cell-value
+                                    span.price-inside__info-cell-span 3157.00 р.
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span 0%
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span 3157.00 р.
+                .price-category__item
+                    .price-category__item-box
+                        .price-category__item-title Освещение растений
+                        +icon('arrow-point', 'arrow-point-price')
+                    .price-inside
+                        .price-inside__menu
+                            .price-inside__menu-item Все
+                            .price-inside__menu-item Комплектующие
+                            .price-inside__menu-item Приборы
+                            .price-inside__menu-item Расходники
+                            .price-inside__menu-item Системы
+                        .price-inside__info
+                            .price-inside__info-row.price-inside__info-row-sign
+                                .price-inside__info-cell-box
+                                    .price-inside__info-cell.price-inside__info-cell-clean
+                                        span.price-inside__info-cell-span Наименование
+                                    .price-inside__info-cell.price-inside__info-cell-atm
+                                        span.price-inside__info-cell-span Количество
+                                    .price-inside__info-cell.price-inside__info-cell-visible
+                                        span.price-inside__info-cell-span.price-inside__info-cell-visible Наименование/<br>количество
+                                .price-inside__info-cell.price-inside__info-cell-value
+                                    span.price-inside__info-cell-span Цена
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span Скидка
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span Итого
+                            .price-inside__info-row
+                                .price-inside__info-cell-box
+                                    .price-inside__info-cell
+                                        span.price-inside__info-cell-span Баллон CO2
+                                    .price-inside__info-cell.price-inside__info-cell-cost
+                                        span.price-inside__info-cell-sapn Цена: 3157.00 р.
+                                    .price-inside__info-cell.price-inside__info-cell-symbol
+                                        .quantity-number__symbol -
+                                        .quantity-number__box
+                                            input.quantity-number
+                                            input.quantity-number__right(placeholder='(58)' readonly)
+                                        .quantity-number__symbol +
+                                .price-inside__info-cell.price-inside__info-cell-value
+                                    span.price-inside__info-cell-span 3157.00 р.
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span 0%
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span 3157.00 р.
+                .price-category__item
+                    .price-category__item-box
+                        .price-category__item-title Очистка воздуха
+                        +icon('arrow-point', 'arrow-point-price')
+                    .price-inside
+                        .price-inside__menu
+                            .price-inside__menu-item Все
+                            .price-inside__menu-item Комплектующие
+                            .price-inside__menu-item Приборы
+                            .price-inside__menu-item Расходники
+                            .price-inside__menu-item Системы
+                        .price-inside__info
+                            .price-inside__info-row.price-inside__info-row-sign
+                                .price-inside__info-cell-box
+                                    .price-inside__info-cell.price-inside__info-cell-clean
+                                        span.price-inside__info-cell-span Наименование
+                                    .price-inside__info-cell.price-inside__info-cell-atm
+                                        span.price-inside__info-cell-span Количество
+                                    .price-inside__info-cell.price-inside__info-cell-visible
+                                        span.price-inside__info-cell-span.price-inside__info-cell-visible Наименование/<br>количество
+                                .price-inside__info-cell.price-inside__info-cell-value
+                                    span.price-inside__info-cell-span Цена
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span Скидка
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span Итого
+                            .price-inside__info-row
+                                .price-inside__info-cell-box
+                                    .price-inside__info-cell
+                                        span.price-inside__info-cell-span Баллон CO2
+                                    .price-inside__info-cell.price-inside__info-cell-cost
+                                        span.price-inside__info-cell-sapn Цена: 3157.00 р.
+                                    .price-inside__info-cell.price-inside__info-cell-symbol
+                                        .quantity-number__symbol -
+                                        .quantity-number__box
+                                            input.quantity-number
+                                            input.quantity-number__right(placeholder='(58)' readonly)
+                                        .quantity-number__symbol +
+                                .price-inside__info-cell.price-inside__info-cell-value
+                                    span.price-inside__info-cell-span 3157.00 р.
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span 0%
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span 3157.00 р.
+                .price-category__item
+                    .price-category__item-box
+                        .price-category__item-title Печатная продукция
+                        +icon('arrow-point', 'arrow-point-price')
+                    .price-inside
+                        .price-inside__menu
+                            .price-inside__menu-item Все
+                            .price-inside__menu-item Комплектующие
+                            .price-inside__menu-item Приборы
+                            .price-inside__menu-item Расходники
+                            .price-inside__menu-item Системы
+                        .price-inside__info
+                            .price-inside__info-row.price-inside__info-row-sign.price-inside__info-row-sign
+                                .price-inside__info-cell-box
+                                    .price-inside__info-cell.price-inside__info-cell-clean
+                                        span.price-inside__info-cell-span Наименование
+                                    .price-inside__info-cell.price-inside__info-cell-atm
+                                        span.price-inside__info-cell-span Количество
+                                    .price-inside__info-cell.price-inside__info-cell-visible
+                                        span.price-inside__info-cell-span.price-inside__info-cell-visible Наименование/<br>количество
+                                .price-inside__info-cell.price-inside__info-cell-value
+                                    span.price-inside__info-cell-span Цена
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span Скидка
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span Итого
+                            .price-inside__info-row
+                                .price-inside__info-cell-box
+                                    .price-inside__info-cell
+                                        span.price-inside__info-cell-span Баллон CO2
+                                    .price-inside__info-cell.price-inside__info-cell-cost
+                                        span.price-inside__info-cell-sapn Цена: 3157.00 р.
+                                    .price-inside__info-cell.price-inside__info-cell-symbol
+                                        .quantity-number__symbol -
+                                        .quantity-number__box
+                                            input.quantity-number
+                                            input.quantity-number__right(placeholder='(58)' readonly)
+                                        .quantity-number__symbol +
+                                .price-inside__info-cell.price-inside__info-cell-value
+                                    span.price-inside__info-cell-span 3157.00 р.
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span 0%
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span 3157.00 р.
+                .price-category__item
+                    .price-category__item-box
+                        .price-category__item-title Субстраты
+                        +icon('arrow-point', 'arrow-point-price')
+                    .price-inside
+                        .price-inside__menu
+                            .price-inside__menu-item Все
+                            .price-inside__menu-item Комплектующие
+                            .price-inside__menu-item Приборы
+                            .price-inside__menu-item Расходники
+                            .price-inside__menu-item Системы
+                        .price-inside__info
+                            .price-inside__info-row.price-inside__info-row-sign
+                                .price-inside__info-cell-box
+                                    .price-inside__info-cell.price-inside__info-cell-clean
+                                        span.price-inside__info-cell-span Наименование
+                                    .price-inside__info-cell.price-inside__info-cell-atm
+                                        span.price-inside__info-cell-span Количество
+                                    .price-inside__info-cell.price-inside__info-cell-visible
+                                        span.price-inside__info-cell-span.price-inside__info-cell-visible Наименование/<br>количество
+                                .price-inside__info-cell.price-inside__info-cell-value
+                                    span.price-inside__info-cell-span Цена
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span Скидка
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span Итого
+                            .price-inside__info-row
+                                .price-inside__info-cell-box
+                                    .price-inside__info-cell
+                                        span.price-inside__info-cell-span Баллон CO2
+                                    .price-inside__info-cell.price-inside__info-cell-cost
+                                        span.price-inside__info-cell-sapn Цена: 3157.00 р.
+                                    .price-inside__info-cell.price-inside__info-cell-symbol
+                                        .quantity-number__symbol -
+                                        .quantity-number__box
+                                            input.quantity-number
+                                            input.quantity-number__right(placeholder='(58)' readonly)
+                                        .quantity-number__symbol +
+                                .price-inside__info-cell.price-inside__info-cell-value
+                                    span.price-inside__info-cell-span 3157.00 р.
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span 0%
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span 3157.00 р.
+                .price-category__item
+                    .price-category__item-box
+                        .price-category__item-title Удобрения
+                        +icon('arrow-point', 'arrow-point-price')
+                    .price-inside
+                        .price-inside__menu
+                            .price-inside__menu-item Все
+                            .price-inside__menu-item Комплектующие
+                            .price-inside__menu-item Приборы
+                            .price-inside__menu-item Расходники
+                            .price-inside__menu-item Системы
+                        .price-inside__info
+                            .price-inside__info-row.price-inside__info-row-sign
+                                .price-inside__info-cell-box
+                                    .price-inside__info-cell.price-inside__info-cell-clean
+                                        span.price-inside__info-cell-span Наименование
+                                    .price-inside__info-cell.price-inside__info-cell-atm
+                                        span.price-inside__info-cell-span Количество
+                                    .price-inside__info-cell.price-inside__info-cell-visible
+                                        span.price-inside__info-cell-span.price-inside__info-cell-visible Наименование/<br>количество
+                                .price-inside__info-cell.price-inside__info-cell-value
+                                    span.price-inside__info-cell-span Цена
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span Скидка
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span Итого
+                            .price-inside__info-row
+                                .price-inside__info-cell-box
+                                    .price-inside__info-cell
+                                        span.price-inside__info-cell-span Баллон CO2
+                                    .price-inside__info-cell.price-inside__info-cell-cost
+                                        span.price-inside__info-cell-sapn Цена: 3157.00 р.
+                                    .price-inside__info-cell.price-inside__info-cell-symbol
+                                        .quantity-number__symbol -
+                                        .quantity-number__box
+                                            input.quantity-number
+                                            input.quantity-number__right(placeholder='(58)' readonly)
+                                        .quantity-number__symbol +
+                                .price-inside__info-cell.price-inside__info-cell-value
+                                    span.price-inside__info-cell-span 3157.00 р.
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span 0%
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span 3157.00 р.
+                .price-category__item
+                    .price-category__item-box
+                        .price-category__item-title Умные горшки
+                        +icon('arrow-point', 'arrow-point-price')
+                    .price-inside
+                        .price-inside__menu
+                            .price-inside__menu-item Все
+                            .price-inside__menu-item Комплектующие
+                            .price-inside__menu-item Приборы
+                            .price-inside__menu-item Расходники
+                            .price-inside__menu-item Системы
+                        .price-inside__info
+                            .price-inside__info-row.price-inside__info-row-sign
+                                .price-inside__info-cell-box
+                                    .price-inside__info-cell.price-inside__info-cell-clean
+                                        span.price-inside__info-cell-span Наименование
+                                    .price-inside__info-cell.price-inside__info-cell-atm
+                                        span.price-inside__info-cell-span Количество
+                                    .price-inside__info-cell.price-inside__info-cell-visible
+                                        span.price-inside__info-cell-span.price-inside__info-cell-visible Наименование/<br>количество
+                                .price-inside__info-cell.price-inside__info-cell-value
+                                    span.price-inside__info-cell-span Цена
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span Скидка
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span Итого
+                            .price-inside__info-row
+                                .price-inside__info-cell-box
+                                    .price-inside__info-cell
+                                        span.price-inside__info-cell-span Баллон CO2
+                                    .price-inside__info-cell.price-inside__info-cell-cost
+                                        span.price-inside__info-cell-sapn Цена: 3157.00 р.
+                                    .price-inside__info-cell.price-inside__info-cell-symbol
+                                        .quantity-number__symbol -
+                                        .quantity-number__box
+                                            input.quantity-number
+                                            input.quantity-number__right(placeholder='(58)' readonly)
+                                        .quantity-number__symbol +
+                                .price-inside__info-cell.price-inside__info-cell-value
+                                    span.price-inside__info-cell-span 3157.00 р.
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span 0%
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span 3157.00 р.
+                .price-category__item
+                    .price-category__item-box
+                        .price-category__item-title Футболки и Толстовки
+                        +icon('arrow-point', 'arrow-point-price')
+                    .price-inside
+                        .price-inside__menu
+                            .price-inside__menu-item Все
+                            .price-inside__menu-item Комплектующие
+                            .price-inside__menu-item Приборы
+                            .price-inside__menu-item Расходники
+                            .price-inside__menu-item Системы
+                        .price-inside__info
+                            .price-inside__info-row.price-inside__info-row-sign
+                                .price-inside__info-cell-box
+                                    .price-inside__info-cell.price-inside__info-cell-clean
+                                        span.price-inside__info-cell-span Наименование
+                                    .price-inside__info-cell.price-inside__info-cell-atm
+                                        span.price-inside__info-cell-span Количество
+                                    .price-inside__info-cell.price-inside__info-cell-visible
+                                        span.price-inside__info-cell-span.price-inside__info-cell-visible Наименование/<br>количество
+                                .price-inside__info-cell.price-inside__info-cell-value
+                                    span.price-inside__info-cell-span Цена
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span Скидка
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span Итого
+                            .price-inside__info-row
+                                .price-inside__info-cell-box
+                                    .price-inside__info-cell
+                                        span.price-inside__info-cell-span Баллон CO2
+                                    .price-inside__info-cell.price-inside__info-cell-cost
+                                        span.price-inside__info-cell-sapn Цена: 3157.00 р.
+                                    .price-inside__info-cell.price-inside__info-cell-symbol
+                                        .quantity-number__symbol -
+                                        .quantity-number__box
+                                            input.quantity-number
+                                            input.quantity-number__right(placeholder='(58)' readonly)
+                                        .quantity-number__symbol +
+                                .price-inside__info-cell.price-inside__info-cell-value
+                                    span.price-inside__info-cell-span 3157.00 р.
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span 0%
+                                .price-inside__info-cell
+                                    span.price-inside__info-cell-span 3157.00 р.
+            .price-footer
+                .price-footer__discount
+                    .price-footer__discount-title Скидки
+                    .price-footer__discount-box
+                        .price-footer__discount-item
+                            .price-footer__discount-border
+                                .price-footer__discount-item-title Бонусы
+                                +icon('arrow-point', 'arrow-point-price')
+                            .price-footer__discount-inside-box
+                                .price-footer__discount-inside
+                                    a.price-footer__discount-inside-a Использовать бонусы
+                                    span 115 бонусов
+                        .price-footer__discount-item
+                            .price-footer__discount-border
+                                .price-footer__discount-item-title Промокод
+                                +icon('arrow-point', 'arrow-point-price')
+                            .price-footer__discount-inside-box
+                                .price-footer__discount-inside
+                                    input.price-footer__discount-inside-input(placeholder='Введите промокод')
+                    .price-footer__discount-info
+                        span.price-footer__discount-info-span При оплате покупке вы получите 210 бонусов на ваш личный счет.
+                            a.price-footer__discount-info-a  Хотите больше?
+                        p.price-footer__discount-info-p Сделайте заказ от 5000 р. и получите 5% бонусов от заказа
+                .price-footer__total
+                    .price-footer__total-title Ваш заказ
+                    .price-footer__total-item
+                        .price-footer__total-border
+                            .price-footer__total-inside
+                                .price-footer__total-inside-box
+                                    .price-footer__total-info Товаров на:
+                                    .price-footer__total-info-a 5 170p
+                                .price-footer__total-inside-box
+                                    .price-footer__total-info Общий вес:
+                                    .price-footer__total-info-a 0,68кг
+                                .price-footer__total-inside-box
+                                    .price-footer__total-info Скидка:
+                                    .price-footer__total-info-a 55p
+                    .price-footer__total-item
+                        .price-footer__total-border
+                            .price-footer__total-inside
+                                .price-footer__total-inside-box
+                                    .price-footer__total-info Использовано бонусов:
+                                    .price-footer__total-info-a 115б
+                                .price-footer__total-inside-box
+                                    .price-footer__total-info Зачислено бонусов:
+                                    .price-footer__total-info-a.price-footer__total-info-a-bonus 210б
+                    .price-footer__total-item
+                        .price-footer__total-border
+                            .price-footer__total-inside.price-footer__total-inside-last
+                                .price-footer__total-info.price-footer__total-info-last Итого без доставки:
+                                .price-footer__total-info-a.price-footer__total-info-a-ttl 5 170p
+                            button.btn-green.price-footer__total-btn Оформить заказ
+
+
+
+
+
+

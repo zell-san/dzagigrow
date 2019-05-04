@@ -1,0 +1,139 @@
+.login
+  @media screen and (max-width bigPhoneWidth)
+    display none
+
+  &__menu
+    display flex
+
+    &-item
+      background-color greyDG
+      padding 15px 25px
+      border-radius 3px 3px 0 0
+      font-weight bold
+
+      &:hover
+        background-color white
+
+  &__inside
+    &-entry
+      background-color white
+      padding 35px
+      width 460px
+      display none
+
+      @media screen and (max-width tableWidth)
+        width 100%
+
+      &-input
+        @extend .search-def-input
+        width 100%
+        margin-top 15px
+        margin-bottom 20px
+
+      &-block
+        display flex
+        justify-content space-between
+        margin-top 20px
+
+      &-checkbox
+        display none
+
+        &:checked + label:before
+          content: "\2713"
+          font-size: 15px
+          color: blackTextDG
+          text-align: center
+          line-height: 15px
+          background-color white
+
+      &-label
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+        padding-left: 25px;
+        margin-right: 15px;
+
+        &:before
+          content: ""
+          display: inline-block
+          size (15px)
+          margin-right: 10px
+          position(absolute, 1px, 0, 0, 0)
+          background-color: white
+          border-radius 2px
+          border 2px solid greyDGdark
+
+      &-btn
+        width 100%
+        margin-top 20px
+
+      &-a
+        text-decoration underline
+
+      &-span
+        color redDG
+
+    &-registration
+      display none
+
+      &-block
+        display flex
+
+        @media screen and (max-width tableWidth)
+          flex-direction column
+
+      &-left
+        @extend .login__inside-entry
+        display block
+
+      &-right
+        padding 35px
+        display flex
+        flex-direction column
+        justify-content space-between
+        background-color white
+        width 400px
+        padding-right 70px
+        padding-bottom 45px
+
+        @media screen and (max-width tableWidth)
+          width 100%
+          padding-top 0
+
+      &-box
+        display flex
+        align-items center
+        cursor pointer
+        margin 10px 0
+
+      &-title
+        font-weight bold
+        font-size rem(24px)
+
+.recovery
+  display none
+
+  &__popup
+    width 340px
+    background-color white
+
+    &-title
+      @extend .login__inside-registration-title
+      padding-bottom 15px
+
+.login-media
+  display none
+
+  @media screen and (max-width bigPhoneWidth)
+    display block
+    margin-top -30px
+    margin-bottom 30px
+
+.login__inside-registration-box:hover .icon-reg
+  opacity 1
+
+.login__menu-item.opened
+  background-color white
+
+.tab.opened
+  display block

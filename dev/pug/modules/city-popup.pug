@@ -1,0 +1,15 @@
+.city-you#city-you(href="javascript:PopUpHide()")
+    +icon('close', 'close-city')
+    .city-you__text
+        span Ваш город
+        a.city-you__text-a Пермь?
+    .city-you__btn
+        button.btn-green.city-you__btn-green Да, верно
+        button.btn-grey.city-you__btn-grey Выбрать другой
+.city-choice#city-choice(href="javascript:PopUpHide()")
+    +icon('close', 'close-city')
+    span.city-choice__span Выбор города
+    span.city-choice__span-small Если вашего города нет - выберете ближайший
+    .city-choice__search
+        input.city-choice__search-input(type="text" placeholder="Я ищу...")
+        +icon('search', 'search-header')

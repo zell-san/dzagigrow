@@ -1,0 +1,134 @@
+.stock-teaser
+
+.products_stock
+
+  &__text
+    @extend .products__text
+
+    &-title
+      @extend .products__text-title
+
+    &-all
+      @extend .products__text-all
+
+  &__teaser
+    @extend .products__teaser
+    flex-wrap wrap
+    margin-bottom 55px
+    overflow hidden
+
+    @media screen and (max-width desktopWidth)
+      max-height 880px
+
+      @media screen and (max-width smalDesktopWidth)
+        max-height 1320px
+
+        @media screen and (max-width bigPhoneWidth)
+          max-height 870px
+
+    &-item
+      @extend .products__teaser-item
+      padding-top 15px
+      width auto
+      height auto
+
+      &:nth-child(3n+1)
+        padding-left 0
+
+      @media screen and (max-width desktopWidth)
+
+        &:nth-child(4)
+          padding-left 15px
+
+        &:nth-child(odd)
+          padding-left 0
+
+        @media screen and (max-width smalDesktopWidth)
+          padding-left 0!important
+
+
+
+.ticket_stock
+  @extend .ticket
+  size (416px 205px)
+  flex-direction inherit
+  padding 15px
+
+  @media screen and (max-width desktopWidth)
+    width 100%
+    max-width 447px
+
+    @media screen and (max-width smalDesktopWidth)
+      max-width 100%
+
+      @media screen and (max-width bigPhoneWidth)
+        max-height 130px
+
+  &__left
+    width 40%
+    display flex
+    align-items center
+
+    @media screen and (max-width smalDesktopWidth)
+      width 30%
+
+  &__right
+    flex-direction column
+    display flex
+    justify-content space-between
+    width 60%
+    padding-left 20px
+
+    @media screen and (max-width smalDesktopWidth)
+      width 70%
+
+  &-header
+    @extend .ticket-header
+
+    &__text
+      @extend .ticket-header__text
+      font-size rem(14px)
+
+    &__rating
+      @extend .ticket-header__rating
+
+      &-span
+        @extend .ticket-header__rating-span
+        font-size rem(18px)
+        width 15px
+
+  &-title
+    @extend .ticket-title
+    height 90px
+    font-size rem(14px)
+    padding-top 10px
+
+  &-product
+    @extend .ticket-product
+    display flex
+    align-items center
+    height 100%
+
+    &__img
+      @extend .ticket-product__img
+      margin 0
+
+    &__discount
+      @extend .ticket-product__discount
+      top 0
+
+  &-buy
+    @extend .ticket-buy
+
+    &__price
+      @extend .ticket-buy__price
+
+      &-old
+        @extend .ticket-buy__price-old
+
+      &-new
+        @extend .ticket-buy__price-new
+
+    &__btn
+      @extend .ticket-buy__btn
+

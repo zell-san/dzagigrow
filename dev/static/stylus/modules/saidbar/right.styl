@@ -1,0 +1,53 @@
+.saidbar-nav
+  margin -65px 0 20px 0
+  background-color white
+
+  &__border
+    @extend .menu-nav__border
+
+    &:hover
+      background-color greenDG
+      color white
+
+  &__item
+    @extend .menu-nav__item
+
+    &:hover
+      border-bottom 1px solid greenDG
+
+    &-last
+      border-bottom none!important
+
+      &:hover
+        border-bottom none!important
+
+//mobile
+.saidbar-nav-media
+  margin-top 20px
+  background-color white
+  display none
+
+  @media screen and (max-width desktopWidth)
+    display block
+
+    @media screen and (max-width tableWidth)
+      margin-top 0
+
+  &__border
+    @extend .menu-nav__border
+
+    &:hover
+      background-color greenDG
+      color white
+
+  &__item
+    @extend .menu-nav__item
+
+    &:hover
+      border-bottom 1px solid greenDG
+
+    &-last
+      border-bottom none!important
+
+      &:hover
+        border-bottom none!important

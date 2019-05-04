@@ -1,0 +1,15 @@
+@import "primary-block/menu-cat.styl"
+@import "primary-block/teaser.styl"
+@import "primary-block/teaser-phone.styl"
+@import "primary-block/products-teaser.styl"
+
+
+.primary-block
+  display flex
+  position relative
+
+.section-block__ad
+  width calc(100% - 310px)
+
+  @media screen and (max-width smalDesktopWidth)
+    width 100%

@@ -1,0 +1,222 @@
+.blog
+  display flex
+  justify-content space-between
+
+  &-left
+    display flex
+    flex-direction column
+    width calc(100% - 325px)
+
+    @media screen and (max-width desktopWidth)
+      width 100%
+
+  &-right
+    width 310px
+
+    @media screen and (max-width desktopWidth)
+      display none
+
+.blog-description
+  background-color white
+  padding 35px
+  line-height 21px
+
+  &__a
+    font-weight bold
+
+.blog-sidebar
+  width 100%
+
+  @media screen and (max-width tableWidth)
+    display none
+
+.blog-sidebar-media
+  width 100%
+  display none
+
+  @media screen and (max-width tableWidth)
+    display flex
+    flex-direction column
+
+  &__btn
+    width 100%
+    background-color greenDG
+    display flex
+    justify-content space-between
+    align-items center
+    color white
+    padding 15px 20px
+    margin-top 20px
+
+  &__include
+    width 100%
+    display none
+
+.blog-article
+  padding 5px 0 20px 0
+  display flex
+  flex-wrap wrap
+  overflow hidden
+  max-height 895px
+
+  @media screen and (max-width desktopWidth)
+    max-height 1500px
+
+    @media screen and (max-width smalDesktopWidth)
+      max-height 1272px
+
+      @media screen and (max-width tableWidth)
+        max-height 2168px
+
+        @media screen and (max-width bigPhoneWidth)
+          max-height 2164px
+
+  &__item
+    size (310px 275px)
+    margin 15px 0 0 12px
+    cursor pointer
+
+    &:nth-child(3n-2)
+      margin-left 0
+
+    @media screen and (max-width desktopWidth)
+      size (449px 355px)
+
+      &:nth-child(3n-2)
+        margin-left 12px
+
+      &:nth-child(2n-1)
+        margin-left 0
+
+      @media screen and (max-width smalDesktopWidth)
+        size (353px 298px)
+
+        @media screen and (max-width tableWidth)
+          size (100%)
+          max-height 343px
+          margin-left 0
+
+          &:nth-child(3n-2)
+            margin-left 0
+
+          @media screen and (max-width bigPhoneWidth)
+            max-height 253px
+
+    &-box
+      overflow hidden
+      position relative
+
+      &-img
+        width 100%
+
+      &-date
+        position (absolute none 0 0 none)
+        padding 10px 20px
+        background-color rgba(blackDG 0.5)
+        color greyTextDG
+        font-size rem(12px)
+
+    &-preview
+      background-color white
+      padding 15px
+      display flex
+      align-items center
+      text-align center
+      height 100px
+
+.blog-btn
+  display flex
+  justify-content center
+  margin-top 10px
+
+
+
+//subcribe
+.blog-sbc
+  background-color greenDG
+  color white
+  padding 25px 35px
+
+  @media screen and (max-width desktopWidth)
+    display flex
+    justify-content space-between
+
+    @media screen and (max-width tableWidth)
+      flex-direction column
+
+  &__p
+    font-size rem(30px)
+    font-weight bold
+
+    @media screen and (max-width desktopWidth)
+      font-size rem(36px)
+      padding-bottom 5px
+
+  &__span
+    @media screen and (max-width desktopWidth)
+      font-size rem(18px)
+
+  &__sbc
+    &-input
+      @extend .subscribe-box__right-input
+      width 100%
+      margin 10px 0
+
+      @media screen and (max-width desktopWidth)
+        margin-top 0
+
+        @media screen and (max-width tableWidth)
+          margin-top 10px
+
+  &__policy
+    &-checkbox
+      @extend .subscribe-box__right-checkbox
+
+      &:checked + label:before
+        content: "\2713"
+        font-size rem(15px)
+        color: blackTextDG
+        text-align: center
+        line-height: 15px
+        background-color white
+
+    &-label
+      font-size rem(10px)
+      color white
+      display: inline-block
+      cursor: pointer;
+      position: relative
+      padding-left 25px
+      margin-right 15px
+
+      @media screen and (max-width desktopWidth)
+        font-size rem(14px)
+
+      &:before
+        content: ""
+        display: inline-block
+        size (15px)
+        margin-right: 10px
+        position(absolute, 1px, 0, 0, 0)
+        background-color: white
+        border-radius 2px
+
+  &__btn
+    width 100%
+    margin-top 15px
+
+    @media screen and (max-width tableWidth)
+      display flex
+
+.blog-subscrube
+  display none
+
+  @media screen and (max-width desktopWidth)
+    display flex
+    padding-bottom 25px
+
+.blog-sbc__right, .blog-sbc__left
+  width 47%
+
+  @media screen and (max-width tableWidth)
+    width 100%

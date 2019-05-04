@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Карточка товара</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css"><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body class="product-page">
+    <div class="wrapper">
+      <header>
+        <!--first header-->
+        <div class="full">
+          <div class="container-fluid">
+            <div class="container">
+              <div class="header-nav">
+                <div class="header-nav__left"><a class="header-nav__left-a" href="blog.html">Блог</a><a class="header-nav__left-a" href="dzagi_tube.html">Dzagi tube</a><a class="header-nav__left-a" href="books.html">Книги</a></div>
+                <div class="header-nav__right">
+                  <div class="header-nav__right-social">
+                    <svg class="icon icon-tg social" role="img">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#tg"></use>
+                    </svg>
+                    <svg class="icon icon-ig social" role="img">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#ig"></use>
+                    </svg>
+                    <svg class="icon icon-yt social" role="img">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#yt"></use>
+                    </svg>
+                    <svg class="icon icon-fb social" role="img">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#fb"></use>
+                    </svg>
+                    <svg class="icon icon-vk social" role="img">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#vk"></use>
+                    </svg>
+                  </div>
+                  <div class="header-nav__right-phone" href="tel:+78003331659">8(800)333-16-59</div>
+                  <div class="header-nav__right-hang">Бесплатный звонок<br>по России</div>
+                  <div class="header-nav__right-phone" href="tel:+74951205945">8(495)120-59-45</div>
+                  <div class="header-nav__right-hang">Звонок<br>по Москве и МО</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--second header-->
+          <div class="container-fluid header-second">
+            <div class="container">
+              <div class="header-main">
+                <div class="header-main__logo"><img class="header-main__logo-img" onclick="window.location='index.html';" src="static/img/general/logo.png" alt=""></div>
+                <div class="header-main__city" href="javascript:PopUpHide()"><a class="header-main__city-a">Пермь</a>
+                  <svg class="icon icon-arrow-point arrow-point-city" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                  <div class="city-you" id="city-you" href="javascript:PopUpHide()">
+                    <svg class="icon icon-close close-city" role="img">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#close"></use>
+                    </svg>
+                    <div class="city-you__text"><span>Ваш город</span><a class="city-you__text-a">Пермь?</a></div>
+                    <div class="city-you__btn">
+                      <button class="btn-green city-you__btn-green">Да, верно</button>
+                      <button class="btn-grey city-you__btn-grey">Выбрать другой</button>
+                    </div>
+                  </div>
+                  <div class="city-choice" id="city-choice" href="javascript:PopUpHide()">
+                    <svg class="icon icon-close close-city" role="img">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#close"></use>
+                    </svg><span class="city-choice__span">Выбор города</span><span class="city-choice__span-small">Если вашего города нет - выберете ближайший</span>
+                    <div class="city-choice__search">
+                      <input class="city-choice__search-input" type="text" placeholder="Я ищу...">
+                      <svg class="icon icon-search search-header" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#search"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="header-main__search">
+                  <input class="header-main__search-input" type="text" placeholder="Я ищу...">
+                  <div class="header-main__search-icon" onclick="window.location='result.html';">
+                    <svg class="icon icon-search search-header" role="img">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#search"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="header-main__basket">
+                  <div class="header-main__basket-box">
+                    <div class="header-main__basket-icon">
+                      <svg class="icon icon-basket basket-header" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#basket"></use>
+                      </svg><span class="header-main__basket-number">5</span>
+                    </div>
+                    <div class="header-main__basket-cache"><span class="header-main__basket-hang">Сумма</span><a class="header-main__basket-sum">45 000 р</a></div>
+                    <div class="basket-block" id="basket-block" href="javascript:void(0)">
+                      <svg class="icon icon-close close-basket" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#close"></use>
+                      </svg>
+                      <div class="basket-block__title">Корзина</div>
+                      <div class="basket-block__item">
+                        <svg class="icon icon-cancel cancel-basket" role="img">
+                          <use xlink:href="static/img/svg/symbol/sprite.svg#cancel"></use>
+                        </svg>
+                        <div class="basket-block__item-preview"><img class="basket-block__item-preview-img" src="static/img/content/growbox.png"></div>
+                        <div class="basket-block__item-name">Фитолампа<br>15 Ватт E27 (Биколор)</div>
+                        <div class="basket-block__item-price">2 470р</div>
+                      </div>
+                      <div class="basket-block__bottom">
+                        <div class="basket-block__bottom-sum"><span>Итог:</span><span class="basket-block__bottom-sum-span">2 470р</span></div>
+                        <div class="basket-block__bottom-btn btn-green-big">Перейти в корзину</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--menu header-->
+        <div class="container-fluid header-third">
+          <div class="container">
+            <div class="header-menu">
+              <div class="header-menu__primary">
+                <div class="header-menu__opener">
+                  <svg class="icon icon-menu menu-header" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#menu"></use>
+                  </svg><a class="header-menu__primary-a">Категория товаров</a>
+                </div>
+                <div class="menu-nav">
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Гроубоксы
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Гидропонные системы
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Удобрения
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Освещение
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Полив
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Очистка воздуха
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Автоматизация
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Аксессуары
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Гроубоксы
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Гидропонные системы
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Удобрения
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Освещение
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Полив
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Очистка воздуха
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Автоматизация
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Аксессуары
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Полив
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Очистка воздуха
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item">Автоматизация
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-nav__border">
+                    <div class="menu-nav__item menu-nav__item-last">Аксессуары
+                      <svg class="icon icon-arrow-point subcategor" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                      </svg>
+                      <div class="menu-nav__item-sub">
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Маленькие</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element">Средние</div>
+                        </div>
+                        <div class="menu-nav__item-sub-border">
+                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="header-menu__box">
+                <div class="header-menu__main"><a class="header-menu__main-a" href="price-list.html">Прайс-лист</a><a class="header-menu__main-a" href="stock.html">Акции</a><a class="header-menu__main-a" href="delivery.html">Доставка / Оплата</a><a class="header-menu__main-a" href="reviews.html">Отзывы</a><a class="header-menu__main-a" href="contacts.html">Контакты</a></div>
+                <div class="header-menu__login"><a class="header-menu__login-a" href="login.html">Вход</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Мобильная версия-->
+        <div class="container-fluid header-media">
+          <div class="header-media__menu">
+            <svg class="icon icon-menu menu-header-media" role="img">
+              <use xlink:href="static/img/svg/symbol/sprite.svg#menu"></use>
+            </svg>
+          </div>
+          <div class="header-media__box"><img class="header-media__box-img" src="static/img/general/logo.png" alt' href="javascript:void(0)">
+            <div class="header-media__box-icon">
+              <svg class="icon icon-search search-header-media" role="img">
+                <use xlink:href="static/img/svg/symbol/sprite.svg#search"></use>
+              </svg>
+              <div class="header-main__basket-icon">
+                <svg class="icon icon-basket basket-header-media" role="img">
+                  <use xlink:href="static/img/svg/symbol/sprite.svg#basket"></use>
+                </svg><span class="header-media__box-icon-number">5</span>
+              </div>
+            </div>
+          </div>
+          <div class="header-media__box-search">
+            <div class="header-main__search">
+              <input class="header-main__search-input" type="text" placeholder="Я ищу...">
+              <div class="header-main__search-icon" onclick="window.location='result.html';">
+                <svg class="icon icon-search search-header-media-open" role="img">
+                  <use xlink:href="static/img/svg/symbol/sprite.svg#search"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu-media-full">
+          <div class="container-fluid menu-media-full__open">
+            <div class="header-media-open">
+              <div class="header-media-open__menu">
+                <svg class="icon icon-close close-header-media" role="img">
+                  <use xlink:href="static/img/svg/symbol/sprite.svg#close"></use>
+                </svg>
+              </div>
+              <div class="header-media-open__box"><img class="header-media-open__box-img" src="static/img/general/logo.png" alt' href="javascript:void(0)">
+                <div class="header-media-open__box-icon"><span class="header-media-open__box-icon-span">Пермь
+                    <svg class="icon icon-arrow-point arrow-point-city" role="img">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                    </svg></span>
+                  <div class="city-you" id="city-you" href="javascript:PopUpHide()">
+                    <svg class="icon icon-close close-city" role="img">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#close"></use>
+                    </svg>
+                    <div class="city-you__text"><span>Ваш город</span><a class="city-you__text-a">Пермь?</a></div>
+                    <div class="city-you__btn">
+                      <button class="btn-green city-you__btn-green">Да, верно</button>
+                      <button class="btn-grey city-you__btn-grey">Выбрать другой</button>
+                    </div>
+                  </div>
+                  <div class="city-choice" id="city-choice" href="javascript:PopUpHide()">
+                    <svg class="icon icon-close close-city" role="img">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#close"></use>
+                    </svg><span class="city-choice__span">Выбор города</span><span class="city-choice__span-small">Если вашего города нет - выберете ближайший</span>
+                    <div class="city-choice__search">
+                      <input class="city-choice__search-input" type="text" placeholder="Я ищу...">
+                      <svg class="icon icon-search search-header" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#search"></use>
+                      </svg>
+                    </div>
+                  </div><span class="header-media-open__box-icon-span">Вход</span>
+                </div>
+              </div>
+            </div>
+            <div class="header-media-nav">
+              <svg class="icon icon-menu menu-header" role="img">
+                <use xlink:href="static/img/svg/symbol/sprite.svg#menu"></use>
+              </svg><a class="header-media-nav__a">Категория товаров</a>
+            </div>
+            <div class="menu-media-category">
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Гроубоксы
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+                <div class="menu-media-category__sub">
+                  <div class="menu-media-category__sub-element">Маленькие</div>
+                  <div class="menu-media-category__sub-element">Средние</div>
+                  <div class="menu-media-category__sub-element">Большие</div>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Гидропонные системы
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+                <div class="menu-media-category__sub">
+                  <div class="menu-media-category__sub-element">Маленькие</div>
+                  <div class="menu-media-category__sub-element">Средние</div>
+                  <div class="menu-media-category__sub-element">Большие</div>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Удобрения
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+                <div class="menu-media-category__sub">
+                  <div class="menu-media-category__sub-element">Маленькие</div>
+                  <div class="menu-media-category__sub-element">Средние</div>
+                  <div class="menu-media-category__sub-element">Большие</div>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Освещение
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+                <div class="menu-media-category__sub">
+                  <div class="menu-media-category__sub-element">Маленькие</div>
+                  <div class="menu-media-category__sub-element">Средние</div>
+                  <div class="menu-media-category__sub-element">Большие</div>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Полив
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+                <div class="menu-media-category__sub">
+                  <div class="menu-media-category__sub-element">Маленькие</div>
+                  <div class="menu-media-category__sub-element">Средние</div>
+                  <div class="menu-media-category__sub-element">Большие</div>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Очистка воздуха
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+                <div class="menu-media-category__sub">
+                  <div class="menu-media-category__sub-element">Маленькие</div>
+                  <div class="menu-media-category__sub-element">Средние</div>
+                  <div class="menu-media-category__sub-element">Большие</div>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Автоматизация
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+                <div class="menu-media-category__sub">
+                  <div class="menu-media-category__sub-element">Маленькие</div>
+                  <div class="menu-media-category__sub-element">Средние</div>
+                  <div class="menu-media-category__sub-element">Большие</div>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Аксессуары
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+                <div class="menu-media-category__sub">
+                  <div class="menu-media-category__sub-element">Маленькие</div>
+                  <div class="menu-media-category__sub-element">Средние</div>
+                  <div class="menu-media-category__sub-element">Большие</div>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Гроубоксы
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+                <div class="menu-media-category__sub">
+                  <div class="menu-media-category__sub-element">Маленькие</div>
+                  <div class="menu-media-category__sub-element">Средние</div>
+                  <div class="menu-media-category__sub-element">Большие</div>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Гидропонные системы
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+                <div class="menu-media-category__sub">
+                  <div class="menu-media-category__sub-element">Маленькие</div>
+                  <div class="menu-media-category__sub-element">Средние</div>
+                  <div class="menu-media-category__sub-element">Большие</div>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Удобрения
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+                <div class="menu-media-category__sub">
+                  <div class="menu-media-category__sub-element">Маленькие</div>
+                  <div class="menu-media-category__sub-element">Средние</div>
+                  <div class="menu-media-category__sub-element">Большие</div>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Освещение
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Полив
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Очистка воздуха
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Автоматизация
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Аксессуары
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Полив
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Очистка воздуха
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Автоматизация
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="menu-media-category__border">
+                <div class="menu-media-category__item">Аксессуары
+                  <svg class="icon icon-arrow-point subcategor" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="header-media-main">
+              <div class="header-media-main__border">
+                <div class="header-media-main__border-item">Прайс-лист</div>
+              </div>
+              <div class="header-media-main__border">
+                <div class="header-media-main__border-item">Акции</div>
+              </div>
+              <div class="header-media-main__border">
+                <div class="header-media-main__border-item">Доставка и оплата</div>
+              </div>
+              <div class="header-media-main__border">
+                <div class="header-media-main__border-item">Отзывы</div>
+              </div>
+              <div class="header-media-main__border">
+                <div class="header-media-main__border-item">Контакты</div>
+              </div>
+              <div class="header-media-main__border">
+                <div class="header-media-main__border-item">Блог</div>
+              </div>
+              <div class="header-media-main__border">
+                <div class="header-media-main__border-item">Dzagi tube</div>
+              </div>
+              <div class="header-media-main__border">
+                <div class="header-media-main__border-item">Книги</div>
+              </div>
+            </div>
+            <div class="header-media-contact">
+              <div class="header-media-contact__number">
+                <div class="header-media-contact__number-box">
+                  <div class="header-media-contact__phone" href="tel:+78003331659">8(800)333-16-59</div>
+                  <div class="header-media-contact__hang">Бесплатный звонок<br>по России</div>
+                </div>
+                <div class="header-media-contact__number-box">
+                  <div class="header-media-contact__phone" href="tel:+74951205945">8(495)120-59-45</div>
+                  <div class="header-media-contact__hang">Звонок<br>по Москве и МО</div>
+                </div>
+              </div>
+              <div class="header-media-contact__social">
+                <svg class="icon icon-tg social" role="img">
+                  <use xlink:href="static/img/svg/symbol/sprite.svg#tg"></use>
+                </svg>
+                <svg class="icon icon-ig social" role="img">
+                  <use xlink:href="static/img/svg/symbol/sprite.svg#ig"></use>
+                </svg>
+                <svg class="icon icon-yt social" role="img">
+                  <use xlink:href="static/img/svg/symbol/sprite.svg#yt"></use>
+                </svg>
+                <svg class="icon icon-fb social" role="img">
+                  <use xlink:href="static/img/svg/symbol/sprite.svg#fb"></use>
+                </svg>
+                <svg class="icon icon-vk social" role="img">
+                  <use xlink:href="static/img/svg/symbol/sprite.svg#vk"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="content">
+        <div class="container-fluid">
+          <div class="container page">
+            <ul class="breadcrumb">
+              <li class="breadcrumb-item"><a class="breadcrumb-item__a breadcrumb-item__a-first" href="#">DzagiGrow /</a></li>
+              <li class="breadcrumb-item"><a class="breadcrumb-item__a" href="#">Блог /</a></li>
+              <li class="breadcrumb-item breadcrumb-item__active">Статья</li>
+            </ul>
+            <div class="product">
+              <div class="product-box">
+                <div class="product-left">
+                  <div class="product-left__gallery">
+                    <div class="product-left__gallery-big"><img class="product-left__gallery-item" src="static/img/content/growbox.png"><img class="product-left__gallery-item" src="static/img/content/growbox.png"><img class="product-left__gallery-item" src="static/img/content/growbox.png"><img class="product-left__gallery-item" src="static/img/content/growbox.png"></div>
+                    <div class="product-left__gallery-small"><img class="product-left__gallery-item" src="static/img/content/growbox.png"><img class="product-left__gallery-item" src="static/img/content/growbox.png"><img class="product-left__gallery-item" src="static/img/content/growbox.png"><img class="product-left__gallery-item" src="static/img/content/growbox.png"></div>
+                  </div>
+                  <div class="product-left__info">
+                    <div class="product-left__info-name">Фитолампа 15 Ватт Е27 (Биколор)</div>
+                    <div class="product-left__info-star"><span class="product-left__info-star-span">☆</span><span class="product-left__info-star-span">☆</span><span class="product-left__info-star-span">☆</span><span class="product-left__info-star-span">☆</span><span class="product-left__info-star-span">☆</span></div>
+                    <div class="product-left-info-atribute">Бренд:<a class="product-left__info-atribute-a">Биколор</a></div>
+                    <div class="product-left__info-descr">Простая и удобная лампа для цоколя Е27. Отлично подойдет для домашнего сада, досвечивания растений, выращивания рассады, а так же сборки собственных конструкций из нескольких ламп.</div>
+                    <ul class="product-left__info-important">Доставка и ограничения:
+                      <li>- Жидкости нельзя отправлять Самолётом</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="product-right">
+                  <div class="product-right__top">
+                    <div class="product-right__price">2 470р</div>
+                    <div class="product-right__btn btn-green">Добавить в корзину</div>
+                    <div class="price-cell product-right__bottom-price-media">
+                      <div class="price-cell__symbol">-</div>
+                      <input class="price-cell__input">
+                      <div class="price-cell__symbol">+</div>
+                    </div>
+                  </div>
+                  <div class="product-right__bottom">
+                    <div class="product-right__bottom-box">
+                      <div class="price-cell product-right__bottom-price">
+                        <div class="price-cell__symbol">-</div>
+                        <input class="price-cell__input">
+                        <div class="price-cell__symbol">+</div>
+                      </div>
+                      <div class="bonus-box">
+                        <div class="bonus-box__text">Бонусов будет зачислено:</div>
+                        <div class="bonus-box__number">91 бонус</div>
+                      </div>
+                    </div>
+                    <div class="product-right__bottom-text">Принимаем к оплате:</div>
+                    <div class="product-right__bottom-pay">
+                      <object class="product-right__bottom-pay-img" type="image/svg+xml" data="static/img/general/icon_payments.svg"></object>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-none">
+                  <div class="product-right__top">
+                    <div class="product-right__price">2 470р</div>
+                    <div class="product-right__btn btn-grey__all">Товара нет в наличии</div>
+                  </div>
+                  <div class="product-right__bottom">
+                    <div class="product-none__bottom-text">Оставьте свою почту и мы сообщим когда товар появится на складе</div>
+                    <input class="product-none__bottom-input" placeholder="Ваш почтовый адрес">
+                    <div class="product-right__btn btn-green">Отправить</div>
+                  </div>
+                </div>
+                <div class="product-authorized">
+                  <div class="product-right__top">
+                    <div class="product-right__price">2 470р</div>
+                    <div class="product-right__btn btn-grey__all">Товара нет в наличии</div>
+                  </div>
+                  <div class="product-right__bottom"><a class="product-authorized__bottom-a">trofim80056</a><span class="product-none__bottom-text">сообщить когда товар появится на складе?</span>
+                    <div class="product-right__btn btn-green">Прислать уведомление?</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-info">
+              <div class="product-menu">
+                <div class="product-menu-item product-about opened" data-tab=".product-inside__about">О продукте</div>
+                <div class="product-menu-item product-brief" data-tab=".product-inside__brief">Инструкция</div>
+                <div class="product-menu-item product-use" data-tab=".product-inside__use">Применение</div>
+                <div class="product-menu-item product-reviews" data-tab=".product-inside__reviews">Отзывы</div>
+              </div>
+              <div class="product-inside">
+                <div class="product-inside__about tab opened">
+                  <div class="about-product__block">
+                    <div class="about-product__box">
+                      <div class="about-product__box-item"><a class="about-product__box-item-a">Мощность:</a><span class="about-product__box-item-span">5 светодиодов по 3 Ватта = 15 Ватт (Номинальная мощность).</span></div>
+                      <div class="about-product__box-item"><a class="about-product__box-item-a">Электрическая мощность:</a><span class="about-product__box-item-span">7 Ватт.</span></div>
+                      <div class="about-product__box-item"><a class="about-product__box-item-a">Длина волны излучения света:</a><span class="about-product__box-item-span">4 красных светодиода 660 нм + 1 светодиод 450 нм.</span></div>
+                      <div class="about-product__box-item"><a class="about-product__box-item-a">Питание:</a><span class="about-product__box-item-span">110 - 240 В.</span></div>
+                      <div class="about-product__box-item"><a class="about-product__box-item-a">Срок службы:</a><span class="about-product__box-item-span">~ 50 000 часов.</span></div>
+                      <div class="about-product__box-item"><a class="about-product__box-item-a">Габариты:</a><span class="about-product__box-item-span">d=9,5 см h=10 см.</span></div>
+                      <div class="about-product__box-item"><a class="about-product__box-item-a">Вес:</a><span class="about-product__box-item-span">~ 0,26 кг.</span></div>
+                    </div>
+                    <div class="about-product__img"><img class="about-product__img-item" src="static/img/content/tube.png"></div>
+                  </div>
+                  <div class="about-product__title">О продукте:</div>
+                  <div class="about-product__descr">Ripen - питательный комплекс для медленно цветущих и завершающих жизненный цикл растений. Сам производитель называет Ripen —“forcing solution”, т.е. «усиливающий раствор».<br>Предназначен для ускорения процесса цветения и увеличения объема урожая. Состоит из очищенных минеральных солей и защитных элементов (буферов). Минимально допустимый состав элементов:<br><br>- P2O5 6%<br>- K2O 5%<br>- MgO 3%<br>- SO4 3%<br>Формула Ripen разработана с предельной точностью, поскольку растение на последней стадии развития является очень хрупкой биологической системой с пониженной способностью усваивать питательные вещества.<br><br></div>
+                  <div class="about-product__title">Преимущества продукта:</div>
+                  <div class="about-product__descr">- ускоряет процесс созревания. Ripen подает растению сигнал о завершении жизненного цикла, и оно реагирует, в полной мере активизируя свой генетический потенциал;<br>- укрепляет иммунную систему;<br>- увеличивает содержание активных веществ, что особенно важно при выращивании лекарственных, ароматических и кулинарных растений;<br>- поставляет растению необходимые для конечной стадии цветения/плодоношения элементы в легкоусвояемой форме;<br>- в случае накопления нитратов или иных элементов, помогает переработать эти отложения, улучшая вкус и повышая экологическую ценность урожая;<br>- в случае серьезной инвазии патогенов или насекомых Ripen позволяет ускорить естественный цикл и сохранить хотя бы часть урожая;<br>- в условиях открытого грунта Ripen позволяет быстро собрать урожай, прежде чем он будет испорчен холодной и влажной погодой;<br>- в условиях закрытого грунта помогает моделировать окончание цикла, ускоряя созревание самых медленных растений.</div>
+                </div>
+                <div class="product-inside__brief tab"></div>
+                <div class="product-inside__use tab"></div>
+                <div class="product-inside__reviews tab">
+                  <div class="reviews">
+                    <div class="reviews__afore">
+                      <div class="reviews-afore">
+                        <div class="reviews-afore__comment">
+                          <div class="reviews-afore__comment-name">nalunin@icloud.com</div>
+                          <div class="reviews-afore__comment-box">
+                            <div class="reviews-afore__comment-star"><span class="reviews-afore__comment-star-span">☆</span><span class="reviews-afore__comment-star-span">☆</span><span class="reviews-afore__comment-star-span">☆</span><span class="reviews-afore__comment-star-span">☆</span><span class="reviews-afore__comment-star-span">☆</span></div>
+                            <div class="reviews-afore__comment-date">25.09.2018</div>
+                          </div>
+                          <div class="reviews-afore__comment-descr">Пришло быстро все гуд)</div>
+                        </div>
+                        <div class="reviews-afore__comment">
+                          <div class="reviews-afore__comment-name">nalunin@icloud.com</div>
+                          <div class="reviews-afore__comment-box">
+                            <div class="reviews-afore__comment-star"><span class="reviews-afore__comment-star-span">☆</span><span class="reviews-afore__comment-star-span">☆</span><span class="reviews-afore__comment-star-span">☆</span><span class="reviews-afore__comment-star-span">☆</span><span class="reviews-afore__comment-star-span">☆</span></div>
+                            <div class="reviews-afore__comment-date">25.09.2018</div>
+                          </div>
+                          <div class="reviews-afore__comment-descr">Пришло быстро все гуд)</div>
+                        </div>
+                        <div class="reviews-afore__comment">
+                          <div class="reviews-afore__comment-name">nalunin@icloud.com</div>
+                          <div class="reviews-afore__comment-box">
+                            <div class="reviews-afore__comment-star"><span class="reviews-afore__comment-star-span">☆</span><span class="reviews-afore__comment-star-span">☆</span><span class="reviews-afore__comment-star-span">☆</span><span class="reviews-afore__comment-star-span">☆</span><span class="reviews-afore__comment-star-span">☆</span></div>
+                            <div class="reviews-afore__comment-date">25.09.2018</div>
+                          </div>
+                          <div class="reviews-afore__comment-descr">Пришло быстро все гуд)</div>
+                        </div>
+                        <div class="reviews-afore__comment">
+                          <div class="reviews-afore__comment-name">nalunin@icloud.com</div>
+                          <div class="reviews-afore__comment-box">
+                            <div class="reviews-afore__comment-star"><span class="reviews-afore__comment-star-span">☆</span><span class="reviews-afore__comment-star-span">☆</span><span class="reviews-afore__comment-star-span">☆</span><span class="reviews-afore__comment-star-span">☆</span><span class="reviews-afore__comment-star-span">☆</span></div>
+                            <div class="reviews-afore__comment-date">25.09.2018</div>
+                          </div>
+                          <div class="reviews-afore__comment-descr">Пришло быстро все гуд)Пришло быстро все гуд)Пришло быстро все гуд)Пришло быстро все гуд)Пришло быстро все гуд)Пришло быстро все гуд)Пришло быстро все гуд)Пришло быстро все гуд)Пришло быстро все гуд)Пришло быстро все гуд)Пришло быстро все гуд)Пришло быстро все гуд)Пришло быстро все гуд)Пришло быстро все гуд)Пришло быстро все гуд)Пришло быстро все гуд)Пришло быстро все гуд)</div>
+                        </div>
+                      </div>
+                      <div class="reviews__afore-btn">
+                        <button class="btn-more">Загрузить еще
+                          <svg class="icon icon-arrow-point arrow-point-more" role="img">
+                            <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="reviews__none">
+                      <div class="reviews__none-box"><img class="reviews__none-img" src="static/img/general/logo.png">
+                        <p class="reviews__none-p">У данного товара нет отзывов.</p>
+                        <p class="reviews__none-p">Станьте первым, кто оставил отзыв об этом товаре!</p>
+                      </div>
+                    </div>
+                    <div class="reviews__write">
+                      <div class="reviews__write-title">Написать отзыв</div>
+                      <div class="reviews__write-rating">Оцените товар</div>
+                      <div class="reviews__write-star"><span class="reviews__write-star-span">☆</span><span class="reviews__write-star-span">☆</span><span class="reviews__write-star-span">☆</span><span class="reviews__write-star-span">☆</span><span class="reviews__write-star-span">☆</span></div>
+                      <div class="reviews__write-text">Напишите отзыв</div>
+                      <textarea class="reviews__write-textarea"></textarea>
+                      <div class="reviews__write-btn">
+                        <button class="btn-green">Добавить отзыв</button>
+                      </div>
+                    </div>
+                    <div class="reviews__authorized">
+                      <div class="reviews__write-title">Написать отзыв</div>
+                      <div class="reviews__write-text">Чтобы оставлять отзыв вам необходимо <br><a class="reviews__write-text-a">войти</a> под своим аккаунтом.<br><br>Если вы еще не зарегистрированы, то можете пройти <a class="reviews__write-text-a">регистрацию</a>, которая займет всего пару минут.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-inside__media">
+          <div class="product-inside__about tab opened">
+            <div class="about-product__block">
+              <div class="about-product__box">
+                <div class="about-product__box-item"><a class="about-product__box-item-a">Мощность:</a><span class="about-product__box-item-span">5 светодиодов по 3 Ватта = 15 Ватт (Номинальная мощность).</span></div>
+                <div class="about-product__box-item"><a class="about-product__box-item-a">Электрическая мощность:</a><span class="about-product__box-item-span">7 Ватт.</span></div>
+                <div class="about-product__box-item"><a class="about-product__box-item-a">Длина волны излучения света:</a><span class="about-product__box-item-span">4 красных светодиода 660 нм + 1 светодиод 450 нм.</span></div>
+                <div class="about-product__box-item"><a class="about-product__box-item-a">Питание:</a><span class="about-product__box-item-span">110 - 240 В.</span></div>
+                <div class="about-product__box-item"><a class="about-product__box-item-a">Срок службы:</a><span class="about-product__box-item-span">~ 50 000 часов.</span></div>
+                <div class="about-product__box-item"><a class="about-product__box-item-a">Габариты:</a><span class="about-product__box-item-span">d=9,5 см h=10 см.</span></div>
+                <div class="about-product__box-item"><a class="about-product__box-item-a">Вес:</a><span class="about-product__box-item-span">~ 0,26 кг.</span></div>
+              </div>
+              <div class="about-product__img"><img class="about-product__img-item" src="static/img/content/tube.png"></div>
+            </div>
+            <div class="about-product__title">О продукте:</div>
+            <div class="about-product__descr">Ripen - питательный комплекс для медленно цветущих и завершающих жизненный цикл растений. Сам производитель называет Ripen —“forcing solution”, т.е. «усиливающий раствор».<br>Предназначен для ускорения процесса цветения и увеличения объема урожая. Состоит из очищенных минеральных солей и защитных элементов (буферов). Минимально допустимый состав элементов:<br><br>- P2O5 6%<br>- K2O 5%<br>- MgO 3%<br>- SO4 3%<br>Формула Ripen разработана с предельной точностью, поскольку растение на последней стадии развития является очень хрупкой биологической системой с пониженной способностью усваивать питательные вещества.<br><br></div>
+            <div class="about-product__title">Преимущества продукта:</div>
+            <div class="about-product__descr">- ускоряет процесс созревания. Ripen подает растению сигнал о завершении жизненного цикла, и оно реагирует, в полной мере активизируя свой генетический потенциал;<br>- укрепляет иммунную систему;<br>- увеличивает содержание активных веществ, что особенно важно при выращивании лекарственных, ароматических и кулинарных растений;<br>- поставляет растению необходимые для конечной стадии цветения/плодоношения элементы в легкоусвояемой форме;<br>- в случае накопления нитратов или иных элементов, помогает переработать эти отложения, улучшая вкус и повышая экологическую ценность урожая;<br>- в случае серьезной инвазии патогенов или насекомых Ripen позволяет ускорить естественный цикл и сохранить хотя бы часть урожая;<br>- в условиях открытого грунта Ripen позволяет быстро собрать урожай, прежде чем он будет испорчен холодной и влажной погодой;<br>- в условиях закрытого грунта помогает моделировать окончание цикла, ускоряя созревание самых медленных растений.</div>
+          </div>
+          <div class="product-inside__brief tab"></div>
+          <div class="product-inside__use tab"></div>
+          <div class="product-inside__reviews tab">
+            <div class="reviews">
+              <div class="reviews__afore">
+                <div class="reviews-afore">
+                  <div class="reviews-afore__comment">
+                    <div class="reviews-afore__comment-name">nalunin@icloud.com</div>
+                    <div class="reviews-afore__comment-box">
+                      <div class="reviews-afore__comment-star"><span class="reviews-afore__comment-star-span">☆</span><span class="reviews-afore__comment-star-span">☆</span><span class="reviews-afore__comment-star-span">☆</span><span class="reviews-afore__comment-star-span">☆</span><span class="reviews-afore__comment-star-span">☆</span></div>
+                      <div class="reviews-afore__comment-date">25.09.2018</div>
+                    </div>
+                    <div class="reviews-afore__comment-descr">Пришло быстро все гуд)</div>
+                  </div>
+                  <div class="reviews-afore__comment">
+                    <div class="reviews-afore__comment-name">nalunin@icloud.com</div>
+                    <div class="reviews-afore__comment-box">
+                      <div class="reviews-afore__comment-star"><span class="reviews-afore__comment-star-span">☆</span><span class="reviews-afore__comment-star-span">☆</span><span class="reviews-afore__comment-star-span">☆</span><span class="reviews-afore__comment-star-span">☆</span><span class="reviews-afore__comment-star-span">☆</span></div>
+                      <div class="reviews-afore__comment-date">25.09.2018</div>
+                    </div>
+                    <div class="reviews-afore__comment-descr">Пришло быстро все гуд)</div>
+                  </div>
+                  <div class="reviews-afore__comment">
+                    <div class="reviews-afore__comment-name">nalunin@icloud.com</div>
+                    <div class="reviews-afore__comment-box">
+                      <div class="reviews-afore__comment-star"><span class="reviews-afore__comment-star-span">☆</span><span class="reviews-afore__comment-star-span">☆</span><span class="reviews-afore__comment-star-span">☆</span><span class="reviews-afore__comment-star-span">☆</span><span class="reviews-afore__comment-star-span">☆</span></div>
+                      <div class="reviews-afore__comment-date">25.09.2018</div>
+                    </div>
+                    <div class="reviews-afore__comment-descr">Пришло быстро все гуд)</div>
+                  </div>
+                  <div class="reviews-afore__comment">
+                    <div class="reviews-afore__comment-name">nalunin@icloud.com</div>
+                    <div class="reviews-afore__comment-box">
+                      <div class="reviews-afore__comment-star"><span class="reviews-afore__comment-star-span">☆</span><span class="reviews-afore__comment-star-span">☆</span><span class="reviews-afore__comment-star-span">☆</span><span class="reviews-afore__comment-star-span">☆</span><span class="reviews-afore__comment-star-span">☆</span></div>
+                      <div class="reviews-afore__comment-date">25.09.2018</div>
+                    </div>
+                    <div class="reviews-afore__comment-descr">Пришло быстро все гуд)Пришло быстро все гуд)Пришло быстро все гуд)Пришло быстро все гуд)Пришло быстро все гуд)Пришло быстро все гуд)Пришло быстро все гуд)Пришло быстро все гуд)Пришло быстро все гуд)Пришло быстро все гуд)Пришло быстро все гуд)Пришло быстро все гуд)Пришло быстро все гуд)Пришло быстро все гуд)Пришло быстро все гуд)Пришло быстро все гуд)Пришло быстро все гуд)</div>
+                  </div>
+                </div>
+                <div class="reviews__afore-btn">
+                  <button class="btn-more">Загрузить еще
+                    <svg class="icon icon-arrow-point arrow-point-more" role="img">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="reviews__none">
+                <div class="reviews__none-box"><img class="reviews__none-img" src="static/img/general/logo.png">
+                  <p class="reviews__none-p">У данного товара нет отзывов.</p>
+                  <p class="reviews__none-p">Станьте первым, кто оставил отзыв об этом товаре!</p>
+                </div>
+              </div>
+              <div class="reviews__write">
+                <div class="reviews__write-title">Написать отзыв</div>
+                <div class="reviews__write-rating">Оцените товар</div>
+                <div class="reviews__write-star"><span class="reviews__write-star-span">☆</span><span class="reviews__write-star-span">☆</span><span class="reviews__write-star-span">☆</span><span class="reviews__write-star-span">☆</span><span class="reviews__write-star-span">☆</span></div>
+                <div class="reviews__write-text">Напишите отзыв</div>
+                <textarea class="reviews__write-textarea"></textarea>
+                <div class="reviews__write-btn">
+                  <button class="btn-green">Добавить отзыв</button>
+                </div>
+              </div>
+              <div class="reviews__authorized">
+                <div class="reviews__write-title">Написать отзыв</div>
+                <div class="reviews__write-text">Чтобы оставлять отзыв вам необходимо <br><a class="reviews__write-text-a">войти</a> под своим аккаунтом.<br><br>Если вы еще не зарегистрированы, то можете пройти <a class="reviews__write-text-a">регистрацию</a>, которая займет всего пару минут.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="container">
+            <div class="products">
+              <div class="products__text">
+                <div class="products__text-title">Товар входит в комплекты</div>
+              </div>
+              <div class="products__extra">
+                <div class="product__extra-item">
+                  <div class="ticket__extra">
+                    <div class="ticket__left">
+                      <div class="ticket-product"><img class="ticket-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket-product__discount">-15%</div>
+                      </div>
+                    </div>
+                    <div class="ticket__right">
+                      <div class="ticket-header">
+                        <div class="ticket-header__text">Pro Box</div>
+                        <div class="ticket-header__rating"><span class="ticket-header__rating-span">☆</span><span class="ticket-header__rating-span">☆</span><span class="ticket-header__rating-span">☆</span><span class="ticket-header__rating-span">☆</span><span class="ticket-header__rating-span">☆</span></div>
+                      </div>
+                      <div class="ticket-title">Гроубокс 120-Apollo10</div>
+                      <div class="ticket-buy">
+                        <div class="ticket-buy__price">
+                          <div class="ticket-buy__price-old">590р</div>
+                          <div class="ticket-buy__price-new">450р</div>
+                        </div>
+                        <div class="ticket-buy__btn">
+                          <button class="btn-basket" href="javascript:void(0)">
+                            <svg class="icon icon-tick-inside " role="img">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#tick-inside"></use>
+                            </svg>
+                            <div class="ticket-buy__btn-text">Купить</div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__extra-item">
+                  <div class="product__extra-item-plus">+</div>
+                  <div class="ticket__extra">
+                    <div class="ticket__left">
+                      <div class="ticket-product"><img class="ticket-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket-product__discount">-15%</div>
+                      </div>
+                    </div>
+                    <div class="ticket__right">
+                      <div class="ticket-header">
+                        <div class="ticket-header__text">Pro Box</div>
+                        <div class="ticket-header__rating"><span class="ticket-header__rating-span">☆</span><span class="ticket-header__rating-span">☆</span><span class="ticket-header__rating-span">☆</span><span class="ticket-header__rating-span">☆</span><span class="ticket-header__rating-span">☆</span></div>
+                      </div>
+                      <div class="ticket-title">Гроубокс 120-Apollo10</div>
+                      <div class="ticket-buy">
+                        <div class="ticket-buy__price">
+                          <div class="ticket-buy__price-old">590р</div>
+                          <div class="ticket-buy__price-new">450р</div>
+                        </div>
+                        <div class="ticket-buy__btn">
+                          <button class="btn-basket" href="javascript:void(0)">
+                            <svg class="icon icon-tick-inside " role="img">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#tick-inside"></use>
+                            </svg>
+                            <div class="ticket-buy__btn-text">Купить</div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__extra-item">
+                  <div class="product__extra-item-plus">+</div>
+                  <div class="ticket__extra">
+                    <div class="ticket__left">
+                      <div class="ticket-product"><img class="ticket-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket-product__discount">-15%</div>
+                      </div>
+                    </div>
+                    <div class="ticket__right">
+                      <div class="ticket-header">
+                        <div class="ticket-header__text">Pro Box</div>
+                        <div class="ticket-header__rating"><span class="ticket-header__rating-span">☆</span><span class="ticket-header__rating-span">☆</span><span class="ticket-header__rating-span">☆</span><span class="ticket-header__rating-span">☆</span><span class="ticket-header__rating-span">☆</span></div>
+                      </div>
+                      <div class="ticket-title">Гроубокс 120-Apollo10</div>
+                      <div class="ticket-buy">
+                        <div class="ticket-buy__price">
+                          <div class="ticket-buy__price-old">590р</div>
+                          <div class="ticket-buy__price-new">450р</div>
+                        </div>
+                        <div class="ticket-buy__btn">
+                          <button class="btn-basket" href="javascript:void(0)">
+                            <svg class="icon icon-tick-inside " role="img">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#tick-inside"></use>
+                            </svg>
+                            <div class="ticket-buy__btn-text">Купить</div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="products">
+              <div class="products__text">
+                <div class="products__text-title">С этим товаром покупают</div>
+                <div class="products__text-all"></div>
+              </div>
+              <div class="products__additionally">
+                <div class="product__additionally-item">
+                  <div class="ticket__add">
+                    <div class="ticket__left">
+                      <div class="ticket-product"><img class="ticket-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket-product__discount">-15%</div>
+                      </div>
+                    </div>
+                    <div class="ticket__right">
+                      <div class="ticket-header">
+                        <div class="ticket-header__text">Pro Box</div>
+                        <div class="ticket-header__rating"><span class="ticket-header__rating-span">☆</span><span class="ticket-header__rating-span">☆</span><span class="ticket-header__rating-span">☆</span><span class="ticket-header__rating-span">☆</span><span class="ticket-header__rating-span">☆</span></div>
+                      </div>
+                      <div class="ticket-title">Гроубокс 120-Apollo10</div>
+                      <div class="ticket-buy">
+                        <div class="ticket-buy__price">
+                          <div class="ticket-buy__price-old">590р</div>
+                          <div class="ticket-buy__price-new">450р</div>
+                        </div>
+                        <div class="ticket-buy__btn">
+                          <button class="btn-basket" href="javascript:void(0)">
+                            <svg class="icon icon-tick-inside " role="img">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#tick-inside"></use>
+                            </svg>
+                            <div class="ticket-buy__btn-text">Купить</div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__additionally-item">
+                  <div class="ticket__add">
+                    <div class="ticket__left">
+                      <div class="ticket-product"><img class="ticket-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket-product__discount">-15%</div>
+                      </div>
+                    </div>
+                    <div class="ticket__right">
+                      <div class="ticket-header">
+                        <div class="ticket-header__text">Pro Box</div>
+                        <div class="ticket-header__rating"><span class="ticket-header__rating-span">☆</span><span class="ticket-header__rating-span">☆</span><span class="ticket-header__rating-span">☆</span><span class="ticket-header__rating-span">☆</span><span class="ticket-header__rating-span">☆</span></div>
+                      </div>
+                      <div class="ticket-title">Гроубокс 120-Apollo10</div>
+                      <div class="ticket-buy">
+                        <div class="ticket-buy__price">
+                          <div class="ticket-buy__price-old">590р</div>
+                          <div class="ticket-buy__price-new">450р</div>
+                        </div>
+                        <div class="ticket-buy__btn">
+                          <button class="btn-basket" href="javascript:void(0)">
+                            <svg class="icon icon-tick-inside " role="img">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#tick-inside"></use>
+                            </svg>
+                            <div class="ticket-buy__btn-text">Купить</div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product__media-basket">
+              <div class="product__media-basket-box"><span class="product__media-basket-box-span">Добавить в корзину</span>
+                <svg class="icon icon-basket basret-btn-product" role="img">
+                  <use xlink:href="static/img/svg/symbol/sprite.svg#basket"></use>
+                </svg><span class="product__media-basket-box-span">2470 р</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid sub_reviews">
+          <div class="sub_reviews__sub">
+            <!--подписаться на акции-->
+            <div class="container-fluid subscribe-block-stock">
+              <div class="container subscribe-block-stock__cont">
+                <object class="logo-big" type="image/svg+xml" data="static/img/general/logo.svg"></object>
+                <div class="subscribe-stock">
+                  <div class="subscribe-stock__left"><span class="subscribe-stock__left-span">Будь в курсе</span></div>
+                  <div class="subscribe-stock__left-second">Подпишитесь на последние обновления и узнавайте о новинках и специальных предложениях первыми</div>
+                  <div class="subscribe-stock__right">
+                    <div class="subscribe-stock__right-sbc">
+                      <input class="subscribe-stock__right-input" placeholder="Ваш почтовый адрес">
+                      <button class="btn-subscribe">Подписаться</button>
+                    </div>
+                    <div class="subscribe-stock__right-policy">
+                      <input class="subscribe-stock__right-checkbox" id="checkbox_sbc-news" type="checkbox">
+                      <label class="subscribe-stock__right-label" for="checkbox_sbc-news">Я согласен на обработку персональных данных,<br>а также с условиями подписки</label>
+                    </div>
+                    <button class="btn-subscribe__small">Подписаться</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sub_reviews__reviews">
+            <!-- Отзывы-->
+            <div class="container-fluid reviews_block">
+              <div class="container reviews_box">
+                <div class="reviews_message">
+                  <div class="reviews_message__detail">
+                    <div class="reviews_message__detail-title">trofim80056</div>
+                    <div class="reviews_message__detail-descr">Всем привет,заказывал здесь в первый раз и как оказалось не зря! пришло всё быстро,упаковка отличная,всем советую заказывать и не боятся за свои кровные;) магазин пять баллов,успехов вам!</div>
+                  </div>
+                  <div class="reviews_message__detail">
+                    <div class="reviews_message__detail-title">trofim80056</div>
+                    <div class="reviews_message__detail-descr">Всем привет,заказывал здесь в первый раз и как оказалось не зря! пришло всё быстро,упаковка отличная,всем советую заказывать и не боятся за свои кровные;) магазин пять баллов,успехов вам!</div>
+                  </div>
+                </div>
+                <div class="reviews_all">
+                  <div class="reviews_all__star"><span class="reviews_all__star-span">☆</span><span class="reviews_all__star-span">☆</span><span class="reviews_all__star-span">☆</span><span class="reviews_all__star-span">☆</span><span class="reviews_all__star-span">☆</span>
+                    <div class="reviews_all__date">11.07.2018</div>
+                  </div>
+                  <button class="btn-green">Все отзывы</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--footer-->
+      <footer class="container-fluid footer-block">
+        <div class="container footer-box">
+          <div class="footer-box-menu">
+            <div class="footer-box-menu__column">
+              <p class="footer-box-menu__column-p" onclick="window.location='catalog.html';">Каталог</p>
+              <p class="footer-box-menu__column-p" onclick="window.location='stock.html';">Акции</p>
+              <p class="footer-box-menu__column-p" onclick="window.location='delivery.html';">Оплата/Доставка</p>
+              <p class="footer-box-menu__column-p" onclick="window.location='warranty.html';">Гарантия</p>
+              <p class="footer-box-menu__column-p" onclick="window.location='faq.html';">FAQ</p>
+              <p class="footer-box-menu__column-p" onclick="window.location='price-list.html';">Прайс-лист</p>
+            </div>
+            <div class="footer-box-menu__column">
+              <p class="footer-box-menu__column-p" onclick="window.location='index.html';">О нас</p>
+              <p class="footer-box-menu__column-p" onclick="window.location='reviews.html';">Отзывы</p>
+              <p class="footer-box-menu__column-p" onclick="window.location='blog.html';">Блог</p>
+              <p class="footer-box-menu__column-p" onclick="window.location='dzagi_tube.html';">Dzagi-tube</p>
+              <p class="footer-box-menu__column-p" onclick="window.location='books.html';">Книга "Сам вырастил"</p>
+            </div>
+            <div class="footer-box-menu__column">
+              <p class="footer-box-menu__column-p" onclick="window.location='index.html';">Вход</p>
+              <p class="footer-box-menu__column-p" onclick="window.location='index.html';">Регистрация</p>
+              <p class="footer-box-menu__column-p" onclick="window.location='index.html';">Восстановление пароля</p>
+            </div>
+          </div>
+          <div class="footer-box-container">
+            <div class="footer-box-contact">
+              <div class="footer-box-contact__number">8 (800) 333-16-59</div>
+              <div class="footer-box-contact__text">ИНТЕРНЕТ-МАГАЗИН: ПН-ПТ 08:00–22:00<br>СБ-ВС 12:00—22:00, ЗВОНОК БЕСПЛАТНЫЙ</div>
+              <div class="footer-box-contact__number">8 (495) 120-59-42</div>
+              <div class="footer-box-contact__text">ГРОУШОП В МОСКВЕ: ПН–ВС 12:00–21:00</div>
+            </div>
+            <div class="footer-box-connect">
+              <div class="footer-box-connect__search">
+                <input class="footer-box-connect__search-input" placeholder="Я ищю...">
+                <svg class="icon icon-search search-footer" role="img">
+                  <use xlink:href="static/img/svg/symbol/sprite.svg#search"></use>
+                </svg>
+              </div>
+              <div class="footer-box-connect__social">
+                <div class="footer-box-connect__social-icon">
+                  <svg class="icon icon-tg social-footer" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#tg"></use>
+                  </svg>
+                </div>
+                <div class="footer-box-connect__social-icon">
+                  <svg class="icon icon-ig social-footer" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#ig"></use>
+                  </svg>
+                </div>
+                <div class="footer-box-connect__social-icon">
+                  <svg class="icon icon-yt social-footer" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#yt"></use>
+                  </svg>
+                </div>
+                <div class="footer-box-connect__social-icon">
+                  <svg class="icon icon-fb social-footer" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#fb"></use>
+                  </svg>
+                </div>
+                <div class="footer-box-connect__social-icon">
+                  <svg class="icon icon-vk social-footer" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#vk"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="footer-box-connect__mail">Остались вопросы пишите на почту<br><a class="footer-box-connect__mail-a">sales@dzagigrow.ru</a></div>
+            </div>
+          </div>
+          <div class="up">
+            <svg class="icon icon-down-arrow " role="img">
+              <use xlink:href="static/img/svg/symbol/sprite.svg#down-arrow"></use>
+            </svg>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="static/js/jquery.js"></script>
+    <script src="static/js/slick.min.js"></script>
+    <script src="static/js/jquery.fancybox.js"></script>
+    <script src="static/js/libs.min.js"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>

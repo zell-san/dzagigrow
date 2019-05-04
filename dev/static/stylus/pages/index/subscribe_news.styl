@@ -1,0 +1,70 @@
+//подписаться на новости
+.subscribe-block-news
+  @extend .subscribe-block
+
+  &__cont
+    @extend .subscribe-block__cont
+
+    @media screen and (max-width smalDesktopWidth)
+      justify-content center
+      display flex
+
+.subscribe-news
+  @extend .subscribe-box
+
+  @media screen and (max-width desktopWidth)
+    flex-direction column
+    align-items: flex-start;
+    padding 40px 0 50px 200px
+
+    @media screen and (max-width smalDesktopWidth)
+      width 80%
+      padding-left 0
+
+      @media screen and (max-width tableWidth)
+        width 100%
+        align-items center
+
+  &__left
+    @extend .subscribe-box__left
+
+    @media screen and (max-width desktopWidth)
+      width 75%
+
+      @media screen and (max-width smalDesktopWidth)
+        width 100%
+
+    &-span
+      @extend .subscribe-box__left-span
+
+  &__right
+    @extend .subscribe-box__right
+
+    @media screen and (max-width desktopWidth)
+      padding-top 20px
+
+      @media screen and (max-width tableWidth)
+        width 100%
+        align-items center
+
+    &-sbc
+      @extend .subscribe-box__right-sbc
+
+    &-input
+      @extend .subscribe-box__right-input
+
+      @media screen and (max-width tableWidth)
+        width 100%
+
+    &-policy
+      @extend .subscribe-box__right-policy
+
+    &-checkbox
+      @extend .subscribe-box__right-checkbox
+
+    &-label
+      @extend .subscribe-box__right-label
+
+
+
+

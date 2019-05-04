@@ -1,0 +1,31 @@
+// Все отзывы
+.btn-green
+  @extend .btn-basket
+  background-color greenDG
+  color white
+  size (150px 40px)
+
+  @media screen and (max-width bigPhoneWidth)
+    size (100px 30px)
+
+  &:hover
+    background-color greenDGdark
+
+.btn-green-big
+  @extend .btn-green
+  size (240px 55px)
+  font-size rem(16px)
+
+.contacts__btn
+  width 100%
+  height 100px
+  font-size rem(18px)
+
+  @media screen and (max-width tableWidth)
+    padding 0 20px
+    text-align start
+
+    @media screen and (max-width bigPhoneWidth)
+      font-size rem(12px)
+      line-height 15px
+      height 70px

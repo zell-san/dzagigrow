@@ -1,0 +1,49 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Контакты'
+    - var pageClass = 'contacts-page'
+
+block content
+
+    .container-fluid
+        .container.page
+            include ../modules/breadcrumb
+            .page-title Контакты
+            .contacts
+                .contacts__title Интернет-магазин DzagiGrow
+                .contacts__descr Вас приветствует команда магазина DzagiGrow!
+                .contacts__block
+                    .contacts__item
+                        .contacts__item-title Режим работы
+                        .contacts__item-descr Заказы в нашем магазине принимаются ежедневно и круглосуточно. Операторы и менеджеры работают в будни с 8:00 до 22:00 по московскому времени. В выходные дни с 12:00 до 22:00.
+                    .contacts__item
+                        .contacts__item-title DzagiGrow в соцсетях
+                        .contacts__item-descr Присоединяйтесь к нашим сообществам <a class='contacts__item-a'>ВКонтакте</a> и <a class='contacts__item-a'>Facebook</a>, узнайте еще больше о домашнем растениеводстве в нашем блоге и видеоканале на <a class='contacts__item-a'>YouTube!</a> Фоловьте нас в <a class='contacts__item-a'>Инстаграме</a> и <a class='contacts__item-a'>Телеграме!</a>
+                .contacts__block
+                    .contacts__box
+                        .contacts__item
+                            .contacts__item-title Контакты
+                            .contacts__item-descr Чтобы связаться с нами:<br>- позвоните нам на горячую линию по телефону <a class='contacts__item-a'>8 800 333-16-59</a> (звонок бесплатный);<br>- обратитесь к нашему онлайн-консультанту (справа внизу "Я тут, если что");<br>- напишите нам электронную почту <a class='contacts__item-a'>sales@dzagigrow.ru</a>
+                        .contacts__item
+                            .contacts__item-title Пункт выдачи товаров в Перми
+                            .contacts__item-descr Режим работы: ПН-ПТ - с 10:00 до 18:00.<br>Адрес: ул. Дзержинского, 59 лит К (конец здания).<br>Тел.: 8 (800) 333-16-59
+                    .contacts__item
+                        .contacts__social
+                            img.contacts__social-img(src="static/img/content/widget.png")
+                .contacts__box
+                    .contacts__map
+                        .contacts__item-title Карта и схема проезда:
+                        img.contacts__map-img(src="static/img/content/map.png")
+                .contacts__block
+                    .contacts__box
+                        .contacts__item
+                            .contacts__item-title Гроушоп DzagiGrow в Москве
+                            .contacts__item-descr У московского магазина DzagiGrow появился собственный сайт. Все товары на сайте доступны для покупки в магазине и для заказа онлайн с доставкой по Москве.
+                        .contacts__box-btn
+                            button.btn-green.contacts__btn Посмотреть контакты гроушопа DzagiGrow в Москве
+                                +icon('arrow-point', 'contacts-arrow')
+                    .contacts__box
+                        .contacts__item
+                            .contacts__item-photo
+                            img.contacts__item-photo-img(src="static/img/content/entry.png")

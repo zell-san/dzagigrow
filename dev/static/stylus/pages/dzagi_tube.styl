@@ -1,0 +1,54 @@
+.tube
+  @extend .blog
+
+  &-left
+    @extend .blog-left
+
+  &-right
+    @extend .blog-right
+
+.tube-description
+  @extend .blog-description
+
+  &__box
+    display flex
+
+    @media screen and (max-width tableWidth)
+      flex-direction column
+      margin-bottom 20px
+
+  &__a
+    @extend .blog-description__a
+
+  &__social
+    display flex
+    background-color greenDG
+    min-width 135px
+    align-items center
+    justify-content center
+    flex-direction column
+    cursor pointer
+
+    &-a
+      color white
+      text-align center
+      padding-top 10px
+      font-weight bold
+
+.tube-btn
+  @extend .blog-btn
+
+.tube-article
+  @extend .blog-article
+
+  &__item
+    @extend .blog-article__item
+
+    &-box
+      @extend .blog-article__item-box
+
+      &-img
+        @extend .blog-article__item-box-img
+
+    &-preview
+      @extend .blog-article__item-preview
