@@ -24,12 +24,22 @@ block content
                 .reviews__write
                     .reviews__write-title Написать отзыв
                     .reviews__write-rating Оцените товар
-                    .reviews__write-star
-                        span.reviews__write-star-span ☆
-                        span.reviews__write-star-span ☆
-                        span.reviews__write-star-span ☆
-                        span.reviews__write-star-span ☆
-                        span.reviews__write-star-span ☆
+                    .reviews__write-star#reviewStars-input
+                        input#star-4(type="radio" name="reviewStars")
+                        label.reviews__write-star-span(for="star-4") ☆
+
+                        input#star-3(type="radio" name="reviewStars")
+                        label.reviews__write-star-span(for="star-3") ☆
+
+                        input#star-2(type="radio" name="reviewStars")
+                        label.reviews__write-star-span(for="star-2") ☆
+
+                        input#star-1(type="radio" name="reviewStars")
+                        label.reviews__write-star-span(for="star-1") ☆
+
+                        input#star-0(type="radio" name="reviewStars")
+                        label.reviews__write-star-span(for="star-0") ☆
+
                     .reviews__write-text Напишите отзыв
                     textarea.reviews__write-textarea
                     .reviews__write-btn

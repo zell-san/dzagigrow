@@ -1,0 +1,168 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Категории'
+    - var pageClass = 'categories-page'
+
+block content
+
+    .container-fluid
+        .container.page
+            include ../modules/breadcrumb
+            .categories
+                .categories__row
+                    .categories__item
+                        .categories__item-content
+                            .categories__item-content-box
+                                a
+                                    img.categories__item-content-img(src="static/img/content/co2.jpg")
+                                a.categories__item-content-title-block
+                                    .categories__item-content-title CO2
+                    .categories__item
+                        .categories__item-content
+                            .categories__item-content-box
+                                a
+                                    img.categories__item-content-img(src="static/img/content/e-mod-pro.png")
+                                a.categories__item-content-title-block
+                                    .categories__item-content-title E-Mode PRO
+                                    +icon('arrow-point', 'arrow-point-categories')
+                            .categories__item-content-inside
+                                .categories__item-content-box.categories__item-content-box-inside
+                                    .categories__item-content-box-inside-overflow
+                                        .categories__item-content-inside-close
+                                            +icon('close', 'close-categories')
+                                        a.categories__item-content-a Комплектующие
+                                        a.categories__item-content-a Комплектующие
+                                        a.categories__item-content-a Комплектующие
+                                        a.categories__item-content-a Комплектующие
+                                        a.categories__item-content-a Комплектующие
+                                        a.categories__item-content-a Комплектующие
+                                        a.categories__item-content-a Комплектующие
+                    .categories__item
+                        .categories__item-content
+                            .categories__item-content-box
+                                a
+                                    img.categories__item-content-img(src="static/img/content/ph.png")
+                                a.categories__item-content-title-block
+                                    .categories__item-content-title PH, EC, TDS
+                                    +icon('arrow-point', 'arrow-point-categories')
+                            .categories__item-content-inside
+                                .categories__item-content-box.categories__item-content-box-inside
+                                    .categories__item-content-inside-close
+                                        +icon('close', 'close-categories')
+                                    a.categories__item-content-a Комплектующие
+                                    a.categories__item-content-a Комплектующие
+                                    a.categories__item-content-a Комплектующие
+                                    a.categories__item-content-a Комплектующие
+                                    a.categories__item-content-a Комплектующие
+                                    a.categories__item-content-a Комплектующие
+                                    a.categories__item-content-a Комплектующие
+                    .categories__item
+                        .categories__item-content
+                            .categories__item-content-box
+                                a
+                                    img.categories__item-content-img(src="static/img/content/acs.png")
+                                a.categories__item-content-title-block
+                                    .categories__item-content-title Аксессуары
+                                    +icon('arrow-point', 'arrow-point-categories')
+                            .categories__item-content-inside
+                                .categories__item-content-box.categories__item-content-box-inside
+                                    .categories__item-content-inside-close
+                                        +icon('close', 'close-categories')
+                                    a.categories__item-content-a Комплектующие
+                                    a.categories__item-content-a Комплектующие
+                                    a.categories__item-content-a Комплектующие
+                                    a.categories__item-content-a Комплектующие
+                                    a.categories__item-content-a Комплектующие
+                                    a.categories__item-content-a Комплектующие
+                                    a.categories__item-content-a Комплектующие
+                    .categories__item
+                        .categories__item-content
+                            .categories__item-content-box
+                                a
+                                    img.categories__item-content-img(src="static/img/content/ven.png")
+                                a.categories__item-content-title-block
+                                    .categories__item-content-title Вентиляция
+                                    +icon('arrow-point', 'arrow-point-categories')
+                            .categories__item-content-inside
+                                .categories__item-content-box.categories__item-content-box-inside
+                                    .categories__item-content-inside-close
+                                        +icon('close', 'close-categories')
+                                    a.categories__item-content-a Комплектующие
+                                    a.categories__item-content-a Комплектующие
+                                    a.categories__item-content-a Комплектующие
+                                    a.categories__item-content-a Комплектующие
+                                    a.categories__item-content-a Комплектующие
+                                    a.categories__item-content-a Комплектующие
+                                    a.categories__item-content-a Комплектующие
+                    .categories__item
+                        .categories__item-content
+                            .categories__item-content-box
+                                a
+                                    img.categories__item-content-img(src="static/img/content/grow.png")
+                                a.categories__item-content-title-block
+                                    .categories__item-content-title Готовые гроубоксы
+                                    +icon('arrow-point', 'arrow-point-categories')
+                            .categories__item-content-inside
+                                .categories__item-content-box.categories__item-content-box-inside
+                                    .categories__item-content-inside-close
+                                        +icon('close', 'close-categories')
+                                    a.categories__item-content-a Комплектующие
+                                    a.categories__item-content-a Комплектующие
+                                    a.categories__item-content-a Комплектующие
+                                    a.categories__item-content-a Комплектующие
+                                    a.categories__item-content-a Комплектующие
+                                    a.categories__item-content-a Комплектующие
+                                    a.categories__item-content-a Комплектующие
+                    .categories__item
+                        .categories__item-content
+                            .categories__item-content-box
+                                a.categories__item-content-a
+                                    img.categories__item-content-img(src="static/img/content/grow.png")
+                                a.categories__item-content-title-block
+                                    .categories__item-content-title Готовые гроубоксы
+                    .categories__item
+                        .categories__item-content
+                            .categories__item-content-box
+                                a
+                                    img.categories__item-content-img(src="static/img/content/growt.png")
+                                a.categories__item-content-title-block
+                                    .categories__item-content-title Гроутены
+                                    +icon('arrow-point', 'arrow-point-categories')
+                            .categories__item-content-inside
+                                .categories__item-content-box.categories__item-content-box-inside
+                                    .categories__item-content-inside-close
+                                        +icon('close', 'close-categories')
+                                    a.categories__item-content-a Комплектующие
+                                    a.categories__item-content-a Комплектующие
+                                    a.categories__item-content-a Комплектующие
+                                    a.categories__item-content-a Комплектующие
+                                    a.categories__item-content-a Комплектующие
+                                    a.categories__item-content-a Комплектующие
+                                    a.categories__item-content-a Комплектующие
+                    .categories__item
+                        .categories__item-content
+                            .categories__item-content-box
+                                a
+                                    img.categories__item-content-img(src="static/img/content/cap.png")
+                                a.categories__item-content-title-block
+                                    .categories__item-content-title Капельный полив
+                                    +icon('arrow-point', 'arrow-point-categories')
+                            .categories__item-content-inside
+                                .categories__item-content-box.categories__item-content-box-inside
+                                    .categories__item-content-inside-close
+                                        +icon('close', 'close-categories')
+                                    a.categories__item-content-a Комплектующие
+                                    a.categories__item-content-a Комплектующие
+                                    a.categories__item-content-a Комплектующие
+                                    a.categories__item-content-a Комплектующие
+                                    a.categories__item-content-a Комплектующие
+                                    a.categories__item-content-a Комплектующие
+                                    a.categories__item-content-a Комплектующие
+                    .categories__item
+                        .categories__item-content
+                            .categories__item-content-box
+                                a.categories__item-content-a
+                                    img.categories__item-content-img(src="static/img/content/clim.png")
+                                a.categories__item-content-title-block
+                                    .categories__item-content-title Климат-контроль

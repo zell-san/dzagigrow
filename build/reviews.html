@@ -19,23 +19,22 @@
               <div class="header-nav">
                 <div class="header-nav__left"><a class="header-nav__left-a" href="blog.html">Блог</a><a class="header-nav__left-a" href="dzagi_tube.html">Dzagi tube</a><a class="header-nav__left-a" href="books.html">Книги</a></div>
                 <div class="header-nav__right">
-                  <div class="header-nav__right-social">
-                    <svg class="icon icon-tg social" role="img">
-                      <use xlink:href="static/img/svg/symbol/sprite.svg#tg"></use>
-                    </svg>
-                    <svg class="icon icon-ig social" role="img">
-                      <use xlink:href="static/img/svg/symbol/sprite.svg#ig"></use>
-                    </svg>
-                    <svg class="icon icon-yt social" role="img">
-                      <use xlink:href="static/img/svg/symbol/sprite.svg#yt"></use>
-                    </svg>
-                    <svg class="icon icon-fb social" role="img">
-                      <use xlink:href="static/img/svg/symbol/sprite.svg#fb"></use>
-                    </svg>
-                    <svg class="icon icon-vk social" role="img">
-                      <use xlink:href="static/img/svg/symbol/sprite.svg#vk"></use>
-                    </svg>
-                  </div>
+                  <div class="header-nav__right-social"><a>
+                      <svg class="icon icon-tg social" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#tg"></use>
+                      </svg></a><a>
+                      <svg class="icon icon-ig social" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#ig"></use>
+                      </svg></a><a>
+                      <svg class="icon icon-yt social" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#yt"></use>
+                      </svg></a><a>
+                      <svg class="icon icon-fb social" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#fb"></use>
+                      </svg></a><a>
+                      <svg class="icon icon-vk social" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#vk"></use>
+                      </svg></a></div>
                   <div class="header-nav__right-phone" href="tel:+78003331659">8(800)333-16-59</div>
                   <div class="header-nav__right-hang">Бесплатный звонок<br>по России</div>
                   <div class="header-nav__right-phone" href="tel:+74951205945">8(495)120-59-45</div>
@@ -47,42 +46,41 @@
           <!--second header-->
           <div class="container-fluid header-second">
             <div class="container">
-              <div class="header-main">
-                <div class="header-main__logo"><img class="header-main__logo-img" onclick="window.location='index.html';" src="static/img/general/logo.png" alt=""></div>
-                <div class="header-main__city" href="javascript:PopUpHide()"><a class="header-main__city-a">Пермь</a>
-                  <svg class="icon icon-arrow-point arrow-point-city" role="img">
-                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                  <div class="city-you" id="city-you" href="javascript:PopUpHide()">
+              <div class="header-main"><a class="header-main__logo"><img class="header-main__logo-img" onclick="window.location='index.html';" src="static/img/general/logo.png" alt=""></a>
+                <div class="header-main__city">
+                  <div class="header-main__city-box"><a class="header-main__city-a">Пермь</a>
+                    <svg class="icon icon-arrow-point arrow-point-city" role="img">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                    </svg>
+                  </div>
+                  <div class="city-you" id="city-you">
                     <svg class="icon icon-close close-city" role="img">
                       <use xlink:href="static/img/svg/symbol/sprite.svg#close"></use>
                     </svg>
-                    <div class="city-you__text"><span>Ваш город</span><a class="city-you__text-a">Пермь?</a></div>
+                    <div class="city-you__text"><span>Ваш город</span><a class="city-you__text-a">Пермь<span>?</span></a></div>
                     <div class="city-you__btn">
                       <button class="btn-green city-you__btn-green">Да, верно</button>
                       <button class="btn-grey city-you__btn-grey">Выбрать другой</button>
                     </div>
                   </div>
-                  <div class="city-choice" id="city-choice" href="javascript:PopUpHide()">
+                  <div class="city-choice" id="city-choice">
                     <svg class="icon icon-close close-city" role="img">
                       <use xlink:href="static/img/svg/symbol/sprite.svg#close"></use>
                     </svg><span class="city-choice__span">Выбор города</span><span class="city-choice__span-small">Если вашего города нет - выберете ближайший</span>
-                    <div class="city-choice__search">
-                      <input class="city-choice__search-input" type="text" placeholder="Я ищу...">
-                      <svg class="icon icon-search search-header" role="img">
-                        <use xlink:href="static/img/svg/symbol/sprite.svg#search"></use>
-                      </svg>
-                    </div>
+                    <form class="city-choice__search">
+                      <input class="city-choice__search-input" id="city__search" type="text">
+                      <div class="city-choice__search-btn">Ок</div>
+                    </form>
                   </div>
                 </div>
-                <div class="header-main__search">
+                <form class="header-main__search">
                   <input class="header-main__search-input" type="text" placeholder="Я ищу...">
-                  <div class="header-main__search-icon" onclick="window.location='result.html';">
+                  <button class="header-main__search-icon" onclick="window.location='result.html';">
                     <svg class="icon icon-search search-header" role="img">
                       <use xlink:href="static/img/svg/symbol/sprite.svg#search"></use>
                     </svg>
-                  </div>
-                </div>
+                  </button>
+                </form>
                 <div class="header-main__basket">
                   <div class="header-main__basket-box">
                     <div class="header-main__basket-icon">
@@ -105,8 +103,7 @@
                         <div class="basket-block__item-price">2 470р</div>
                       </div>
                       <div class="basket-block__bottom">
-                        <div class="basket-block__bottom-sum"><span>Итог:</span><span class="basket-block__bottom-sum-span">2 470р</span></div>
-                        <div class="basket-block__bottom-btn btn-green-big">Перейти в корзину</div>
+                        <div class="basket-block__bottom-sum"><span>Итог:</span><span class="basket-block__bottom-sum-span">2 470р</span></div><a class="basket-block__bottom-btn btn-green-big">Перейти в корзину</a>
                       </div>
                     </div>
                   </div>
@@ -126,364 +123,204 @@
                   </svg><a class="header-menu__primary-a">Категория товаров</a>
                 </div>
                 <div class="menu-nav">
-                  <div class="menu-nav__border">
-                    <div class="menu-nav__item">Гроубоксы
+                  <div class="menu-nav__border"><a class="menu-nav__item">Гроубоксы
                       <svg class="icon icon-arrow-point subcategor" role="img">
                         <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                      </svg>
-                      <div class="menu-nav__item-sub">
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Маленькие</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Средние</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                        </div>
-                      </div>
+                      </svg></a>
+                    <div class="menu-nav__item-sub">
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                     </div>
                   </div>
-                  <div class="menu-nav__border">
-                    <div class="menu-nav__item">Гидропонные системы
+                  <div class="menu-nav__border"><a class="menu-nav__item">Гидропонные системы
                       <svg class="icon icon-arrow-point subcategor" role="img">
                         <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                      </svg>
-                      <div class="menu-nav__item-sub">
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Маленькие</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Средние</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                        </div>
-                      </div>
+                      </svg></a>
+                    <div class="menu-nav__item-sub">
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                     </div>
                   </div>
-                  <div class="menu-nav__border">
-                    <div class="menu-nav__item">Удобрения
+                  <div class="menu-nav__border"><a class="menu-nav__item">Удобрения
                       <svg class="icon icon-arrow-point subcategor" role="img">
                         <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                      </svg>
-                      <div class="menu-nav__item-sub">
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Маленькие</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Средние</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                        </div>
-                      </div>
+                      </svg></a>
+                    <div class="menu-nav__item-sub">
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                     </div>
                   </div>
-                  <div class="menu-nav__border">
-                    <div class="menu-nav__item">Освещение
+                  <div class="menu-nav__border"><a class="menu-nav__item">Освещение
                       <svg class="icon icon-arrow-point subcategor" role="img">
                         <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                      </svg>
-                      <div class="menu-nav__item-sub">
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Маленькие</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Средние</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                        </div>
-                      </div>
+                      </svg></a>
+                    <div class="menu-nav__item-sub">
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                     </div>
                   </div>
-                  <div class="menu-nav__border">
-                    <div class="menu-nav__item">Полив
+                  <div class="menu-nav__border"><a class="menu-nav__item">Полив
                       <svg class="icon icon-arrow-point subcategor" role="img">
                         <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                      </svg>
-                      <div class="menu-nav__item-sub">
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Маленькие</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Средние</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                        </div>
-                      </div>
+                      </svg></a>
+                    <div class="menu-nav__item-sub">
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                     </div>
                   </div>
-                  <div class="menu-nav__border">
-                    <div class="menu-nav__item">Очистка воздуха
+                  <div class="menu-nav__border"><a class="menu-nav__item">Очистка воздуха
                       <svg class="icon icon-arrow-point subcategor" role="img">
                         <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                      </svg>
-                      <div class="menu-nav__item-sub">
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Маленькие</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Средние</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                        </div>
-                      </div>
+                      </svg></a>
+                    <div class="menu-nav__item-sub">
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                     </div>
                   </div>
-                  <div class="menu-nav__border">
-                    <div class="menu-nav__item">Автоматизация
+                  <div class="menu-nav__border"><a class="menu-nav__item">Автоматизация
                       <svg class="icon icon-arrow-point subcategor" role="img">
                         <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                      </svg>
-                      <div class="menu-nav__item-sub">
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Маленькие</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Средние</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                        </div>
-                      </div>
+                      </svg></a>
+                    <div class="menu-nav__item-sub">
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                     </div>
                   </div>
-                  <div class="menu-nav__border">
-                    <div class="menu-nav__item">Аксессуары
+                  <div class="menu-nav__border"><a class="menu-nav__item">Аксессуары
                       <svg class="icon icon-arrow-point subcategor" role="img">
                         <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                      </svg>
-                      <div class="menu-nav__item-sub">
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Маленькие</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Средние</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                        </div>
-                      </div>
+                      </svg></a>
+                    <div class="menu-nav__item-sub">
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                     </div>
                   </div>
-                  <div class="menu-nav__border">
-                    <div class="menu-nav__item">Гроубоксы
+                  <div class="menu-nav__border"><a class="menu-nav__item">Гроубоксы
                       <svg class="icon icon-arrow-point subcategor" role="img">
                         <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                      </svg>
-                      <div class="menu-nav__item-sub">
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Маленькие</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Средние</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                        </div>
-                      </div>
+                      </svg></a>
+                    <div class="menu-nav__item-sub">
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                     </div>
                   </div>
-                  <div class="menu-nav__border">
-                    <div class="menu-nav__item">Гидропонные системы
+                  <div class="menu-nav__border"><a class="menu-nav__item">Гидропонные системы
                       <svg class="icon icon-arrow-point subcategor" role="img">
                         <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                      </svg>
-                      <div class="menu-nav__item-sub">
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Маленькие</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Средние</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                        </div>
-                      </div>
+                      </svg></a>
+                    <div class="menu-nav__item-sub">
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                     </div>
                   </div>
-                  <div class="menu-nav__border">
-                    <div class="menu-nav__item">Удобрения
+                  <div class="menu-nav__border"><a class="menu-nav__item">Удобрения
                       <svg class="icon icon-arrow-point subcategor" role="img">
                         <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                      </svg>
-                      <div class="menu-nav__item-sub">
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Маленькие</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Средние</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                        </div>
-                      </div>
+                      </svg></a>
+                    <div class="menu-nav__item-sub">
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                     </div>
                   </div>
-                  <div class="menu-nav__border">
-                    <div class="menu-nav__item">Освещение
+                  <div class="menu-nav__border"><a class="menu-nav__item">Освещение
                       <svg class="icon icon-arrow-point subcategor" role="img">
                         <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                      </svg>
-                      <div class="menu-nav__item-sub">
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Маленькие</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Средние</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                        </div>
-                      </div>
+                      </svg></a>
+                    <div class="menu-nav__item-sub">
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                     </div>
                   </div>
-                  <div class="menu-nav__border">
-                    <div class="menu-nav__item">Полив
+                  <div class="menu-nav__border"><a class="menu-nav__item">Полив
                       <svg class="icon icon-arrow-point subcategor" role="img">
                         <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                      </svg>
-                      <div class="menu-nav__item-sub">
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Маленькие</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Средние</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                        </div>
-                      </div>
+                      </svg></a>
+                    <div class="menu-nav__item-sub">
+                      <div class="men menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                     </div>
                   </div>
-                  <div class="menu-nav__border">
-                    <div class="menu-nav__item">Очистка воздуха
+                  <div class="menu-nav__border"><a class="menu-nav__item">Очистка воздуха
                       <svg class="icon icon-arrow-point subcategor" role="img">
                         <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                      </svg>
-                      <div class="menu-nav__item-sub">
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Маленькие</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Средние</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                        </div>
-                      </div>
+                      </svg></a>
+                    <div class="menu-nav__item-sub">
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                     </div>
                   </div>
-                  <div class="menu-nav__border">
-                    <div class="menu-nav__item">Автоматизация
+                  <div class="menu-nav__border"><a class="menu-nav__item">Автоматизация
                       <svg class="icon icon-arrow-point subcategor" role="img">
                         <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                      </svg>
-                      <div class="menu-nav__item-sub">
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Маленькие</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Средние</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                        </div>
-                      </div>
+                      </svg></a>
+                    <div class="menu-nav__item-sub">
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                     </div>
                   </div>
-                  <div class="menu-nav__border">
-                    <div class="menu-nav__item">Аксессуары
+                  <div class="menu-nav__border"><a class="menu-nav__item">Аксессуары
                       <svg class="icon icon-arrow-point subcategor" role="img">
                         <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                      </svg>
-                      <div class="menu-nav__item-sub">
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Маленькие</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Средние</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                        </div>
-                      </div>
+                      </svg></a>
+                    <div class="menu-nav__item-sub">
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                     </div>
                   </div>
-                  <div class="menu-nav__border">
-                    <div class="menu-nav__item">Полив
+                  <div class="menu-nav__border"><a class="menu-nav__item">Полив
                       <svg class="icon icon-arrow-point subcategor" role="img">
                         <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                      </svg>
-                      <div class="menu-nav__item-sub">
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Маленькие</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Средние</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                        </div>
-                      </div>
+                      </svg></a>
+                    <div class="menu-nav__item-sub">
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                     </div>
                   </div>
-                  <div class="menu-nav__border">
-                    <div class="menu-nav__item">Очистка воздуха
+                  <div class="menu-nav__border"><a class="menu-nav__item">Очистка воздуха
                       <svg class="icon icon-arrow-point subcategor" role="img">
                         <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                      </svg>
-                      <div class="menu-nav__item-sub">
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Маленькие</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Средние</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                        </div>
-                      </div>
+                      </svg></a>
+                    <div class="menu-nav__item-sub">
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                     </div>
                   </div>
-                  <div class="menu-nav__border">
-                    <div class="menu-nav__item">Автоматизация
+                  <div class="menu-nav__border"><a class="menu-nav__item">Автоматизация
                       <svg class="icon icon-arrow-point subcategor" role="img">
                         <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                      </svg>
-                      <div class="menu-nav__item-sub">
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Маленькие</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Средние</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                        </div>
-                      </div>
+                      </svg></a>
+                    <div class="menu-nav__item-sub">
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                     </div>
                   </div>
-                  <div class="menu-nav__border">
-                    <div class="menu-nav__item menu-nav__item-last">Аксессуары
+                  <div class="menu-nav__border"><a class="menu-nav__item menu-nav__item-last">Аксессуары
                       <svg class="icon icon-arrow-point subcategor" role="img">
                         <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                      </svg>
-                      <div class="menu-nav__item-sub">
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Маленькие</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Средние</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                        </div>
-                      </div>
+                      </svg></a>
+                    <div class="menu-nav__item-sub">
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                     </div>
                   </div>
                 </div>
@@ -502,27 +339,25 @@
               <use xlink:href="static/img/svg/symbol/sprite.svg#menu"></use>
             </svg>
           </div>
-          <div class="header-media__box"><img class="header-media__box-img" src="static/img/general/logo.png" alt' href="javascript:void(0)">
+          <div class="header-media__box"><a><img class="header-media__box-img" src="static/img/general/logo.png" alt' href="javascript:void(0)"></a>
             <div class="header-media__box-icon">
               <svg class="icon icon-search search-header-media" role="img">
                 <use xlink:href="static/img/svg/symbol/sprite.svg#search"></use>
-              </svg>
-              <div class="header-main__basket-icon">
+              </svg><a class="header-main__basket-icon">
                 <svg class="icon icon-basket basket-header-media" role="img">
                   <use xlink:href="static/img/svg/symbol/sprite.svg#basket"></use>
-                </svg><span class="header-media__box-icon-number">5</span>
-              </div>
+                </svg><span class="header-media__box-icon-number">5</span></a>
             </div>
           </div>
           <div class="header-media__box-search">
-            <div class="header-main__search">
+            <form class="header-main__search">
               <input class="header-main__search-input" type="text" placeholder="Я ищу...">
-              <div class="header-main__search-icon" onclick="window.location='result.html';">
+              <button class="header-main__search-icon" onclick="window.location='result.html';">
                 <svg class="icon icon-search search-header-media-open" role="img">
                   <use xlink:href="static/img/svg/symbol/sprite.svg#search"></use>
                 </svg>
-              </div>
-            </div>
+              </button>
+            </form>
           </div>
         </div>
         <div class="menu-media-full">
@@ -538,26 +373,24 @@
                     <svg class="icon icon-arrow-point arrow-point-city" role="img">
                       <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
                     </svg></span>
-                  <div class="city-you" id="city-you" href="javascript:PopUpHide()">
+                  <div class="city-you" id="city-you">
                     <svg class="icon icon-close close-city" role="img">
                       <use xlink:href="static/img/svg/symbol/sprite.svg#close"></use>
                     </svg>
-                    <div class="city-you__text"><span>Ваш город</span><a class="city-you__text-a">Пермь?</a></div>
+                    <div class="city-you__text"><span>Ваш город</span><a class="city-you__text-a">Пермь<span>?</span></a></div>
                     <div class="city-you__btn">
                       <button class="btn-green city-you__btn-green">Да, верно</button>
                       <button class="btn-grey city-you__btn-grey">Выбрать другой</button>
                     </div>
                   </div>
-                  <div class="city-choice" id="city-choice" href="javascript:PopUpHide()">
+                  <div class="city-choice" id="city-choice">
                     <svg class="icon icon-close close-city" role="img">
                       <use xlink:href="static/img/svg/symbol/sprite.svg#close"></use>
                     </svg><span class="city-choice__span">Выбор города</span><span class="city-choice__span-small">Если вашего города нет - выберете ближайший</span>
-                    <div class="city-choice__search">
-                      <input class="city-choice__search-input" type="text" placeholder="Я ищу...">
-                      <svg class="icon icon-search search-header" role="img">
-                        <use xlink:href="static/img/svg/symbol/sprite.svg#search"></use>
-                      </svg>
-                    </div>
+                    <form class="city-choice__search">
+                      <input class="city-choice__search-input" id="city__search" type="text">
+                      <div class="city-choice__search-btn">Ок</div>
+                    </form>
                   </div><span class="header-media-open__box-icon-span">Вход</span>
                 </div>
               </div>
@@ -568,227 +401,118 @@
               </svg><a class="header-media-nav__a">Категория товаров</a>
             </div>
             <div class="menu-media-category">
-              <div class="menu-media-category__border">
-                <div class="menu-media-category__item">Гроубоксы
+              <div class="menu-media-category__border"><a class="menu-media-category__item">Гроубоксы
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                </div>
-                <div class="menu-media-category__sub">
-                  <div class="menu-media-category__sub-element">Маленькие</div>
-                  <div class="menu-media-category__sub-element">Средние</div>
-                  <div class="menu-media-category__sub-element">Большие</div>
-                </div>
+                  </svg></a>
+                <div class="menu-media-category__sub"><a class="menu-media-category__sub-element">Маленькие</a><a class="menu-media-category__sub-element">Средние</a><a class="menu-media-category__sub-element">Большие</a></div>
               </div>
-              <div class="menu-media-category__border">
-                <div class="menu-media-category__item">Гидропонные системы
+              <div class="menu-media-category__border"><a class="menu-media-category__item">Гидропонные системы
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                </div>
-                <div class="menu-media-category__sub">
-                  <div class="menu-media-category__sub-element">Маленькие</div>
-                  <div class="menu-media-category__sub-element">Средние</div>
-                  <div class="menu-media-category__sub-element">Большие</div>
-                </div>
+                  </svg></a>
+                <div class="menu-media-category__sub"><a class="menu-media-category__sub-element">Маленькие</a><a class="menu-media-category__sub-element">Средние</a><a class="menu-media-category__sub-element">Большие</a></div>
               </div>
-              <div class="menu-media-category__border">
-                <div class="menu-media-category__item">Удобрения
+              <div class="menu-media-category__border"><a class="menu-media-category__item">Удобрения
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                </div>
-                <div class="menu-media-category__sub">
-                  <div class="menu-media-category__sub-element">Маленькие</div>
-                  <div class="menu-media-category__sub-element">Средние</div>
-                  <div class="menu-media-category__sub-element">Большие</div>
-                </div>
+                  </svg></a>
+                <div class="menu-media-category__sub"><a class="menu-media-category__sub-element">Маленькие</a><a class="menu-media-category__sub-element">Средние</a><a class="menu-media-category__sub-element">Большие</a></div>
               </div>
-              <div class="menu-media-category__border">
-                <div class="menu-media-category__item">Освещение
+              <div class="menu-media-category__border"><a class="menu-media-category__item">Освещение
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                </div>
-                <div class="menu-media-category__sub">
-                  <div class="menu-media-category__sub-element">Маленькие</div>
-                  <div class="menu-media-category__sub-element">Средние</div>
-                  <div class="menu-media-category__sub-element">Большие</div>
-                </div>
+                  </svg></a>
+                <div class="menu-media-category__sub"><a class="menu-media-category__sub-element">Маленькие</a><a class="menu-media-category__sub-element">Средние</a><a class="menu-media-category__sub-element">Большие</a></div>
               </div>
-              <div class="menu-media-category__border">
-                <div class="menu-media-category__item">Полив
+              <div class="menu-media-category__border"><a class="menu-media-category__item">Полив
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                </div>
-                <div class="menu-media-category__sub">
-                  <div class="menu-media-category__sub-element">Маленькие</div>
-                  <div class="menu-media-category__sub-element">Средние</div>
-                  <div class="menu-media-category__sub-element">Большие</div>
-                </div>
+                  </svg></a>
+                <div class="menu-media-category__sub"><a class="menu-media-category__sub-element">Маленькие</a><a class="menu-media-category__sub-element">Средние</a><a class="menu-media-category__sub-element">Большие</a></div>
               </div>
-              <div class="menu-media-category__border">
-                <div class="menu-media-category__item">Очистка воздуха
+              <div class="menu-media-category__border"><a class="menu-media-category__item">Очистка воздуха
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                </div>
-                <div class="menu-media-category__sub">
-                  <div class="menu-media-category__sub-element">Маленькие</div>
-                  <div class="menu-media-category__sub-element">Средние</div>
-                  <div class="menu-media-category__sub-element">Большие</div>
-                </div>
+                  </svg></a>
+                <div class="menu-media-category__sub"><a class="menu-media-category__sub-element">Маленькие</a><a class="menu-media-category__sub-element">Средние</a><a class="menu-media-category__sub-element">Большие</a></div>
               </div>
-              <div class="menu-media-category__border">
-                <div class="menu-media-category__item">Автоматизация
+              <div class="menu-media-category__border"><a class="menu-media-category__item">Автоматизация
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                </div>
-                <div class="menu-media-category__sub">
-                  <div class="menu-media-category__sub-element">Маленькие</div>
-                  <div class="menu-media-category__sub-element">Средние</div>
-                  <div class="menu-media-category__sub-element">Большие</div>
-                </div>
+                  </svg></a>
+                <div class="menu-media-category__sub"><a class="menu-media-category__sub-element">Маленькие</a><a class="menu-media-category__sub-element">Средние</a><a class="menu-media-category__sub-element">Большие</a></div>
               </div>
-              <div class="menu-media-category__border">
-                <div class="menu-media-category__item">Аксессуары
+              <div class="menu-media-category__border"><a class="menu-media-category__item">Аксессуары
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                </div>
-                <div class="menu-media-category__sub">
-                  <div class="menu-media-category__sub-element">Маленькие</div>
-                  <div class="menu-media-category__sub-element">Средние</div>
-                  <div class="menu-media-category__sub-element">Большие</div>
-                </div>
+                  </svg></a>
+                <div class="menu-media-category__sub"><a class="menu-media-category__sub-element">Маленькие</a><a class="menu-media-category__sub-element">Средние</a><a class="menu-media-category__sub-element">Большие</a></div>
               </div>
-              <div class="menu-media-category__border">
-                <div class="menu-media-category__item">Гроубоксы
+              <div class="menu-media-category__border"><a class="menu-media-category__item">Гроубоксы
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                </div>
-                <div class="menu-media-category__sub">
-                  <div class="menu-media-category__sub-element">Маленькие</div>
-                  <div class="menu-media-category__sub-element">Средние</div>
-                  <div class="menu-media-category__sub-element">Большие</div>
-                </div>
+                  </svg></a>
+                <div class="menu-media-category__sub"><a class="menu-media-category__sub-element">Маленькие</a><a class="menu-media-category__sub-element">Средние</a><a class="menu-media-category__sub-element">Большие</a></div>
               </div>
-              <div class="menu-media-category__border">
-                <div class="menu-media-category__item">Гидропонные системы
+              <div class="menu-media-category__border"><a class="menu-media-category__item">Гидропонные системы
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                </div>
-                <div class="menu-media-category__sub">
-                  <div class="menu-media-category__sub-element">Маленькие</div>
-                  <div class="menu-media-category__sub-element">Средние</div>
-                  <div class="menu-media-category__sub-element">Большие</div>
-                </div>
+                  </svg></a>
+                <div class="menu-media-category__sub"><a class="menu-media-category__sub-element">Маленькие</a><a class="menu-media-category__sub-element">Средние</a><a class="menu-media-category__sub-element">Большие</a></div>
               </div>
-              <div class="menu-media-category__border">
-                <div class="menu-media-category__item">Удобрения
+              <div class="menu-media-category__border"><a class="menu-media-category__item">Удобрения
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                </div>
-                <div class="menu-media-category__sub">
-                  <div class="menu-media-category__sub-element">Маленькие</div>
-                  <div class="menu-media-category__sub-element">Средние</div>
-                  <div class="menu-media-category__sub-element">Большие</div>
-                </div>
+                  </svg></a>
+                <div class="menu-media-category__sub"><a class="menu-media-category__sub-element">Маленькие</a><a class="menu-media-category__sub-element">Средние</a><a class="menu-media-category__sub-element">Большие</a></div>
               </div>
-              <div class="menu-media-category__border">
-                <div class="menu-media-category__item">Освещение
+              <div class="menu-media-category__border"><a class="menu-media-category__item">Освещение
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                </div>
-              </div>
-              <div class="menu-media-category__border">
-                <div class="menu-media-category__item">Полив
+                  </svg></a></div>
+              <div class="menu-media-category__border"><a class="menu-media-category__item">Полив
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                </div>
-              </div>
-              <div class="menu-media-category__border">
-                <div class="menu-media-category__item">Очистка воздуха
+                  </svg></a></div>
+              <div class="menu-media-category__border"><a class="menu-media-category__item">Очистка воздуха
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                </div>
-              </div>
-              <div class="menu-media-category__border">
-                <div class="menu-media-category__item">Автоматизация
+                  </svg></a></div>
+              <div class="menu-media-category__border"><a class="menu-media-category__item">Автоматизация
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                </div>
-              </div>
-              <div class="menu-media-category__border">
-                <div class="menu-media-category__item">Аксессуары
+                  </svg></a></div>
+              <div class="menu-media-category__border"><a class="menu-media-category__item">Аксессуары
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                </div>
-              </div>
-              <div class="menu-media-category__border">
-                <div class="menu-media-category__item">Полив
+                  </svg></a></div>
+              <div class="menu-media-category__border"><a class="menu-media-category__item">Полив
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                </div>
-              </div>
-              <div class="menu-media-category__border">
-                <div class="menu-media-category__item">Очистка воздуха
+                  </svg></a></div>
+              <div class="menu-media-category__border"><a class="menu-media-category__item">Очистка воздуха
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                </div>
-              </div>
-              <div class="menu-media-category__border">
-                <div class="menu-media-category__item">Автоматизация
+                  </svg></a></div>
+              <div class="menu-media-category__border"><a class="menu-media-category__item">Автоматизация
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                </div>
-              </div>
-              <div class="menu-media-category__border">
-                <div class="menu-media-category__item">Аксессуары
+                  </svg></a></div>
+              <div class="menu-media-category__border"><a class="menu-media-category__item">Аксессуары
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                </div>
-              </div>
+                  </svg></a></div>
             </div>
             <div class="header-media-main">
-              <div class="header-media-main__border">
-                <div class="header-media-main__border-item">Прайс-лист</div>
-              </div>
-              <div class="header-media-main__border">
-                <div class="header-media-main__border-item">Акции</div>
-              </div>
-              <div class="header-media-main__border">
-                <div class="header-media-main__border-item">Доставка и оплата</div>
-              </div>
-              <div class="header-media-main__border">
-                <div class="header-media-main__border-item">Отзывы</div>
-              </div>
-              <div class="header-media-main__border">
-                <div class="header-media-main__border-item">Контакты</div>
-              </div>
-              <div class="header-media-main__border">
-                <div class="header-media-main__border-item">Блог</div>
-              </div>
-              <div class="header-media-main__border">
-                <div class="header-media-main__border-item">Dzagi tube</div>
-              </div>
-              <div class="header-media-main__border">
-                <div class="header-media-main__border-item">Книги</div>
-              </div>
+              <div class="header-media-main__border"><a class="header-media-main__border-item">Прайс-лист</a></div>
+              <div class="header-media-main__border"><a class="header-media-main__border-item">Акции</a></div>
+              <div class="header-media-main__border"><a class="header-media-main__border-item">Доставка и оплата</a></div>
+              <div class="header-media-main__border"><a class="header-media-main__border-item">Отзывы</a></div>
+              <div class="header-media-main__border"><a class="header-media-main__border-item">Контакты</a></div>
+              <div class="header-media-main__border"><a class="header-media-main__border-item">Блог</a></div>
+              <div class="header-media-main__border"><a class="header-media-main__border-item">Dzagi tube</a></div>
+              <div class="header-media-main__border"><a class="header-media-main__border-item">Книги</a></div>
             </div>
             <div class="header-media-contact">
               <div class="header-media-contact__number">
@@ -801,23 +525,22 @@
                   <div class="header-media-contact__hang">Звонок<br>по Москве и МО</div>
                 </div>
               </div>
-              <div class="header-media-contact__social">
-                <svg class="icon icon-tg social" role="img">
-                  <use xlink:href="static/img/svg/symbol/sprite.svg#tg"></use>
-                </svg>
-                <svg class="icon icon-ig social" role="img">
-                  <use xlink:href="static/img/svg/symbol/sprite.svg#ig"></use>
-                </svg>
-                <svg class="icon icon-yt social" role="img">
-                  <use xlink:href="static/img/svg/symbol/sprite.svg#yt"></use>
-                </svg>
-                <svg class="icon icon-fb social" role="img">
-                  <use xlink:href="static/img/svg/symbol/sprite.svg#fb"></use>
-                </svg>
-                <svg class="icon icon-vk social" role="img">
-                  <use xlink:href="static/img/svg/symbol/sprite.svg#vk"></use>
-                </svg>
-              </div>
+              <div class="header-media-contact__social"><a>
+                  <svg class="icon icon-tg social" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#tg"></use>
+                  </svg></a><a>
+                  <svg class="icon icon-ig social" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#ig"></use>
+                  </svg></a><a>
+                  <svg class="icon icon-yt social" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#yt"></use>
+                  </svg></a><a>
+                  <svg class="icon icon-fb social" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#fb"></use>
+                  </svg></a><a>
+                  <svg class="icon icon-vk social" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#vk"></use>
+                  </svg></a></div>
             </div>
           </div>
         </div>
@@ -884,7 +607,18 @@
               <div class="reviews__write">
                 <div class="reviews__write-title">Написать отзыв</div>
                 <div class="reviews__write-rating">Оцените товар</div>
-                <div class="reviews__write-star"><span class="reviews__write-star-span">☆</span><span class="reviews__write-star-span">☆</span><span class="reviews__write-star-span">☆</span><span class="reviews__write-star-span">☆</span><span class="reviews__write-star-span">☆</span></div>
+                <div class="reviews__write-star" id="reviewStars-input">
+                  <input id="star-4" type="radio" name="reviewStars">
+                  <label class="reviews__write-star-span" for="star-4">☆</label>
+                  <input id="star-3" type="radio" name="reviewStars">
+                  <label class="reviews__write-star-span" for="star-3">☆</label>
+                  <input id="star-2" type="radio" name="reviewStars">
+                  <label class="reviews__write-star-span" for="star-2">☆</label>
+                  <input id="star-1" type="radio" name="reviewStars">
+                  <label class="reviews__write-star-span" for="star-1">☆</label>
+                  <input id="star-0" type="radio" name="reviewStars">
+                  <label class="reviews__write-star-span" for="star-0">☆</label>
+                </div>
                 <div class="reviews__write-text">Напишите отзыв</div>
                 <textarea class="reviews__write-textarea"></textarea>
                 <div class="reviews__write-btn">
@@ -903,25 +637,10 @@
       <footer class="container-fluid footer-block">
         <div class="container footer-box">
           <div class="footer-box-menu">
-            <div class="footer-box-menu__column">
-              <p class="footer-box-menu__column-p" onclick="window.location='catalog.html';">Каталог</p>
-              <p class="footer-box-menu__column-p" onclick="window.location='stock.html';">Акции</p>
-              <p class="footer-box-menu__column-p" onclick="window.location='delivery.html';">Оплата/Доставка</p>
-              <p class="footer-box-menu__column-p" onclick="window.location='warranty.html';">Гарантия</p>
-              <p class="footer-box-menu__column-p" onclick="window.location='faq.html';">FAQ</p>
-              <p class="footer-box-menu__column-p" onclick="window.location='price-list.html';">Прайс-лист</p>
-            </div>
-            <div class="footer-box-menu__column">
-              <p class="footer-box-menu__column-p" onclick="window.location='index.html';">О нас</p>
-              <p class="footer-box-menu__column-p" onclick="window.location='reviews.html';">Отзывы</p>
-              <p class="footer-box-menu__column-p" onclick="window.location='blog.html';">Блог</p>
-              <p class="footer-box-menu__column-p" onclick="window.location='dzagi_tube.html';">Dzagi-tube</p>
-              <p class="footer-box-menu__column-p" onclick="window.location='books.html';">Книга "Сам вырастил"</p>
-            </div>
-            <div class="footer-box-menu__column">
-              <p class="footer-box-menu__column-p" onclick="window.location='index.html';">Вход</p>
-              <p class="footer-box-menu__column-p" onclick="window.location='index.html';">Регистрация</p>
-              <p class="footer-box-menu__column-p" onclick="window.location='index.html';">Восстановление пароля</p>
+            <div class="footer-box-menu__column"><a class="footer-box-menu__column-a" onclick="window.location='index.html';">О нас</a><a class="footer-box-menu__column-a" onclick="window.location='stock.html';">Акции</a><a class="footer-box-menu__column-a" onclick="window.location='delivery.html';">Оплата/Доставка</a><a class="footer-box-menu__column-a" onclick="window.location='warranty.html';">Гарантия</a><a class="footer-box-menu__column-a" onclick="window.location='return.html';">Возврат</a><a class="footer-box-menu__column-a" onclick="window.location='faq.html';">FAQ</a></div>
+            <div class="footer-box-menu__column"><a class="footer-box-menu__column-a" onclick="window.location='index.html';">Вход</a><a class="footer-box-menu__column-a" onclick="window.location='index.html';">Регистрация</a><a class="footer-box-menu__column-a" onclick="window.location='index.html';">Восстановление пароля</a><a class="footer-box-menu__column-a" onclick="window.location='blog.html';">Блог</a><a class="footer-box-menu__column-a" onclick="window.location='dzagi_tube.html';">Dzagi-tube</a><a class="footer-box-menu__column-a" onclick="window.location='books.html';">Книга "Сам вырастил"</a></div>
+            <div class="footer-box-menu__column"><a class="footer-box-menu__column-a" onclick="window.location='books.html';">Положение о персональных данных</a>
+              <div class="footer-box-menu__column-div">У нас вы можете купить всё для гидропоники и домашнего выращивания</div>
             </div>
           </div>
           <div class="footer-box-container">
@@ -932,12 +651,14 @@
               <div class="footer-box-contact__text">ГРОУШОП В МОСКВЕ: ПН–ВС 12:00–21:00</div>
             </div>
             <div class="footer-box-connect">
-              <div class="footer-box-connect__search">
+              <form class="footer-box-connect__search">
                 <input class="footer-box-connect__search-input" placeholder="Я ищю...">
-                <svg class="icon icon-search search-footer" role="img">
-                  <use xlink:href="static/img/svg/symbol/sprite.svg#search"></use>
-                </svg>
-              </div>
+                <bitton class="footer-box-connect__search-btn">
+                  <svg class="icon icon-search search-footer" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#search"></use>
+                  </svg>
+                </bitton>
+              </form>
               <div class="footer-box-connect__social">
                 <div class="footer-box-connect__social-icon">
                   <svg class="icon icon-tg social-footer" role="img">
@@ -975,11 +696,18 @@
           </div>
         </div>
       </footer>
+      <div class="container-fluid footer-block">
+        <div class="container footer-copirate">
+          <p>© 2013 - 2019 ИП Ежов А.А.</p>
+          <p>Все права защищены.</p>
+        </div>
+      </div>
     </div>
     <script src="static/js/jquery.js"></script>
+    <script src="static/js/main.js"></script>
     <script src="static/js/slick.min.js"></script>
     <script src="static/js/jquery.fancybox.js"></script>
+    <script src="static/js/jquery-ui.js"></script>
     <script src="static/js/libs.min.js"></script>
-    <script src="static/js/main.js"></script>
   </body>
 </html>

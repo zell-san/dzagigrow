@@ -1,0 +1,23 @@
+.return__form-btn-cancel
+  @extend .return__upload
+  background-color rgba(0, 0, 0, 0.3)
+  font-size 1rem
+  padding 12px 50px
+  margin 0 29px
+
+  @media screen and (max-width tableWidth)
+    margin 0
+
+  &:hover
+    background-color rgba(0, 0, 0, 0.5)
+
+.return__form-btn-send
+  @extend .return__form-btn-cancel
+  background-color #e7e7e7
+  color greenDG
+
+  @media screen and (max-width bigPhoneWidth)
+    margin-top 20px
+
+  &:hover
+    background-color white

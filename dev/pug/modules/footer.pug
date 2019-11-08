@@ -3,22 +3,23 @@ footer.container-fluid.footer-block
     .container.footer-box
         .footer-box-menu
             .footer-box-menu__column
-                p.footer-box-menu__column-p(onclick="window.location='catalog.html';") Каталог
-                p.footer-box-menu__column-p(onclick="window.location='stock.html';") Акции
-                p.footer-box-menu__column-p(onclick="window.location='delivery.html';") Оплата/Доставка
-                p.footer-box-menu__column-p(onclick="window.location='warranty.html';") Гарантия
-                p.footer-box-menu__column-p(onclick="window.location='faq.html';") FAQ
-                p.footer-box-menu__column-p(onclick="window.location='price-list.html';") Прайс-лист
+                a.footer-box-menu__column-a(onclick="window.location='index.html';") О нас
+                a.footer-box-menu__column-a(onclick="window.location='stock.html';") Акции
+                a.footer-box-menu__column-a(onclick="window.location='delivery.html';") Оплата/Доставка
+                a.footer-box-menu__column-a(onclick="window.location='warranty.html';") Гарантия
+                a.footer-box-menu__column-a(onclick="window.location='return.html';") Возврат
+                a.footer-box-menu__column-a(onclick="window.location='faq.html';") FAQ
+
             .footer-box-menu__column
-                p.footer-box-menu__column-p(onclick="window.location='index.html';") О нас
-                p.footer-box-menu__column-p(onclick="window.location='reviews.html';") Отзывы
-                p.footer-box-menu__column-p(onclick="window.location='blog.html';") Блог
-                p.footer-box-menu__column-p(onclick="window.location='dzagi_tube.html';") Dzagi-tube
-                p.footer-box-menu__column-p(onclick="window.location='books.html';") Книга "Сам вырастил"
+                a.footer-box-menu__column-a(onclick="window.location='index.html';") Вход
+                a.footer-box-menu__column-a(onclick="window.location='index.html';") Регистрация
+                a.footer-box-menu__column-a(onclick="window.location='index.html';") Восстановление пароля
+                a.footer-box-menu__column-a(onclick="window.location='blog.html';") Блог
+                a.footer-box-menu__column-a(onclick="window.location='dzagi_tube.html';") Dzagi-tube
+                a.footer-box-menu__column-a(onclick="window.location='books.html';") Книга "Сам вырастил"
             .footer-box-menu__column
-                p.footer-box-menu__column-p(onclick="window.location='index.html';") Вход
-                p.footer-box-menu__column-p(onclick="window.location='index.html';") Регистрация
-                p.footer-box-menu__column-p(onclick="window.location='index.html';") Восстановление пароля
+                a.footer-box-menu__column-a(onclick="window.location='books.html';") Положение о персональных данных
+                .footer-box-menu__column-div У нас вы можете купить всё для гидропоники и домашнего выращивания
         .footer-box-container
             .footer-box-contact
                 .footer-box-contact__number 8 (800) 333-16-59
@@ -26,9 +27,10 @@ footer.container-fluid.footer-block
                 .footer-box-contact__number 8 (495) 120-59-42
                 .footer-box-contact__text ГРОУШОП В МОСКВЕ: ПН–ВС 12:00–21:00
             .footer-box-connect
-                .footer-box-connect__search
+                form.footer-box-connect__search
                     input.footer-box-connect__search-input(placeholder='Я ищю...')
-                    +icon('search', 'search-footer')
+                    bitton.footer-box-connect__search-btn
+                        +icon('search', 'search-footer')
                 .footer-box-connect__social
                     .footer-box-connect__social-icon
                         +icon('tg', 'social-footer')(href= "javascript:void(0)")
@@ -44,3 +46,7 @@ footer.container-fluid.footer-block
                     a.footer-box-connect__mail-a sales@dzagigrow.ru
         .up
             +icon('down-arrow')
+.container-fluid.footer-block
+    .container.footer-copirate
+        p © 2013 - 2019 ИП Ежов А.А.
+        p Все права защищены.

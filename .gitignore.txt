@@ -1,5 +1,5 @@
-node_modules/
-шаблон dzagigrow/
+node_modules/*
+шаблон dzagigrow/*
 bash.exe.stackdump
 desktop.ini
 README.md

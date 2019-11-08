@@ -69,17 +69,6 @@
         width 16px
         opacity 0.2
 
-        &:hover
-        &:hover ~ span
-          opacity 1
-
-        &:hover:before
-        &:hover ~ span:before
-          content: "\2605";
-          position: absolute;
-          color yellowDG
-          cursor pointer
-
   &-title
     text-decoration underline
     font-size rem(16px)
@@ -138,6 +127,24 @@
 
 
 
+.rating__fill
+  opacity 1
 
+  &::before
+    content: "\2605";
+    position: absolute;
+    color: #ffea00;
+    cursor: pointer;
+    opacity: 1;
 
+.rating__half
+  opacity 1
+  color: rgba(0,0,0,0.2);
 
+  &::before
+    content: "\2605";
+    position: absolute;
+    cursor pointer
+    background: linear-gradient(90deg, yellowDG 50%, rgba(255, 255, 255, 0) 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;

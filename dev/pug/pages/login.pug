@@ -14,7 +14,7 @@ block content
                 .login__menu
                     .login__menu-item.opened(data-tab='.login__inside-entry') Вход
                     .login__menu-item(data-tab='.login__inside-registration') Регистрация
-                .login__inside
+                form.login__inside
                     .login__inside-entry.tab.opened
                         p.login__inside-entry-p Логин
                         input.login__inside-entry-input
@@ -57,7 +57,7 @@ block content
         .login__menu
             .login__menu-item.opened(data-tab='.login__inside-entry') Вход
             .login__menu-item(data-tab='.login__inside-registration') Регистрация
-        .login__inside
+        form.login__inside
             .login__inside-entry.tab.opened
                 p.login__inside-entry-p Логин
                 input.login__inside-entry-input
@@ -97,7 +97,7 @@ block content
                             +icon('location', 'icon-reg')
                             a.login__inside-registration-a Отслеживание заказа
     .recovery
-        .recovery__popup
+        form.recovery__popup
             .recovery__popup-title Восстановление пароля
             p.login__inside-entry-p Email
             input.login__inside-entry-input

@@ -1,0 +1,453 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Ваша корзина'
+    - var pageClass = 'basket-page'
+
+block content
+
+    .container-fluid
+        .container.page
+            include ../modules/breadcrumb
+            .page-title Ваша корзина
+            .basket
+                .basket__products
+                    .basket__products-row-block
+                        .basket__products-row-media
+                            +icon('cancel', 'cancel-basket__products')
+                            .basket__products-preview
+                                img.basket__products-preview-img(src='static/img/content/growbox.png')
+                            .basket__products-name Фитолампа 15 Ватт E27 (Биколор)
+                        .basket__products-row-box
+                            .basket__products-row.basket__products-row-sign
+                                .basket__products-cell-box
+                                    .basket__products-cell
+                                        span.basket__products-cell-span Товар
+                                    .basket__products-cell
+                                        span.basket__products-cell-span Вес
+                                    .basket__products-cell
+                                        span.basket__products-cell-span Цена
+                                    .basket__products-cell
+                                        span.basket__products-cell-span Количество
+                                    .basket__products-cell
+                                        span.basket__products-cell-span Скидка
+                                    .basket__products-cell
+                                        span.basket__products-cell-span Сумма
+                            .basket__products-row
+                                .basket__products-cell-box
+                                    .basket__products-cell
+                                        +icon('cancel', 'cancel-basket__products')
+                                        a.basket__products-preview
+                                            img.basket__products-preview-img(src='static/img/content/growbox.png')
+                                        a.basket__products-name Фитолампа 15 Ватт E27 (Биколор)
+                                    .basket__products-cell
+                                        span.basket__products-cell-span 0,7кг.
+                                    .basket__products-cell
+                                        span.basket__products-cell-span 2470р.
+                                    .basket__products-cell
+                                        .quantity-number__symbol -
+                                        .quantity-number__box
+                                            input.quantity-number
+                                        .quantity-number__symbol +
+                                    .basket__products-cell.basket__products-cell-red
+                                        span.basket__products-cell-span.basket__products-cell-span-red Нет в наличии
+                    .basket__products-row-block
+                        //похожие товары
+                        .basket__promotion-analog
+                            .basket__promotion-text-analog
+                                .basket__promotion-text-title Вместо этого товара вы можете купить
+                            .basket__promotion-teaser.basket__promotion-teaser-analog
+                                .basket__promotion-teaser-item
+                                    .basket__ticket.basket__ticket-analog
+                                        .basket__ticket-left
+                                            a.basket__ticket-product
+                                                img.basket__ticket-product-img(src='static/img/content/growbox.png' alt='')
+                                                .basket__ticket-product-discount -15%
+                                        .basket__ticket-right
+                                            .basket__ticket-header
+                                                .basket__ticket-header-text Pro Box
+                                                .basket__ticket-header-rating
+                                                    span.basket__ticket-header-rating-span ☆
+                                                    span.basket__ticket-header-rating-span ☆
+                                                    span.basket__ticket-header-rating-span ☆
+                                                    span.basket__ticket-header-rating-span ☆
+                                                    span.basket__ticket-header-rating-span ☆
+                                            a.basket__ticket-title Гроубокс 120-Apollo10
+                                            .basket__ticket-buy
+                                                .basket__ticket-buy-price
+                                                    .basket__ticket-buy-price-old 590р
+                                                    .basket__ticket-buy-price-new 450р
+                                                .basket__ticket-buy-btn
+                                                    button.btn-basket(href='javascript:void(0)')
+                                                        +icon('tick-inside')
+                                                        .basket__ticket-buy-btn-text Купить
+                                .basket__promotion-teaser-item
+                                    .basket__ticket.basket__ticket-analog
+                                        .basket__ticket-left
+                                            a.basket__ticket-product
+                                                img.basket__ticket-product-img(src='static/img/content/growbox.png' alt='')
+                                                .basket__ticket-product-discount -15%
+                                        .basket__ticket-right
+                                            .basket__ticket-header
+                                                .basket__ticket-header-text Pro Box
+                                                .basket__ticket-header-rating
+                                                    span.basket__ticket-header-rating-span ☆
+                                                    span.basket__ticket-header-rating-span ☆
+                                                    span.basket__ticket-header-rating-span ☆
+                                                    span.basket__ticket-header-rating-span ☆
+                                                    span.basket__ticket-header-rating-span ☆
+                                            a.basket__ticket-title Гроубокс 120-Apollo10
+                                            .basket__ticket-buy
+                                                .basket__ticket-buy-price
+                                                    .basket__ticket-buy-price-old 590р
+                                                    .basket__ticket-buy-price-new 450р
+                                                .basket__ticket-buy-btn
+                                                    button.btn-basket(href='javascript:void(0)')
+                                                        +icon('tick-inside')
+                                                        .basket__ticket-buy-btn-text Купить
+                                .basket__promotion-teaser-item
+                                    .basket__ticket.basket__ticket-analog
+                                        .basket__ticket-left
+                                            a.basket__ticket-product
+                                                img.basket__ticket-product-img(src='static/img/content/growbox.png' alt='')
+                                                .basket__ticket-product-discount -15%
+                                        .basket__ticket-right
+                                            .basket__ticket-header
+                                                .basket__ticket-header-text Pro Box
+                                                .basket__ticket-header-rating
+                                                    span.basket__ticket-header-rating-span ☆
+                                                    span.basket__ticket-header-rating-span ☆
+                                                    span.basket__ticket-header-rating-span ☆
+                                                    span.basket__ticket-header-rating-span ☆
+                                                    span.basket__ticket-header-rating-span ☆
+                                            a.basket__ticket-title Гроубокс 120-Apollo10
+                                            .basket__ticket-buy
+                                                .basket__ticket-buy-price
+                                                    .basket__ticket-buy-price-old 590р
+                                                    .basket__ticket-buy-price-new 450р
+                                                .basket__ticket-buy-btn
+                                                    button.btn-basket(href='javascript:void(0)')
+                                                        +icon('tick-inside')
+                                                        .basket__ticket-buy-btn-text Купить
+                                .basket__promotion-teaser-item
+                                    .basket__ticket.basket__ticket-analog
+                                        .basket__ticket-left
+                                            a.basket__ticket-product
+                                                img.basket__ticket-product-img(src='static/img/content/growbox.png' alt='')
+                                                .basket__ticket-product-discount -15%
+                                        .basket__ticket-right
+                                            .basket__ticket-header
+                                                .basket__ticket-header-text Pro Box
+                                                .basket__ticket-header-rating
+                                                    span.basket__ticket-header-rating-span ☆
+                                                    span.basket__ticket-header-rating-span ☆
+                                                    span.basket__ticket-header-rating-span ☆
+                                                    span.basket__ticket-header-rating-span ☆
+                                                    span.basket__ticket-header-rating-span ☆
+                                            a.basket__ticket-title Гроубокс 120-Apollo10
+                                            .basket__ticket-buy
+                                                .basket__ticket-buy-price
+                                                    .basket__ticket-buy-price-old 590р
+                                                    .basket__ticket-buy-price-new 450р
+                                                .basket__ticket-buy-btn
+                                                    button.btn-basket(href='javascript:void(0)')
+                                                        +icon('tick-inside')
+                                                        .basket__ticket-buy-btn-text Купить
+                                .basket__promotion-teaser-item
+                                    .basket__ticket.basket__ticket-analog
+                                        .basket__ticket-left
+                                            a.basket__ticket-product
+                                                img.basket__ticket-product-img(src='static/img/content/growbox.png' alt='')
+                                                .basket__ticket-product-discount -15%
+                                        .basket__ticket-right
+                                            .basket__ticket-header
+                                                .basket__ticket-header-text Pro Box
+                                                .basket__ticket-header-rating
+                                                    span.basket__ticket-header-rating-span ☆
+                                                    span.basket__ticket-header-rating-span ☆
+                                                    span.basket__ticket-header-rating-span ☆
+                                                    span.basket__ticket-header-rating-span ☆
+                                                    span.basket__ticket-header-rating-span ☆
+                                            a.basket__ticket-title Гроубокс 120-Apollo10
+                                            .basket__ticket-buy
+                                                .basket__ticket-buy-price
+                                                    .basket__ticket-buy-price-old 590р
+                                                    .basket__ticket-buy-price-new 450р
+                                                .basket__ticket-buy-btn
+                                                    button.btn-basket(href='javascript:void(0)')
+                                                        +icon('tick-inside')
+                                                        .basket__ticket-buy-btn-text Купить
+                                .basket__promotion-teaser-item
+                                    .basket__ticket.basket__ticket-analog
+                                        .basket__ticket-left
+                                            a.basket__ticket-product
+                                                img.basket__ticket-product-img(src='static/img/content/growbox.png' alt='')
+                                                .basket__ticket-product-discount -15%
+                                        .basket__ticket-right
+                                            .basket__ticket-header
+                                                .basket__ticket-header-text Pro Box
+                                                .basket__ticket-header-rating
+                                                    span.basket__ticket-header-rating-span ☆
+                                                    span.basket__ticket-header-rating-span ☆
+                                                    span.basket__ticket-header-rating-span ☆
+                                                    span.basket__ticket-header-rating-span ☆
+                                                    span.basket__ticket-header-rating-span ☆
+                                            a.basket__ticket-title Гроубокс 120-Apollo10
+                                            .basket__ticket-buy
+                                                .basket__ticket-buy-price
+                                                    .basket__ticket-buy-price-old 590р
+                                                    .basket__ticket-buy-price-new 450р
+                                                .basket__ticket-buy-btn
+                                                    button.btn-basket(href='javascript:void(0)')
+                                                        +icon('tick-inside')
+                                                        .basket__ticket-buy-btn-text Купить
+                    .basket__products-row-block
+                        .basket__products-row-media
+                            +icon('cancel', 'cancel-basket__products')
+                            a.basket__products-preview
+                                img.basket__products-preview-img(src='static/img/content/growbox.png')
+                            a.basket__products-name Фитолампа 15 Ватт E27 (Биколор)
+                        .basket__products-row-box
+                            .basket__products-row.basket__products-row-sign-media
+                                .basket__products-cell-box
+                                    .basket__products-cell
+                                        span.basket__products-cell-span Товар
+                                    .basket__products-cell
+                                        span.basket__products-cell-span Вес
+                                    .basket__products-cell
+                                        span.basket__products-cell-span Цена
+                                    .basket__products-cell
+                                        span.basket__products-cell-span Количество
+                                    .basket__products-cell
+                                        span.basket__products-cell-span Скидка
+                                    .basket__products-cell
+                                        span.basket__products-cell-span Сумма
+                            .basket__products-row
+                                .basket__products-cell-box
+                                    .basket__products-cell
+                                        +icon('cancel', 'cancel-basket__products')
+                                        .basket__products-preview
+                                            img.basket__products-preview-img(src='static/img/content/growbox.png')
+                                        .basket__products-name Фитолампа 15 Ватт E27 (Биколор)
+                                    .basket__products-cell
+                                        span.basket__products-cell-span 0,7кг.
+                                    .basket__products-cell
+                                        span.basket__products-cell-span 2470р.
+                                    .basket__products-cell
+                                        .quantity-number__symbol -
+                                        .quantity-number__box
+                                            input.quantity-number
+                                        .quantity-number__symbol +
+                                    .basket__products-cell
+                                        span.basket__products-cell-span 247р.
+                                    .basket__products-cell
+                                        span.basket__products-cell-span 2470р.
+
+
+
+                //промо
+                .basket__promotion
+                    .basket__promotion-text
+                        .basket__promotion-text-title С этим товаром покупают
+                    .basket__promotion-teaser
+                        .basket__promotion-teaser-item
+                            .basket__ticket
+                                .basket__ticket-left
+                                    a.basket__ticket-product
+                                        img.basket__ticket-product-img(src='static/img/content/growbox.png' alt='')
+                                        .basket__ticket-product-discount -15%
+                                .basket__ticket-right
+                                    .basket__ticket-header
+                                        .basket__ticket-header-text Pro Box
+                                        .basket__ticket-header-rating
+                                            span.basket__ticket-header-rating-span ☆
+                                            span.basket__ticket-header-rating-span ☆
+                                            span.basket__ticket-header-rating-span ☆
+                                            span.basket__ticket-header-rating-span ☆
+                                            span.basket__ticket-header-rating-span ☆
+                                    a.basket__ticket-title Гроубокс 120-Apollo10
+                                    .basket__ticket-buy
+                                        .basket__ticket-buy-price
+                                            .basket__ticket-buy-price-old 590р
+                                            .basket__ticket-buy-price-new 450р
+                                        .basket__ticket-buy-btn
+                                            button.btn-basket(href='javascript:void(0)')
+                                                +icon('tick-inside')
+                                                .basket__ticket-buy-btn-text Купить
+                        .basket__promotion-teaser-item
+                            .basket__ticket
+                                .basket__ticket-left
+                                    a.basket__ticket-product
+                                        img.basket__ticket-product-img(src='static/img/content/growbox.png' alt='')
+                                        .basket__ticket-product-discount -15%
+                                .basket__ticket-right
+                                    .basket__ticket-header
+                                        .basket__ticket-header-text Pro Box
+                                        .basket__ticket-header-rating
+                                            span.basket__ticket-header-rating-span ☆
+                                            span.basket__ticket-header-rating-span ☆
+                                            span.basket__ticket-header-rating-span ☆
+                                            span.basket__ticket-header-rating-span ☆
+                                            span.basket__ticket-header-rating-span ☆
+                                    a.basket__ticket-title Гроубокс 120-Apollo10
+                                    .basket__ticket-buy
+                                        .basket__ticket-buy-price
+                                            .basket__ticket-buy-price-old 590р
+                                            .basket__ticket-buy-price-new 450р
+                                        .basket__ticket-buy-btn
+                                            button.btn-basket(href='javascript:void(0)')
+                                                +icon('tick-inside')
+                                                .basket__ticket-buy-btn-text Купить
+                        .basket__promotion-teaser-item
+                            .basket__ticket
+                                .basket__ticket-left
+                                    a.basket__ticket-product
+                                        img.basket__ticket-product-img(src='static/img/content/growbox.png' alt='')
+                                        .basket__ticket-product-discount -15%
+                                .basket__ticket-right
+                                    .basket__ticket-header
+                                        .basket__ticket-header-text Pro Box
+                                        .basket__ticket-header-rating
+                                            span.basket__ticket-header-rating-span ☆
+                                            span.basket__ticket-header-rating-span ☆
+                                            span.basket__ticket-header-rating-span ☆
+                                            span.basket__ticket-header-rating-span ☆
+                                            span.basket__ticket-header-rating-span ☆
+                                    a.basket__ticket-title Гроубокс 120-Apollo10
+                                    .basket__ticket-buy
+                                        .basket__ticket-buy-price
+                                            .basket__ticket-buy-price-old 590р
+                                            .basket__ticket-buy-price-new 450р
+                                        .basket__ticket-buy-btn
+                                            button.btn-basket(href='javascript:void(0)')
+                                                +icon('tick-inside')
+                                                .basket__ticket-buy-btn-text Купить
+                        .basket__promotion-teaser-item
+                            .basket__ticket
+                                .basket__ticket-left
+                                    a.basket__ticket-product
+                                        img.basket__ticket-product-img(src='static/img/content/growbox.png' alt='')
+                                        .basket__ticket-product-discount -15%
+                                .basket__ticket-right
+                                    .basket__ticket-header
+                                        .basket__ticket-header-text Pro Box
+                                        .basket__ticket-header-rating
+                                            span.basket__ticket-header-rating-span ☆
+                                            span.basket__ticket-header-rating-span ☆
+                                            span.basket__ticket-header-rating-span ☆
+                                            span.basket__ticket-header-rating-span ☆
+                                            span.basket__ticket-header-rating-span ☆
+                                    a.basket__ticket-title Гроубокс 120-Apollo10
+                                    .basket__ticket-buy
+                                        .basket__ticket-buy-price
+                                            .basket__ticket-buy-price-old 590р
+                                            .basket__ticket-buy-price-new 450р
+                                        .basket__ticket-buy-btn
+                                            button.btn-basket(href='javascript:void(0)')
+                                                +icon('tick-inside')
+                                                .basket__ticket-buy-btn-text Купить
+                        .basket__promotion-teaser-item
+                            .basket__ticket
+                                .basket__ticket-left
+                                    a.basket__ticket-product
+                                        img.basket__ticket-product-img(src='static/img/content/growbox.png' alt='')
+                                        .basket__ticket-product-discount -15%
+                                .basket__ticket-right
+                                    .basket__ticket-header
+                                        .basket__ticket-header-text Pro Box
+                                        .basket__ticket-header-rating
+                                            span.basket__ticket-header-rating-span ☆
+                                            span.basket__ticket-header-rating-span ☆
+                                            span.basket__ticket-header-rating-span ☆
+                                            span.basket__ticket-header-rating-span ☆
+                                            span.basket__ticket-header-rating-span ☆
+                                    a.basket__ticket-title Гроубокс 120-Apollo10
+                                    .basket__ticket-buy
+                                        .basket__ticket-buy-price
+                                            .basket__ticket-buy-price-old 590р
+                                            .basket__ticket-buy-price-new 450р
+                                        .basket__ticket-buy-btn
+                                            button.btn-basket(href='javascript:void(0)')
+                                                +icon('tick-inside')
+                                                .basket__ticket-buy-btn-text Купить
+                        .basket__promotion-teaser-item
+                            .basket__ticket
+                                .basket__ticket-left
+                                    a.basket__ticket-product
+                                        img.basket__ticket-product-img(src='static/img/content/growbox.png' alt='')
+                                        .basket__ticket-product-discount -15%
+                                .basket__ticket-right
+                                    .basket__ticket-header
+                                        .basket__ticket-header-text Pro Box
+                                        .basket__ticket-header-rating
+                                            span.basket__ticket-header-rating-span ☆
+                                            span.basket__ticket-header-rating-span ☆
+                                            span.basket__ticket-header-rating-span ☆
+                                            span.basket__ticket-header-rating-span ☆
+                                            span.basket__ticket-header-rating-span ☆
+                                    a.basket__ticket-title Гроубокс 120-Apollo10
+                                    .basket__ticket-buy
+                                        .basket__ticket-buy-price
+                                            .basket__ticket-buy-price-old 590р
+                                            .basket__ticket-buy-price-new 450р
+                                        .basket__ticket-buy-btn
+                                            button.btn-basket(href='javascript:void(0)')
+                                                +icon('tick-inside')
+                                                .basket__ticket-buy-btn-text Купить
+
+
+                //итого и оформить заказ
+                .price-footer
+                    .price-footer__discount
+                        .price-footer__discount-title Скидки
+                        .price-footer__discount-box
+                            .price-footer__discount-item
+                                .price-footer__discount-border
+                                    .price-footer__discount-item-title Бонусы
+                                    +icon('arrow-point', 'arrow-point-price')
+                                .price-footer__discount-inside-box
+                                    .price-footer__discount-inside
+                                        a.price-footer__discount-inside-a Использовать бонусы
+                                        span 115 бонусов
+                            .price-footer__discount-item
+                                .price-footer__discount-border
+                                    .price-footer__discount-item-title Промокод
+                                    +icon('arrow-point', 'arrow-point-price')
+                                .price-footer__discount-inside-box
+                                    .price-footer__discount-inside
+                                        input.price-footer__discount-inside-input(placeholder='Введите промокод')
+                        .price-footer__discount-info
+                            span.price-footer__discount-info-span При оплате покупке вы получите 210 бонусов на ваш личный счет.
+                                a.price-footer__discount-info-a  Хотите больше?
+                            p.price-footer__discount-info-p Сделайте заказ от 5000 р. и получите 5% бонусов от заказа
+                    .price-footer__total
+                        .price-footer__total-title Ваш заказ
+                        .price-footer__total-item
+                            .price-footer__total-border
+                                .price-footer__total-inside
+                                    .price-footer__total-inside-box
+                                        .price-footer__total-info Товаров на:
+                                        .price-footer__total-info-a 5 170p
+                                    .price-footer__total-inside-box
+                                        .price-footer__total-info Общий вес:
+                                        .price-footer__total-info-a 0,68кг
+                                    .price-footer__total-inside-box
+                                        .price-footer__total-info Скидка:
+                                        .price-footer__total-info-a 55p
+                        .price-footer__total-item
+                            .price-footer__total-border
+                                .price-footer__total-inside
+                                    .price-footer__total-inside-box
+                                        .price-footer__total-info Использовано бонусов:
+                                        .price-footer__total-info-a 115б
+                                    .price-footer__total-inside-box
+                                        .price-footer__total-info Зачислено бонусов:
+                                        .price-footer__total-info-a.price-footer__total-info-a-bonus 210б
+                        .price-footer__total-item
+                            .price-footer__total-border
+                                .price-footer__total-inside.price-footer__total-inside-last
+                                    .price-footer__total-info.price-footer__total-info-last Итого без доставки:
+                                    .price-footer__total-info-a.price-footer__total-info-a-ttl 5 170p
+                                button.btn-green.price-footer__total-btn Оформить заказ
+
+

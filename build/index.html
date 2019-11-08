@@ -19,23 +19,22 @@
               <div class="header-nav">
                 <div class="header-nav__left"><a class="header-nav__left-a" href="blog.html">Блог</a><a class="header-nav__left-a" href="dzagi_tube.html">Dzagi tube</a><a class="header-nav__left-a" href="books.html">Книги</a></div>
                 <div class="header-nav__right">
-                  <div class="header-nav__right-social">
-                    <svg class="icon icon-tg social" role="img">
-                      <use xlink:href="static/img/svg/symbol/sprite.svg#tg"></use>
-                    </svg>
-                    <svg class="icon icon-ig social" role="img">
-                      <use xlink:href="static/img/svg/symbol/sprite.svg#ig"></use>
-                    </svg>
-                    <svg class="icon icon-yt social" role="img">
-                      <use xlink:href="static/img/svg/symbol/sprite.svg#yt"></use>
-                    </svg>
-                    <svg class="icon icon-fb social" role="img">
-                      <use xlink:href="static/img/svg/symbol/sprite.svg#fb"></use>
-                    </svg>
-                    <svg class="icon icon-vk social" role="img">
-                      <use xlink:href="static/img/svg/symbol/sprite.svg#vk"></use>
-                    </svg>
-                  </div>
+                  <div class="header-nav__right-social"><a>
+                      <svg class="icon icon-tg social" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#tg"></use>
+                      </svg></a><a>
+                      <svg class="icon icon-ig social" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#ig"></use>
+                      </svg></a><a>
+                      <svg class="icon icon-yt social" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#yt"></use>
+                      </svg></a><a>
+                      <svg class="icon icon-fb social" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#fb"></use>
+                      </svg></a><a>
+                      <svg class="icon icon-vk social" role="img">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#vk"></use>
+                      </svg></a></div>
                   <div class="header-nav__right-phone" href="tel:+78003331659">8(800)333-16-59</div>
                   <div class="header-nav__right-hang">Бесплатный звонок<br>по России</div>
                   <div class="header-nav__right-phone" href="tel:+74951205945">8(495)120-59-45</div>
@@ -47,42 +46,41 @@
           <!--second header-->
           <div class="container-fluid header-second">
             <div class="container">
-              <div class="header-main">
-                <div class="header-main__logo"><img class="header-main__logo-img" onclick="window.location='index.html';" src="static/img/general/logo.png" alt=""></div>
-                <div class="header-main__city" href="javascript:PopUpHide()"><a class="header-main__city-a">Пермь</a>
-                  <svg class="icon icon-arrow-point arrow-point-city" role="img">
-                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                  <div class="city-you" id="city-you" href="javascript:PopUpHide()">
+              <div class="header-main"><a class="header-main__logo"><img class="header-main__logo-img" onclick="window.location='index.html';" src="static/img/general/logo.png" alt=""></a>
+                <div class="header-main__city">
+                  <div class="header-main__city-box"><a class="header-main__city-a">Пермь</a>
+                    <svg class="icon icon-arrow-point arrow-point-city" role="img">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
+                    </svg>
+                  </div>
+                  <div class="city-you" id="city-you">
                     <svg class="icon icon-close close-city" role="img">
                       <use xlink:href="static/img/svg/symbol/sprite.svg#close"></use>
                     </svg>
-                    <div class="city-you__text"><span>Ваш город</span><a class="city-you__text-a">Пермь?</a></div>
+                    <div class="city-you__text"><span>Ваш город</span><a class="city-you__text-a">Пермь<span>?</span></a></div>
                     <div class="city-you__btn">
                       <button class="btn-green city-you__btn-green">Да, верно</button>
                       <button class="btn-grey city-you__btn-grey">Выбрать другой</button>
                     </div>
                   </div>
-                  <div class="city-choice" id="city-choice" href="javascript:PopUpHide()">
+                  <div class="city-choice" id="city-choice">
                     <svg class="icon icon-close close-city" role="img">
                       <use xlink:href="static/img/svg/symbol/sprite.svg#close"></use>
                     </svg><span class="city-choice__span">Выбор города</span><span class="city-choice__span-small">Если вашего города нет - выберете ближайший</span>
-                    <div class="city-choice__search">
-                      <input class="city-choice__search-input" type="text" placeholder="Я ищу...">
-                      <svg class="icon icon-search search-header" role="img">
-                        <use xlink:href="static/img/svg/symbol/sprite.svg#search"></use>
-                      </svg>
-                    </div>
+                    <form class="city-choice__search">
+                      <input class="city-choice__search-input" id="city__search" type="text">
+                      <div class="city-choice__search-btn">Ок</div>
+                    </form>
                   </div>
                 </div>
-                <div class="header-main__search">
+                <form class="header-main__search">
                   <input class="header-main__search-input" type="text" placeholder="Я ищу...">
-                  <div class="header-main__search-icon" onclick="window.location='result.html';">
+                  <button class="header-main__search-icon" onclick="window.location='result.html';">
                     <svg class="icon icon-search search-header" role="img">
                       <use xlink:href="static/img/svg/symbol/sprite.svg#search"></use>
                     </svg>
-                  </div>
-                </div>
+                  </button>
+                </form>
                 <div class="header-main__basket">
                   <div class="header-main__basket-box">
                     <div class="header-main__basket-icon">
@@ -105,8 +103,7 @@
                         <div class="basket-block__item-price">2 470р</div>
                       </div>
                       <div class="basket-block__bottom">
-                        <div class="basket-block__bottom-sum"><span>Итог:</span><span class="basket-block__bottom-sum-span">2 470р</span></div>
-                        <div class="basket-block__bottom-btn btn-green-big">Перейти в корзину</div>
+                        <div class="basket-block__bottom-sum"><span>Итог:</span><span class="basket-block__bottom-sum-span">2 470р</span></div><a class="basket-block__bottom-btn btn-green-big">Перейти в корзину</a>
                       </div>
                     </div>
                   </div>
@@ -126,364 +123,204 @@
                   </svg><a class="header-menu__primary-a">Категория товаров</a>
                 </div>
                 <div class="menu-nav">
-                  <div class="menu-nav__border">
-                    <div class="menu-nav__item">Гроубоксы
+                  <div class="menu-nav__border"><a class="menu-nav__item">Гроубоксы
                       <svg class="icon icon-arrow-point subcategor" role="img">
                         <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                      </svg>
-                      <div class="menu-nav__item-sub">
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Маленькие</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Средние</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                        </div>
-                      </div>
+                      </svg></a>
+                    <div class="menu-nav__item-sub">
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                     </div>
                   </div>
-                  <div class="menu-nav__border">
-                    <div class="menu-nav__item">Гидропонные системы
+                  <div class="menu-nav__border"><a class="menu-nav__item">Гидропонные системы
                       <svg class="icon icon-arrow-point subcategor" role="img">
                         <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                      </svg>
-                      <div class="menu-nav__item-sub">
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Маленькие</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Средние</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                        </div>
-                      </div>
+                      </svg></a>
+                    <div class="menu-nav__item-sub">
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                     </div>
                   </div>
-                  <div class="menu-nav__border">
-                    <div class="menu-nav__item">Удобрения
+                  <div class="menu-nav__border"><a class="menu-nav__item">Удобрения
                       <svg class="icon icon-arrow-point subcategor" role="img">
                         <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                      </svg>
-                      <div class="menu-nav__item-sub">
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Маленькие</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Средние</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                        </div>
-                      </div>
+                      </svg></a>
+                    <div class="menu-nav__item-sub">
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                     </div>
                   </div>
-                  <div class="menu-nav__border">
-                    <div class="menu-nav__item">Освещение
+                  <div class="menu-nav__border"><a class="menu-nav__item">Освещение
                       <svg class="icon icon-arrow-point subcategor" role="img">
                         <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                      </svg>
-                      <div class="menu-nav__item-sub">
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Маленькие</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Средние</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                        </div>
-                      </div>
+                      </svg></a>
+                    <div class="menu-nav__item-sub">
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                     </div>
                   </div>
-                  <div class="menu-nav__border">
-                    <div class="menu-nav__item">Полив
+                  <div class="menu-nav__border"><a class="menu-nav__item">Полив
                       <svg class="icon icon-arrow-point subcategor" role="img">
                         <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                      </svg>
-                      <div class="menu-nav__item-sub">
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Маленькие</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Средние</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                        </div>
-                      </div>
+                      </svg></a>
+                    <div class="menu-nav__item-sub">
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                     </div>
                   </div>
-                  <div class="menu-nav__border">
-                    <div class="menu-nav__item">Очистка воздуха
+                  <div class="menu-nav__border"><a class="menu-nav__item">Очистка воздуха
                       <svg class="icon icon-arrow-point subcategor" role="img">
                         <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                      </svg>
-                      <div class="menu-nav__item-sub">
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Маленькие</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Средние</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                        </div>
-                      </div>
+                      </svg></a>
+                    <div class="menu-nav__item-sub">
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                     </div>
                   </div>
-                  <div class="menu-nav__border">
-                    <div class="menu-nav__item">Автоматизация
+                  <div class="menu-nav__border"><a class="menu-nav__item">Автоматизация
                       <svg class="icon icon-arrow-point subcategor" role="img">
                         <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                      </svg>
-                      <div class="menu-nav__item-sub">
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Маленькие</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Средние</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                        </div>
-                      </div>
+                      </svg></a>
+                    <div class="menu-nav__item-sub">
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                     </div>
                   </div>
-                  <div class="menu-nav__border">
-                    <div class="menu-nav__item">Аксессуары
+                  <div class="menu-nav__border"><a class="menu-nav__item">Аксессуары
                       <svg class="icon icon-arrow-point subcategor" role="img">
                         <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                      </svg>
-                      <div class="menu-nav__item-sub">
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Маленькие</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Средние</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                        </div>
-                      </div>
+                      </svg></a>
+                    <div class="menu-nav__item-sub">
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                     </div>
                   </div>
-                  <div class="menu-nav__border">
-                    <div class="menu-nav__item">Гроубоксы
+                  <div class="menu-nav__border"><a class="menu-nav__item">Гроубоксы
                       <svg class="icon icon-arrow-point subcategor" role="img">
                         <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                      </svg>
-                      <div class="menu-nav__item-sub">
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Маленькие</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Средние</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                        </div>
-                      </div>
+                      </svg></a>
+                    <div class="menu-nav__item-sub">
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                     </div>
                   </div>
-                  <div class="menu-nav__border">
-                    <div class="menu-nav__item">Гидропонные системы
+                  <div class="menu-nav__border"><a class="menu-nav__item">Гидропонные системы
                       <svg class="icon icon-arrow-point subcategor" role="img">
                         <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                      </svg>
-                      <div class="menu-nav__item-sub">
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Маленькие</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Средние</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                        </div>
-                      </div>
+                      </svg></a>
+                    <div class="menu-nav__item-sub">
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                     </div>
                   </div>
-                  <div class="menu-nav__border">
-                    <div class="menu-nav__item">Удобрения
+                  <div class="menu-nav__border"><a class="menu-nav__item">Удобрения
                       <svg class="icon icon-arrow-point subcategor" role="img">
                         <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                      </svg>
-                      <div class="menu-nav__item-sub">
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Маленькие</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Средние</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                        </div>
-                      </div>
+                      </svg></a>
+                    <div class="menu-nav__item-sub">
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                     </div>
                   </div>
-                  <div class="menu-nav__border">
-                    <div class="menu-nav__item">Освещение
+                  <div class="menu-nav__border"><a class="menu-nav__item">Освещение
                       <svg class="icon icon-arrow-point subcategor" role="img">
                         <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                      </svg>
-                      <div class="menu-nav__item-sub">
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Маленькие</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Средние</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                        </div>
-                      </div>
+                      </svg></a>
+                    <div class="menu-nav__item-sub">
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                     </div>
                   </div>
-                  <div class="menu-nav__border">
-                    <div class="menu-nav__item">Полив
+                  <div class="menu-nav__border"><a class="menu-nav__item">Полив
                       <svg class="icon icon-arrow-point subcategor" role="img">
                         <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                      </svg>
-                      <div class="menu-nav__item-sub">
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Маленькие</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Средние</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                        </div>
-                      </div>
+                      </svg></a>
+                    <div class="menu-nav__item-sub">
+                      <div class="men menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                     </div>
                   </div>
-                  <div class="menu-nav__border">
-                    <div class="menu-nav__item">Очистка воздуха
+                  <div class="menu-nav__border"><a class="menu-nav__item">Очистка воздуха
                       <svg class="icon icon-arrow-point subcategor" role="img">
                         <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                      </svg>
-                      <div class="menu-nav__item-sub">
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Маленькие</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Средние</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                        </div>
-                      </div>
+                      </svg></a>
+                    <div class="menu-nav__item-sub">
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                     </div>
                   </div>
-                  <div class="menu-nav__border">
-                    <div class="menu-nav__item">Автоматизация
+                  <div class="menu-nav__border"><a class="menu-nav__item">Автоматизация
                       <svg class="icon icon-arrow-point subcategor" role="img">
                         <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                      </svg>
-                      <div class="menu-nav__item-sub">
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Маленькие</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Средние</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                        </div>
-                      </div>
+                      </svg></a>
+                    <div class="menu-nav__item-sub">
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                     </div>
                   </div>
-                  <div class="menu-nav__border">
-                    <div class="menu-nav__item">Аксессуары
+                  <div class="menu-nav__border"><a class="menu-nav__item">Аксессуары
                       <svg class="icon icon-arrow-point subcategor" role="img">
                         <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                      </svg>
-                      <div class="menu-nav__item-sub">
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Маленькие</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Средние</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                        </div>
-                      </div>
+                      </svg></a>
+                    <div class="menu-nav__item-sub">
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                     </div>
                   </div>
-                  <div class="menu-nav__border">
-                    <div class="menu-nav__item">Полив
+                  <div class="menu-nav__border"><a class="menu-nav__item">Полив
                       <svg class="icon icon-arrow-point subcategor" role="img">
                         <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                      </svg>
-                      <div class="menu-nav__item-sub">
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Маленькие</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Средние</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                        </div>
-                      </div>
+                      </svg></a>
+                    <div class="menu-nav__item-sub">
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                     </div>
                   </div>
-                  <div class="menu-nav__border">
-                    <div class="menu-nav__item">Очистка воздуха
+                  <div class="menu-nav__border"><a class="menu-nav__item">Очистка воздуха
                       <svg class="icon icon-arrow-point subcategor" role="img">
                         <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                      </svg>
-                      <div class="menu-nav__item-sub">
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Маленькие</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Средние</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                        </div>
-                      </div>
+                      </svg></a>
+                    <div class="menu-nav__item-sub">
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                     </div>
                   </div>
-                  <div class="menu-nav__border">
-                    <div class="menu-nav__item">Автоматизация
+                  <div class="menu-nav__border"><a class="menu-nav__item">Автоматизация
                       <svg class="icon icon-arrow-point subcategor" role="img">
                         <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                      </svg>
-                      <div class="menu-nav__item-sub">
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Маленькие</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Средние</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                        </div>
-                      </div>
+                      </svg></a>
+                    <div class="menu-nav__item-sub">
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                     </div>
                   </div>
-                  <div class="menu-nav__border">
-                    <div class="menu-nav__item menu-nav__item-last">Аксессуары
+                  <div class="menu-nav__border"><a class="menu-nav__item menu-nav__item-last">Аксессуары
                       <svg class="icon icon-arrow-point subcategor" role="img">
                         <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                      </svg>
-                      <div class="menu-nav__item-sub">
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Маленькие</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element">Средние</div>
-                        </div>
-                        <div class="menu-nav__item-sub-border">
-                          <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                        </div>
-                      </div>
+                      </svg></a>
+                    <div class="menu-nav__item-sub">
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                      <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                     </div>
                   </div>
                 </div>
@@ -502,27 +339,25 @@
               <use xlink:href="static/img/svg/symbol/sprite.svg#menu"></use>
             </svg>
           </div>
-          <div class="header-media__box"><img class="header-media__box-img" src="static/img/general/logo.png" alt' href="javascript:void(0)">
+          <div class="header-media__box"><a><img class="header-media__box-img" src="static/img/general/logo.png" alt' href="javascript:void(0)"></a>
             <div class="header-media__box-icon">
               <svg class="icon icon-search search-header-media" role="img">
                 <use xlink:href="static/img/svg/symbol/sprite.svg#search"></use>
-              </svg>
-              <div class="header-main__basket-icon">
+              </svg><a class="header-main__basket-icon">
                 <svg class="icon icon-basket basket-header-media" role="img">
                   <use xlink:href="static/img/svg/symbol/sprite.svg#basket"></use>
-                </svg><span class="header-media__box-icon-number">5</span>
-              </div>
+                </svg><span class="header-media__box-icon-number">5</span></a>
             </div>
           </div>
           <div class="header-media__box-search">
-            <div class="header-main__search">
+            <form class="header-main__search">
               <input class="header-main__search-input" type="text" placeholder="Я ищу...">
-              <div class="header-main__search-icon" onclick="window.location='result.html';">
+              <button class="header-main__search-icon" onclick="window.location='result.html';">
                 <svg class="icon icon-search search-header-media-open" role="img">
                   <use xlink:href="static/img/svg/symbol/sprite.svg#search"></use>
                 </svg>
-              </div>
-            </div>
+              </button>
+            </form>
           </div>
         </div>
         <div class="menu-media-full">
@@ -538,26 +373,24 @@
                     <svg class="icon icon-arrow-point arrow-point-city" role="img">
                       <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
                     </svg></span>
-                  <div class="city-you" id="city-you" href="javascript:PopUpHide()">
+                  <div class="city-you" id="city-you">
                     <svg class="icon icon-close close-city" role="img">
                       <use xlink:href="static/img/svg/symbol/sprite.svg#close"></use>
                     </svg>
-                    <div class="city-you__text"><span>Ваш город</span><a class="city-you__text-a">Пермь?</a></div>
+                    <div class="city-you__text"><span>Ваш город</span><a class="city-you__text-a">Пермь<span>?</span></a></div>
                     <div class="city-you__btn">
                       <button class="btn-green city-you__btn-green">Да, верно</button>
                       <button class="btn-grey city-you__btn-grey">Выбрать другой</button>
                     </div>
                   </div>
-                  <div class="city-choice" id="city-choice" href="javascript:PopUpHide()">
+                  <div class="city-choice" id="city-choice">
                     <svg class="icon icon-close close-city" role="img">
                       <use xlink:href="static/img/svg/symbol/sprite.svg#close"></use>
                     </svg><span class="city-choice__span">Выбор города</span><span class="city-choice__span-small">Если вашего города нет - выберете ближайший</span>
-                    <div class="city-choice__search">
-                      <input class="city-choice__search-input" type="text" placeholder="Я ищу...">
-                      <svg class="icon icon-search search-header" role="img">
-                        <use xlink:href="static/img/svg/symbol/sprite.svg#search"></use>
-                      </svg>
-                    </div>
+                    <form class="city-choice__search">
+                      <input class="city-choice__search-input" id="city__search" type="text">
+                      <div class="city-choice__search-btn">Ок</div>
+                    </form>
                   </div><span class="header-media-open__box-icon-span">Вход</span>
                 </div>
               </div>
@@ -568,227 +401,118 @@
               </svg><a class="header-media-nav__a">Категория товаров</a>
             </div>
             <div class="menu-media-category">
-              <div class="menu-media-category__border">
-                <div class="menu-media-category__item">Гроубоксы
+              <div class="menu-media-category__border"><a class="menu-media-category__item">Гроубоксы
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                </div>
-                <div class="menu-media-category__sub">
-                  <div class="menu-media-category__sub-element">Маленькие</div>
-                  <div class="menu-media-category__sub-element">Средние</div>
-                  <div class="menu-media-category__sub-element">Большие</div>
-                </div>
+                  </svg></a>
+                <div class="menu-media-category__sub"><a class="menu-media-category__sub-element">Маленькие</a><a class="menu-media-category__sub-element">Средние</a><a class="menu-media-category__sub-element">Большие</a></div>
               </div>
-              <div class="menu-media-category__border">
-                <div class="menu-media-category__item">Гидропонные системы
+              <div class="menu-media-category__border"><a class="menu-media-category__item">Гидропонные системы
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                </div>
-                <div class="menu-media-category__sub">
-                  <div class="menu-media-category__sub-element">Маленькие</div>
-                  <div class="menu-media-category__sub-element">Средние</div>
-                  <div class="menu-media-category__sub-element">Большие</div>
-                </div>
+                  </svg></a>
+                <div class="menu-media-category__sub"><a class="menu-media-category__sub-element">Маленькие</a><a class="menu-media-category__sub-element">Средние</a><a class="menu-media-category__sub-element">Большие</a></div>
               </div>
-              <div class="menu-media-category__border">
-                <div class="menu-media-category__item">Удобрения
+              <div class="menu-media-category__border"><a class="menu-media-category__item">Удобрения
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                </div>
-                <div class="menu-media-category__sub">
-                  <div class="menu-media-category__sub-element">Маленькие</div>
-                  <div class="menu-media-category__sub-element">Средние</div>
-                  <div class="menu-media-category__sub-element">Большие</div>
-                </div>
+                  </svg></a>
+                <div class="menu-media-category__sub"><a class="menu-media-category__sub-element">Маленькие</a><a class="menu-media-category__sub-element">Средние</a><a class="menu-media-category__sub-element">Большие</a></div>
               </div>
-              <div class="menu-media-category__border">
-                <div class="menu-media-category__item">Освещение
+              <div class="menu-media-category__border"><a class="menu-media-category__item">Освещение
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                </div>
-                <div class="menu-media-category__sub">
-                  <div class="menu-media-category__sub-element">Маленькие</div>
-                  <div class="menu-media-category__sub-element">Средние</div>
-                  <div class="menu-media-category__sub-element">Большие</div>
-                </div>
+                  </svg></a>
+                <div class="menu-media-category__sub"><a class="menu-media-category__sub-element">Маленькие</a><a class="menu-media-category__sub-element">Средние</a><a class="menu-media-category__sub-element">Большие</a></div>
               </div>
-              <div class="menu-media-category__border">
-                <div class="menu-media-category__item">Полив
+              <div class="menu-media-category__border"><a class="menu-media-category__item">Полив
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                </div>
-                <div class="menu-media-category__sub">
-                  <div class="menu-media-category__sub-element">Маленькие</div>
-                  <div class="menu-media-category__sub-element">Средние</div>
-                  <div class="menu-media-category__sub-element">Большие</div>
-                </div>
+                  </svg></a>
+                <div class="menu-media-category__sub"><a class="menu-media-category__sub-element">Маленькие</a><a class="menu-media-category__sub-element">Средние</a><a class="menu-media-category__sub-element">Большие</a></div>
               </div>
-              <div class="menu-media-category__border">
-                <div class="menu-media-category__item">Очистка воздуха
+              <div class="menu-media-category__border"><a class="menu-media-category__item">Очистка воздуха
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                </div>
-                <div class="menu-media-category__sub">
-                  <div class="menu-media-category__sub-element">Маленькие</div>
-                  <div class="menu-media-category__sub-element">Средние</div>
-                  <div class="menu-media-category__sub-element">Большие</div>
-                </div>
+                  </svg></a>
+                <div class="menu-media-category__sub"><a class="menu-media-category__sub-element">Маленькие</a><a class="menu-media-category__sub-element">Средние</a><a class="menu-media-category__sub-element">Большие</a></div>
               </div>
-              <div class="menu-media-category__border">
-                <div class="menu-media-category__item">Автоматизация
+              <div class="menu-media-category__border"><a class="menu-media-category__item">Автоматизация
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                </div>
-                <div class="menu-media-category__sub">
-                  <div class="menu-media-category__sub-element">Маленькие</div>
-                  <div class="menu-media-category__sub-element">Средние</div>
-                  <div class="menu-media-category__sub-element">Большие</div>
-                </div>
+                  </svg></a>
+                <div class="menu-media-category__sub"><a class="menu-media-category__sub-element">Маленькие</a><a class="menu-media-category__sub-element">Средние</a><a class="menu-media-category__sub-element">Большие</a></div>
               </div>
-              <div class="menu-media-category__border">
-                <div class="menu-media-category__item">Аксессуары
+              <div class="menu-media-category__border"><a class="menu-media-category__item">Аксессуары
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                </div>
-                <div class="menu-media-category__sub">
-                  <div class="menu-media-category__sub-element">Маленькие</div>
-                  <div class="menu-media-category__sub-element">Средние</div>
-                  <div class="menu-media-category__sub-element">Большие</div>
-                </div>
+                  </svg></a>
+                <div class="menu-media-category__sub"><a class="menu-media-category__sub-element">Маленькие</a><a class="menu-media-category__sub-element">Средние</a><a class="menu-media-category__sub-element">Большие</a></div>
               </div>
-              <div class="menu-media-category__border">
-                <div class="menu-media-category__item">Гроубоксы
+              <div class="menu-media-category__border"><a class="menu-media-category__item">Гроубоксы
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                </div>
-                <div class="menu-media-category__sub">
-                  <div class="menu-media-category__sub-element">Маленькие</div>
-                  <div class="menu-media-category__sub-element">Средние</div>
-                  <div class="menu-media-category__sub-element">Большие</div>
-                </div>
+                  </svg></a>
+                <div class="menu-media-category__sub"><a class="menu-media-category__sub-element">Маленькие</a><a class="menu-media-category__sub-element">Средние</a><a class="menu-media-category__sub-element">Большие</a></div>
               </div>
-              <div class="menu-media-category__border">
-                <div class="menu-media-category__item">Гидропонные системы
+              <div class="menu-media-category__border"><a class="menu-media-category__item">Гидропонные системы
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                </div>
-                <div class="menu-media-category__sub">
-                  <div class="menu-media-category__sub-element">Маленькие</div>
-                  <div class="menu-media-category__sub-element">Средние</div>
-                  <div class="menu-media-category__sub-element">Большие</div>
-                </div>
+                  </svg></a>
+                <div class="menu-media-category__sub"><a class="menu-media-category__sub-element">Маленькие</a><a class="menu-media-category__sub-element">Средние</a><a class="menu-media-category__sub-element">Большие</a></div>
               </div>
-              <div class="menu-media-category__border">
-                <div class="menu-media-category__item">Удобрения
+              <div class="menu-media-category__border"><a class="menu-media-category__item">Удобрения
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                </div>
-                <div class="menu-media-category__sub">
-                  <div class="menu-media-category__sub-element">Маленькие</div>
-                  <div class="menu-media-category__sub-element">Средние</div>
-                  <div class="menu-media-category__sub-element">Большие</div>
-                </div>
+                  </svg></a>
+                <div class="menu-media-category__sub"><a class="menu-media-category__sub-element">Маленькие</a><a class="menu-media-category__sub-element">Средние</a><a class="menu-media-category__sub-element">Большие</a></div>
               </div>
-              <div class="menu-media-category__border">
-                <div class="menu-media-category__item">Освещение
+              <div class="menu-media-category__border"><a class="menu-media-category__item">Освещение
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                </div>
-              </div>
-              <div class="menu-media-category__border">
-                <div class="menu-media-category__item">Полив
+                  </svg></a></div>
+              <div class="menu-media-category__border"><a class="menu-media-category__item">Полив
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                </div>
-              </div>
-              <div class="menu-media-category__border">
-                <div class="menu-media-category__item">Очистка воздуха
+                  </svg></a></div>
+              <div class="menu-media-category__border"><a class="menu-media-category__item">Очистка воздуха
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                </div>
-              </div>
-              <div class="menu-media-category__border">
-                <div class="menu-media-category__item">Автоматизация
+                  </svg></a></div>
+              <div class="menu-media-category__border"><a class="menu-media-category__item">Автоматизация
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                </div>
-              </div>
-              <div class="menu-media-category__border">
-                <div class="menu-media-category__item">Аксессуары
+                  </svg></a></div>
+              <div class="menu-media-category__border"><a class="menu-media-category__item">Аксессуары
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                </div>
-              </div>
-              <div class="menu-media-category__border">
-                <div class="menu-media-category__item">Полив
+                  </svg></a></div>
+              <div class="menu-media-category__border"><a class="menu-media-category__item">Полив
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                </div>
-              </div>
-              <div class="menu-media-category__border">
-                <div class="menu-media-category__item">Очистка воздуха
+                  </svg></a></div>
+              <div class="menu-media-category__border"><a class="menu-media-category__item">Очистка воздуха
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                </div>
-              </div>
-              <div class="menu-media-category__border">
-                <div class="menu-media-category__item">Автоматизация
+                  </svg></a></div>
+              <div class="menu-media-category__border"><a class="menu-media-category__item">Автоматизация
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                </div>
-              </div>
-              <div class="menu-media-category__border">
-                <div class="menu-media-category__item">Аксессуары
+                  </svg></a></div>
+              <div class="menu-media-category__border"><a class="menu-media-category__item">Аксессуары
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                </div>
-              </div>
+                  </svg></a></div>
             </div>
             <div class="header-media-main">
-              <div class="header-media-main__border">
-                <div class="header-media-main__border-item">Прайс-лист</div>
-              </div>
-              <div class="header-media-main__border">
-                <div class="header-media-main__border-item">Акции</div>
-              </div>
-              <div class="header-media-main__border">
-                <div class="header-media-main__border-item">Доставка и оплата</div>
-              </div>
-              <div class="header-media-main__border">
-                <div class="header-media-main__border-item">Отзывы</div>
-              </div>
-              <div class="header-media-main__border">
-                <div class="header-media-main__border-item">Контакты</div>
-              </div>
-              <div class="header-media-main__border">
-                <div class="header-media-main__border-item">Блог</div>
-              </div>
-              <div class="header-media-main__border">
-                <div class="header-media-main__border-item">Dzagi tube</div>
-              </div>
-              <div class="header-media-main__border">
-                <div class="header-media-main__border-item">Книги</div>
-              </div>
+              <div class="header-media-main__border"><a class="header-media-main__border-item">Прайс-лист</a></div>
+              <div class="header-media-main__border"><a class="header-media-main__border-item">Акции</a></div>
+              <div class="header-media-main__border"><a class="header-media-main__border-item">Доставка и оплата</a></div>
+              <div class="header-media-main__border"><a class="header-media-main__border-item">Отзывы</a></div>
+              <div class="header-media-main__border"><a class="header-media-main__border-item">Контакты</a></div>
+              <div class="header-media-main__border"><a class="header-media-main__border-item">Блог</a></div>
+              <div class="header-media-main__border"><a class="header-media-main__border-item">Dzagi tube</a></div>
+              <div class="header-media-main__border"><a class="header-media-main__border-item">Книги</a></div>
             </div>
             <div class="header-media-contact">
               <div class="header-media-contact__number">
@@ -801,23 +525,22 @@
                   <div class="header-media-contact__hang">Звонок<br>по Москве и МО</div>
                 </div>
               </div>
-              <div class="header-media-contact__social">
-                <svg class="icon icon-tg social" role="img">
-                  <use xlink:href="static/img/svg/symbol/sprite.svg#tg"></use>
-                </svg>
-                <svg class="icon icon-ig social" role="img">
-                  <use xlink:href="static/img/svg/symbol/sprite.svg#ig"></use>
-                </svg>
-                <svg class="icon icon-yt social" role="img">
-                  <use xlink:href="static/img/svg/symbol/sprite.svg#yt"></use>
-                </svg>
-                <svg class="icon icon-fb social" role="img">
-                  <use xlink:href="static/img/svg/symbol/sprite.svg#fb"></use>
-                </svg>
-                <svg class="icon icon-vk social" role="img">
-                  <use xlink:href="static/img/svg/symbol/sprite.svg#vk"></use>
-                </svg>
-              </div>
+              <div class="header-media-contact__social"><a>
+                  <svg class="icon icon-tg social" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#tg"></use>
+                  </svg></a><a>
+                  <svg class="icon icon-ig social" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#ig"></use>
+                  </svg></a><a>
+                  <svg class="icon icon-yt social" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#yt"></use>
+                  </svg></a><a>
+                  <svg class="icon icon-fb social" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#fb"></use>
+                  </svg></a><a>
+                  <svg class="icon icon-vk social" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#vk"></use>
+                  </svg></a></div>
             </div>
           </div>
         </div>
@@ -826,15 +549,9 @@
         <!--phone-->
         <div class="container-fluid teaser-phone-block">
           <div class="teaser-phone single-item">
-            <div class="teaser-phone__item"><img class="teaser-phone__item-img" src="static/img/content/image1.png" alt="">
-              <button class="teaser-phone__item-button-yellow" href="javascript:void(0)">Подробнее</button>
-            </div>
-            <div class="teaser-phone__item"><img class="teaser-phone__item-img" src="static/img/content/image3.png" alt="">
-              <button class="teaser-phone__item-button-green" href="javascript:void(0)">Читать книгу</button>
-            </div>
-            <div class="teaser-phone__item"><img class="teaser-phone__item-img" src="static/img/content/image2.png" alt="">
-              <button class="teaser-phone__item-button-black" href="javascript:void(0)">Посмотреть все скидки дня!</button>
-            </div>
+            <div class="teaser-phone__item"><img class="teaser-phone__item-img" src="static/img/content/image1.png" alt=""><a class="teaser-phone__item-button-yellow" href="javascript:void(0)">Подробнее</a></div>
+            <div class="teaser-phone__item"><img class="teaser-phone__item-img" src="static/img/content/image3.png" alt=""><a class="teaser-phone__item-button-green" href="javascript:void(0)">Читать книгу</a></div>
+            <div class="teaser-phone__item"><img class="teaser-phone__item-img" src="static/img/content/image2.png" alt=""><a class="teaser-phone__item-button-black" href="javascript:void(0)">Посмотреть все скидки дня!</a></div>
           </div>
         </div>
         <!--главная страница-->
@@ -842,398 +559,228 @@
         <div class="container-fluid">
           <div class="container primary-block">
             <div class="menu-nav__index">
-              <div class="menu-nav__border">
-                <div class="menu-nav__item">Гроубоксы
+              <div class="menu-nav__border"><a class="menu-nav__item">Гроубоксы
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                  <div class="menu-nav__item-sub">
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element">Маленькие</div>
-                    </div>
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element">Средние</div>
-                    </div>
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                    </div>
-                  </div>
+                  </svg></a>
+                <div class="menu-nav__item-sub">
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                 </div>
               </div>
-              <div class="menu-nav__border">
-                <div class="menu-nav__item">Гидропонные системы
+              <div class="menu-nav__border"><a class="menu-nav__item">Гидропонные системы
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                  <div class="menu-nav__item-sub">
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element">Маленькие</div>
-                    </div>
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element">Средние</div>
-                    </div>
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                    </div>
-                  </div>
+                  </svg></a>
+                <div class="menu-nav__item-sub">
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                 </div>
               </div>
-              <div class="menu-nav__border">
-                <div class="menu-nav__item">Удобрения
+              <div class="menu-nav__border"><a class="menu-nav__item">Удобрения
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                  <div class="menu-nav__item-sub">
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element">Маленькие</div>
-                    </div>
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element">Средние</div>
-                    </div>
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                    </div>
-                  </div>
+                  </svg></a>
+                <div class="menu-nav__item-sub">
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                 </div>
               </div>
-              <div class="menu-nav__border">
-                <div class="menu-nav__item">Освещение
+              <div class="menu-nav__border"><a class="menu-nav__item">Освещение
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                  <div class="menu-nav__item-sub">
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element">Маленькие</div>
-                    </div>
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element">Средние</div>
-                    </div>
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                    </div>
-                  </div>
+                  </svg></a>
+                <div class="menu-nav__item-sub">
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                 </div>
               </div>
-              <div class="menu-nav__border">
-                <div class="menu-nav__item">Полив
+              <div class="menu-nav__border"><a class="menu-nav__item">Полив
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                  <div class="menu-nav__item-sub">
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element">Маленькие</div>
-                    </div>
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element">Средние</div>
-                    </div>
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                    </div>
-                  </div>
+                  </svg></a>
+                <div class="menu-nav__item-sub">
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                 </div>
               </div>
-              <div class="menu-nav__border">
-                <div class="menu-nav__item">Очистка воздуха
+              <div class="menu-nav__border"><a class="menu-nav__item">Очистка воздуха
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                  <div class="menu-nav__item-sub">
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element">Маленькие</div>
-                    </div>
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element">Средние</div>
-                    </div>
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                    </div>
-                  </div>
+                  </svg></a>
+                <div class="menu-nav__item-sub">
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                 </div>
               </div>
-              <div class="menu-nav__border">
-                <div class="menu-nav__item">Автоматизация
+              <div class="menu-nav__border"><a class="menu-nav__item">Автоматизация
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                  <div class="menu-nav__item-sub">
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element">Маленькие</div>
-                    </div>
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element">Средние</div>
-                    </div>
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                    </div>
-                  </div>
+                  </svg></a>
+                <div class="menu-nav__item-sub">
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                 </div>
               </div>
-              <div class="menu-nav__border">
-                <div class="menu-nav__item">Аксессуары
+              <div class="menu-nav__border"><a class="menu-nav__item">Аксессуары
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                  <div class="menu-nav__item-sub">
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element">Маленькие</div>
-                    </div>
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element">Средние</div>
-                    </div>
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                    </div>
-                  </div>
+                  </svg></a>
+                <div class="menu-nav__item-sub">
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                 </div>
               </div>
-              <div class="menu-nav__border">
-                <div class="menu-nav__item">Гроубоксы
+              <div class="menu-nav__border"><a class="menu-nav__item">Гроубоксы
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                  <div class="menu-nav__item-sub">
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element">Маленькие</div>
-                    </div>
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element">Средние</div>
-                    </div>
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                    </div>
-                  </div>
+                  </svg></a>
+                <div class="menu-nav__item-sub">
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                 </div>
               </div>
-              <div class="menu-nav__border">
-                <div class="menu-nav__item">Гидропонные системы
+              <div class="menu-nav__border"><a class="menu-nav__item">Гидропонные системы
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                  <div class="menu-nav__item-sub">
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element">Маленькие</div>
-                    </div>
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element">Средние</div>
-                    </div>
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                    </div>
-                  </div>
+                  </svg></a>
+                <div class="menu-nav__item-sub">
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                 </div>
               </div>
-              <div class="menu-nav__border">
-                <div class="menu-nav__item">Удобрения
+              <div class="menu-nav__border"><a class="menu-nav__item">Удобрения
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                  <div class="menu-nav__item-sub">
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element">Маленькие</div>
-                    </div>
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element">Средние</div>
-                    </div>
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                    </div>
-                  </div>
+                  </svg></a>
+                <div class="menu-nav__item-sub">
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                 </div>
               </div>
-              <div class="menu-nav__border">
-                <div class="menu-nav__item">Освещение
+              <div class="menu-nav__border"><a class="menu-nav__item">Освещение
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                  <div class="menu-nav__item-sub">
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element">Маленькие</div>
-                    </div>
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element">Средние</div>
-                    </div>
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                    </div>
-                  </div>
+                  </svg></a>
+                <div class="menu-nav__item-sub">
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                 </div>
               </div>
-              <div class="menu-nav__border">
-                <div class="menu-nav__item">Полив
+              <div class="menu-nav__border"><a class="menu-nav__item">Полив
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                  <div class="menu-nav__item-sub">
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element">Маленькие</div>
-                    </div>
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element">Средние</div>
-                    </div>
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                    </div>
-                  </div>
+                  </svg></a>
+                <div class="menu-nav__item-sub">
+                  <div class="men menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                 </div>
               </div>
-              <div class="menu-nav__border">
-                <div class="menu-nav__item">Очистка воздуха
+              <div class="menu-nav__border"><a class="menu-nav__item">Очистка воздуха
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                  <div class="menu-nav__item-sub">
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element">Маленькие</div>
-                    </div>
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element">Средние</div>
-                    </div>
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                    </div>
-                  </div>
+                  </svg></a>
+                <div class="menu-nav__item-sub">
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                 </div>
               </div>
-              <div class="menu-nav__border">
-                <div class="menu-nav__item">Автоматизация
+              <div class="menu-nav__border"><a class="menu-nav__item">Автоматизация
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                  <div class="menu-nav__item-sub">
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element">Маленькие</div>
-                    </div>
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element">Средние</div>
-                    </div>
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                    </div>
-                  </div>
+                  </svg></a>
+                <div class="menu-nav__item-sub">
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                 </div>
               </div>
-              <div class="menu-nav__border">
-                <div class="menu-nav__item">Аксессуары
+              <div class="menu-nav__border"><a class="menu-nav__item">Аксессуары
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                  <div class="menu-nav__item-sub">
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element">Маленькие</div>
-                    </div>
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element">Средние</div>
-                    </div>
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                    </div>
-                  </div>
+                  </svg></a>
+                <div class="menu-nav__item-sub">
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                 </div>
               </div>
-              <div class="menu-nav__border">
-                <div class="menu-nav__item">Полив
+              <div class="menu-nav__border"><a class="menu-nav__item">Полив
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                  <div class="menu-nav__item-sub">
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element">Маленькие</div>
-                    </div>
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element">Средние</div>
-                    </div>
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                    </div>
-                  </div>
+                  </svg></a>
+                <div class="menu-nav__item-sub">
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                 </div>
               </div>
-              <div class="menu-nav__border">
-                <div class="menu-nav__item">Очистка воздуха
+              <div class="menu-nav__border"><a class="menu-nav__item">Очистка воздуха
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                  <div class="menu-nav__item-sub">
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element">Маленькие</div>
-                    </div>
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element">Средние</div>
-                    </div>
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                    </div>
-                  </div>
+                  </svg></a>
+                <div class="menu-nav__item-sub">
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                 </div>
               </div>
-              <div class="menu-nav__border">
-                <div class="menu-nav__item">Автоматизация
+              <div class="menu-nav__border"><a class="menu-nav__item">Автоматизация
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                  <div class="menu-nav__item-sub">
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element">Маленькие</div>
-                    </div>
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element">Средние</div>
-                    </div>
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                    </div>
-                  </div>
+                  </svg></a>
+                <div class="menu-nav__item-sub">
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                 </div>
               </div>
-              <div class="menu-nav__border">
-                <div class="menu-nav__item menu-nav__item-last">Аксессуары
+              <div class="menu-nav__border"><a class="menu-nav__item menu-nav__item-last">Аксессуары
                   <svg class="icon icon-arrow-point subcategor" role="img">
                     <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-point"></use>
-                  </svg>
-                  <div class="menu-nav__item-sub">
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element">Маленькие</div>
-                    </div>
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element">Средние</div>
-                    </div>
-                    <div class="menu-nav__item-sub-border">
-                      <div class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</div>
-                    </div>
-                  </div>
+                  </svg></a>
+                <div class="menu-nav__item-sub">
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Маленькие</a></div>
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element">Средние</a></div>
+                  <div class="menu-nav__item-sub-border"><a class="menu-nav__item-sub-element menu-nav__item-sub-element-last">Большие</a></div>
                 </div>
               </div>
             </div>
             <div class="section-block__ad">
               <div class="teaser">
-                <div class="teaser__big"><img class="teaser__big-img" src="static/img/content/image1.png" alt="">
-                  <button class="teaser__big-button" href="javascript:void(0)">Подробнее</button>
-                </div>
+                <div class="teaser__big"><img class="teaser__big-img" src="static/img/content/image1.png" alt=""><a class="teaser__big-button" href="javascript:void(0)">Подробнее</a></div>
                 <div class="teaser__small">
-                  <div class="teaser__small-right"><img class="teaser__small-right-img" src="static/img/content/image3.png" alt="">
-                    <button class="teaser__small-right-button" href="javascript:void(0)">Читать книгу</button>
-                  </div>
-                  <div class="teaser__small-right"><img class="teaser__small-right-img" src="static/img/content/image2.png" alt="">
-                    <button class="teaser__small-right-button-bottom" href="javascript:void(0)">Посмотреть все скидки дня!</button>
-                  </div>
+                  <div class="teaser__small-right"><img class="teaser__small-right-img" src="static/img/content/image3.png" alt=""><a class="teaser__small-right-button" href="javascript:void(0)">Читать книгу</a></div>
+                  <div class="teaser__small-right"><img class="teaser__small-right-img" src="static/img/content/image2.png" alt=""><a class="teaser__small-right-button-bottom" href="javascript:void(0)">Посмотреть все скидки дня!</a></div>
                 </div>
               </div>
               <!--products-teaser-->
               <div class="products_ad">
                 <div class="products_ad__text">
-                  <div class="products_ad__text-title">Готовые гроубоксы</div>
-                  <div class="products_ad__text-all" href="javascript:void(0)">Все товары</div>
+                  <div class="products_ad__text-title">Готовые гроубоксы</div><a class="products_ad__text-all" href="javascript:void(0)">Все товары</a>
                 </div>
                 <div class="products_ad__teaser">
                   <div class="products_ad__teaser-item">
                     <div class="ticket_ad">
                       <div class="ticket_ad-header">
                         <div class="ticket_ad-header__text">Pro Box</div>
-                        <div class="ticket_ad-header__rating"><span class="ticket_ad-header__rating-span">☆</span><span class="ticket_ad-header__rating-span">☆</span><span class="ticket_ad-header__rating-span">☆</span><span class="ticket_ad-header__rating-span">☆</span><span class="ticket_ad-header__rating-span">☆</span></div>
-                      </div>
-                      <div class="ticket_ad-title" onclick="window.location='product.html';">Гроубокс 120-Apollo10</div>
-                      <div class="ticket_ad-product"><img class="ticket_ad-product__img" src="static/img/content/growbox.png" alt="" onclick="window.location='product.html';">
-                        <div class="ticket_ad-product__discount">-15%</div>
-                      </div>
+                        <div class="ticket_ad-header__rating"><span class="ticket_ad-header__rating-span">☆</span><span class="ticket_ad-header__rating-span">☆</span><span class="ticket_ad-header__rating-span rating__half">☆</span><span class="ticket_ad-header__rating-span rating__fill">☆</span><span class="ticket_ad-header__rating-span rating__fill">☆</span></div>
+                      </div><a class="ticket_ad-title" onclick="window.location='product.html';">Гроубокс 120-Apollo10</a><a class="ticket_ad-product"><img class="ticket_ad-product__img" src="static/img/content/growbox.png" alt="" onclick="window.location='product.html';">
+                        <div class="ticket_ad-product__discount">-15%</div></a>
                       <div class="ticket_ad-buy">
                         <div class="ticket_ad-buy__price">
                           <div class="ticket_ad-buy__price-old">60 200р</div>
@@ -1255,11 +802,8 @@
                       <div class="ticket_ad-header">
                         <div class="ticket_ad-header__text">Pro Box</div>
                         <div class="ticket_ad-header__rating"><span class="ticket_ad-header__rating-span">☆</span><span class="ticket_ad-header__rating-span">☆</span><span class="ticket_ad-header__rating-span">☆</span><span class="ticket_ad-header__rating-span">☆</span><span class="ticket_ad-header__rating-span">☆</span></div>
-                      </div>
-                      <div class="ticket_ad-title">Гроубокс 120-Apollo10</div>
-                      <div class="ticket_ad-product"><img class="ticket_ad-product__img" src="static/img/content/growbox.png" alt="">
-                        <div class="ticket_ad-product__discount">-15%</div>
-                      </div>
+                      </div><a class="ticket_ad-title">Гроубокс 120-Apollo10</a><a class="ticket_ad-product"><img class="ticket_ad-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket_ad-product__discount">-15%</div></a>
                       <div class="ticket_ad-buy">
                         <div class="ticket_ad-buy__price">
                           <div class="ticket_ad-buy__price-old">60 200р</div>
@@ -1281,11 +825,8 @@
                       <div class="ticket_ad-header">
                         <div class="ticket_ad-header__text">Pro Box</div>
                         <div class="ticket_ad-header__rating"><span class="ticket_ad-header__rating-span">☆</span><span class="ticket_ad-header__rating-span">☆</span><span class="ticket_ad-header__rating-span">☆</span><span class="ticket_ad-header__rating-span">☆</span><span class="ticket_ad-header__rating-span">☆</span></div>
-                      </div>
-                      <div class="ticket_ad-title">Гроубокс 120-Apollo10</div>
-                      <div class="ticket_ad-product"><img class="ticket_ad-product__img" src="static/img/content/growbox.png" alt="">
-                        <div class="ticket_ad-product__discount">-15%</div>
-                      </div>
+                      </div><a class="ticket_ad-title">Гроубокс 120-Apollo10</a><a class="ticket_ad-product"><img class="ticket_ad-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket_ad-product__discount">-15%</div></a>
                       <div class="ticket_ad-buy">
                         <div class="ticket_ad-buy__price">
                           <div class="ticket_ad-buy__price-old">60 200р</div>
@@ -1307,11 +848,8 @@
                       <div class="ticket_ad-header">
                         <div class="ticket_ad-header__text">Pro Box</div>
                         <div class="ticket_ad-header__rating"><span class="ticket_ad-header__rating-span">☆</span><span class="ticket_ad-header__rating-span">☆</span><span class="ticket_ad-header__rating-span">☆</span><span class="ticket_ad-header__rating-span">☆</span><span class="ticket_ad-header__rating-span">☆</span></div>
-                      </div>
-                      <div class="ticket_ad-title">Гроубокс 120-Apollo10</div>
-                      <div class="ticket_ad-product"><img class="ticket_ad-product__img" src="static/img/content/growbox.png" alt="">
-                        <div class="ticket_ad-product__discount">-15%</div>
-                      </div>
+                      </div><a class="ticket_ad-title">Гроубокс 120-Apollo10</a><a class="ticket_ad-product"><img class="ticket_ad-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket_ad-product__discount">-15%</div></a>
                       <div class="ticket_ad-buy">
                         <div class="ticket_ad-buy__price">
                           <div class="ticket_ad-buy__price-old">60 200р</div>
@@ -1373,8 +911,7 @@
           <div class="container">
             <div class="products-hit">
               <div class="products-hit__text">
-                <div class="products-hit__text-title">Хит продаж</div>
-                <div class="products-hit__text-all" href="javascript:void(0)">Все товары</div>
+                <div class="products-hit__text-title">Хит продаж</div><a class="products-hit__text-all" href="javascript:void(0)">Все товары</a>
               </div>
               <div class="products-hit__box">
                 <div class="products-hit_big__teaser">
@@ -1382,11 +919,8 @@
                     <div class="ticket_hit_big-header">
                       <div class="ticket_hit_big-header__text">Pro Box</div>
                       <div class="ticket_hit_big-header__rating"><span class="ticket_hit_big-header__rating-span">☆</span><span class="ticket_hit_big-header__rating-span">☆</span><span class="ticket_hit_big-header__rating-span">☆</span><span class="ticket_hit_big-header__rating-span">☆</span><span class="ticket_hit_big-header__rating-span">☆</span></div>
-                    </div>
-                    <div class="ticket_hit_big-title">Гроубокс 120-Apollo10</div>
-                    <div class="ticket_hit_big-product"><img class="ticket_hit_big-product__img" src="static/img/content/growbox.png" alt="">
-                      <div class="ticket_hit_big-product__discount">-15%</div>
-                    </div>
+                    </div><a class="ticket_hit_big-title">Гроубокс 120-Apollo10</a><a class="ticket_hit_big-product"><img class="ticket_hit_big-product__img" src="static/img/content/growbox.png" alt="">
+                      <div class="ticket_hit_big-product__discount">-15%</div></a>
                     <div class="ticket_hit_big-buy">
                       <div class="ticket_hit_big-buy__price">
                         <div class="ticket_hit_big-buy__price-new">58 915р</div>
@@ -1405,15 +939,12 @@
                 </div>
                 <div class="products-hit__teaser">
                   <div class="products-hit__teaser-item">
-                    <div class="ticket_hit">
-                      <div class="ticket_hit-product"><img class="ticket_hit-product__img" src="static/img/content/growbox.png" alt="">
-                        <div class="ticket_hit-product__discount">-15%</div>
-                      </div>
+                    <div class="ticket_hit"><a class="ticket_hit-product"><img class="ticket_hit-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket_hit-product__discount">-15%</div></a>
                       <div class="ticket_hit-header">
                         <div class="ticket_hit-header__text">Pro Box</div>
                         <div class="ticket_hit-header__rating"><span class="ticket_hit-header__rating-span">☆</span><span class="ticket_hit-header__rating-span">☆</span><span class="ticket_hit-header__rating-span">☆</span><span class="ticket_hit-header__rating-span">☆</span><span class="ticket_hit-header__rating-span">☆</span></div>
-                      </div>
-                      <div class="ticket_hit-title">Гроубокс 120-Apollo10</div>
+                      </div><a class="ticket_hit-title">Гроубокс 120-Apollo10</a>
                       <div class="ticket_hit-buy">
                         <div class="ticket_hit-buy__price">
                           <div class="ticket_hit-buy__price-old">60 200р</div>
@@ -1431,15 +962,12 @@
                     </div>
                   </div>
                   <div class="products-hit__teaser-item">
-                    <div class="ticket_hit">
-                      <div class="ticket_hit-product"><img class="ticket_hit-product__img" src="static/img/content/growbox.png" alt="">
-                        <div class="ticket_hit-product__discount">-15%</div>
-                      </div>
+                    <div class="ticket_hit"><a class="ticket_hit-product"><img class="ticket_hit-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket_hit-product__discount">-15%</div></a>
                       <div class="ticket_hit-header">
                         <div class="ticket_hit-header__text">Pro Box</div>
                         <div class="ticket_hit-header__rating"><span class="ticket_hit-header__rating-span">☆</span><span class="ticket_hit-header__rating-span">☆</span><span class="ticket_hit-header__rating-span">☆</span><span class="ticket_hit-header__rating-span">☆</span><span class="ticket_hit-header__rating-span">☆</span></div>
-                      </div>
-                      <div class="ticket_hit-title">Гроубокс 120-Apollo10</div>
+                      </div><a class="ticket_hit-title">Гроубокс 120-Apollo10</a>
                       <div class="ticket_hit-buy">
                         <div class="ticket_hit-buy__price">
                           <div class="ticket_hit-buy__price-old">60 200р</div>
@@ -1457,15 +985,12 @@
                     </div>
                   </div>
                   <div class="products-hit__teaser-item">
-                    <div class="ticket_hit">
-                      <div class="ticket_hit-product"><img class="ticket_hit-product__img" src="static/img/content/growbox.png" alt="">
-                        <div class="ticket_hit-product__discount">-15%</div>
-                      </div>
+                    <div class="ticket_hit"><a class="ticket_hit-product"><img class="ticket_hit-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket_hit-product__discount">-15%</div></a>
                       <div class="ticket_hit-header">
                         <div class="ticket_hit-header__text">Pro Box</div>
                         <div class="ticket_hit-header__rating"><span class="ticket_hit-header__rating-span">☆</span><span class="ticket_hit-header__rating-span">☆</span><span class="ticket_hit-header__rating-span">☆</span><span class="ticket_hit-header__rating-span">☆</span><span class="ticket_hit-header__rating-span">☆</span></div>
-                      </div>
-                      <div class="ticket_hit-title">Гроубокс 120-Apollo10</div>
+                      </div><a class="ticket_hit-title">Гроубокс 120-Apollo10</a>
                       <div class="ticket_hit-buy">
                         <div class="ticket_hit-buy__price">
                           <div class="ticket_hit-buy__price-old">60 200р</div>
@@ -1483,15 +1008,12 @@
                     </div>
                   </div>
                   <div class="products-hit__teaser-item">
-                    <div class="ticket_hit">
-                      <div class="ticket_hit-product"><img class="ticket_hit-product__img" src="static/img/content/growbox.png" alt="">
-                        <div class="ticket_hit-product__discount">-15%</div>
-                      </div>
+                    <div class="ticket_hit"><a class="ticket_hit-product"><img class="ticket_hit-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket_hit-product__discount">-15%</div></a>
                       <div class="ticket_hit-header">
                         <div class="ticket_hit-header__text">Pro Box</div>
                         <div class="ticket_hit-header__rating"><span class="ticket_hit-header__rating-span">☆</span><span class="ticket_hit-header__rating-span">☆</span><span class="ticket_hit-header__rating-span">☆</span><span class="ticket_hit-header__rating-span">☆</span><span class="ticket_hit-header__rating-span">☆</span></div>
-                      </div>
-                      <div class="ticket_hit-title">Гроубокс 120-Apollo10 000000000000000000000000</div>
+                      </div><a class="ticket_hit-title">Гроубокс 120-Apollo10 000000000000000000000000</a>
                       <div class="ticket_hit-buy">
                         <div class="ticket_hit-buy__price">
                           <div class="ticket_hit-buy__price-old">60 200р</div>
@@ -1518,23 +1040,18 @@
           <div class="container stock-teaser">
             <div class="products_stock">
               <div class="products_stock__text">
-                <div class="products_stock__text-title">Аукционные товары</div>
-                <div class="products_stock__text-all" href="javascript:void(0)">Все товары</div>
+                <div class="products_stock__text-title">Аукционные товары</div><a class="products_stock__text-all" href="javascript:void(0)">Все товары</a>
               </div>
               <div class="products_stock__teaser">
                 <div class="products_stock__teaser-item">
                   <div class="ticket_stock">
-                    <div class="ticket_stock__left">
-                      <div class="ticket_stock-product"><img class="ticket_stock-product__img" src="static/img/content/growbox.png" alt="">
-                        <div class="ticket_stock-product__discount">-15%</div>
-                      </div>
-                    </div>
+                    <div class="ticket_stock__left"><a class="ticket_stock-product"><img class="ticket_stock-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket_stock-product__discount">-15%</div></a></div>
                     <div class="ticket_stock__right">
                       <div class="ticket_stock-header">
                         <div class="ticket_stock-header__text">Pro Box</div>
                         <div class="ticket_stock-header__rating"><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span></div>
-                      </div>
-                      <div class="ticket_stock-title">Гроубокс 120-Apollo10</div>
+                      </div><a class="ticket_stock-title">Гроубокс 120-Apollo10</a>
                       <div class="ticket_stock-buy">
                         <div class="ticket_stock-buy__price">
                           <div class="ticket_stock-buy__price-old">590р</div>
@@ -1554,17 +1071,13 @@
                 </div>
                 <div class="products_stock__teaser-item">
                   <div class="ticket_stock">
-                    <div class="ticket_stock__left">
-                      <div class="ticket_stock-product"><img class="ticket_stock-product__img" src="static/img/content/growbox.png" alt="">
-                        <div class="ticket_stock-product__discount">-15%</div>
-                      </div>
-                    </div>
+                    <div class="ticket_stock__left"><a class="ticket_stock-product"><img class="ticket_stock-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket_stock-product__discount">-15%</div></a></div>
                     <div class="ticket_stock__right">
                       <div class="ticket_stock-header">
                         <div class="ticket_stock-header__text">Pro Box</div>
                         <div class="ticket_stock-header__rating"><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span></div>
-                      </div>
-                      <div class="ticket_stock-title">Гроубокс 120-Apollo10</div>
+                      </div><a class="ticket_stock-title">Гроубокс 120-Apollo10</a>
                       <div class="ticket_stock-buy">
                         <div class="ticket_stock-buy__price">
                           <div class="ticket_stock-buy__price-old">590р</div>
@@ -1584,17 +1097,13 @@
                 </div>
                 <div class="products_stock__teaser-item">
                   <div class="ticket_stock">
-                    <div class="ticket_stock__left">
-                      <div class="ticket_stock-product"><img class="ticket_stock-product__img" src="static/img/content/growbox.png" alt="">
-                        <div class="ticket_stock-product__discount">-15%</div>
-                      </div>
-                    </div>
+                    <div class="ticket_stock__left"><a class="ticket_stock-product"><img class="ticket_stock-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket_stock-product__discount">-15%</div></a></div>
                     <div class="ticket_stock__right">
                       <div class="ticket_stock-header">
                         <div class="ticket_stock-header__text">Pro Box</div>
                         <div class="ticket_stock-header__rating"><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span></div>
-                      </div>
-                      <div class="ticket_stock-title">Гроубокс 120-Apollo10</div>
+                      </div><a class="ticket_stock-title">Гроубокс 120-Apollo10</a>
                       <div class="ticket_stock-buy">
                         <div class="ticket_stock-buy__price">
                           <div class="ticket_stock-buy__price-old">590р</div>
@@ -1614,17 +1123,13 @@
                 </div>
                 <div class="products_stock__teaser-item">
                   <div class="ticket_stock">
-                    <div class="ticket_stock__left">
-                      <div class="ticket_stock-product"><img class="ticket_stock-product__img" src="static/img/content/growbox.png" alt="">
-                        <div class="ticket_stock-product__discount">-15%</div>
-                      </div>
-                    </div>
+                    <div class="ticket_stock__left"><a class="ticket_stock-product"><img class="ticket_stock-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket_stock-product__discount">-15%</div></a></div>
                     <div class="ticket_stock__right">
                       <div class="ticket_stock-header">
                         <div class="ticket_stock-header__text">Pro Box</div>
                         <div class="ticket_stock-header__rating"><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span></div>
-                      </div>
-                      <div class="ticket_stock-title">Гроубокс 120-Apollo10</div>
+                      </div><a class="ticket_stock-title">Гроубокс 120-Apollo10</a>
                       <div class="ticket_stock-buy">
                         <div class="ticket_stock-buy__price">
                           <div class="ticket_stock-buy__price-old">590р</div>
@@ -1644,17 +1149,13 @@
                 </div>
                 <div class="products_stock__teaser-item">
                   <div class="ticket_stock">
-                    <div class="ticket_stock__left">
-                      <div class="ticket_stock-product"><img class="ticket_stock-product__img" src="static/img/content/growbox.png" alt="">
-                        <div class="ticket_stock-product__discount">-15%</div>
-                      </div>
-                    </div>
+                    <div class="ticket_stock__left"><a class="ticket_stock-product"><img class="ticket_stock-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket_stock-product__discount">-15%</div></a></div>
                     <div class="ticket_stock__right">
                       <div class="ticket_stock-header">
                         <div class="ticket_stock-header__text">Pro Box</div>
                         <div class="ticket_stock-header__rating"><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span></div>
-                      </div>
-                      <div class="ticket_stock-title">Гроубокс 120-Apollo10</div>
+                      </div><a class="ticket_stock-title">Гроубокс 120-Apollo10</a>
                       <div class="ticket_stock-buy">
                         <div class="ticket_stock-buy__price">
                           <div class="ticket_stock-buy__price-old">590р</div>
@@ -1674,17 +1175,13 @@
                 </div>
                 <div class="products_stock__teaser-item">
                   <div class="ticket_stock">
-                    <div class="ticket_stock__left">
-                      <div class="ticket_stock-product"><img class="ticket_stock-product__img" src="static/img/content/growbox.png" alt="">
-                        <div class="ticket_stock-product__discount">-15%</div>
-                      </div>
-                    </div>
+                    <div class="ticket_stock__left"><a class="ticket_stock-product"><img class="ticket_stock-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket_stock-product__discount">-15%</div></a></div>
                     <div class="ticket_stock__right">
                       <div class="ticket_stock-header">
                         <div class="ticket_stock-header__text">Pro Box</div>
                         <div class="ticket_stock-header__rating"><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span></div>
-                      </div>
-                      <div class="ticket_stock-title">Гроубокс 120-Apollo10</div>
+                      </div><a class="ticket_stock-title">Гроубокс 120-Apollo10</a>
                       <div class="ticket_stock-buy">
                         <div class="ticket_stock-buy__price">
                           <div class="ticket_stock-buy__price-old">590р</div>
@@ -1704,17 +1201,13 @@
                 </div>
                 <div class="products_stock__teaser-item">
                   <div class="ticket_stock">
-                    <div class="ticket_stock__left">
-                      <div class="ticket_stock-product"><img class="ticket_stock-product__img" src="static/img/content/growbox.png" alt="">
-                        <div class="ticket_stock-product__discount">-15%</div>
-                      </div>
-                    </div>
+                    <div class="ticket_stock__left"><a class="ticket_stock-product"><img class="ticket_stock-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket_stock-product__discount">-15%</div></a></div>
                     <div class="ticket_stock__right">
                       <div class="ticket_stock-header">
                         <div class="ticket_stock-header__text">Pro Box</div>
                         <div class="ticket_stock-header__rating"><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span></div>
-                      </div>
-                      <div class="ticket_stock-title">Гроубокс 120-Apollo10</div>
+                      </div><a class="ticket_stock-title">Гроубокс 120-Apollo10</a>
                       <div class="ticket_stock-buy">
                         <div class="ticket_stock-buy__price">
                           <div class="ticket_stock-buy__price-old">590р</div>
@@ -1734,17 +1227,13 @@
                 </div>
                 <div class="products_stock__teaser-item">
                   <div class="ticket_stock">
-                    <div class="ticket_stock__left">
-                      <div class="ticket_stock-product"><img class="ticket_stock-product__img" src="static/img/content/growbox.png" alt="">
-                        <div class="ticket_stock-product__discount">-15%</div>
-                      </div>
-                    </div>
+                    <div class="ticket_stock__left"><a class="ticket_stock-product"><img class="ticket_stock-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket_stock-product__discount">-15%</div></a></div>
                     <div class="ticket_stock__right">
                       <div class="ticket_stock-header">
                         <div class="ticket_stock-header__text">Pro Box</div>
                         <div class="ticket_stock-header__rating"><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span></div>
-                      </div>
-                      <div class="ticket_stock-title">Гроубокс 120-Apollo10</div>
+                      </div><a class="ticket_stock-title">Гроубокс 120-Apollo10</a>
                       <div class="ticket_stock-buy">
                         <div class="ticket_stock-buy__price">
                           <div class="ticket_stock-buy__price-old">590р</div>
@@ -1764,17 +1253,13 @@
                 </div>
                 <div class="products_stock__teaser-item">
                   <div class="ticket_stock">
-                    <div class="ticket_stock__left">
-                      <div class="ticket_stock-product"><img class="ticket_stock-product__img" src="static/img/content/growbox.png" alt="">
-                        <div class="ticket_stock-product__discount">-15%</div>
-                      </div>
-                    </div>
+                    <div class="ticket_stock__left"><a class="ticket_stock-product"><img class="ticket_stock-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket_stock-product__discount">-15%</div></a></div>
                     <div class="ticket_stock__right">
                       <div class="ticket_stock-header">
                         <div class="ticket_stock-header__text">Pro Box</div>
                         <div class="ticket_stock-header__rating"><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span><span class="ticket_stock-header__rating-span">☆</span></div>
-                      </div>
-                      <div class="ticket_stock-title">Гроубокс 120-Apollo10</div>
+                      </div><a class="ticket_stock-title">Гроубокс 120-Apollo10</a>
                       <div class="ticket_stock-buy">
                         <div class="ticket_stock-buy__price">
                           <div class="ticket_stock-buy__price-old">590р</div>
@@ -1802,7 +1287,7 @@
             <object class="icon-logo" type="image/svg+xml" data="static/img/general/logo.svg"></object>
             <div class="subscribe-news">
               <div class="subscribe-news__left"><span class="subscribe-news__left-span">Следите за полезными статьями и видео у нас в блоге</span></div>
-              <div class="subscribe-news__right">
+              <form class="subscribe-news__right">
                 <div class="subscribe-news__right-sbc">
                   <input class="subscribe-news__right-input" placeholder="Ваш почтовый адрес">
                   <button class="btn-subscribe">Подписаться</button>
@@ -1812,7 +1297,7 @@
                   <label class="subscribe-news__right-label" for="checkbox_sbc">Я согласен на обработку персональных данных, а также с условиями подписки</label>
                 </div>
                 <button class="btn-subscribe__small">Подписаться</button>
-              </div>
+              </form>
             </div>
           </div>
         </div>
@@ -1821,8 +1306,7 @@
           <div class="container">
             <div class="products_out">
               <div class="products_out__text">
-                <div class="products_out__text-title">Товары для аута</div>
-                <div class="products_out__text-all" href="javascript:void(0)">Все товары</div>
+                <div class="products_out__text-title">Товары для аута</div><a class="products_out__text-all" href="javascript:void(0)">Все товары</a>
               </div>
               <div class="products_out__teaser">
                 <div class="products_out__teaser-item">
@@ -1830,11 +1314,8 @@
                     <div class="ticket_out-header">
                       <div class="ticket_out-header__text">Pro Box</div>
                       <div class="ticket_out-header__rating"><span class="ticket_out-header__rating-span">☆</span><span class="ticket_out-header__rating-span">☆</span><span class="ticket_out-header__rating-span">☆</span><span class="ticket_out-header__rating-span">☆</span><span class="ticket_out-header__rating-span">☆</span></div>
-                    </div>
-                    <div class="ticket_out-title">Гроубокс 120-Apollo10</div>
-                    <div class="ticket_out-product"><img class="ticket_out-product__img" src="static/img/content/growbox.png" alt="">
-                      <div class="ticket_out-product__discount">-15%</div>
-                    </div>
+                    </div><a class="ticket_out-title">Гроубокс 120-Apollo10</a><a class="ticket_out-product"><img class="ticket_out-product__img" src="static/img/content/growbox.png" alt="">
+                      <div class="ticket_out-product__discount">-15%</div></a>
                     <div class="ticket_out-buy">
                       <div class="ticket_out-buy__price">
                         <div class="ticket_out-buy__price-old">60 200р</div>
@@ -1856,11 +1337,8 @@
                     <div class="ticket_out-header">
                       <div class="ticket_out-header__text">Pro Box</div>
                       <div class="ticket_out-header__rating"><span class="ticket_out-header__rating-span">☆</span><span class="ticket_out-header__rating-span">☆</span><span class="ticket_out-header__rating-span">☆</span><span class="ticket_out-header__rating-span">☆</span><span class="ticket_out-header__rating-span">☆</span></div>
-                    </div>
-                    <div class="ticket_out-title">Гроубокс 120-Apollo10</div>
-                    <div class="ticket_out-product"><img class="ticket_out-product__img" src="static/img/content/growbox.png" alt="">
-                      <div class="ticket_out-product__discount">-15%</div>
-                    </div>
+                    </div><a class="ticket_out-title">Гроубокс 120-Apollo10</a><a class="ticket_out-product"><img class="ticket_out-product__img" src="static/img/content/growbox.png" alt="">
+                      <div class="ticket_out-product__discount">-15%</div></a>
                     <div class="ticket_out-buy">
                       <div class="ticket_out-buy__price">
                         <div class="ticket_out-buy__price-old">60 200р</div>
@@ -1882,11 +1360,8 @@
                     <div class="ticket_out-header">
                       <div class="ticket_out-header__text">Pro Box</div>
                       <div class="ticket_out-header__rating"><span class="ticket_out-header__rating-span">☆</span><span class="ticket_out-header__rating-span">☆</span><span class="ticket_out-header__rating-span">☆</span><span class="ticket_out-header__rating-span">☆</span><span class="ticket_out-header__rating-span">☆</span></div>
-                    </div>
-                    <div class="ticket_out-title">Гроубокс 120-Apollo10</div>
-                    <div class="ticket_out-product"><img class="ticket_out-product__img" src="static/img/content/growbox.png" alt="">
-                      <div class="ticket_out-product__discount">-15%</div>
-                    </div>
+                    </div><a class="ticket_out-title">Гроубокс 120-Apollo10</a><a class="ticket_out-product"><img class="ticket_out-product__img" src="static/img/content/growbox.png" alt="">
+                      <div class="ticket_out-product__discount">-15%</div></a>
                     <div class="ticket_out-buy">
                       <div class="ticket_out-buy__price">
                         <div class="ticket_out-buy__price-old">60 200р</div>
@@ -1908,11 +1383,8 @@
                     <div class="ticket_out-header">
                       <div class="ticket_out-header__text">Pro Box</div>
                       <div class="ticket_out-header__rating"><span class="ticket_out-header__rating-span">☆</span><span class="ticket_out-header__rating-span">☆</span><span class="ticket_out-header__rating-span">☆</span><span class="ticket_out-header__rating-span">☆</span><span class="ticket_out-header__rating-span">☆</span></div>
-                    </div>
-                    <div class="ticket_out-title">Гроубокс 120-Apollo10</div>
-                    <div class="ticket_out-product"><img class="ticket_out-product__img" src="static/img/content/growbox.png" alt="">
-                      <div class="ticket_out-product__discount">-15%</div>
-                    </div>
+                    </div><a class="ticket_out-title">Гроубокс 120-Apollo10</a><a class="ticket_out-product"><img class="ticket_out-product__img" src="static/img/content/growbox.png" alt="">
+                      <div class="ticket_out-product__discount">-15%</div></a>
                     <div class="ticket_out-buy">
                       <div class="ticket_out-buy__price">
                         <div class="ticket_out-buy__price-old">60 200р</div>
@@ -1938,23 +1410,18 @@
           <div class="container automatic-teaser">
             <div class="products_automatic">
               <div class="products_automatic__text">
-                <div class="products_automatic__text-title">Товары для автоматизации</div>
-                <div class="products_automatic__text-all" href="javascript:void(0)">Все товары</div>
+                <div class="products_automatic__text-title">Товары для автоматизации</div><a class="products_automatic__text-all" href="javascript:void(0)">Все товары</a>
               </div>
               <div class="products_automatic__teaser">
                 <div class="products_automatic__teaser-item">
                   <div class="ticket_automatic">
-                    <div class="ticket_automatic__left">
-                      <div class="ticket_automatic-product"><img class="ticket_automatic-product__img" src="static/img/content/growbox.png" alt="">
-                        <div class="ticket_automatic-product__discount">-15%</div>
-                      </div>
-                    </div>
+                    <div class="ticket_automatic__left"><a class="ticket_automatic-product"><img class="ticket_automatic-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket_automatic-product__discount">-15%</div></a></div>
                     <div class="ticket_automatic__right">
                       <div class="ticket_automatic-header">
                         <div class="ticket_automatic-header__text">Pro Box</div>
                         <div class="ticket_automatic-header__rating"><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span></div>
-                      </div>
-                      <div class="ticket_automatic-title">Гроубокс 120-Apollo10</div>
+                      </div><a class="ticket_automatic-title">Гроубокс 120-Apollo10</a>
                       <div class="ticket_automatic-buy">
                         <div class="ticket_automatic-buy__price">
                           <div class="ticket_automatic-buy__price-old">590р</div>
@@ -1974,17 +1441,13 @@
                 </div>
                 <div class="products_automatic__teaser-item">
                   <div class="ticket_automatic">
-                    <div class="ticket_automatic__left">
-                      <div class="ticket_automatic-product"><img class="ticket_automatic-product__img" src="static/img/content/growbox.png" alt="">
-                        <div class="ticket_automatic-product__discount">-15%</div>
-                      </div>
-                    </div>
+                    <div class="ticket_automatic__left"><a class="ticket_automatic-product"><img class="ticket_automatic-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket_automatic-product__discount">-15%</div></a></div>
                     <div class="ticket_automatic__right">
                       <div class="ticket_automatic-header">
                         <div class="ticket_automatic-header__text">Pro Box</div>
                         <div class="ticket_automatic-header__rating"><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span></div>
-                      </div>
-                      <div class="ticket_automatic-title">Гроубокс 120-Apollo10</div>
+                      </div><a class="ticket_automatic-title">Гроубокс 120-Apollo10</a>
                       <div class="ticket_automatic-buy">
                         <div class="ticket_automatic-buy__price">
                           <div class="ticket_automatic-buy__price-old">590р</div>
@@ -2004,17 +1467,13 @@
                 </div>
                 <div class="products_automatic__teaser-item">
                   <div class="ticket_automatic">
-                    <div class="ticket_automatic__left">
-                      <div class="ticket_automatic-product"><img class="ticket_automatic-product__img" src="static/img/content/growbox.png" alt="">
-                        <div class="ticket_automatic-product__discount">-15%</div>
-                      </div>
-                    </div>
+                    <div class="ticket_automatic__left"><a class="ticket_automatic-product"><img class="ticket_automatic-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket_automatic-product__discount">-15%</div></a></div>
                     <div class="ticket_automatic__right">
                       <div class="ticket_automatic-header">
                         <div class="ticket_automatic-header__text">Pro Box</div>
                         <div class="ticket_automatic-header__rating"><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span></div>
-                      </div>
-                      <div class="ticket_automatic-title">Гроубокс 120-Apollo10</div>
+                      </div><a class="ticket_automatic-title">Гроубокс 120-Apollo10</a>
                       <div class="ticket_automatic-buy">
                         <div class="ticket_automatic-buy__price">
                           <div class="ticket_automatic-buy__price-old">590р</div>
@@ -2034,17 +1493,13 @@
                 </div>
                 <div class="products_automatic__teaser-item">
                   <div class="ticket_automatic">
-                    <div class="ticket_automatic__left">
-                      <div class="ticket_automatic-product"><img class="ticket_automatic-product__img" src="static/img/content/growbox.png" alt="">
-                        <div class="ticket_automatic-product__discount">-15%</div>
-                      </div>
-                    </div>
+                    <div class="ticket_automatic__left"><a class="ticket_automatic-product"><img class="ticket_automatic-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket_automatic-product__discount">-15%</div></a></div>
                     <div class="ticket_automatic__right">
                       <div class="ticket_automatic-header">
                         <div class="ticket_automatic-header__text">Pro Box</div>
                         <div class="ticket_automatic-header__rating"><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span></div>
-                      </div>
-                      <div class="ticket_automatic-title">Гроубокс 120-Apollo10</div>
+                      </div><a class="ticket_automatic-title">Гроубокс 120-Apollo10</a>
                       <div class="ticket_automatic-buy">
                         <div class="ticket_automatic-buy__price">
                           <div class="ticket_automatic-buy__price-old">590р</div>
@@ -2064,17 +1519,13 @@
                 </div>
                 <div class="products_automatic__teaser-item">
                   <div class="ticket_automatic">
-                    <div class="ticket_automatic__left">
-                      <div class="ticket_automatic-product"><img class="ticket_automatic-product__img" src="static/img/content/growbox.png" alt="">
-                        <div class="ticket_automatic-product__discount">-15%</div>
-                      </div>
-                    </div>
+                    <div class="ticket_automatic__left"><a class="ticket_automatic-product"><img class="ticket_automatic-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket_automatic-product__discount">-15%</div></a></div>
                     <div class="ticket_automatic__right">
                       <div class="ticket_automatic-header">
                         <div class="ticket_automatic-header__text">Pro Box</div>
                         <div class="ticket_automatic-header__rating"><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span></div>
-                      </div>
-                      <div class="ticket_automatic-title">Гроубокс 120-Apollo10</div>
+                      </div><a class="ticket_automatic-title">Гроубокс 120-Apollo10</a>
                       <div class="ticket_automatic-buy">
                         <div class="ticket_automatic-buy__price">
                           <div class="ticket_automatic-buy__price-old">590р</div>
@@ -2094,17 +1545,13 @@
                 </div>
                 <div class="products_automatic__teaser-item">
                   <div class="ticket_automatic">
-                    <div class="ticket_automatic__left">
-                      <div class="ticket_automatic-product"><img class="ticket_automatic-product__img" src="static/img/content/growbox.png" alt="">
-                        <div class="ticket_automatic-product__discount">-15%</div>
-                      </div>
-                    </div>
+                    <div class="ticket_automatic__left"><a class="ticket_automatic-product"><img class="ticket_automatic-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket_automatic-product__discount">-15%</div></a></div>
                     <div class="ticket_automatic__right">
                       <div class="ticket_automatic-header">
                         <div class="ticket_automatic-header__text">Pro Box</div>
                         <div class="ticket_automatic-header__rating"><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span></div>
-                      </div>
-                      <div class="ticket_automatic-title">Гроубокс 120-Apollo10</div>
+                      </div><a class="ticket_automatic-title">Гроубокс 120-Apollo10</a>
                       <div class="ticket_automatic-buy">
                         <div class="ticket_automatic-buy__price">
                           <div class="ticket_automatic-buy__price-old">590р</div>
@@ -2124,17 +1571,13 @@
                 </div>
                 <div class="products_automatic__teaser-item">
                   <div class="ticket_automatic">
-                    <div class="ticket_automatic__left">
-                      <div class="ticket_automatic-product"><img class="ticket_automatic-product__img" src="static/img/content/growbox.png" alt="">
-                        <div class="ticket_automatic-product__discount">-15%</div>
-                      </div>
-                    </div>
+                    <div class="ticket_automatic__left"><a class="ticket_automatic-product"><img class="ticket_automatic-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket_automatic-product__discount">-15%</div></a></div>
                     <div class="ticket_automatic__right">
                       <div class="ticket_automatic-header">
                         <div class="ticket_automatic-header__text">Pro Box</div>
                         <div class="ticket_automatic-header__rating"><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span></div>
-                      </div>
-                      <div class="ticket_automatic-title">Гроубокс 120-Apollo10</div>
+                      </div><a class="ticket_automatic-title">Гроубокс 120-Apollo10</a>
                       <div class="ticket_automatic-buy">
                         <div class="ticket_automatic-buy__price">
                           <div class="ticket_automatic-buy__price-old">590р</div>
@@ -2154,17 +1597,13 @@
                 </div>
                 <div class="products_automatic__teaser-item">
                   <div class="ticket_automatic">
-                    <div class="ticket_automatic__left">
-                      <div class="ticket_automatic-product"><img class="ticket_automatic-product__img" src="static/img/content/growbox.png" alt="">
-                        <div class="ticket_automatic-product__discount">-15%</div>
-                      </div>
-                    </div>
+                    <div class="ticket_automatic__left"><a class="ticket_automatic-product"><img class="ticket_automatic-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket_automatic-product__discount">-15%</div></a></div>
                     <div class="ticket_automatic__right">
                       <div class="ticket_automatic-header">
                         <div class="ticket_automatic-header__text">Pro Box</div>
                         <div class="ticket_automatic-header__rating"><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span></div>
-                      </div>
-                      <div class="ticket_automatic-title">Гроубокс 120-Apollo10</div>
+                      </div><a class="ticket_automatic-title">Гроубокс 120-Apollo10</a>
                       <div class="ticket_automatic-buy">
                         <div class="ticket_automatic-buy__price">
                           <div class="ticket_automatic-buy__price-old">590р</div>
@@ -2184,17 +1623,13 @@
                 </div>
                 <div class="products_automatic__teaser-item">
                   <div class="ticket_automatic">
-                    <div class="ticket_automatic__left">
-                      <div class="ticket_automatic-product"><img class="ticket_automatic-product__img" src="static/img/content/growbox.png" alt="">
-                        <div class="ticket_automatic-product__discount">-15%</div>
-                      </div>
-                    </div>
+                    <div class="ticket_automatic__left"><a class="ticket_automatic-product"><img class="ticket_automatic-product__img" src="static/img/content/growbox.png" alt="">
+                        <div class="ticket_automatic-product__discount">-15%</div></a></div>
                     <div class="ticket_automatic__right">
                       <div class="ticket_automatic-header">
                         <div class="ticket_automatic-header__text">Pro Box</div>
                         <div class="ticket_automatic-header__rating"><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span><span class="ticket_automatic-header__rating-span">☆</span></div>
-                      </div>
-                      <div class="ticket_automatic-title">Гроубокс 120-Apollo10</div>
+                      </div><a class="ticket_automatic-title">Гроубокс 120-Apollo10</a>
                       <div class="ticket_automatic-buy">
                         <div class="ticket_automatic-buy__price">
                           <div class="ticket_automatic-buy__price-old">590р</div>
@@ -2233,7 +1668,7 @@
                 <div class="subscribe-stock">
                   <div class="subscribe-stock__left"><span class="subscribe-stock__left-span">Будь в курсе</span></div>
                   <div class="subscribe-stock__left-second">Подпишитесь на последние обновления и узнавайте о новинках и специальных предложениях первыми</div>
-                  <div class="subscribe-stock__right">
+                  <form class="subscribe-stock__right">
                     <div class="subscribe-stock__right-sbc">
                       <input class="subscribe-stock__right-input" placeholder="Ваш почтовый адрес">
                       <button class="btn-subscribe">Подписаться</button>
@@ -2243,7 +1678,7 @@
                       <label class="subscribe-stock__right-label" for="checkbox_sbc-news">Я согласен на обработку персональных данных,<br>а также с условиями подписки</label>
                     </div>
                     <button class="btn-subscribe__small">Подписаться</button>
-                  </div>
+                  </form>
                 </div>
               </div>
             </div>
@@ -2308,30 +1743,32 @@
             </div>
           </div>
         </div>
+        <!-- Информация о магазине-->
+        <div class="container-fluid">
+          <div class="container partner">
+            <div class="partner-box">
+              <div class="partner-box__title">Наши партнеры</div>
+              <div class="partner-box__slide">
+                <div class="partner-box__slide-item"><img src="static/img/content/e-mod.png" alt=""></div>
+                <div class="partner-box__slide-item"><img src="static/img/content/e-mod.png" alt=""></div>
+                <div class="partner-box__slide-item"><img src="static/img/content/e-mod.png" alt=""></div>
+                <div class="partner-box__slide-item"><img src="static/img/content/e-mod.png" alt=""></div>
+                <div class="partner-box__slide-item"><img src="static/img/content/e-mod.png" alt=""></div>
+                <div class="partner-box__slide-item"><img src="static/img/content/e-mod.png" alt=""></div>
+                <div class="partner-box__slide-item"><img src="static/img/content/e-mod.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <!--footer-->
       <footer class="container-fluid footer-block">
         <div class="container footer-box">
           <div class="footer-box-menu">
-            <div class="footer-box-menu__column">
-              <p class="footer-box-menu__column-p" onclick="window.location='catalog.html';">Каталог</p>
-              <p class="footer-box-menu__column-p" onclick="window.location='stock.html';">Акции</p>
-              <p class="footer-box-menu__column-p" onclick="window.location='delivery.html';">Оплата/Доставка</p>
-              <p class="footer-box-menu__column-p" onclick="window.location='warranty.html';">Гарантия</p>
-              <p class="footer-box-menu__column-p" onclick="window.location='faq.html';">FAQ</p>
-              <p class="footer-box-menu__column-p" onclick="window.location='price-list.html';">Прайс-лист</p>
-            </div>
-            <div class="footer-box-menu__column">
-              <p class="footer-box-menu__column-p" onclick="window.location='index.html';">О нас</p>
-              <p class="footer-box-menu__column-p" onclick="window.location='reviews.html';">Отзывы</p>
-              <p class="footer-box-menu__column-p" onclick="window.location='blog.html';">Блог</p>
-              <p class="footer-box-menu__column-p" onclick="window.location='dzagi_tube.html';">Dzagi-tube</p>
-              <p class="footer-box-menu__column-p" onclick="window.location='books.html';">Книга "Сам вырастил"</p>
-            </div>
-            <div class="footer-box-menu__column">
-              <p class="footer-box-menu__column-p" onclick="window.location='index.html';">Вход</p>
-              <p class="footer-box-menu__column-p" onclick="window.location='index.html';">Регистрация</p>
-              <p class="footer-box-menu__column-p" onclick="window.location='index.html';">Восстановление пароля</p>
+            <div class="footer-box-menu__column"><a class="footer-box-menu__column-a" onclick="window.location='index.html';">О нас</a><a class="footer-box-menu__column-a" onclick="window.location='stock.html';">Акции</a><a class="footer-box-menu__column-a" onclick="window.location='delivery.html';">Оплата/Доставка</a><a class="footer-box-menu__column-a" onclick="window.location='warranty.html';">Гарантия</a><a class="footer-box-menu__column-a" onclick="window.location='return.html';">Возврат</a><a class="footer-box-menu__column-a" onclick="window.location='faq.html';">FAQ</a></div>
+            <div class="footer-box-menu__column"><a class="footer-box-menu__column-a" onclick="window.location='index.html';">Вход</a><a class="footer-box-menu__column-a" onclick="window.location='index.html';">Регистрация</a><a class="footer-box-menu__column-a" onclick="window.location='index.html';">Восстановление пароля</a><a class="footer-box-menu__column-a" onclick="window.location='blog.html';">Блог</a><a class="footer-box-menu__column-a" onclick="window.location='dzagi_tube.html';">Dzagi-tube</a><a class="footer-box-menu__column-a" onclick="window.location='books.html';">Книга "Сам вырастил"</a></div>
+            <div class="footer-box-menu__column"><a class="footer-box-menu__column-a" onclick="window.location='books.html';">Положение о персональных данных</a>
+              <div class="footer-box-menu__column-div">У нас вы можете купить всё для гидропоники и домашнего выращивания</div>
             </div>
           </div>
           <div class="footer-box-container">
@@ -2342,12 +1779,14 @@
               <div class="footer-box-contact__text">ГРОУШОП В МОСКВЕ: ПН–ВС 12:00–21:00</div>
             </div>
             <div class="footer-box-connect">
-              <div class="footer-box-connect__search">
+              <form class="footer-box-connect__search">
                 <input class="footer-box-connect__search-input" placeholder="Я ищю...">
-                <svg class="icon icon-search search-footer" role="img">
-                  <use xlink:href="static/img/svg/symbol/sprite.svg#search"></use>
-                </svg>
-              </div>
+                <bitton class="footer-box-connect__search-btn">
+                  <svg class="icon icon-search search-footer" role="img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#search"></use>
+                  </svg>
+                </bitton>
+              </form>
               <div class="footer-box-connect__social">
                 <div class="footer-box-connect__social-icon">
                   <svg class="icon icon-tg social-footer" role="img">
@@ -2385,11 +1824,18 @@
           </div>
         </div>
       </footer>
+      <div class="container-fluid footer-block">
+        <div class="container footer-copirate">
+          <p>© 2013 - 2019 ИП Ежов А.А.</p>
+          <p>Все права защищены.</p>
+        </div>
+      </div>
     </div>
     <script src="static/js/jquery.js"></script>
+    <script src="static/js/main.js"></script>
     <script src="static/js/slick.min.js"></script>
     <script src="static/js/jquery.fancybox.js"></script>
+    <script src="static/js/jquery-ui.js"></script>
     <script src="static/js/libs.min.js"></script>
-    <script src="static/js/main.js"></script>
   </body>
 </html>

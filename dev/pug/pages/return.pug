@@ -1,0 +1,116 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Возврат товара'
+    - var pageClass = 'return-page'
+
+block content
+
+    .container-fluid.return__banner
+        .container.page.return__banner-block
+            .return__banner-box
+                .return__banner-box-title Вернуть товар - просто!
+                .return__banner-box-descr <br>Если в вашем заказе обнаружился брак, вы можете его легко вернуть и получить деньги обратно.
+            img.return__banner-img(src="static/img/content/package.png")
+    .container-fluid
+        .container
+            .return
+                .return__descr
+                    p.return__descr-p Как вернуть товар
+                    p Вернуть товар в магазине DzagiGrow очень просто. Вам необходимо заполнить форму и прикрепить необходимые документы, после чего с вами свяжется менеджер магазина.
+                    p Ознакомьтесь с подробной инструкцией по возврату товара ниже.
+                .return__instruction
+                    .return__instruction-box
+                        +icon('note', 'instruction-return')
+                        p.return__instruction-box-p Оформите заявку<br>на сайте
+                    .return__instruction-box
+                        +icon('clock', 'instruction-return')
+                        p.return__instruction-box-p Дождитесь, пока с вами<br>свяжется менеджер
+                    .return__instruction-box
+                        +icon('moto', 'instruction-return')
+                        p.return__instruction-box-p Верните товар<br>и получите деньги
+                .return__form
+                    .return__form-table
+                        .return__form-table-row
+                            .return__form-table-col
+                                p.return__form-table-col-p Причина обращения*
+                            .return__form-table-col-right
+                                .return__form-table-col-select
+                                    a.return__slct(href="javascript:void(0);") Выберите один из вариантов
+                                    ul.return__slct-drop
+                                        li.return__slct-drop-li
+                                            a.return__slct-drop-li-a(href="javascript:void(0);") 1
+                                        li.return__slct-drop-li
+                                            a.return__slct-drop-li-a(href="javascript:void(0);") 2
+                                        li.return__slct-drop-li
+                                            a.return__slct-drop-li-a(href="javascript:void(0);") 3
+                                        li.return__slct-drop-li
+                                            a.return__slct-drop-li-a(href="javascript:void(0);") 4
+                                    +icon('arrow-point', 'arrow-point-return')
+                                    input(type="hidden" id="select")
+                        .return__form-table-row
+                            .return__form-table-col
+                                p.return__form-table-col-p Имя*
+                            .return__form-table-col-right
+                                .return__form-table-col-select
+                                    input.return__form-table-col-input(href="javascript:void(0);" placeholder="Напишите ваше имя")
+                        .return__form-table-row
+                            .return__form-table-col
+                                p.return__form-table-col-p Номер заказа*
+                            .return__form-table-col-right
+                                .return__form-table-col-select
+                                    input.return__form-table-col-input(href="javascript:void(0);" placeholder="Например 12345678")
+                        .return__form-table-row
+                            .return__form-table-col
+                                p.return__form-table-col-p Контактные данные*
+                            .return__form-table-col-right
+                                .return__form-table-col-select
+                                    input.return__form-table-col-input(href="javascript:void(0);" placeholder="Телефон или электронная почта")
+                        .return__form-table-row
+                            .return__form-table-col
+                                p.return__form-table-col-p Описание проблемы*
+                            .return__form-table-col-right
+                                .return__form-table-col-select
+                                    input.return__form-table-col-input(href="javascript:void(0);" placeholder="Описание вашей проблемы")
+                        .return__form-table-row
+                            .return__form-table-col
+                                p.return__form-table-col-p Картинки проблемы*
+                            .return__form-table-col-right
+
+                    .return__form-picture
+                        .return__form-picture-item
+                            +icon ('upload', 'upload-return')
+                            button.return__upload Загрузить
+                        .return__form-picture-item
+                            +icon ('upload', 'upload-return')
+                            button.return__upload Загрузить
+                        .return__form-picture-item
+                            +icon ('upload', 'upload-return')
+                            button.return__upload Загрузить
+                    .return__form-btn
+                        button.return__form-btn-cancel Отмена
+                        button.return__form-btn-send Отправить
+                .return__regulations
+                    .return__regulations-title Полные правила возврата
+                    .return__regulations-points
+                        .return__regulations-points-item
+                            .return__regulations-points-border
+                                +icon('arrow-point', 'arrow-point-more')
+                                .return__regulations-points-item-title Возврат товара надлежащего качества
+                            .return__regulations-points-inside-box
+                                .return__regulations-points-inside
+                                    p Что такое Lorem Ipsum?
+                                    p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
+                        .return__regulations-points-item
+                            .return__regulations-points-border
+                                +icon('arrow-point', 'arrow-point-more')
+                                .return__regulations-points-item-title Возврат товара ненадлежащего качества
+                            .return__regulations-points-inside-box
+                                .return__regulations-points-inside
+                                    p Что такое Lorem Ipsum?
+                                    p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
+
+
+                    .return__regulations-descr
+                        p.return__regulations-descr-p Обратный адрес для возврата вы можете получить, воспользовавшись обращением в службу поддержки. Отправляйте возврат от тогог лица, на которого был оформлен заказ, или в сообщении указывайте номер заказа и ФИО отправителя посылки. Это поможет избежать путаницы и ускорит процедуру возврата.
+                        p.return__regulations-descr-p Посылки, не полученные покупателем, хранятся на складе интернет-магазина в течении месяца и в дальнейшем будут расформированы. Повторная отправка этих товаров осуществляется только после оплаты издержек интернет-магазина за пересылку и хранение груза в той или иной службе доставки.

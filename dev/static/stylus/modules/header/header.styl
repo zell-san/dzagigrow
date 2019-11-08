@@ -68,11 +68,21 @@
     cursor pointer
     padding-right 40px
 
+    &-box
+      display flex
+
   &__search
     @extend .search-def
 
     &-input
       @extend .search-def-input
+
+    &-icon
+      size (70px 40px)
+      background-color greenDG
+      padding 10px 25px
+      border-radius: 0 3px 3px 0
+      border none
 
   &__basket
     justify-content flex-end

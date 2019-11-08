@@ -140,6 +140,19 @@
         @media screen and (max-width tableWidth)
           width 100%
 
+      &-text
+        margin-bottom 5px
+
+        &-red
+          color redDG
+
+        &-box
+          margin-top 10px
+
+        &-a
+          margin-left 5px
+          font-weight bold
+
       &-box
         display flex
         align-items center
@@ -307,7 +320,6 @@
 
 .products__additionally
   @extend .products__teaser
-  margin-bottom 30px
   padding-top 15px
 
   & .slick-list.draggable
@@ -350,6 +362,17 @@
     @media screen and (max-width tableWidth)
       size (100%)
       margin-left 0
+
+    &-box
+      margin 10px 0 0 15px
+      max-width 495px
+      display: flex
+      flex-wrap: wrap
+
+    &-a
+      text-decoration underline
+      margin-right 10px
+      font-weight bold
 
     &-item
       width 100%
@@ -413,3 +436,6 @@
 
 .tab.opened
   display block
+
+.products-last
+  margin-bottom 30px

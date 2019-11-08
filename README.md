@@ -1,9 +1,5 @@
-# dzagigrow
-a html / css for website about growing
+Для запуска шаблона нужно выполнить следующие шаги
 
-all results in /build folder
-
-you should run "npm i" for loading node modules
-
-For rebilding html/css you should raun "gulp" command.
-
+1. git clone https://github.com/FARCER/gulp4start
+2. npm i
+3. gulp

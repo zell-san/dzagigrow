@@ -70,9 +70,38 @@
     @extend .search-def
     max-width 330px
     padding-top 20px
+    position relative
 
     &-input
       @extend .search-def-input
 
       @media screen and (max-width 600px)
         width 70%
+
+    &-btn
+      background greenDG
+      color white
+      border none
+      cursor pointer
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      border-radius: 0 3px 3px 0;
+
+.ui-menu
+  z-index 2000
+
+.ui-menu-item-wrapper:hover, .ui-menu-item-wrapper:focus, .ui-menu-item-wrapper:focus-within, .ui-menu-item-wrapper:active
+  background greenDG
+  border 1px solid greenDG
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover
+  background greenDG
+  border 1px solid greenDG
+  color white

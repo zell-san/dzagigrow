@@ -1,7 +1,7 @@
 {
-  "headerLeft": {
-    "Блог" : "javascript:void(0)",
-    "Dzagi tube" : "javascript:void(0)",
-    "Книги" : "javascript:void(0)"
+  "navPages": {
+    "Главная страница" : "main.html",
+    "О компании" : "about.html",
+    "Каталог" : "catalog.html"
   }
 }

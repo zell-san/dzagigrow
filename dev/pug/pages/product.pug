@@ -56,6 +56,11 @@ block content
                             .product-right__bottom-text Принимаем к оплате:
                             .product-right__bottom-pay
                                 object.product-right__bottom-pay-img(type="image/svg+xml" data="static/img/general/icon_payments.svg")
+                            .product-right__bottom-text-box
+                                .product-right__bottom-text.product-right__bottom-text-red Опасный груз
+                                .product-right__bottom-text Авиа доставка ТК СДЭК не осуществляется
+                                .product-right__bottom-text Примерный срок доставки:
+                                    a.product-right__bottom-text-a 5 дней
                     .product-none
                         .product-right__top
                             .product-right__price 2 470р
@@ -103,8 +108,15 @@ block content
                                .about-product__box-item
                                    a.about-product__box-item-a Вес:
                                    span.about-product__box-item-span ~ 0,26 кг.
-                            .about-product__img
-                                img.about-product__img-item(src="static/img/content/tube.png")
+                            .about-product__img-block
+                                .about-product__img
+                                    img.about-product__img-item(src="static/img/content/tube.png")
+                                .about-product__img-box
+                                    a.about-product__img-a Выращивание в земле
+                                    a.about-product__img-a Выращивание на гидропонике
+                                    a.about-product__img-a Освещение
+                                    a.about-product__img-a Растениеводство
+                                    a.about-product__img-a С чего начать
                         .about-product__title О продукте:
                         .about-product__descr Ripen - питательный комплекс для медленно цветущих и завершающих жизненный цикл растений. Сам производитель называет Ripen —“forcing solution”, т.е. «усиливающий раствор».<br>Предназначен для ускорения процесса цветения и увеличения объема урожая. Состоит из очищенных минеральных солей и защитных элементов (буферов). Минимально допустимый состав элементов:<br><br>- P2O5 6%<br>- K2O 5%<br>- MgO 3%<br>- SO4 3%<br>Формула Ripen разработана с предельной точностью, поскольку растение на последней стадии развития является очень хрупкой биологической системой с пониженной способностью усваивать питательные вещества.<br><br>
                         .about-product__title Преимущества продукта:
@@ -209,7 +221,7 @@ block content
                     .product__extra-item
                         .ticket__extra
                             .ticket__left
-                                .ticket-product
+                                a.ticket-product
                                     img.ticket-product__img(src='static/img/content/growbox.png' alt='')
                                     .ticket-product__discount -15%
                             .ticket__right
@@ -221,7 +233,7 @@ block content
                                         span.ticket-header__rating-span ☆
                                         span.ticket-header__rating-span ☆
                                         span.ticket-header__rating-span ☆
-                                .ticket-title Гроубокс 120-Apollo10
+                                a.ticket-title Гроубокс 120-Apollo10
                                 .ticket-buy
                                     .ticket-buy__price
                                         .ticket-buy__price-old 590р
@@ -234,7 +246,7 @@ block content
                         .product__extra-item-plus +
                         .ticket__extra
                             .ticket__left
-                                .ticket-product
+                                a.ticket-product
                                     img.ticket-product__img(src='static/img/content/growbox.png' alt='')
                                     .ticket-product__discount -15%
                             .ticket__right
@@ -246,8 +258,7 @@ block content
                                         span.ticket-header__rating-span ☆
                                         span.ticket-header__rating-span ☆
                                         span.ticket-header__rating-span ☆
-                                .ticket-title Гроубокс 120-Apollo10
-
+                                a.ticket-title Гроубокс 120-Apollo10
                                 .ticket-buy
                                     .ticket-buy__price
                                         .ticket-buy__price-old 590р
@@ -260,7 +271,7 @@ block content
                         .product__extra-item-plus +
                         .ticket__extra
                             .ticket__left
-                                .ticket-product
+                                a.ticket-product
                                     img.ticket-product__img(src='static/img/content/growbox.png' alt='')
                                     .ticket-product__discount -15%
                             .ticket__right
@@ -272,8 +283,7 @@ block content
                                         span.ticket-header__rating-span ☆
                                         span.ticket-header__rating-span ☆
                                         span.ticket-header__rating-span ☆
-                                .ticket-title Гроубокс 120-Apollo10
-
+                                a.ticket-title Гроубокс 120-Apollo10
                                 .ticket-buy
                                     .ticket-buy__price
                                         .ticket-buy__price-old 590р
@@ -290,7 +300,7 @@ block content
                     .product__additionally-item
                         .ticket__add
                             .ticket__left
-                                .ticket-product
+                                a.ticket-product
                                     img.ticket-product__img(src='static/img/content/growbox.png' alt='')
                                     .ticket-product__discount -15%
                             .ticket__right
@@ -302,7 +312,7 @@ block content
                                         span.ticket-header__rating-span ☆
                                         span.ticket-header__rating-span ☆
                                         span.ticket-header__rating-span ☆
-                                .ticket-title Гроубокс 120-Apollo10
+                                a.ticket-title Гроубокс 120-Apollo10
                                 .ticket-buy
                                     .ticket-buy__price
                                         .ticket-buy__price-old 590р
@@ -314,7 +324,7 @@ block content
                     .product__additionally-item
                         .ticket__add
                             .ticket__left
-                                .ticket-product
+                                a.ticket-product
                                     img.ticket-product__img(src='static/img/content/growbox.png' alt='')
                                     .ticket-product__discount -15%
                             .ticket__right
@@ -326,8 +336,60 @@ block content
                                         span.ticket-header__rating-span ☆
                                         span.ticket-header__rating-span ☆
                                         span.ticket-header__rating-span ☆
-                                .ticket-title Гроубокс 120-Apollo10
-
+                                a.ticket-title Гроубокс 120-Apollo10
+                                .ticket-buy
+                                    .ticket-buy__price
+                                        .ticket-buy__price-old 590р
+                                        .ticket-buy__price-new 450р
+                                    .ticket-buy__btn
+                                        button.btn-basket(href='javascript:void(0)')
+                                            +icon('tick-inside')
+                                            .ticket-buy__btn-text Купить
+            .products.products-last
+                .products__text
+                    .products__text-title Похожие товары
+                    .products__text-all
+                .products__additionally
+                    .product__additionally-item
+                        .ticket__add
+                            .ticket__left
+                                a.ticket-product
+                                    img.ticket-product__img(src='static/img/content/growbox.png' alt='')
+                                    .ticket-product__discount -15%
+                            .ticket__right
+                                .ticket-header
+                                    .ticket-header__text Pro Box
+                                    .ticket-header__rating
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                a.ticket-title Гроубокс 120-Apollo10
+                                .ticket-buy
+                                    .ticket-buy__price
+                                        .ticket-buy__price-old 590р
+                                        .ticket-buy__price-new 450р
+                                    .ticket-buy__btn
+                                        button.btn-basket(href='javascript:void(0)')
+                                            +icon('tick-inside')
+                                            .ticket-buy__btn-text Купить
+                    .product__additionally-item
+                        .ticket__add
+                            .ticket__left
+                                a.ticket-product
+                                    img.ticket-product__img(src='static/img/content/growbox.png' alt='')
+                                    .ticket-product__discount -15%
+                            .ticket__right
+                                .ticket-header
+                                    .ticket-header__text Pro Box
+                                    .ticket-header__rating
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                        span.ticket-header__rating-span ☆
+                                a.ticket-title Гроубокс 120-Apollo10
                                 .ticket-buy
                                     .ticket-buy__price
                                         .ticket-buy__price-old 590р

@@ -1,0 +1,217 @@
+.basket
+  &__products
+    @extend .price-inside__info
+    margin-bottom 40px
+    background-color white
+
+    &-row
+      @extend .price-inside__info-row
+      height 150px
+
+      @media screen and (max-width smalDesktopWidth)
+        padding 0 35px
+        height auto
+
+        @media screen and (max-width bigPhoneWidth)
+          padding 0 15px
+
+      &-media
+        @extend .basket__products-row
+        display none
+        justify-content flex-start
+        background-color blueDG
+
+        @media screen and (max-width smalDesktopWidth)
+          display flex
+          align-items center
+
+      &-box
+        @media screen and (max-width smalDesktopWidth)
+          display flex
+
+      &-sign
+        @extend .price-inside__info-row-sign
+        height 60px
+
+        @media screen and (max-width smalDesktopWidth)
+          height auto
+          max-height 245px
+
+          @media screen and (max-width tableWidth)
+            max-height 245px!important
+            height auto
+
+          & .basket__products-cell-box
+            align-items flex-start
+
+          & .basket__products-cell
+            justify-content flex-start!important
+
+        &-media
+          @extend .basket__products-row-sign
+          display none
+
+          @media screen and (max-width smalDesktopWidth)
+            display flex
+
+        & .basket__products-cell
+          justify-content center
+
+    &-cell
+      @extend .price-inside__info-cell
+      display flex
+      align-items center
+      max-width 140px
+
+      @media screen and (max-width smalDesktopWidth)
+        justify-content flex-end
+
+        @media screen and (max-width tableWidth)
+          min-height 42px
+
+      &:first-child
+        @media screen and (max-width smalDesktopWidth)
+          display none
+
+      &-red
+        max-width 280px
+
+      & .quantity-number
+        text-align center
+        width 65px
+
+      &-box
+        @extend .price-inside__info-cell-box
+        width 100%
+        align-items center
+
+        @media screen and (max-width smalDesktopWidth)
+          justify-content space-evenly
+          align-items flex-end
+          height 100%
+
+      &-span
+        &-red
+          color: redDG
+
+
+    &-preview
+      @extend .basket-block__item-preview
+      display flex
+      align-items center
+
+      &-img
+        width 100%
+
+  &__promotion
+    @extend .products_automatic
+
+    &-analog
+      border 1px solid greenDG
+
+    &-text
+      @extend .products_automatic__text
+
+      &-analog
+        padding 15px 15px 0 15px
+
+      &-title
+        @extend .products_automatic__text-title
+
+    &-teaser
+      @extend .products_automatic__teaser
+      height auto
+      padding 0 25px 0 25px
+
+      @media screen and (max-width bigPhoneWidth)
+        padding 0
+
+      &-analog
+        padding 0 26px 0 25px
+        margin-bottom 30px
+
+        @media screen and (max-width desktopWidth)
+          padding 0 23px 0 25px
+
+          @media screen and (max-width tableWidth)
+            padding 0 21px 0 25px
+
+      &-item
+        @extend .products_automatic__teaser-item
+        padding-left 0
+
+        &:nth-child(3n+1)
+          padding-left 0
+
+        & .basket__ticket
+          border none
+
+  &__ticket
+    @extend .ticket_automatic
+    width 100%
+
+    &-analog
+      border 1px solid greyDGdark !important
+      width 100%
+
+    &-left
+      @extend .ticket_automatic__left
+
+    &-product
+      @extend .ticket_automatic-product
+
+      &-img
+        @extend .ticket_automatic-product__img
+
+      &-discount
+        @extend .ticket_automatic-product__discount
+
+    &-right
+      @extend .ticket_automatic__right
+
+    &-header
+      @extend .ticket_automatic-header
+
+      &-text
+        @extend .ticket_automatic-header__text
+
+      &-rating
+        @extend .ticket_automatic-header__rating
+
+        &-span
+          @extend .ticket_automatic-header__rating-span
+
+    &-title
+      @extend .ticket_automatic-title
+
+    &-buy
+      @extend .ticket_automatic-buy
+
+      &-price
+        @extend .ticket_automatic-buy__price
+
+        &-old
+          @extend .ticket_automatic-buy__price-old
+
+        &-new
+          @extend .ticket_automatic-buy__price-new
+
+      &-btn
+        @extend .ticket_automatic-buy__btn
+
+  &__similar
+    @extend .products_automatic
+
+    &-teaser
+      @extend .products_automatic__teaser
+      height auto
+
+      &-item
+        @extend .products_automatic__teaser-item
+
+.basket__promotion-teaser .slick-prev.slick-arrow, .basket__promotion-teaser .slick-next.slick-arrow
+  background-color white
+  padding: 50px 21px 65px 0;
+
+  @media screen and (max-width bigPhoneWidth)
+    background-color transparent

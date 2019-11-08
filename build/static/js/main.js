@@ -16,39 +16,29 @@ $(function() {
     $('.up').click(function() {
         $('body,html').animate({scrollTop:0},800);
     });
-    
+
     //выбор города
-    $(document).ready(function(){
-        //Скрыть PopUp при загрузке страницы
+
+    //Скрыть PopUp при загрузке страницы
+    $(".close-city").on("click", function () {
         PopUpHide();
-        $(".close-city").on("click", function () {
-            PopUpHide();
-        });
-        $(".city-choice").on("click", function () {
-            PopUpHide();
-        });
+
     });
-    function PopUpShow(){
-        $(".city-you").show();
-        $(".city-choice").show();
-    }
-
-    //Функция скрытия PopUp
-    function PopUpHide(){
-        $(".city-you").hide();
-        $(".city-choice").hide();
-    }
 
 
-    $('.header-main__city').click(function () {
-        $('.city-you').fadeToggle(100);
+    $('.header-main__city-box').click(function () {
+        $('.city-you').css('display','flex');
     });
     $('.header-media-open__box-icon-span').click(function () {
-        $('.city-you').fadeToggle(100);
+        $('.city-you').css('display','flex');
     });
     $('.city-you__btn-grey').click(function () {
-        $('.city-choice').fadeToggle(100);
+        $('.city-choice').css('display','flex');
     });
+    $('.city-you__btn-green').click(function () {
+        $('.city-you').css('display','none');
+    });
+
 
 
     //about показать/скрыть текст
@@ -172,7 +162,7 @@ $(function() {
 
     //мобильное меню, категории, субкатегории
     $('.menu-media-category__item').click(function(){
-        var block=$(this).parents('.menu-media-category__border').find('.menu-media-category__sub');
+        var block=$(this).parents('.menu-media-category__border').find('.menu-media-category__sub')
         if($(this).hasClass('opened')){
             $(this).removeClass('opened');
             block.slideUp();
@@ -212,6 +202,32 @@ $(function() {
     //прайс разворачиваем промо
     $('.price-footer__discount-border').click(function(){
         var block=$(this).parents('.price-footer__discount-item').find('.price-footer__discount-inside-box');
+        if($(this).hasClass('opened')){
+            $(this).removeClass('opened');
+            block.slideUp();
+        }
+        else{
+            $(this).addClass('opened');
+            block.slideDown();
+        }
+    });
+
+    //Страница возврата товара
+    $('.return__regulations-points-border').click(function(){
+        var block=$(this).parents('.return__regulations-points-item').find('.return__regulations-points-inside-box');
+        if($(this).hasClass('opened')){
+            $(this).removeClass('opened');
+            block.slideUp();
+        }
+        else{
+            $(this).addClass('opened');
+            block.slideDown();
+        }
+    });
+
+    //Оформление заказа
+    $('.checkout__points-item').click(function(){
+        var block=$(this).parents('.checkout__points-block').find('.checkout__points-inside-box');
         if($(this).hasClass('opened')){
             $(this).removeClass('opened');
             block.slideUp();
@@ -360,18 +376,49 @@ $(function() {
         block.show();
     });
 
-
-
+    //категории
+    $('.arrow-point-categories').click(function(){
+        var block=$(this).parents('.categories__item').find('.categories__item-content-inside');
+        if(block.hasClass('opened')){
+            block.removeClass('opened');
+            block.slideUp();
+        }
+        else{
+            block.addClass('opened');
+            block.slideDown();
+        }
+    });
+    $('.close-categories').click(function(){
+        var block=$('.categories__item-content-inside');
+        if(block.hasClass('opened')){
+            block.removeClass('opened');
+            block.slideUp();
+        }
+        else{
+            block.addClass('opened');
+            block.slideDown();
+        }
+    });
 
     //карусуль
-    $(document).ready(function () {
+
         //слайдер топ
         $('.teaser-phone').slick({
             dots:true,
             arrows:false,
             infinity:true,
             autoplay:true,
-            autoplayspeed:500
+            autoplayspeed:500,
+            responsive: [
+                {
+                    breakpoint: 99999,
+                    settings:'unslick'
+                },
+                {
+                    breakpoint: 768,
+                    settings:'slick'
+                }
+            ]
         });
         //product-teaser
         $('.products_ad__teaser').slick({
@@ -519,6 +566,41 @@ $(function() {
                 }
             ]
         });
+        //корзина
+        $('.basket__promotion-teaser').slick({
+            infinity:true,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            rightPadding: '60px',
+            responsive: [
+                {
+                    breakpoint: 1330,
+                    settings:{
+                        slidesToShow: 2,
+                        slidesToScroll: 2}
+                },
+                {
+                    breakpoint: 768,
+                    settings:{
+                        slidesToShow: 1,
+                        slidesToScroll: 1}
+                },
+                {
+                    breakpoint: 479,
+                    settings: {
+                        arrows: false,
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+        //Партнеры главная
+        $('.partner-box__slide').slick({
+            infinity:true,
+            slidesToShow: 5,
+            slidesToScroll: 5
+        });
 
         //popup login
         $('.login__inside-entry-a').on('click',function () {
@@ -543,11 +625,125 @@ $(function() {
             $.fancybox.close( $('.recovery-apply'),{
             })
         });
+
+
+    // Select
+    $('.return__slct').click(function(){
+        /* Заносим выпадающий список в переменную */
+        var dropBlock = $(this).parent().find('.return__slct-drop');
+
+        /* Делаем проверку: Если выпадающий блок скрыт то делаем его видимым*/
+        if( dropBlock.is(':hidden') ) {
+            dropBlock.slideDown();
+
+            /* Выделяем ссылку открывающую select */
+            $(this).addClass('active');
+
+            /* Работаем с событием клика по элементам выпадающего списка */
+            $('.return__slct-drop').find('li').click(function(){
+
+                /* Заносим в переменную HTML код элемента
+                списка по которому кликнули */
+                var selectResult = $(this).html();
+
+                /* Находим наш скрытый инпут и передаем в него
+                значение из переменной selectResult */
+                $(this).parent().parent().find('input').val(selectResult);
+
+                /* Передаем значение переменной selectResult в ссылку которая
+                открывает наш выпадающий список и удаляем активность */
+                $(this).parent().parent().find('.return__slct').removeClass('active').html(selectResult);
+
+                /* Скрываем выпадающий блок */
+                dropBlock.slideUp();
+            });
+
+            /* Продолжаем проверку: Если выпадающий блок не скрыт то скрываем его */
+        } else {
+            $(this).removeClass('active');
+            dropBlock.slideUp();
+        }
+
+        /* Предотвращаем обычное поведение ссылки при клике */
+        return false;
+    });
+
+    $('.arrow-point-return').click(function(){
+        /* Заносим выпадающий список в переменную */
+        var dropBlock = $(this).parent().find('.return__slct-drop');
+
+        /* Делаем проверку: Если выпадающий блок скрыт то делаем его видимым*/
+        if( dropBlock.is(':hidden') ) {
+            dropBlock.slideDown();
+
+            /* Выделяем ссылку открывающую select */
+            $(this).addClass('active');
+
+            /* Работаем с событием клика по элементам выпадающего списка */
+            $('.return__slct-drop').find('li').click(function(){
+
+                /* Заносим в переменную HTML код элемента
+                списка по которому кликнули */
+                var selectResult = $(this).html();
+
+                /* Находим наш скрытый инпут и передаем в него
+                значение из переменной selectResult */
+                $(this).parent().parent().find('input').val(selectResult);
+
+                /* Передаем значение переменной selectResult в ссылку которая
+                открывает наш выпадающий список и удаляем активность */
+                $(this).parent().parent().find('.return__slct').removeClass('active').html(selectResult);
+
+                /* Скрываем выпадающий блок */
+                dropBlock.slideUp();
+            });
+
+            /* Продолжаем проверку: Если выпадающий блок не скрыт то скрываем его */
+        } else {
+            $(this).removeClass('active');
+            dropBlock.slideUp();
+        }
+
+        /* Предотвращаем обычное поведение ссылки при клике */
+        return false;
     });
 
 });
 
 
 
+
+
+
+
+// автозаполнение инпут
+
+$(function() {
+
+    var cities = ["Пермь", "Москва", "Казань", "Екатеринбург", "Новосибирск",
+        "Ялта", "Челябинск"];
+
+    $('#city__search').autocomplete({
+        source: cities
+
+    });
+    $('.city-choice__search-btn').on('click',function () {
+        var city = $('#city__search').val();
+        $('.header-main__city-a').text(city);
+    });
+});
+
+
+function PopUpShow(){
+    $(".city-you").show();
+    $(".city-choice").show();
+}
+
+//Функция скрытия PopUp
+function PopUpHide(){
+    console.log(1);
+    $(".city-you").hide();
+    $(".city-choice").hide();
+}
 
 

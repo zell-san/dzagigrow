@@ -1,0 +1,24 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Подтверждение оплаты'
+    - var pageClass = 'proof_of_payment-page'
+
+block content
+
+    .container-fluid
+        .container.page
+            include ../modules/breadcrumb
+            .page-title Подтверждение оплаты
+            .proof-pay
+                .proof-pay__block
+                    .proof-pay__block-title <b>Заказ успешно создан!</b>&nbsp;Номер заказа&nbsp;
+                        a.proof-pay__block-title-a 0000.
+                    .proof-pay__block-descr Для оплаты вы будете перенаправлены на сайт агрегатора PAYANYWAY<br>Спасибо, что выбрали DzagiGrow!
+                    .proof-pay__box
+                        .proof-pay__box-border
+                            .proof-pay__box-total Сумма заказа:
+                                a.proof-pay__box-total-a 5505 руб.
+                            button.proof-pay__box-total-btn Оплатить
+                .proof-pay__my-orders Посмотреть статус всех заказов вы можете на странице&nbsp;
+                    a.proof-pay__my-orders-a Мои заказы

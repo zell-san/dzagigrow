@@ -27,7 +27,7 @@ block content
                             .cabinet-sidebar__border.cabinet-sidebar__border-last
                                 +icon('prize', 'cabinet-menu')
                                 a.saidbar-nav__item-a Бонусы
-                    .blog-sbc
+                    form.blog-sbc
                         p.blog-sbc__p Знания
                         span.blog-sbc__span Стань продвинутым гровером. Получай полезные статьи раз в две недели!
                         .blog-sbc__sbc
@@ -758,7 +758,7 @@ block content
                                 object.icon-logo-cab(type="image/svg+xml" data="static/img/general/logo.svg")
                                 .personal-subscriptions__main-box.personal-subscriptions__main-box-yes
                                     .personal-subscriptions__main-title Вы подписаны на новостную рассылку
-                            .personal-subscriptions__btn
+                            form.personal-subscriptions__btn
                                 button.btn-subscribe.blog-sbc__btn.personal-subscriptions__btn-sbc Отписаться
                     .cabinet-place__personal-bonus.tab
                         include ../modules/breadcrumb
@@ -792,7 +792,7 @@ block content
                                 .personal-bonus__box
                                     .personal-bonus__btn.btn-more Подробней о бонусной программе
                     .cabinet-place__sbc
-                            .blog-sbc
+                        form.blog-sbc
                                 .blog-sbc__right
                                     p.blog-sbc__p Знания
                                     span.blog-sbc__span Стань продвинутым гровером. Получай полезные статьи раз в две недели!
@@ -805,7 +805,7 @@ block content
                                     button.btn-subscribe.blog-sbc__btn Подписаться
 
     .recovery-data
-        .recovery__popup-data
+        form.recovery__popup-data
             .recovery__popup-data-title Изменение пароля
             .recovery__popup-data-text Текущий пароль:
             input.recovery__popup-data-input

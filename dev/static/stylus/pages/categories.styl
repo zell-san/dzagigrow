@@ -1,0 +1,102 @@
+.categories
+  @extend .books
+  margin-top 30px
+
+  &__row
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-right -5px
+    margin-left -5px
+
+  &__item
+    width 20%
+    padding 0 5px 35px 5px
+    position relative
+
+    @media screen and (max-width desktopWidth)
+      width 25%
+
+      @media screen and (max-width smalDesktopWidth)
+        width 33.33%
+
+        @media screen and (max-width tableWidth)
+          width 50%
+
+          @media screen and (max-width bigPhoneWidth)
+            width 100%
+
+    &-content
+      background white
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 50%;
+      padding-bottom: 50%;
+      box-sizing: border-box;
+      position relative
+
+      &-box
+        position absolute
+        width 100%
+        top: 0
+        left 0
+        height 100%
+        padding 25px 30px
+
+        &-inside
+          padding 40px 30px
+
+          &-overflow
+            overflow: scroll;
+            height: inherit;
+
+      &-inside
+        position: absolute;
+        background-color: blackDG;
+        padding-top: 50%;
+        padding-bottom: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index 1000
+        display none
+
+      &-a
+        display flex
+        text-decoration: underline;
+        color: white;
+        font-size 14px
+        padding-bottom 5px
+
+      &-img
+        width 100%
+        margin auto
+        display flex
+        max-width 158px
+        max-height 158px
+
+        @media screen and (max-width desktopWidth)
+          width 75%
+
+          @media screen and (max-width bigPhoneWidth)
+            max-width 300px
+            max-height 300px
+
+      &-title
+        //
+
+        &-block
+          position absolute
+          bottom 25px
+          left 30px
+          right 30px
+          display flex
+          justify-content space-between
+
+          /*@media screen and (max-width smalDesktopWidth)
+            bottom 15px
+            left 20px
+            right 20px*/
+

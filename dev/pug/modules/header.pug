@@ -10,11 +10,16 @@ header
                         a.header-nav__left-a(href= "books.html") Книги
                     .header-nav__right
                         .header-nav__right-social
-                            +icon('tg', 'social')
-                            +icon('ig', 'social')(href= "javascript:void(0)")
-                            +icon('yt', 'social')(href= "javascript:void(0)")
-                            +icon('fb', 'social')(href= "javascript:void(0)")
-                            +icon('vk', 'social')(href= "javascript:void(0)")
+                            a
+                                +icon('tg', 'social')(href= "javascript:void(0)")
+                            a
+                                +icon('ig', 'social')(href= "javascript:void(0)")
+                            a
+                                +icon('yt', 'social')(href= "javascript:void(0)")
+                            a
+                                +icon('fb', 'social')(href= "javascript:void(0)")
+                            a
+                                +icon('vk', 'social')(href= "javascript:void(0)")
                         .header-nav__right-phone(href="tel:+78003331659") 8(800)333-16-59
                         .header-nav__right-hang Бесплатный звонок<br>по России
                         .header-nav__right-phone(href="tel:+74951205945") 8(495)120-59-45
@@ -23,16 +28,18 @@ header
         .container-fluid.header-second
             .container
                 .header-main
-                    .header-main__logo
+                    a.header-main__logo
                         img.header-main__logo-img(onclick="window.location='index.html';" src="static/img/general/logo.png" alt="")
-                    .header-main__city(href="javascript:PopUpHide()")
-                        a.header-main__city-a Пермь
-                        +icon('arrow-point', 'arrow-point-city')
+                    .header-main__city
+                        .header-main__city-box
+                            a.header-main__city-a Пермь
+                            +icon('arrow-point', 'arrow-point-city')
                         include city-popup
-                    .header-main__search
+                    form.header-main__search
                         input.header-main__search-input(type="text" placeholder="Я ищу...")
-                        .header-main__search-icon(onclick="window.location='result.html';")
+                        button.header-main__search-icon(onclick="window.location='result.html';")
                             +icon('search', 'search-header')
+
                     .header-main__basket
                         .header-main__basket-box
                             .header-main__basket-icon
@@ -54,7 +61,7 @@ header
                                     .basket-block__bottom-sum
                                         span Итог:
                                         span.basket-block__bottom-sum-span 2 470р
-                                    .basket-block__bottom-btn.btn-green-big Перейти в корзину
+                                    a.basket-block__bottom-btn.btn-green-big Перейти в корзину
 
 
 

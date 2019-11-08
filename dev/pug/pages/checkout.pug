@@ -1,0 +1,212 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Оформление заказа'
+    - var pageClass = 'checkout-page'
+
+block content
+
+    .container-fluid
+        .container.page
+            include ../modules/breadcrumb
+            .page-title Оформление заказа
+            .checkout
+                //левый блок с характеристиками
+                .checkout__points
+                    .checkout__points-block
+                        .checkout__points-item.opened
+                            .checkout__points-item-title Покупатель
+                            .checkout__points-inside-box
+                                .checkout__points-inside
+                                    .checkout__person
+                                        form.checkout__person-form
+                                            .checkout__person-form-p-box
+                                                p.checkout__person-form-p ФИО
+                                                .checkout__person-form-p-red *
+                                            input.checkout__person-form-input
+                                            .checkout__person-form-p-box
+                                                p.checkout__person-form-p E-mail
+                                                .checkout__person-form-p-red *
+                                            input.checkout__person-form-input
+                                            .checkout__person-form-p-box
+                                                p.checkout__person-form-p Телефон
+                                                .checkout__person-form-p-red *
+                                            input.checkout__person-form-input
+                                            .checkout__person-form-checkbox-box
+                                                input.checkout__person-form-checkbox#checkout__person-checkbox(type="checkbox")
+                                                label(for='checkout__person-checkbox').checkout__person-form-checkbox-label Включить СМС-уведомления о заказе
+                                        .checkout__person-authorization
+                                            p Авторизуйтесь на сайте или зарегистрируйте новый аккаунт и мы сохраним всю информацию по заказу и автоматически заполним ваши контактные данные
+                                            a.checkout__person-authorization-a <br><br>Авторизация
+                    .checkout__points-block
+                        .checkout__points-item
+                            .checkout__points-item-title Регион доставки
+                            .checkout__points-item-box
+                                .checkout__points-item-descr Населенный пункт:
+                                    a.checkout__points-item-descr-a не выбрано
+                                .checkout__points-item-icon
+                                    +icon('arrow-point', 'arrow-point-checkout')
+                            .checkout__points-inside-box
+                                .checkout__points-inside
+                                    .checkout__city
+                                        .checkout__city-p-box
+                                            .checkout__city-p-red *
+                                            .checkout__city-p Населенный пункт <i>(Например: Пермь, Пермский край, Россия)</i>
+                                        input.checkout__city-input
+                    .checkout__points-block
+                        .checkout__points-item
+                            .checkout__points-item-title Доставка
+                            .checkout__points-item-box
+                                .checkout__points-item-descr Служба доставки:
+                                    a.checkout__points-item-descr-a не выбрано
+                                .checkout__points-item-icon
+                                    +icon('arrow-point', 'arrow-point-checkout')
+                            .checkout__points-inside-box
+                                .checkout__points-inside
+                                    .checkout__delivery
+                                        p Выберите тип оплаты:
+                                        .checkout__delivery-button-box
+                                            button.checkout__delivery-button Оплата при получении
+                                            button.checkout__delivery-button-green Предоплата
+                                        p Выберите способ доставки:
+                                        .checkout__delivery-post-box
+                                            .checkout__delivery-post
+                                                .checkout__delivery-post-title Почта России
+                                                .checkout__delivery-post-item
+                                                    .checkout__delivery-post-item-box
+                                                        input(type='checkbox').checkout__delivery-post-item-checkbox#checkout__delivery-checkbox-post-first
+                                                        label(for='checkout__delivery-checkbox-post-first').checkout__delivery-post-item-label
+                                                        .checkout__delivery-post-item-img-box
+                                                            img.checkout__delivery-post-item-img(src="static/img/content/post.png")
+                                                            p Почта России (отправление 1-го класса)
+                                                    .checkout__delivery-post-item-box
+                                                        a 574 руб.
+                                                        a ~ 1-3 дня
+                                                .checkout__delivery-post-item
+                                                    .checkout__delivery-post-item-box
+                                                        input(type='checkbox').checkout__delivery-post-item-checkbox#checkout__delivery-checkbox-post
+                                                        label(for='checkout__delivery-checkbox-post').checkout__delivery-post-item-label
+                                                        .checkout__delivery-post-item-img-box
+                                                            img.checkout__delivery-post-item-img(src="static/img/content/post.png")
+                                                            p Почта России (наземная посылка)
+                                                    .checkout__delivery-post-item-box
+                                                        a 574 руб.
+                                                        a ~ 1-3 дня
+                                            .checkout__delivery-post
+                                                .checkout__delivery-post-title Доставка до центра выдачи
+                                                .checkout__delivery-post-item
+                                                    .checkout__delivery-post-item-box
+                                                        input(type='checkbox').checkout__delivery-post-item-checkbox#checkout__delivery-checkbox-sdek
+                                                        label(for='checkout__delivery-checkbox-sdek').checkout__delivery-post-item-label
+                                                        .checkout__delivery-post-item-img-box
+                                                            img.checkout__delivery-post-item-img(src="static/img/content/sdek-checkout.png")
+                                                            p СДЭК (посылка - до пункта выдачи)
+                                                    .checkout__delivery-post-item-box
+                                                        a 574 руб.
+                                                        a ~ 1-3 дня
+                    .checkout__points-block
+                        .checkout__points-item
+                            .checkout__points-item-title Местоположение
+                            .checkout__points-item-box
+                                .checkout__points-item-descr Населенный пункт:
+                                    a.checkout__points-item-descr-a не выбрано
+                                .checkout__points-item-icon
+                                    +icon('arrow-point', 'arrow-point-checkout')
+                            .checkout__points-inside-box
+                                .checkout__points-inside
+                                    .checkout__address
+                                        .checkout__address-form
+                                            .checkout__address-form-p-box
+                                                p.checkout__address-form-p ФИО
+                                                .checkout__address-form-p-red *
+                                            input.checkout__address-form-input
+                                            .checkout__address-form-p-box
+                                                p.checkout__address-form-p E-mail
+                                                .checkout__address-form-p-red *
+                                            input.checkout__address-form-input
+                                            .checkout__address-form-block
+                                                .checkout__address-form-p-block
+                                                    .checkout__address-form-p-box
+                                                        p.checkout__address-form-p Дом
+                                                        .checkout__address-form-p-red *
+                                                    input.checkout__address-form-input
+                                                .checkout__address-form-p-block
+                                                    .checkout__address-form-p-box
+                                                        p.checkout__address-form-p Корпус
+                                                    input.checkout__address-form-input
+                                                .checkout__address-form-p-block
+                                                    .checkout__address-form-p-box
+                                                        p.checkout__address-form-p Квартира
+                                                        .checkout__address-form-p-red *
+                                                    input.checkout__address-form-input
+                                                .checkout__address-form-p-block
+                                                    .checkout__address-form-p-box
+                                                        p.checkout__address-form-p Индекс
+                                                        .checkout__address-form-p-red *
+                                                    input.checkout__address-form-input.checkout__address-form-input-last
+                                            .checkout__address-form-block-message
+                                                .checkout__address-form-p-box
+                                                    p.checkout__address-form-p Комментарий к заказу:
+                                                    .checkout__address-form-p-red
+                                                input.checkout__address-form-input
+                    .checkout__points-block
+                        .checkout__points-item
+                            .checkout__points-item-title Варианты оплаты
+                            .checkout__points-item-box
+                                .checkout__points-item-descr Способ оплаты:
+                                    a.checkout__points-item-descr-a не выбрано
+                                .checkout__points-item-icon
+                                    +icon('arrow-point', 'arrow-point-checkout')
+                            .checkout__points-inside-box
+                                .checkout__points-inside
+                                    .checkout__pay
+                                        p Выберите способ оплаты:
+                                        .checkout__pay-item-block
+                                            .checkout__pay-item
+                                                .checkout__pay-item-box
+                                                    input(type='checkbox').checkout__pay-item-checkbox#checkout__pay-checkbox-qiwi
+                                                    label(for='checkout__pay-checkbox-qiwi').checkout__pay-item-label
+                                                    .checkout__pay-item-img-box
+                                                        img.checkout__pay-item-img(src="static/img/content/Logo_qiwi_rgb.png")
+                                                    p QIWI Кошелек
+                                            .checkout__pay-item
+                                                .checkout__pay-item-box
+                                                    input(type='checkbox').checkout__pay-item-checkbox#checkout__pay-checkbox-w1
+                                                    label(for='checkout__pay-checkbox-w1').checkout__pay-item-label
+                                                    .checkout__pay-item-img-box
+                                                        img.checkout__pay-item-img(src="static/img/content/w1.png")
+                                                    p RUR Единый кошелек
+                                            .checkout__pay-item
+                                                .checkout__pay-item-box
+                                                    input(type='checkbox').checkout__pay-item-checkbox#checkout__pay-checkbox-ym
+                                                    label(for='checkout__pay-checkbox-ym').checkout__pay-item-label
+                                                    .checkout__pay-item-img-box
+                                                        img.checkout__pay-item-img(src="static/img/content/ym.png")
+                                                    p Яндекс.Деньги
+                                            .checkout__pay-item
+                                                .checkout__pay-item-box
+                                                    input(type='checkbox').checkout__pay-item-checkbox#checkout__pay-checkbox-wm
+                                                    label(for='checkout__pay-checkbox-wm').checkout__pay-item-label
+                                                    .checkout__pay-item-img-box
+                                                        img.checkout__pay-item-img(src="static/img/content/webmoney_logo.png")
+                                                    p WMR
+
+                //Итого блок справа
+                .checkout__total
+                    .checkout__total-item.checkout__total-item-first
+                        .checkout__total-border
+                            .checkout__total-item-info Товаров на:
+                            .checkout__total-item-info-a 5 170p
+                    .checkout__total-item
+                        .checkout__total-border
+                            .checkout__total-item-info Общий вес:
+                            .checkout__total-item-info-a 0,68кг
+                    .checkout__total-item
+                        .checkout__total-border
+                            .checkout__total-item-info Доставка:
+                            .checkout__total-item-info-a 530p
+                    .checkout__total-item.checkout__total-item-last
+                        .checkout__total-border
+                            .checkout__total-item-info Итого:
+                            .checkout__total-item-info-a 5700p
+

@@ -3,16 +3,17 @@
     .header-media__menu
         +icon('menu', 'menu-header-media')
     .header-media__box
-        img.header-media__box-img(src='static/img/general/logo.png' alt'' href='javascript:void(0)')
+        a
+            img.header-media__box-img(src='static/img/general/logo.png' alt'' href='javascript:void(0)')
         .header-media__box-icon
             +icon('search', 'search-header-media')
-            .header-main__basket-icon
+            a.header-main__basket-icon
                 +icon('basket', 'basket-header-media')
                 span.header-media__box-icon-number 5
     .header-media__box-search
-        .header-main__search
+        form.header-main__search
             input.header-main__search-input(type="text" placeholder="Я ищу...")
-            .header-main__search-icon(onclick="window.location='result.html';")
+            button.header-main__search-icon(onclick="window.location='result.html';")
                 +icon('search', 'search-header-media-open')
 .menu-media-full
     .container-fluid.menu-media-full__open
@@ -31,126 +32,126 @@
             a.header-media-nav__a Категория товаров
         .menu-media-category
             .menu-media-category__border
-                .menu-media-category__item Гроубоксы
+                a.menu-media-category__item Гроубоксы
                     +icon('arrow-point', 'subcategor')
                 .menu-media-category__sub
-                    .menu-media-category__sub-element Маленькие
-                    .menu-media-category__sub-element Средние
-                    .menu-media-category__sub-element Большие
+                    a.menu-media-category__sub-element Маленькие
+                    a.menu-media-category__sub-element Средние
+                    a.menu-media-category__sub-element Большие
             .menu-media-category__border
-                .menu-media-category__item Гидропонные системы
+                a.menu-media-category__item Гидропонные системы
                     +icon('arrow-point', 'subcategor')
                 .menu-media-category__sub
-                    .menu-media-category__sub-element Маленькие
-                    .menu-media-category__sub-element Средние
-                    .menu-media-category__sub-element Большие
+                    a.menu-media-category__sub-element Маленькие
+                    a.menu-media-category__sub-element Средние
+                    a.menu-media-category__sub-element Большие
             .menu-media-category__border
-                .menu-media-category__item Удобрения
+                a.menu-media-category__item Удобрения
                     +icon('arrow-point', 'subcategor')
                 .menu-media-category__sub
-                    .menu-media-category__sub-element Маленькие
-                    .menu-media-category__sub-element Средние
-                    .menu-media-category__sub-element Большие
+                    a.menu-media-category__sub-element Маленькие
+                    a.menu-media-category__sub-element Средние
+                    a.menu-media-category__sub-element Большие
             .menu-media-category__border
-                .menu-media-category__item Освещение
+                a.menu-media-category__item Освещение
                     +icon('arrow-point', 'subcategor')
                 .menu-media-category__sub
-                    .menu-media-category__sub-element Маленькие
-                    .menu-media-category__sub-element Средние
-                    .menu-media-category__sub-element Большие
+                    a.menu-media-category__sub-element Маленькие
+                    a.menu-media-category__sub-element Средние
+                    a.menu-media-category__sub-element Большие
             .menu-media-category__border
-                .menu-media-category__item Полив
+                a.menu-media-category__item Полив
                     +icon('arrow-point', 'subcategor')
                 .menu-media-category__sub
-                    .menu-media-category__sub-element Маленькие
-                    .menu-media-category__sub-element Средние
-                    .menu-media-category__sub-element Большие
+                    a.menu-media-category__sub-element Маленькие
+                    a.menu-media-category__sub-element Средние
+                    a.menu-media-category__sub-element Большие
             .menu-media-category__border
-                .menu-media-category__item Очистка воздуха
+                a.menu-media-category__item Очистка воздуха
                     +icon('arrow-point', 'subcategor')
                 .menu-media-category__sub
-                    .menu-media-category__sub-element Маленькие
-                    .menu-media-category__sub-element Средние
-                    .menu-media-category__sub-element Большие
+                    a.menu-media-category__sub-element Маленькие
+                    a.menu-media-category__sub-element Средние
+                    a.menu-media-category__sub-element Большие
             .menu-media-category__border
-                .menu-media-category__item Автоматизация
+                a.menu-media-category__item Автоматизация
                     +icon('arrow-point', 'subcategor')
                 .menu-media-category__sub
-                    .menu-media-category__sub-element Маленькие
-                    .menu-media-category__sub-element Средние
-                    .menu-media-category__sub-element Большие
+                    a.menu-media-category__sub-element Маленькие
+                    a.menu-media-category__sub-element Средние
+                    a.menu-media-category__sub-element Большие
             .menu-media-category__border
-                .menu-media-category__item Аксессуары
+                a.menu-media-category__item Аксессуары
                     +icon('arrow-point', 'subcategor')
                 .menu-media-category__sub
-                    .menu-media-category__sub-element Маленькие
-                    .menu-media-category__sub-element Средние
-                    .menu-media-category__sub-element Большие
+                    a.menu-media-category__sub-element Маленькие
+                    a.menu-media-category__sub-element Средние
+                    a.menu-media-category__sub-element Большие
             .menu-media-category__border
-                .menu-media-category__item Гроубоксы
+                a.menu-media-category__item Гроубоксы
                     +icon('arrow-point', 'subcategor')
                 .menu-media-category__sub
-                    .menu-media-category__sub-element Маленькие
-                    .menu-media-category__sub-element Средние
-                    .menu-media-category__sub-element Большие
+                    a.menu-media-category__sub-element Маленькие
+                    a.menu-media-category__sub-element Средние
+                    a.menu-media-category__sub-element Большие
             .menu-media-category__border
-                .menu-media-category__item Гидропонные системы
+                a.menu-media-category__item Гидропонные системы
                     +icon('arrow-point', 'subcategor')
                 .menu-media-category__sub
-                    .menu-media-category__sub-element Маленькие
-                    .menu-media-category__sub-element Средние
-                    .menu-media-category__sub-element Большие
+                    a.menu-media-category__sub-element Маленькие
+                    a.menu-media-category__sub-element Средние
+                    a.menu-media-category__sub-element Большие
             .menu-media-category__border
-                .menu-media-category__item Удобрения
+                a.menu-media-category__item Удобрения
                     +icon('arrow-point', 'subcategor')
                 .menu-media-category__sub
-                    .menu-media-category__sub-element Маленькие
-                    .menu-media-category__sub-element Средние
-                    .menu-media-category__sub-element Большие
+                    a.menu-media-category__sub-element Маленькие
+                    a.menu-media-category__sub-element Средние
+                    a.menu-media-category__sub-element Большие
             .menu-media-category__border
-                .menu-media-category__item Освещение
+                a.menu-media-category__item Освещение
                     +icon('arrow-point', 'subcategor')
             .menu-media-category__border
-                .menu-media-category__item Полив
+                a.menu-media-category__item Полив
                     +icon('arrow-point', 'subcategor')
             .menu-media-category__border
-                .menu-media-category__item Очистка воздуха
+                a.menu-media-category__item Очистка воздуха
                     +icon('arrow-point', 'subcategor')
             .menu-media-category__border
-                .menu-media-category__item Автоматизация
+                a.menu-media-category__item Автоматизация
                     +icon('arrow-point', 'subcategor')
             .menu-media-category__border
-                .menu-media-category__item Аксессуары
+                a.menu-media-category__item Аксессуары
                     +icon('arrow-point', 'subcategor')
             .menu-media-category__border
-                .menu-media-category__item Полив
+                a.menu-media-category__item Полив
                     +icon('arrow-point', 'subcategor')
             .menu-media-category__border
-                .menu-media-category__item Очистка воздуха
+                a.menu-media-category__item Очистка воздуха
                     +icon('arrow-point', 'subcategor')
             .menu-media-category__border
-                .menu-media-category__item Автоматизация
+                a.menu-media-category__item Автоматизация
                     +icon('arrow-point', 'subcategor')
             .menu-media-category__border
-                .menu-media-category__item Аксессуары
+                a.menu-media-category__item Аксессуары
                     +icon('arrow-point', 'subcategor')
         .header-media-main
             .header-media-main__border
-                .header-media-main__border-item Прайс-лист
+                a.header-media-main__border-item Прайс-лист
             .header-media-main__border
-                .header-media-main__border-item Акции
+                a.header-media-main__border-item Акции
             .header-media-main__border
-                .header-media-main__border-item Доставка и оплата
+                a.header-media-main__border-item Доставка и оплата
             .header-media-main__border
-                .header-media-main__border-item Отзывы
+                a.header-media-main__border-item Отзывы
             .header-media-main__border
-                .header-media-main__border-item Контакты
+                a.header-media-main__border-item Контакты
             .header-media-main__border
-                .header-media-main__border-item Блог
+                a.header-media-main__border-item Блог
             .header-media-main__border
-                .header-media-main__border-item Dzagi tube
+                a.header-media-main__border-item Dzagi tube
             .header-media-main__border
-                .header-media-main__border-item Книги
+                a.header-media-main__border-item Книги
         .header-media-contact
             .header-media-contact__number
                 .header-media-contact__number-box
@@ -160,8 +161,13 @@
                     .header-media-contact__phone(href="tel:+74951205945") 8(495)120-59-45
                     .header-media-contact__hang Звонок<br>по Москве и МО
             .header-media-contact__social
-                 +icon('tg', 'social')(href= "javascript:void(0)")
-                 +icon('ig', 'social')(href= "javascript:void(0)")
-                 +icon('yt', 'social')(href= "javascript:void(0)")
-                 +icon('fb', 'social')(href= "javascript:void(0)")
-                 +icon('vk', 'social')(href= "javascript:void(0)")
+                 a
+                    +icon('tg', 'social')(href= "javascript:void(0)")
+                 a
+                    +icon('ig', 'social')(href= "javascript:void(0)")
+                 a
+                    +icon('yt', 'social')(href= "javascript:void(0)")
+                 a
+                    +icon('fb', 'social')(href= "javascript:void(0)")
+                 a
+                    +icon('vk', 'social')(href= "javascript:void(0)")

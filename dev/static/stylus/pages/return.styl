@@ -1,0 +1,262 @@
+.return__banner
+  background-color greenDG
+  margin-bottom 120px
+  padding 30px 0
+
+  @media screen and (max-width tableWidth)
+    margin-bottom 50px
+
+  &-block
+    display flex
+    align-items center
+
+  &-box
+    color white
+
+    &-title
+      font-size 3.5rem
+      font-weight bold
+      line-height 3.5rem
+
+      @media screen and (max-width tableWidth)
+        font-size 2rem
+        line-height 2.5rem
+
+        @media screen and (max-width bigPhoneWidth)
+          font-size 1.5rem
+          line-height 1.5rem
+
+    &-descr
+      font-size 1.3rem
+
+      @media screen and (max-width tableWidth)
+        font-size 1rem
+
+        @media screen and (max-width bigPhoneWidth)
+          font-size 0.875rem
+
+  &-img
+    margin-left 10px
+
+
+.container.page.return__banner-block
+  margin-bottom 0
+
+.return
+
+  &__descr
+    margin-bottom 100px
+
+    @media screen and (max-width tableWidth)
+      margin-bottom 50px
+
+    & p
+      padding-bottom 15px
+
+    &-p
+      font-weight bold
+      font-size 1.5rem
+
+  &__instruction
+    display flex
+    justify-content space-between
+    margin-bottom 100px
+
+    @media screen and (max-width tableWidth)
+      margin-bottom 50px
+
+      @media screen and (max-width bigPhoneWidth)
+        flex-direction column
+
+    &-box
+      text-align center
+
+      @media screen and (max-width bigPhoneWidth)
+        margin-bottom 30px
+
+  &__form
+    background-color greenDG
+    margin 0 200px 100px 200px
+    padding 50px
+    border-radius 10px
+
+    @media screen and (max-width desktopWidth)
+      margin 0 0 100px 0
+
+      @media screen and (max-width tableWidth)
+        margin-bottom 50px
+        padding 50px 25px
+
+    &-table
+      &-row
+        display flex
+        margin-bottom 30px
+
+        &:nth-child(5)
+          padding-top 30px
+
+      &-col
+        color white
+        width 44%
+        display flex
+        align-items center
+
+        &-right
+          width 56%
+
+        &-p
+          width 100%
+          margin-right 50px
+          text-align right
+          font-size 1rem
+
+          @media screen and (max-width tableWidth)
+            font-size 0.75rem
+            margin-right 15px
+
+        &-select
+          border-bottom 1px solid white
+          width 297px
+          display flex
+          justify-content space-between
+          position relative
+
+          @media screen and (max-width tableWidth)
+            width 100%
+            font-size 0.75rem
+
+        &-input
+          background-color transparent
+          border none
+          color white
+          width 100%
+          padding 5px
+
+    &-picture
+      display flex
+      justify-content center
+      margin-bottom 50px
+
+      @media screen and (max-width tableWidth)
+        justify-content space-between
+
+        @media screen and (max-width bigPhoneWidth)
+          flex-direction column
+          align-items center
+
+
+      &-item
+        size (135px)
+        border-radius 10px
+        border 1px solid rgba(255, 255, 255, 0.5)
+        background-color rgba(255, 255, 255, 0.2)
+        display flex
+        flex-direction column
+        justify-content center
+        align-items center
+        margin 0 25px
+
+        @media screen and (max-width tableWidth)
+          margin 0
+          size (100px)
+
+          @media screen and (max-width bigPhoneWidth)
+            margin-bottom 10px
+
+        &:hover
+          border 1px solid rgba(255, 255, 255, 0.7)
+          background-color rgba(255, 255, 255, 0.4)
+
+    &-btn
+      display flex
+      justify-content space-evenly
+
+      @media screen and (max-width tableWidth)
+        justify-content space-between
+
+        @media screen and (max-width bigPhoneWidth)
+          flex-direction column
+          align-items center
+
+  &__slct
+    width 100%
+    display: block;
+    padding: 5px
+    color: #ffffff8a;
+
+
+    /*
+        Супер финт обрезаем текст
+        чтобы не вылезал за рамку
+    */
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+
+    & .return__slct-drop-li-a
+      color white
+
+    &.active
+      border-radius: 5px 5px 0 0;
+      border-bottom: none;
+
+    &-drop
+      margin: 29px 0 0 0;
+      padding: 0;
+      width: 297px;
+      border: 1px solid #cecece;
+      border-top: none;
+      display: none;
+      position: absolute;
+      background: #fff;
+      z-index 1000
+
+
+      &-li
+        list-style: none;
+        border-top: 1px dotted #e8e8e8;
+        cursor: pointer;
+        display: block;
+        color: #444;
+        padding: 4px 15px 4px 25px;
+
+        &:hover
+          background-color: #e8e8e8;
+          color: #222;
+
+
+  &__regulations
+    &-title
+      @extend .return__descr-p
+
+    &-points
+      margin-bottom 40px
+
+      &-item
+        @extend .price-footer__discount-item
+        padding 0
+
+        &-title
+          @extend .price-footer__discount-item-title
+          margin-left 20px
+
+      &-border
+        @extend .price-footer__discount-border
+        border-top none
+        border-bottom 1px solid greenDG
+        justify-content flex-start
+
+      &-inside
+        padding 15px 0
+
+        &-box
+          @extend .price-footer__discount-inside-box
+
+    &-descr
+      margin-bottom 100px
+
+      &-p
+        margin-bottom 20px
+
+.return__regulations-points-border.opened .arrow-point-more
+  transform rotate(270deg)

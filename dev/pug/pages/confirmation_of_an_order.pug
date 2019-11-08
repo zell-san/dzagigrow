@@ -1,0 +1,17 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Подтверждение заказа'
+    - var pageClass = 'confirmation_of_an_order-page'
+
+block content
+
+    .container-fluid
+        .container.page
+            include ../modules/breadcrumb
+            .page-title Подтверждение заказа
+            .confirm-order
+                .confirm-order__block
+                    .proof-pay__block-title <b>Заказ успешно создан!</b>&nbsp;Номер заказа&nbsp;
+                        a.proof-pay__block-title-a 0000.
+                    .proof-pay__block-descr <b>На указанный Вами e-mail отправлено письмо с информацией о заказе.</b><br>Пожалуйста проверьте электронную почту! Возможно, наше письмо попало в папку «Спам».<br><br>Если Вы внезапно передумали, или у Вас остались какие-то вопросы — напишите или позвоните нам, даже если просто Вы хотите еще раз удостовериться, что Мы получили Ваш заказ!<br><br>Мы обработаем заказ и отправим его в течении 24 часов.<br><br>С уважением, служба поддержки покупателей.
