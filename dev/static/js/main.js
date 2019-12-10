@@ -6,15 +6,15 @@ $(document).ready(function () {
 $(function() {
 
     //скролл к верху страницы
-    $(window).scroll(function() {
-        if($(this).scrollTop() != 0) {
+    $(window).scroll(function () {
+        if ($(this).scrollTop() != 0) {
             $('.up').fadeIn();
         } else {
             $('.up').fadeOut();
         }
     });
-    $('.up').click(function() {
-        $('body,html').animate({scrollTop:0},800);
+    $('.up').click(function () {
+        $('body,html').animate({scrollTop: 0}, 800);
     });
 
     //выбор города
@@ -27,60 +27,31 @@ $(function() {
 
 
     $('.header-main__city-box').click(function () {
-        $('.city-you').css('display','flex');
+        $('.city-you').css('display', 'flex');
     });
     $('.header-media-open__box-icon-span').click(function () {
-        $('.city-you').css('display','flex');
+        $('.city-you').css('display', 'flex');
     });
     $('.city-you__btn-grey').click(function () {
-        $('.city-choice').css('display','flex');
+        $('.city-choice').css('display', 'flex');
     });
     $('.city-you__btn-green').click(function () {
-        $('.city-you').css('display','none');
+        $('.city-you').css('display', 'none');
     });
-
 
 
     //about показать/скрыть текст
-    $('#open-btn').click(function(){
-        var block=$('.about-inside-container');
-        if(block.hasClass('opened')){
+    $('#open-btn').click(function () {
+        var block = $('.about-inside-container');
+        if (block.hasClass('opened')) {
             block.removeClass('opened');
             block.slideUp();
             $(this).text('Открыть');
         }
-        else{
+        else {
             block.addClass('opened');
             block.slideDown();
             $(this).text('Закрыть');
-        }
-    });
-
-    //меню левое показать
-    $('.header-menu__opener').click(function(){
-        var block=$('.menu-nav');
-        if(block.hasClass('opened')){
-            block.removeClass('opened');
-            block.slideUp();
-        }
-        else{
-            block.addClass('opened');
-            block.slideDown();
-        }
-    })
-
-    //меню левое выпадающий список
-    $('.menu-nav__item').click(function(){
-        var block=$(this).parents('.menu-nav__border').find('.menu-nav__item-sub');
-        if($(this).hasClass('opened')){
-            $(this).removeClass('opened');
-            block.slideUp();
-        }
-        else{
-            $('.menu-nav__item-sub').hide;
-            $('.menu-nav__item').removeClass('opened');
-            $(this).addClass('opened');
-            block.slideDown();
         }
     });
 

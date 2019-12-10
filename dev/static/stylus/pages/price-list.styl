@@ -93,7 +93,7 @@
       padding 0 35px
       border-top 1px solid greyDGdark
       display flex
-      height 65px
+      min-height 65px
       width 100%
       justify-content space-between
       align-items center
@@ -130,11 +130,12 @@
         justify-content flex-start
         min-width 174px
 
-      @media screen and (max-width tableWidth)
-        min-width 85px
+        @media screen and (max-width tableWidth)
+          max-width 175px
+          min-width 85px
 
-        @media screen and (max-width bigPhoneWidth)
-          min-width 55px
+          @media screen and (max-width bigPhoneWidth)
+            min-width 55px
 
       &-box
         display flex
@@ -162,6 +163,8 @@
             display flex
 
       &-atm
+        max-width 200px
+
         @media screen and (max-width smalDesktopWidth)
           display none
 
@@ -187,13 +190,20 @@
           justify-content flex-start
 
       &-symbol
+        align-items center
+        max-width 200px
+
         @media screen and (max-width tableWidth)
           justify-content flex-start
           display flex
 
+      &-span
+        display flex
+        align-items center
+
 
 .quantity-number
-  width 35px
+  width 50px
   height 40px
   border none
   text-align right
@@ -202,7 +212,7 @@
     width 44px
 
     @media screen and (max-width bigPhoneWidth)
-      width 25px
+      width 35px
       height 30px
       font-size rem(12px)
 
@@ -213,6 +223,10 @@
   &__box
     border 1px solid greyDGdark
     display flex
+    height: 42px
+
+    @media screen and (max-width bigPhoneWidth)
+      height: 32px;
 
   &__symbol
     display flex
