@@ -4,10 +4,17 @@ block variables
     - var title = 'Результаты поиска'
     - var pageClass = 'result-page'
 
+
+
 block content
+
 
     .container-fluid
         .container.page
+            .preloader
+                .sk-wandering-cubes
+                    .sk-cube.sk-cube-1
+                    .sk-cube.sk-cube-2
             include ../modules/breadcrumb
             .page-title Результаты поиска по запросу "Гроубокс"
             .result__filter Сортировать:
@@ -19,7 +26,7 @@ block content
                 a.result__filter-a по цене
                     +icon('arrow-point', 'arrow-point-filter')
             .result
-                .result__product.preloader
+                .result__product
                     .result__product-item
                         .ticket
                             .ticket__left

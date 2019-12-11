@@ -1,5 +1,6 @@
 .city-you
   @extend .popup
+  padding 25px
 
   @media screen and (max-width smalDesktopWidth)
     right 50%
@@ -13,16 +14,17 @@
   &__text
     display flex
     font-size rem(24px)
+    flex-wrap wrap
+    justify-content center
 
     @media screen and (max-width bigPhoneWidth)
       font-size rem(14px)
 
-    &-span
-      min-width: 121px;
+    & span
+      padding-right 5px
 
     &-a
       font-weight bold
-      padding-left 5px
 
   &__btn
     display flex

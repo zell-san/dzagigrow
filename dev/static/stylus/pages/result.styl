@@ -75,15 +75,12 @@
         max-width 430px
 
 
-.preloader {
-  position: relative;
-  min-height: 60px;
-}
 
-.preloader:before {
+.preloader {
+  min-height: 100%;
   content: '';
-  position: absolute;
-  z-index: 1;
+  position: fixed;
+  z-index: 9999;
   top: 0;
   left: 0;
   right: 0;
@@ -96,45 +93,48 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  }
+
+.sk-wandering-cubes {
+  width: 20px;
+  height: 20px;
+  position: fixed;
+  left calc(50% - 25px)
+  top calc(50% - 25px)
+  margin: auto;
 }
 
-.preloader:after {
-  content: '';
+
+.sk-wandering-cubes .sk-cube {
+  background-color: greenDG;
+  width: 1em;
+  height: 1em;
   position: absolute;
-  z-index: 2;
-  top: 50%;
-  left: 50%;
-  margin-left: -15px;
-  margin-top: -15px;
-  width: 30px;
-  height: 30px;
-  border: 4px rgba(0, 0, 0, .25) solid;
-  border-top: 4px #1071b6 solid;
-  border-radius: 50%;
-  -webkit-animation: preloader .6s infinite linear;
-  animation: preloader .6s infinite linear;
+  top: 0;
+  left: 0;
+  animation: sk-wandering-cubes 1.8s ease-in-out -1.8s infinite both;
 }
-
-@-webkit-keyframes preloader {
+.sk-wandering-cubes .sk-cube-2 {
+  animation-delay: -0.9s;
+}
+@keyframes sk-wandering-cubes {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
-
-  to {
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg);
+  25% {
+    transform: translateX(2em) rotate(-90deg) scale(0.5);
   }
-}
-
-@keyframes preloader {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+  50% {
+    /* Hack to make FF rotate in the right direction */
+    transform: translateX(2em) translateY(2em) rotate(-179deg);
   }
-
-  to {
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg);
+  50.1% {
+    transform: translateX(2em) translateY(2em) rotate(-180deg);
+  }
+  75% {
+    transform: translateX(0) translateY(2em) rotate(-270deg) scale(0.5);
+  }
+  100% {
+    transform: rotate(-360deg);
   }
 }

@@ -28,8 +28,8 @@ header
         .container-fluid.header-second
             .container
                 .header-main
-                    a.header-main__logo
-                        img.header-main__logo-img(onclick="window.location='index.html';" src="static/img/general/logo.png" alt="")
+                    a.header-main__logo(href="index.html")
+                        img.header-main__logo-img(src="static/img/general/logo.png" alt="")
                     .header-main__city
                         .header-main__city-box
                             a.header-main__city-a Пермь
@@ -37,7 +37,7 @@ header
                         include city-popup
                     form.header-main__search
                         input.header-main__search-input(type="text" placeholder="Я ищу...")
-                        button.header-main__search-icon(onclick="window.location='result.html';")
+                        a.header-main__search-icon(href="result.html")
                             +icon('search', 'search-header')
 
                     .header-main__basket
