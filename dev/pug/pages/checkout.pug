@@ -117,19 +117,21 @@ block content
                                     .checkout__address
                                         .checkout__address-form
                                             .checkout__address-form-p-box
-                                                p.checkout__address-form-p ФИО
+                                                p.checkout__address-form-p Город или населенный пункт
                                                 .checkout__address-form-p-red *
-                                            input.checkout__address-form-input
+                                            .checkout__address-form-error Адрес указан не верно
+                                            input.checkout__address-form-input.error-input
                                             .checkout__address-form-p-box
-                                                p.checkout__address-form-p E-mail
+                                                p.checkout__address-form-p Улица
                                                 .checkout__address-form-p-red *
                                             input.checkout__address-form-input
+                                            .checkout__address-form-error Номер дома или квартиры указан не верно
                                             .checkout__address-form-block
                                                 .checkout__address-form-p-block
                                                     .checkout__address-form-p-box
                                                         p.checkout__address-form-p Дом
                                                         .checkout__address-form-p-red *
-                                                    input.checkout__address-form-input
+                                                    input.checkout__address-form-input.error-input
                                                 .checkout__address-form-p-block
                                                     .checkout__address-form-p-box
                                                         p.checkout__address-form-p Корпус
@@ -138,7 +140,7 @@ block content
                                                     .checkout__address-form-p-box
                                                         p.checkout__address-form-p Квартира
                                                         .checkout__address-form-p-red *
-                                                    input.checkout__address-form-input
+                                                    input.checkout__address-form-input.error-input
                                                 .checkout__address-form-p-block
                                                     .checkout__address-form-p-box
                                                         p.checkout__address-form-p Индекс
@@ -190,7 +192,9 @@ block content
                                                     .checkout__pay-item-img-box
                                                         img.checkout__pay-item-img(src="static/img/content/webmoney_logo.png")
                                                     p WMR
-
+                    .checkout__issue
+                        button.checkout__delivery-button Вернуться к корзине
+                        button.checkout__delivery-button-green Оформить заказ
                 //Итого блок справа
                 .checkout__total
                     .checkout__total-item.checkout__total-item-first

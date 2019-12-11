@@ -273,6 +273,10 @@
             width 64px
             margin-right 20px
 
+      &-error
+        color redDG
+        margin: 5px 0;
+
       &-block
         display flex
 
@@ -346,6 +350,20 @@
           margin-right 10px
           min-width 100px
 
+  &__issue
+    @extend .checkout__delivery-button-box
+    display flex
+    justify-content flex-end
+
+    & .checkout__delivery-button-green
+      white-space: nowrap;
+      width 200px
+
+    & .checkout__delivery-button
+      font-size 100%
+
+.error-input
+  border: 1px solid redDG
 
 
 
